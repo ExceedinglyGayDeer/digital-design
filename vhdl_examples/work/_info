@@ -89,47 +89,230 @@ Z16 !s107 C:/Users/holge/Desktop/Modelsim_tutorial/full_adder_tb.vhd|
 !i113 1
 R11
 R12
-Efull_adder
-Z17 w1550784022
+Ecounter_24bit
+Z17 w1551276252
+Z18 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z19 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R1
 R2
 R3
-Z18 8C:/Users/holge/Desktop/Modelsim_tutorial/full_adder.vhd
-Z19 FC:/Users/holge/Desktop/Modelsim_tutorial/full_adder.vhd
+Z20 8C:/Users/holge/Desktop/Modelsim_tutorial/counter_24bit.vhd
+Z21 FC:/Users/holge/Desktop/Modelsim_tutorial/counter_24bit.vhd
 l0
-L4
-V`D`zbQ@n]G@50]k60QVFH0
-!s100 FGfS:7V[57ac4`1_V3SfX0
+L5
+V@FJGlOV[3Z:HEbKSKBVj73
+!s100 7840YQdIc17GKC8<z;:l?0
 R6
 32
-Z20 !s110 1550784029
+Z22 !s110 1551276705
 !i10b 1
-Z21 !s108 1550784029.000000
-Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/holge/Desktop/Modelsim_tutorial/full_adder.vhd|
-Z23 !s107 C:/Users/holge/Desktop/Modelsim_tutorial/full_adder.vhd|
+Z23 !s108 1551276705.000000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/holge/Desktop/Modelsim_tutorial/counter_24bit.vhd|
+Z25 !s107 C:/Users/holge/Desktop/Modelsim_tutorial/counter_24bit.vhd|
+!i113 1
+R11
+R12
+Artl
+R18
+R19
+R1
+R2
+Z26 DEx4 work 13 counter_24bit 0 22 @FJGlOV[3Z:HEbKSKBVj73
+l16
+L14
+Z27 Vn>>RUB8^_?J^PH3fmHd:O0
+Z28 !s100 JDemBV2G7`W8VW0QRdPAL3
+R6
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R11
+R12
+Ecounter_24bit_tb
+Z29 w1551276700
+Z30 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R1
+R2
+R3
+Z31 8C:/Users/holge/Desktop/Modelsim_tutorial/counter_24bit_tb.vhd
+Z32 FC:/Users/holge/Desktop/Modelsim_tutorial/counter_24bit_tb.vhd
+l0
+L5
+V]_PzN_7m4CGff6DSNhMQM2
+!s100 OL[o63E@m=z4ai<jRRc:61
+R6
+32
+Z33 !s110 1551276704
+!i10b 1
+Z34 !s108 1551276704.000000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/holge/Desktop/Modelsim_tutorial/counter_24bit_tb.vhd|
+Z36 !s107 C:/Users/holge/Desktop/Modelsim_tutorial/counter_24bit_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R30
+R1
+R2
+DEx4 work 16 counter_24bit_tb 0 22 ]_PzN_7m4CGff6DSNhMQM2
+l27
+L8
+V1:MC>1?=1KbOB]AA7_<e`0
+!s100 ^dT3NDShV_XT?1m>nF=3a0
+R6
+32
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 1
+R11
+R12
+Efull_adder
+Z37 w1551101517
+R1
+R2
+R3
+Z38 8C:/Users/holge/Desktop/Modelsim_tutorial/full_adder.vhd
+Z39 FC:/Users/holge/Desktop/Modelsim_tutorial/full_adder.vhd
+l0
+L4
+VKTY5a^khzbOC;Z8[H8=ji1
+!s100 ddV`QGD:8AIZzcl2no:4k3
+R6
+32
+Z40 !s110 1551105011
+!i10b 1
+Z41 !s108 1551105011.000000
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/holge/Desktop/Modelsim_tutorial/full_adder.vhd|
+Z43 !s107 C:/Users/holge/Desktop/Modelsim_tutorial/full_adder.vhd|
 !i113 1
 R11
 R12
 Artl
 R1
 R2
-DEx4 work 10 full_adder 0 22 `D`zbQ@n]G@50]k60QVFH0
-l17
+DEx4 work 10 full_adder 0 22 KTY5a^khzbOC;Z8[H8=ji1
+l15
 L14
-VT[BD8oi6KScMn[YZKEan62
-!s100 `mSH0mf1@B`Zjgk4mW<6o0
+VNLN;Tj7az3aNbQ7<l?D4h0
+!s100 jC<]9ASMho`A^z?b@e]AA3
 R6
 32
-R20
+R40
 !i10b 1
-R21
-R22
-R23
+R41
+R42
+R43
+!i113 1
+R11
+R12
+Efull_adder_4
+Z44 w1551106463
+R1
+R2
+R3
+Z45 8C:/Users/holge/Desktop/Modelsim_tutorial/full_adder_4.vhd
+Z46 FC:/Users/holge/Desktop/Modelsim_tutorial/full_adder_4.vhd
+l0
+L4
+VdH1je9gR46d1ez80]^Y2@1
+!s100 kb9WP];a_a;0:mSGLTXAN1
+R6
+32
+Z47 !s110 1551114174
+!i10b 1
+Z48 !s108 1551114174.000000
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/holge/Desktop/Modelsim_tutorial/full_adder_4.vhd|
+Z50 !s107 C:/Users/holge/Desktop/Modelsim_tutorial/full_adder_4.vhd|
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+Z51 DEx4 work 12 full_adder_4 0 22 dH1je9gR46d1ez80]^Y2@1
+l26
+L12
+Vfeg]CnP1nW@:<2XR:jBD20
+!s100 oe0DKoL?lV[Jm[GNf]IX:2
+R6
+32
+R47
+!i10b 1
+R48
+R49
+R50
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+R51
+l26
+L12
+V;L>P9>oAiOj_hb0kd5EEK2
+!s100 4iMjGm3hcN;e1?Yb[>B2b3
+R6
+32
+!s110 1551106323
+!i10b 1
+!s108 1551106322.000000
+R49
+R50
+!i113 1
+R11
+R12
+w1551101775
+Efull_adder_4_tb
+Z52 w1551114105
+R30
+R1
+R2
+R3
+Z53 8C:/Users/holge/Desktop/Modelsim_tutorial/full_adder_4_tb.vhd
+Z54 FC:/Users/holge/Desktop/Modelsim_tutorial/full_adder_4_tb.vhd
+l0
+L5
+V_=[;^=H2MV7j27JPmkOX[1
+!s100 CFm01L8L=oS1X=RUIUo6[0
+R6
+32
+Z55 !s110 1551114175
+!i10b 1
+R48
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/holge/Desktop/Modelsim_tutorial/full_adder_4_tb.vhd|
+Z57 !s107 C:/Users/holge/Desktop/Modelsim_tutorial/full_adder_4_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R30
+R1
+R2
+DEx4 work 15 full_adder_4_tb 0 22 _=[;^=H2MV7j27JPmkOX[1
+l31
+L8
+VA1AK^^EHRnogJYVChVl[`0
+!s100 M;T35YF2n=9A@KVG0:S2K1
+R6
+32
+R55
+!i10b 1
+R48
+R56
+R57
 !i113 1
 R11
 R12
 Efull_adder_tb
-Z24 w1550783002
+Z58 w1551104996
 R1
 R2
 R3
@@ -141,9 +324,27 @@ VPgZAUD7iZ39a@:UKQk`f_2
 !s100 6G4Df5hoYKk5ZLmN7e:X>1
 R6
 32
-Z25 !s110 1550784030
+R40
 !i10b 1
-R21
+R41
+R15
+R16
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+Z59 DEx4 work 13 full_adder_tb 0 22 PgZAUD7iZ39a@:UKQk`f_2
+l24
+L7
+V1SVKAL><@az4B[L4o:FJ=0
+!s100 Lo]>YDnEjS1=z;W4?13]U0
+R6
+32
+R40
+!i10b 1
+R41
 R15
 R16
 !i113 1
@@ -152,40 +353,41 @@ R12
 Abehave
 R1
 R2
-Z26 DEx4 work 13 full_adder_tb 0 22 PgZAUD7iZ39a@:UKQk`f_2
+R59
 l25
 L7
-Z27 VH@ZmJGN6NB9jGZDgbC04m3
-Z28 !s100 6L[JiK:0Lc?I[JkPD5>L11
+VH@ZmJGN6NB9jGZDgbC04m3
+!s100 6L[JiK:0Lc?I[JkPD5>L11
 R6
 32
-R25
+!s110 1550784030
 !i10b 1
-R21
+!s108 1550784029.000000
 R15
 R16
 !i113 1
 R11
 R12
+w1550783002
 Etutorial_led_blink
-Z29 w1550697791
-Z30 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z60 w1550697791
+R30
 R1
 R2
 R3
-Z31 8C:/Users/holge/Desktop/Modelsim_tutorial/tutorial_led_blink.vhd
-Z32 FC:/Users/holge/Desktop/Modelsim_tutorial/tutorial_led_blink.vhd
+Z61 8C:/Users/holge/Desktop/Modelsim_tutorial/tutorial_led_blink.vhd
+Z62 FC:/Users/holge/Desktop/Modelsim_tutorial/tutorial_led_blink.vhd
 l0
 L5
 Vfo`8O[bH=Ka8?Gn5GhOGn1
 !s100 4:>z^]<2@L@bcPPmY:@BT3
 R6
 32
-Z33 !s110 1550698973
+Z63 !s110 1550698973
 !i10b 1
-Z34 !s108 1550698973.000000
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/holge/Desktop/Modelsim_tutorial/tutorial_led_blink.vhd|
-Z36 !s107 C:/Users/holge/Desktop/Modelsim_tutorial/tutorial_led_blink.vhd|
+Z64 !s108 1550698973.000000
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/holge/Desktop/Modelsim_tutorial/tutorial_led_blink.vhd|
+Z66 !s107 C:/Users/holge/Desktop/Modelsim_tutorial/tutorial_led_blink.vhd|
 !i113 1
 R11
 R12
@@ -200,33 +402,33 @@ V[adYK6PW6U`S0m6oSkJbF3
 !s100 0^`0dIbVmijRH]8H9k9j>2
 R6
 32
-R33
+R63
 !i10b 1
-R34
-R35
-R36
+R64
+R65
+R66
 !i113 1
 R11
 R12
 Etutorial_led_blink_tb
-Z37 w1550698970
+Z67 w1550698970
 R30
 R1
 R2
 R3
-Z38 8C:/Users/holge/Desktop/Modelsim_tutorial/tutorial_led_blink_tb.vhd
-Z39 FC:/Users/holge/Desktop/Modelsim_tutorial/tutorial_led_blink_tb.vhd
+Z68 8C:/Users/holge/Desktop/Modelsim_tutorial/tutorial_led_blink_tb.vhd
+Z69 FC:/Users/holge/Desktop/Modelsim_tutorial/tutorial_led_blink_tb.vhd
 l0
 L6
 VdCk<CG0K4dMJ?`ceGX^4@1
 !s100 JFWDIafZ2RzW?n5X6OcBR2
 R6
 32
-R33
+R63
 !i10b 1
-R34
-Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/holge/Desktop/Modelsim_tutorial/tutorial_led_blink_tb.vhd|
-Z41 !s107 C:/Users/holge/Desktop/Modelsim_tutorial/tutorial_led_blink_tb.vhd|
+R64
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/holge/Desktop/Modelsim_tutorial/tutorial_led_blink_tb.vhd|
+Z71 !s107 C:/Users/holge/Desktop/Modelsim_tutorial/tutorial_led_blink_tb.vhd|
 !i113 1
 R11
 R12
@@ -241,11 +443,11 @@ V11:A`3Kh@ac5hNW`]Q?_Y2
 !s100 O^9:YE<lgZS]@nn[^4klU0
 R6
 32
-R33
+R63
 !i10b 1
-R34
-R40
-R41
+R64
+R70
+R71
 !i113 1
 R11
 R12

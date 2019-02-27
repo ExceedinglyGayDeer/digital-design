@@ -12,6 +12,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity full_adder_tb
--- Compiling architecture behave of full_adder_tb
+-- Compiling architecture Behavioral of full_adder_tb
 
 } {} {}}

@@ -3,20 +3,16 @@ use ieee.std_logic_1164.all;
  
 entity full_adder is
   port (
-    input_1     : in    std_logic;
-    input_2     : in    std_logic;
-    input_3     : in    std_logic;
-    carry : out std_logic;
-    sum : out std_logic
+    i_bit1     : in    std_logic;
+    i_bit2     : in    std_logic;
+    i_carry     : in    std_logic;
+    o_carry : out std_logic;
+    o_sum : out std_logic
     );
 end full_adder;
- 
+
 architecture rtl of full_adder is
-  signal carry_signal : std_logic;
-  signal sum_signal : std_logic;
 begin
-  carry_signal <= ((input_1 AND (input_2 XOR input_3)) OR (input_2 AND input_3));
-  carry <= carry_signal;
-  sum_signal   <= (((NOT input_2) AND (input_1 XOR input_3)) OR (input_2 AND (NOT (input_1 XOR input_3))));
-  sum <= sum_signal;
+  o_carry <= i_bit1 xor i_bit2 xor i_carry;
+  o_sum   <= ((i_bit1 xor i_bit2) and i_carry) or (i_bit1 and i_bit2);
 end rtl;
