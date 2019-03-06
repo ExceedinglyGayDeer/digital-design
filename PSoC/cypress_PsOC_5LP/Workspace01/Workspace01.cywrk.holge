@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Workspace01\lek4_ex1\Source Files\main.c">
+<ExpandedNodeIds>
+<v>Workspace01</v>
+<v>Workspace01\CapSense_CSD_Design01\TopDesign</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.cydwr</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.cydwr\Pins</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.cydwr\Analog</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.cydwr\Clocks</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.cydwr\Interrupts</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.cydwr\DMA</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.cydwr\System</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.cydwr\Directives</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.cydwr\Flash Security</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.cydwr\EEPROM</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.cyre</v>
+<v>Workspace01\CapSense_CSD_Design01\Header Files</v>
+<v>Workspace01\CapSense_CSD_Design01\Header Files\cyapicallbacks.h</v>
+<v>Workspace01\CapSense_CSD_Design01\Header Files\device.h</v>
+<v>Workspace01\CapSense_CSD_Design01\Source Files</v>
+<v>Workspace01\CapSense_CSD_Design01\Source Files\main.c</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design.pdf</v>
+<v>Workspace01\CapSense_CSD_Design01\Generated_Source\PSoC5</v>
+<v>Workspace01\Design01\TopDesign</v>
+<v>Workspace01\Design01\Design01.cydwr</v>
+<v>Workspace01\Design01\Design01.cydwr\Pins</v>
+<v>Workspace01\Design01\Design01.cydwr\Analog</v>
+<v>Workspace01\Design01\Design01.cydwr\Clocks</v>
+<v>Workspace01\Design01\Design01.cydwr\Interrupts</v>
+<v>Workspace01\Design01\Design01.cydwr\DMA</v>
+<v>Workspace01\Design01\Design01.cydwr\System</v>
+<v>Workspace01\Design01\Design01.cydwr\Directives</v>
+<v>Workspace01\Design01\Design01.cydwr\Flash Security</v>
+<v>Workspace01\Design01\Design01.cydwr\EEPROM</v>
+<v>Workspace01\Design01\Header Files</v>
+<v>Workspace01\Design01\Header Files\cyapicallbacks.h</v>
+<v>Workspace01\Design01\Source Files</v>
+<v>Workspace01\Design01\Source Files\main.c</v>
+<v>Workspace01\Design01\Generated_Source\PSoC5</v>
+<v>Workspace01\Lek1_ex4\TopDesign</v>
+<v>Workspace01\Lek1_ex4\Lek1_ex4.cydwr</v>
+<v>Workspace01\Lek1_ex4\Lek1_ex4.cydwr\Pins</v>
+<v>Workspace01\Lek1_ex4\Lek1_ex4.cydwr\Analog</v>
+<v>Workspace01\Lek1_ex4\Lek1_ex4.cydwr\Clocks</v>
+<v>Workspace01\Lek1_ex4\Lek1_ex4.cydwr\Interrupts</v>
+<v>Workspace01\Lek1_ex4\Lek1_ex4.cydwr\DMA</v>
+<v>Workspace01\Lek1_ex4\Lek1_ex4.cydwr\System</v>
+<v>Workspace01\Lek1_ex4\Lek1_ex4.cydwr\Directives</v>
+<v>Workspace01\Lek1_ex4\Lek1_ex4.cydwr\Flash Security</v>
+<v>Workspace01\Lek1_ex4\Lek1_ex4.cydwr\EEPROM</v>
+<v>Workspace01\Lek1_ex4\Header Files</v>
+<v>Workspace01\Lek1_ex4\Header Files\cyapicallbacks.h</v>
+<v>Workspace01\Lek1_ex4\Source Files</v>
+<v>Workspace01\Lek1_ex4\Source Files\main.c</v>
+<v>Workspace01\Lek1_ex4\Generated_Source</v>
+<v>Workspace01\Lek1_ex4\Generated_Source\PSoC5</v>
+<v>Workspace01\lek4_ex1</v>
+<v>Workspace01\lek4_ex1\TopDesign</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Pins</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Analog</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Clocks</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Interrupts</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\DMA</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\System</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Directives</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Flash Security</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\EEPROM</v>
+<v>Workspace01\lek4_ex1\Header Files</v>
+<v>Workspace01\lek4_ex1\Header Files\cyapicallbacks.h</v>
+<v>Workspace01\lek4_ex1\Source Files</v>
+<v>Workspace01\lek4_ex1\Source Files\main.c</v>
+<v>Workspace01\lek4_ex1\Generated_Source</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Workspace01</v>
+<v>Workspace01\CapSense_CSD_Design01</v>
+<v>Workspace01\Design01</v>
+<v>Workspace01\Lek1_ex4</v>
+<v>Workspace01\lek4_ex1</v>
+<v>Workspace01\lek4_ex1\TopDesign</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Pins</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Analog</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Clocks</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Interrupts</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\DMA</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\System</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Directives</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Flash Security</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\EEPROM</v>
+<v>Workspace01\lek4_ex1\Header Files</v>
+<v>Workspace01\lek4_ex1\Header Files\cyapicallbacks.h</v>
+<v>Workspace01\lek4_ex1\Source Files</v>
+<v>Workspace01\lek4_ex1\Source Files\main.c</v>
+<v>Workspace01\lek4_ex1\Generated_Source</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\clock_pin</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cy_boot</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\init</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\Pin_A</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\Pin_B</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\Pin_C</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\Pin_D</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydevice.h</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydeviceiar.inc</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydevicerv.inc</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydisabledsheets.h</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cyfitter.h</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cyfitter_cfg.c</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cyfitter_cfg.h</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cyfittergnu.inc</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cyfitteriar.inc</v>
+<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cyfitterrv.inc</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Workspace01</v>
+<v>Workspace01\CapSense_CSD_Design01</v>
+<v>Workspace01\CapSense_CSD_Design01\TopDesign</v>
+<v>Workspace01\CapSense_CSD_Design01\TopDesign\TopDesign.cysch</v>
+<v>Workspace01\Design01</v>
+<v>Workspace01\Design01\TopDesign</v>
+<v>Workspace01\Design01\TopDesign\TopDesign.cysch</v>
+<v>Workspace01\Lek1_ex4</v>
+<v>Workspace01\Lek1_ex4\TopDesign</v>
+<v>Workspace01\Lek1_ex4\TopDesign\TopDesign.cysch</v>
+<v>Workspace01\lek4_ex1</v>
+<v>Workspace01\lek4_ex1\TopDesign</v>
+<v>Workspace01\lek4_ex1\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Workspace01</v>
+<v>Workspace01\CapSense_CSD_Design01</v>
+<v>Workspace01\CapSense_CSD_Design01\TopDesign</v>
+<v>Workspace01\CapSense_CSD_Design01\TopDesign\TopDesign.cysch</v>
+<v>Workspace01\Design01</v>
+<v>Workspace01\Design01\TopDesign</v>
+<v>Workspace01\Design01\TopDesign\TopDesign.cysch</v>
+<v>Workspace01\Lek1_ex4</v>
+<v>Workspace01\Lek1_ex4\TopDesign</v>
+<v>Workspace01\Lek1_ex4\TopDesign\TopDesign.cysch</v>
+<v>Workspace01\lek4_ex1</v>
+<v>Workspace01\lek4_ex1\TopDesign</v>
+<v>Workspace01\lek4_ex1\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Workspace01</v>
+<v>Workspace01\CapSense_CSD_Design01</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_AMuxCH0.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_CompCH0.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_CompCH0_PM.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_CSHL.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_IdacCH0.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_IdacCH0_PM.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_INT.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_IntClock.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_Pins.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_PM.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_SMS_Wrapper.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_TunerHelper.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\LED.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_1.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_1_PM.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\CapSense_CSD_Design01.elf</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\CapSense_CSD_Design01.hex</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\CapSense_CSD_Design01.map</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.gpdsc</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.rpt</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01_timing.html</v>
+<v>Workspace01\Design01</v>
+<v>Workspace01\Design01\CortexM3</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\LED.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_PM.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\SW1.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Design01.elf</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Design01.hex</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Design01.map</v>
+<v>Workspace01\Design01\Design01.gpdsc</v>
+<v>Workspace01\Design01\Design01.rpt</v>
+<v>Workspace01\Design01\Design01_timing.html</v>
+<v>Workspace01\Lek1_ex4</v>
+<v>Workspace01\Lek1_ex4\CortexM3</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_A.lst</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_B.lst</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_C.lst</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_D.lst</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Lek1_ex4.elf</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Lek1_ex4.hex</v>
+<v>Workspace01\Lek1_ex4\CortexM3\ARM_GCC_541\Debug\Lek1_ex4.map</v>
+<v>Workspace01\Lek1_ex4\Lek1_ex4.gpdsc</v>
+<v>Workspace01\Lek1_ex4\Lek1_ex4.rpt</v>
+<v>Workspace01\Lek1_ex4\Lek1_ex4_timing.html</v>
+<v>Workspace01\lek4_ex1</v>
+<v>Workspace01\lek4_ex1\CortexM3</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\clock_pin.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\init.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_A.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_B.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_C.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_D.lst</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\lek4_ex1.elf</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\lek4_ex1.hex</v>
+<v>Workspace01\lek4_ex1\CortexM3\ARM_GCC_541\Debug\lek4_ex1.map</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.gpdsc</v>
+<v>Workspace01\lek4_ex1\lek4_ex1.rpt</v>
+<v>Workspace01\lek4_ex1\lek4_ex1_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Workspace01</v>
+<v>Workspace01\CapSense_CSD_Design01</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_AMuxCH0.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_CompCH0.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_CompCH0_PM.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_CSHL.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_IdacCH0.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_IdacCH0_PM.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_INT.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_IntClock.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_Pins.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_PM.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_SMS_Wrapper.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_TunerHelper.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\LED.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_1.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_1_PM.lst</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\CapSense_CSD_Design01.elf</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\CapSense_CSD_Design01.hex</v>
+<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\CapSense_CSD_Design01.map</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.gpdsc</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.rpt</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01_timing.html</v>
+<v>Workspace01\Design01</v>
+<v>Workspace01\Design01\CortexM3</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Workspace01</v>
+<v>Workspace01\CapSense_CSD_Design01</v>
+<v>Workspace01\CapSense_CSD_Design01\PSoC 5LP Architecture TRM</v>
+<v>Workspace01\CapSense_CSD_Design01\CY8C58LP Family Datasheet</v>
+<v>Workspace01\CapSense_CSD_Design01\System Reference Guides</v>
+<v>Workspace01\CapSense_CSD_Design01\System Reference Guides\cy_boot_v5_60</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_v3_50.pdf</v>
+<v>Workspace01\CapSense_CSD_Design01\cy_clock_v2_20.pdf</v>
+<v>Workspace01\CapSense_CSD_Design01\cy_pins_v2_20.pdf</v>
+<v>Workspace01\CapSense_CSD_Design01\PWM_v3_30.pdf</v>
+<v>Workspace01\Design01</v>
+<v>Workspace01\Design01\PSoC 5LP Architecture TRM</v>
+<v>Workspace01\Design01\CY8C58LP Family Datasheet</v>
+<v>Workspace01\Design01\System Reference Guides</v>
+<v>Workspace01\Design01\System Reference Guides\cy_boot_v5_70</v>
+<v>Workspace01\Design01\cy_clock_v2_20.pdf</v>
+<v>Workspace01\Design01\cy_pins_v2_20</v>
+<v>Workspace01\Design01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Workspace01\Design01\Gnd_v1_0.pdf</v>
+<v>Workspace01\Design01\LED_v1_0.pdf</v>
+<v>Workspace01\Design01\not_v1_0.pdf</v>
+<v>Workspace01\Design01\Power_v1_0.pdf</v>
+<v>Workspace01\Design01\PWM_v3_30.pdf</v>
+<v>Workspace01\Design01\Resistor_v1_0.pdf</v>
+<v>Workspace01\Design01\SwitchSPST_v1_0.pdf</v>
+<v>Workspace01\Lek1_ex4</v>
+<v>Workspace01\Lek1_ex4\PSoC 5LP Architecture TRM</v>
+<v>Workspace01\Lek1_ex4\CY8C58LP Family Datasheet</v>
+<v>Workspace01\Lek1_ex4\System Reference Guides</v>
+<v>Workspace01\Lek1_ex4\System Reference Guides\cy_boot_v5_70</v>
+<v>Workspace01\Lek1_ex4\cy_pins_v2_20</v>
+<v>Workspace01\Lek1_ex4\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Workspace01\Lek1_ex4\Gnd_v1_0</v>
+<v>Workspace01\Lek1_ex4\Gnd_v1_0\Gnd_v1_0.pdf</v>
+<v>Workspace01\Lek1_ex4\LED_v1_0</v>
+<v>Workspace01\Lek1_ex4\LED_v1_0\LED_v1_0.pdf</v>
+<v>Workspace01\Lek1_ex4\nand_v1_0</v>
+<v>Workspace01\Lek1_ex4\nand_v1_0\nand_v1_0.pdf</v>
+<v>Workspace01\Lek1_ex4\not_v1_0.pdf</v>
+<v>Workspace01\Lek1_ex4\Resistor_v1_0</v>
+<v>Workspace01\Lek1_ex4\Resistor_v1_0\Resistor_v1_0.pdf</v>
+<v>Workspace01\lek4_ex1</v>
+<v>Workspace01\lek4_ex1\PSoC 5LP Architecture TRM</v>
+<v>Workspace01\lek4_ex1\CY8C58LP Family Datasheet</v>
+<v>Workspace01\lek4_ex1\System Reference Guides</v>
+<v>Workspace01\lek4_ex1\System Reference Guides\cy_boot_v5_70</v>
+<v>Workspace01\lek4_ex1\cy_pins_v2_20</v>
+<v>Workspace01\lek4_ex1\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Workspace01\lek4_ex1\cydff_v1_30</v>
+<v>Workspace01\lek4_ex1\cydff_v1_30\cydff_v1_30.pdf</v>
+<v>Workspace01\lek4_ex1\not_v1_0</v>
+<v>Workspace01\lek4_ex1\not_v1_0\not_v1_0.pdf</v>
+<v>Workspace01\lek4_ex1\or_v1_0.pdf</v>
+<v>Workspace01\lek4_ex1\xor_v1_0.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Workspace01</v>
+<v>Workspace01\CapSense_CSD_Design01</v>
+<v>Workspace01\CapSense_CSD_Design01\PSoC 5LP Architecture TRM</v>
+<v>Workspace01\CapSense_CSD_Design01\CY8C58LP Family Datasheet</v>
+<v>Workspace01\CapSense_CSD_Design01\System Reference Guides</v>
+<v>Workspace01\CapSense_CSD_Design01\System Reference Guides\cy_boot_v5_60</v>
+<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_v3_50.pdf</v>
+<v>Workspace01\CapSense_CSD_Design01\cy_clock_v2_20.pdf</v>
+<v>Workspace01\CapSense_CSD_Design01\cy_pins_v2_20.pdf</v>
+<v>Workspace01\CapSense_CSD_Design01\PWM_v3_30.pdf</v>
+<v>Workspace01\Design01</v>
+<v>Workspace01\Design01\PSoC 5LP Architecture TRM</v>
+<v>Workspace01\Design01\CY8C58LP Family Datasheet</v>
+<v>Workspace01\Design01\System Reference Guides</v>
+<v>Workspace01\Design01\System Reference Guides\cy_boot_v5_70</v>
+<v>Workspace01\Design01\cy_clock_v2_20.pdf</v>
+<v>Workspace01\Design01\cy_pins_v2_20</v>
+<v>Workspace01\Design01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Workspace01\Design01\Gnd_v1_0.pdf</v>
+<v>Workspace01\Design01\LED_v1_0.pdf</v>
+<v>Workspace01\Design01\not_v1_0.pdf</v>
+<v>Workspace01\Design01\Power_v1_0.pdf</v>
+<v>Workspace01\Design01\PWM_v3_30.pdf</v>
+<v>Workspace01\Design01\Resistor_v1_0.pdf</v>
+<v>Workspace01\Design01\SwitchSPST_v1_0.pdf</v>
+<v>Workspace01\Lek1_ex4</v>
+<v>Workspace01\Lek1_ex4\PSoC 5LP Architecture TRM</v>
+<v>Workspace01\Lek1_ex4\CY8C58LP Family Datasheet</v>
+<v>Workspace01\Lek1_ex4\System Reference Guides</v>
+<v>Workspace01\Lek1_ex4\System Reference Guides\cy_boot_v5_70</v>
+<v>Workspace01\Lek1_ex4\cy_pins_v2_20</v>
+<v>Workspace01\Lek1_ex4\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Workspace01\Lek1_ex4\Gnd_v1_0</v>
+<v>Workspace01\Lek1_ex4\Gnd_v1_0\Gnd_v1_0.pdf</v>
+<v>Workspace01\Lek1_ex4\LED_v1_0</v>
+<v>Workspace01\Lek1_ex4\LED_v1_0\LED_v1_0.pdf</v>
+<v>Workspace01\Lek1_ex4\nand_v1_0</v>
+<v>Workspace01\Lek1_ex4\nand_v1_0\nand_v1_0.pdf</v>
+<v>Workspace01\Lek1_ex4\not_v1_0.pdf</v>
+<v>Workspace01\Lek1_ex4\Resistor_v1_0</v>
+<v>Workspace01\Lek1_ex4\Resistor_v1_0\Resistor_v1_0.pdf</v>
+<v>Workspace01\lek4_ex1</v>
+<v>Workspace01\lek4_ex1\PSoC 5LP Architecture TRM</v>
+<v>Workspace01\lek4_ex1\CY8C58LP Family Datasheet</v>
+<v>Workspace01\lek4_ex1\System Reference Guides</v>
+<v>Workspace01\lek4_ex1\System Reference Guides\cy_boot_v5_70</v>
+<v>Workspace01\lek4_ex1\cy_pins_v2_20</v>
+<v>Workspace01\lek4_ex1\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\lek4_ex1.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\lek4_ex1.cydsn\lek4_ex1.cydwr" />
+<name v=".\lek4_ex1.cydsn\main.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1439, 711" SelectedTabbedMdiWindow="98a89db9-5b36-4d9f-b099-611631846e1b"><DocumentWindow Key="C:\Users\holge\OneDrive\Skrivebord\cypress_PsOC_5LP\Workspace01\lek4_ex1.cydsn\TopDesign\TopDesign.cysch" Guid="98a89db9-5b36-4d9f-b099-611631846e1b" /><DocumentWindow Key="C:\Users\holge\OneDrive\Skrivebord\cypress_PsOC_5LP\Workspace01\lek4_ex1.cydsn\lek4_ex1.cydwr" Guid="b8e3218f-92a5-4315-a203-5dccf81cd3e5" /><DocumentWindow Key="C:\Users\holge\OneDrive\Skrivebord\cypress_PsOC_5LP\Workspace01\lek4_ex1.cydsn\main.c" Guid="e1da0bec-6af0-439d-a665-37aaecc18804" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

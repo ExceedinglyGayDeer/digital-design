@@ -1,0 +1,10 @@
+C:\Users\holge\OneDrive\Skrivebord\cypress_PsOC_5LP\Workspace01\Design01.cydsn\Design01.cyprj|91668879-7918-4508-862c-de004aee2d76
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|dfce3bf8-0e4f-41dd-9192-f447dc6b39cc
+C:\Users\holge\OneDrive\Dokumenter\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|682111dc-6958-4034-81da-6680d7df888b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|53c76b4f-b58b-4a21-90e3-68f24e7df927
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|b7e5b73a-0c73-44bc-b0a9-f6159fef8ffb
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|517a61e6-325d-4962-9e51-a9a9cec7ea15
+C:\Users\holge\OneDrive\Skrivebord\cypress_PsOC_5LP\Workspace01\CapSense_CSD_Design01.cydsn\CapSense_CSD_Design01.cyprj|4607e1b3-9a1e-4fff-a258-0baa072b406f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|e955e3d4-42af-4a20-bd38-0f18065b8712
+C:\Users\holge\OneDrive\Skrivebord\cypress_PsOC_5LP\Workspace01\CapSense_PWM_LED.cydsn\CapSense_PWM_LED.cyprj|1455250c-d085-4866-98c6-42f5e4f70d7f
+C:\Users\holge\OneDrive\Skrivebord\cypress_PsOC_5LP\Workspace01\Lek1_ex4.cydsn\Lek1_ex4.cyprj|db201122-bcea-4002-a643-ec7a33571edc

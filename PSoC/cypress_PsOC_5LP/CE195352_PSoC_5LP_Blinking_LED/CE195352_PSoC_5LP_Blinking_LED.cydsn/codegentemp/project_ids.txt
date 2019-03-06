@@ -1,0 +1,7 @@
+C:\Users\holge\Desktop\cypress_PsOC_5LP\CE195352_PSoC_5LP_Blinking_LED\CE195352_PSoC_5LP_Blinking_LED.cydsn\CE195352_PSoC_5LP_Blinking_LED.cyprj|600bf122-16df-4c46-8ce4-c0f50cc1cbb6
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|237f555f-fef2-454c-bbe7-661245ed1d04
+C:\Users\holge\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|7af92d5c-bbca-4e44-842b-b05661c047c4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|fd2fffbb-6d61-41ed-80e1-b53e10648be3
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|f327d76b-ff04-4a10-8c7b-0df68e3ca926
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|99492d1e-4a69-4a59-81b7-753dee69e024
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|1f893352-2cff-432a-88c5-91844bb745a0

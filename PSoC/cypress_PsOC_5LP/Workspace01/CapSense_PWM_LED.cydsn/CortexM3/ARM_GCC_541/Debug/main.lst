@@ -1,0 +1,687 @@
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccgRqwde.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.main,"ax",%progbits
+  20              		.align	2
+  21              		.global	main
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	main, %function
+  25              	main:
+  26              	.LFB63:
+  27              		.file 1 "main.c"
+   1:main.c        **** /* ========================================
+   2:main.c        ****  *
+   3:main.c        ****  * Copyright YOUR COMPANY, THE YEAR
+   4:main.c        ****  * All Rights Reserved
+   5:main.c        ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:main.c        ****  *
+   7:main.c        ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:main.c        ****  * WHICH IS THE PROPERTY OF your company.
+   9:main.c        ****  *
+  10:main.c        ****  * ========================================
+  11:main.c        **** */
+  12:main.c        **** #include "project.h"
+  13:main.c        **** 
+  14:main.c        **** int main(void)
+  15:main.c        **** {
+  28              		.loc 1 15 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 08B5     		push	{r3, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 3, -8
+  35              		.cfi_offset 14, -4
+  16:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
+  36              		.loc 1 16 0
+  37              		.syntax unified
+  38              	@ 16 "main.c" 1
+  39 0002 62B6     		CPSIE   i
+  40              	@ 0 "" 2
+  17:main.c        ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccgRqwde.s 			page 2
+
+
+  18:main.c        ****     CapSense_1_Start();
+  41              		.loc 1 18 0
+  42              		.thumb
+  43              		.syntax unified
+  44 0004 FFF7FEFF 		bl	CapSense_1_Start
+  45              	.LVL0:
+  19:main.c        ****     CapSense_1_InitializeAllBaselines();
+  46              		.loc 1 19 0
+  47 0008 FFF7FEFF 		bl	CapSense_1_InitializeAllBaselines
+  48              	.LVL1:
+  20:main.c        ****     CapSense_1_ScanEnabledWidgets();
+  49              		.loc 1 20 0
+  50 000c FFF7FEFF 		bl	CapSense_1_ScanEnabledWidgets
+  51              	.LVL2:
+  21:main.c        ****     
+  22:main.c        ****     PWM_1_Start();
+  52              		.loc 1 22 0
+  53 0010 FFF7FEFF 		bl	PWM_1_Start
+  54              	.LVL3:
+  55              	.L2:
+  23:main.c        ****     for(;;)
+  24:main.c        ****     {
+  25:main.c        ****         /* Place your application code here. */
+  26:main.c        ****         if (! CapSense_1_IsBusy()) {
+  56              		.loc 1 26 0
+  57 0014 FFF7FEFF 		bl	CapSense_1_IsBusy
+  58              	.LVL4:
+  59 0018 0028     		cmp	r0, #0
+  60 001a FBD1     		bne	.L2
+  61              	.LVL5:
+  62              	.LBB2:
+  27:main.c        ****             uint16 value = 0; /* CapSense_1_GetCentroidPos(); */
+  28:main.c        ****             
+  29:main.c        ****             if (value != 0xFFFF )
+  30:main.c        ****             {
+  31:main.c        ****                 PWM_1_WriteCompare( value );
+  63              		.loc 1 31 0
+  64 001c FFF7FEFF 		bl	PWM_1_WriteCompare
+  65              	.LVL6:
+  32:main.c        ****             }
+  33:main.c        ****             CapSense_1_UpdateEnabledBaselines();
+  66              		.loc 1 33 0
+  67 0020 FFF7FEFF 		bl	CapSense_1_UpdateEnabledBaselines
+  68              	.LVL7:
+  34:main.c        ****             CapSense_1_ScanEnabledWidgets();
+  69              		.loc 1 34 0
+  70 0024 FFF7FEFF 		bl	CapSense_1_ScanEnabledWidgets
+  71              	.LVL8:
+  72 0028 F4E7     		b	.L2
+  73              	.LBE2:
+  74              		.cfi_endproc
+  75              	.LFE63:
+  76              		.size	main, .-main
+  77 002a 00BF     		.text
+  78              	.Letext0:
+  79              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  80              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccgRqwde.s 			page 3
+
+
+  81              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+  82              		.file 5 "Generated_Source\\PSoC5/PWM_1.h"
+  83              		.file 6 "Generated_Source\\PSoC5/CapSense_1_CSHL.h"
+  84              		.file 7 "Generated_Source\\PSoC5/CapSense_1.h"
+  85              		.file 8 "Generated_Source\\PSoC5/core_cm3.h"
+  86              		.section	.debug_info,"",%progbits
+  87              	.Ldebug_info0:
+  88 0000 87010000 		.4byte	0x187
+  89 0004 0400     		.2byte	0x4
+  90 0006 00000000 		.4byte	.Ldebug_abbrev0
+  91 000a 04       		.byte	0x4
+  92 000b 01       		.uleb128 0x1
+  93 000c 62000000 		.4byte	.LASF24
+  94 0010 0C       		.byte	0xc
+  95 0011 B7010000 		.4byte	.LASF25
+  96 0015 F7010000 		.4byte	.LASF26
+  97 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  98 001d 00000000 		.4byte	0
+  99 0021 00000000 		.4byte	.Ldebug_line0
+ 100 0025 02       		.uleb128 0x2
+ 101 0026 01       		.byte	0x1
+ 102 0027 06       		.byte	0x6
+ 103 0028 EB010000 		.4byte	.LASF0
+ 104 002c 02       		.uleb128 0x2
+ 105 002d 01       		.byte	0x1
+ 106 002e 08       		.byte	0x8
+ 107 002f 54000000 		.4byte	.LASF1
+ 108 0033 02       		.uleb128 0x2
+ 109 0034 02       		.byte	0x2
+ 110 0035 05       		.byte	0x5
+ 111 0036 C3010000 		.4byte	.LASF2
+ 112 003a 02       		.uleb128 0x2
+ 113 003b 02       		.byte	0x2
+ 114 003c 07       		.byte	0x7
+ 115 003d 3B000000 		.4byte	.LASF3
+ 116 0041 03       		.uleb128 0x3
+ 117 0042 28000000 		.4byte	.LASF9
+ 118 0046 02       		.byte	0x2
+ 119 0047 3F       		.byte	0x3f
+ 120 0048 4C000000 		.4byte	0x4c
+ 121 004c 02       		.uleb128 0x2
+ 122 004d 04       		.byte	0x4
+ 123 004e 05       		.byte	0x5
+ 124 004f 32000000 		.4byte	.LASF4
+ 125 0053 02       		.uleb128 0x2
+ 126 0054 04       		.byte	0x4
+ 127 0055 07       		.byte	0x7
+ 128 0056 12010000 		.4byte	.LASF5
+ 129 005a 02       		.uleb128 0x2
+ 130 005b 08       		.byte	0x8
+ 131 005c 05       		.byte	0x5
+ 132 005d A9010000 		.4byte	.LASF6
+ 133 0061 02       		.uleb128 0x2
+ 134 0062 08       		.byte	0x8
+ 135 0063 07       		.byte	0x7
+ 136 0064 6E010000 		.4byte	.LASF7
+ 137 0068 04       		.uleb128 0x4
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccgRqwde.s 			page 4
+
+
+ 138 0069 04       		.byte	0x4
+ 139 006a 05       		.byte	0x5
+ 140 006b 696E7400 		.ascii	"int\000"
+ 141 006f 02       		.uleb128 0x2
+ 142 0070 04       		.byte	0x4
+ 143 0071 07       		.byte	0x7
+ 144 0072 61010000 		.4byte	.LASF8
+ 145 0076 03       		.uleb128 0x3
+ 146 0077 85010000 		.4byte	.LASF10
+ 147 007b 03       		.byte	0x3
+ 148 007c 2C       		.byte	0x2c
+ 149 007d 41000000 		.4byte	0x41
+ 150 0081 05       		.uleb128 0x5
+ 151 0082 49010000 		.4byte	.LASF11
+ 152 0086 04       		.byte	0x4
+ 153 0087 E501     		.2byte	0x1e5
+ 154 0089 3A000000 		.4byte	0x3a
+ 155 008d 02       		.uleb128 0x2
+ 156 008e 04       		.byte	0x4
+ 157 008f 04       		.byte	0x4
+ 158 0090 4E000000 		.4byte	.LASF12
+ 159 0094 02       		.uleb128 0x2
+ 160 0095 08       		.byte	0x8
+ 161 0096 04       		.byte	0x4
+ 162 0097 3D010000 		.4byte	.LASF13
+ 163 009b 02       		.uleb128 0x2
+ 164 009c 01       		.byte	0x1
+ 165 009d 08       		.byte	0x8
+ 166 009e BE010000 		.4byte	.LASF14
+ 167 00a2 02       		.uleb128 0x2
+ 168 00a3 08       		.byte	0x8
+ 169 00a4 04       		.byte	0x4
+ 170 00a5 DF010000 		.4byte	.LASF15
+ 171 00a9 02       		.uleb128 0x2
+ 172 00aa 04       		.byte	0x4
+ 173 00ab 07       		.byte	0x7
+ 174 00ac 8D010000 		.4byte	.LASF16
+ 175 00b0 06       		.uleb128 0x6
+ 176 00b1 44010000 		.4byte	.LASF27
+ 177 00b5 01       		.byte	0x1
+ 178 00b6 0E       		.byte	0xe
+ 179 00b7 68000000 		.4byte	0x68
+ 180 00bb 00000000 		.4byte	.LFB63
+ 181 00bf 2A000000 		.4byte	.LFE63-.LFB63
+ 182 00c3 01       		.uleb128 0x1
+ 183 00c4 9C       		.byte	0x9c
+ 184 00c5 2C010000 		.4byte	0x12c
+ 185 00c9 07       		.uleb128 0x7
+ 186 00ca 1C000000 		.4byte	.LBB2
+ 187 00ce 0E000000 		.4byte	.LBE2-.LBB2
+ 188 00d2 FE000000 		.4byte	0xfe
+ 189 00d6 08       		.uleb128 0x8
+ 190 00d7 22000000 		.4byte	.LASF28
+ 191 00db 01       		.byte	0x1
+ 192 00dc 1B       		.byte	0x1b
+ 193 00dd 81000000 		.4byte	0x81
+ 194 00e1 00       		.byte	0
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccgRqwde.s 			page 5
+
+
+ 195 00e2 09       		.uleb128 0x9
+ 196 00e3 20000000 		.4byte	.LVL6
+ 197 00e7 3D010000 		.4byte	0x13d
+ 198 00eb 09       		.uleb128 0x9
+ 199 00ec 24000000 		.4byte	.LVL7
+ 200 00f0 48010000 		.4byte	0x148
+ 201 00f4 09       		.uleb128 0x9
+ 202 00f5 28000000 		.4byte	.LVL8
+ 203 00f9 53010000 		.4byte	0x153
+ 204 00fd 00       		.byte	0
+ 205 00fe 09       		.uleb128 0x9
+ 206 00ff 08000000 		.4byte	.LVL0
+ 207 0103 5E010000 		.4byte	0x15e
+ 208 0107 09       		.uleb128 0x9
+ 209 0108 0C000000 		.4byte	.LVL1
+ 210 010c 69010000 		.4byte	0x169
+ 211 0110 09       		.uleb128 0x9
+ 212 0111 10000000 		.4byte	.LVL2
+ 213 0115 53010000 		.4byte	0x153
+ 214 0119 09       		.uleb128 0x9
+ 215 011a 14000000 		.4byte	.LVL3
+ 216 011e 74010000 		.4byte	0x174
+ 217 0122 09       		.uleb128 0x9
+ 218 0123 18000000 		.4byte	.LVL4
+ 219 0127 7F010000 		.4byte	0x17f
+ 220 012b 00       		.byte	0
+ 221 012c 0A       		.uleb128 0xa
+ 222 012d 30010000 		.4byte	.LASF29
+ 223 0131 08       		.byte	0x8
+ 224 0132 1207     		.2byte	0x712
+ 225 0134 38010000 		.4byte	0x138
+ 226 0138 0B       		.uleb128 0xb
+ 227 0139 76000000 		.4byte	0x76
+ 228 013d 0C       		.uleb128 0xc
+ 229 013e 96010000 		.4byte	.LASF17
+ 230 0142 96010000 		.4byte	.LASF17
+ 231 0146 05       		.byte	0x5
+ 232 0147 C3       		.byte	0xc3
+ 233 0148 0C       		.uleb128 0xc
+ 234 0149 00000000 		.4byte	.LASF18
+ 235 014d 00000000 		.4byte	.LASF18
+ 236 0151 06       		.byte	0x6
+ 237 0152 99       		.byte	0x99
+ 238 0153 0C       		.uleb128 0xc
+ 239 0154 42020000 		.4byte	.LASF19
+ 240 0158 42020000 		.4byte	.LASF19
+ 241 015c 07       		.byte	0x7
+ 242 015d 9B       		.byte	0x9b
+ 243 015e 0C       		.uleb128 0xc
+ 244 015f 50010000 		.4byte	.LASF20
+ 245 0163 50010000 		.4byte	.LASF20
+ 246 0167 07       		.byte	0x7
+ 247 0168 93       		.byte	0x93
+ 248 0169 0C       		.uleb128 0xc
+ 249 016a F0000000 		.4byte	.LASF21
+ 250 016e F0000000 		.4byte	.LASF21
+ 251 0172 06       		.byte	0x6
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccgRqwde.s 			page 6
+
+
+ 252 0173 95       		.byte	0x95
+ 253 0174 0C       		.uleb128 0xc
+ 254 0175 24010000 		.4byte	.LASF22
+ 255 0179 24010000 		.4byte	.LASF22
+ 256 017d 05       		.byte	0x5
+ 257 017e 92       		.byte	0x92
+ 258 017f 0C       		.uleb128 0xc
+ 259 0180 CD010000 		.4byte	.LASF23
+ 260 0184 CD010000 		.4byte	.LASF23
+ 261 0188 07       		.byte	0x7
+ 262 0189 99       		.byte	0x99
+ 263 018a 00       		.byte	0
+ 264              		.section	.debug_abbrev,"",%progbits
+ 265              	.Ldebug_abbrev0:
+ 266 0000 01       		.uleb128 0x1
+ 267 0001 11       		.uleb128 0x11
+ 268 0002 01       		.byte	0x1
+ 269 0003 25       		.uleb128 0x25
+ 270 0004 0E       		.uleb128 0xe
+ 271 0005 13       		.uleb128 0x13
+ 272 0006 0B       		.uleb128 0xb
+ 273 0007 03       		.uleb128 0x3
+ 274 0008 0E       		.uleb128 0xe
+ 275 0009 1B       		.uleb128 0x1b
+ 276 000a 0E       		.uleb128 0xe
+ 277 000b 55       		.uleb128 0x55
+ 278 000c 17       		.uleb128 0x17
+ 279 000d 11       		.uleb128 0x11
+ 280 000e 01       		.uleb128 0x1
+ 281 000f 10       		.uleb128 0x10
+ 282 0010 17       		.uleb128 0x17
+ 283 0011 00       		.byte	0
+ 284 0012 00       		.byte	0
+ 285 0013 02       		.uleb128 0x2
+ 286 0014 24       		.uleb128 0x24
+ 287 0015 00       		.byte	0
+ 288 0016 0B       		.uleb128 0xb
+ 289 0017 0B       		.uleb128 0xb
+ 290 0018 3E       		.uleb128 0x3e
+ 291 0019 0B       		.uleb128 0xb
+ 292 001a 03       		.uleb128 0x3
+ 293 001b 0E       		.uleb128 0xe
+ 294 001c 00       		.byte	0
+ 295 001d 00       		.byte	0
+ 296 001e 03       		.uleb128 0x3
+ 297 001f 16       		.uleb128 0x16
+ 298 0020 00       		.byte	0
+ 299 0021 03       		.uleb128 0x3
+ 300 0022 0E       		.uleb128 0xe
+ 301 0023 3A       		.uleb128 0x3a
+ 302 0024 0B       		.uleb128 0xb
+ 303 0025 3B       		.uleb128 0x3b
+ 304 0026 0B       		.uleb128 0xb
+ 305 0027 49       		.uleb128 0x49
+ 306 0028 13       		.uleb128 0x13
+ 307 0029 00       		.byte	0
+ 308 002a 00       		.byte	0
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccgRqwde.s 			page 7
+
+
+ 309 002b 04       		.uleb128 0x4
+ 310 002c 24       		.uleb128 0x24
+ 311 002d 00       		.byte	0
+ 312 002e 0B       		.uleb128 0xb
+ 313 002f 0B       		.uleb128 0xb
+ 314 0030 3E       		.uleb128 0x3e
+ 315 0031 0B       		.uleb128 0xb
+ 316 0032 03       		.uleb128 0x3
+ 317 0033 08       		.uleb128 0x8
+ 318 0034 00       		.byte	0
+ 319 0035 00       		.byte	0
+ 320 0036 05       		.uleb128 0x5
+ 321 0037 16       		.uleb128 0x16
+ 322 0038 00       		.byte	0
+ 323 0039 03       		.uleb128 0x3
+ 324 003a 0E       		.uleb128 0xe
+ 325 003b 3A       		.uleb128 0x3a
+ 326 003c 0B       		.uleb128 0xb
+ 327 003d 3B       		.uleb128 0x3b
+ 328 003e 05       		.uleb128 0x5
+ 329 003f 49       		.uleb128 0x49
+ 330 0040 13       		.uleb128 0x13
+ 331 0041 00       		.byte	0
+ 332 0042 00       		.byte	0
+ 333 0043 06       		.uleb128 0x6
+ 334 0044 2E       		.uleb128 0x2e
+ 335 0045 01       		.byte	0x1
+ 336 0046 3F       		.uleb128 0x3f
+ 337 0047 19       		.uleb128 0x19
+ 338 0048 03       		.uleb128 0x3
+ 339 0049 0E       		.uleb128 0xe
+ 340 004a 3A       		.uleb128 0x3a
+ 341 004b 0B       		.uleb128 0xb
+ 342 004c 3B       		.uleb128 0x3b
+ 343 004d 0B       		.uleb128 0xb
+ 344 004e 27       		.uleb128 0x27
+ 345 004f 19       		.uleb128 0x19
+ 346 0050 49       		.uleb128 0x49
+ 347 0051 13       		.uleb128 0x13
+ 348 0052 8701     		.uleb128 0x87
+ 349 0054 19       		.uleb128 0x19
+ 350 0055 11       		.uleb128 0x11
+ 351 0056 01       		.uleb128 0x1
+ 352 0057 12       		.uleb128 0x12
+ 353 0058 06       		.uleb128 0x6
+ 354 0059 40       		.uleb128 0x40
+ 355 005a 18       		.uleb128 0x18
+ 356 005b 9742     		.uleb128 0x2117
+ 357 005d 19       		.uleb128 0x19
+ 358 005e 01       		.uleb128 0x1
+ 359 005f 13       		.uleb128 0x13
+ 360 0060 00       		.byte	0
+ 361 0061 00       		.byte	0
+ 362 0062 07       		.uleb128 0x7
+ 363 0063 0B       		.uleb128 0xb
+ 364 0064 01       		.byte	0x1
+ 365 0065 11       		.uleb128 0x11
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccgRqwde.s 			page 8
+
+
+ 366 0066 01       		.uleb128 0x1
+ 367 0067 12       		.uleb128 0x12
+ 368 0068 06       		.uleb128 0x6
+ 369 0069 01       		.uleb128 0x1
+ 370 006a 13       		.uleb128 0x13
+ 371 006b 00       		.byte	0
+ 372 006c 00       		.byte	0
+ 373 006d 08       		.uleb128 0x8
+ 374 006e 34       		.uleb128 0x34
+ 375 006f 00       		.byte	0
+ 376 0070 03       		.uleb128 0x3
+ 377 0071 0E       		.uleb128 0xe
+ 378 0072 3A       		.uleb128 0x3a
+ 379 0073 0B       		.uleb128 0xb
+ 380 0074 3B       		.uleb128 0x3b
+ 381 0075 0B       		.uleb128 0xb
+ 382 0076 49       		.uleb128 0x49
+ 383 0077 13       		.uleb128 0x13
+ 384 0078 1C       		.uleb128 0x1c
+ 385 0079 0B       		.uleb128 0xb
+ 386 007a 00       		.byte	0
+ 387 007b 00       		.byte	0
+ 388 007c 09       		.uleb128 0x9
+ 389 007d 898201   		.uleb128 0x4109
+ 390 0080 00       		.byte	0
+ 391 0081 11       		.uleb128 0x11
+ 392 0082 01       		.uleb128 0x1
+ 393 0083 31       		.uleb128 0x31
+ 394 0084 13       		.uleb128 0x13
+ 395 0085 00       		.byte	0
+ 396 0086 00       		.byte	0
+ 397 0087 0A       		.uleb128 0xa
+ 398 0088 34       		.uleb128 0x34
+ 399 0089 00       		.byte	0
+ 400 008a 03       		.uleb128 0x3
+ 401 008b 0E       		.uleb128 0xe
+ 402 008c 3A       		.uleb128 0x3a
+ 403 008d 0B       		.uleb128 0xb
+ 404 008e 3B       		.uleb128 0x3b
+ 405 008f 05       		.uleb128 0x5
+ 406 0090 49       		.uleb128 0x49
+ 407 0091 13       		.uleb128 0x13
+ 408 0092 3F       		.uleb128 0x3f
+ 409 0093 19       		.uleb128 0x19
+ 410 0094 3C       		.uleb128 0x3c
+ 411 0095 19       		.uleb128 0x19
+ 412 0096 00       		.byte	0
+ 413 0097 00       		.byte	0
+ 414 0098 0B       		.uleb128 0xb
+ 415 0099 35       		.uleb128 0x35
+ 416 009a 00       		.byte	0
+ 417 009b 49       		.uleb128 0x49
+ 418 009c 13       		.uleb128 0x13
+ 419 009d 00       		.byte	0
+ 420 009e 00       		.byte	0
+ 421 009f 0C       		.uleb128 0xc
+ 422 00a0 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccgRqwde.s 			page 9
+
+
+ 423 00a1 00       		.byte	0
+ 424 00a2 3F       		.uleb128 0x3f
+ 425 00a3 19       		.uleb128 0x19
+ 426 00a4 3C       		.uleb128 0x3c
+ 427 00a5 19       		.uleb128 0x19
+ 428 00a6 6E       		.uleb128 0x6e
+ 429 00a7 0E       		.uleb128 0xe
+ 430 00a8 03       		.uleb128 0x3
+ 431 00a9 0E       		.uleb128 0xe
+ 432 00aa 3A       		.uleb128 0x3a
+ 433 00ab 0B       		.uleb128 0xb
+ 434 00ac 3B       		.uleb128 0x3b
+ 435 00ad 0B       		.uleb128 0xb
+ 436 00ae 00       		.byte	0
+ 437 00af 00       		.byte	0
+ 438 00b0 00       		.byte	0
+ 439              		.section	.debug_aranges,"",%progbits
+ 440 0000 1C000000 		.4byte	0x1c
+ 441 0004 0200     		.2byte	0x2
+ 442 0006 00000000 		.4byte	.Ldebug_info0
+ 443 000a 04       		.byte	0x4
+ 444 000b 00       		.byte	0
+ 445 000c 0000     		.2byte	0
+ 446 000e 0000     		.2byte	0
+ 447 0010 00000000 		.4byte	.LFB63
+ 448 0014 2A000000 		.4byte	.LFE63-.LFB63
+ 449 0018 00000000 		.4byte	0
+ 450 001c 00000000 		.4byte	0
+ 451              		.section	.debug_ranges,"",%progbits
+ 452              	.Ldebug_ranges0:
+ 453 0000 00000000 		.4byte	.LFB63
+ 454 0004 2A000000 		.4byte	.LFE63
+ 455 0008 00000000 		.4byte	0
+ 456 000c 00000000 		.4byte	0
+ 457              		.section	.debug_line,"",%progbits
+ 458              	.Ldebug_line0:
+ 459 0000 9A010000 		.section	.debug_str,"MS",%progbits,1
+ 459      02007C01 
+ 459      00000201 
+ 459      FB0E0D00 
+ 459      01010101 
+ 460              	.LASF18:
+ 461 0000 43617053 		.ascii	"CapSense_1_UpdateEnabledBaselines\000"
+ 461      656E7365 
+ 461      5F315F55 
+ 461      70646174 
+ 461      65456E61 
+ 462              	.LASF28:
+ 463 0022 76616C75 		.ascii	"value\000"
+ 463      6500
+ 464              	.LASF9:
+ 465 0028 5F5F696E 		.ascii	"__int32_t\000"
+ 465      7433325F 
+ 465      7400
+ 466              	.LASF4:
+ 467 0032 6C6F6E67 		.ascii	"long int\000"
+ 467      20696E74 
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccgRqwde.s 			page 10
+
+
+ 467      00
+ 468              	.LASF3:
+ 469 003b 73686F72 		.ascii	"short unsigned int\000"
+ 469      7420756E 
+ 469      7369676E 
+ 469      65642069 
+ 469      6E7400
+ 470              	.LASF12:
+ 471 004e 666C6F61 		.ascii	"float\000"
+ 471      7400
+ 472              	.LASF1:
+ 473 0054 756E7369 		.ascii	"unsigned char\000"
+ 473      676E6564 
+ 473      20636861 
+ 473      7200
+ 474              	.LASF24:
+ 475 0062 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 475      43313120 
+ 475      352E342E 
+ 475      31203230 
+ 475      31363036 
+ 476 0095 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 476      20726576 
+ 476      6973696F 
+ 476      6E203233 
+ 476      37373135 
+ 477 00c8 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 477      66756E63 
+ 477      74696F6E 
+ 477      2D736563 
+ 477      74696F6E 
+ 478              	.LASF21:
+ 479 00f0 43617053 		.ascii	"CapSense_1_InitializeAllBaselines\000"
+ 479      656E7365 
+ 479      5F315F49 
+ 479      6E697469 
+ 479      616C697A 
+ 480              	.LASF5:
+ 481 0112 6C6F6E67 		.ascii	"long unsigned int\000"
+ 481      20756E73 
+ 481      69676E65 
+ 481      6420696E 
+ 481      7400
+ 482              	.LASF22:
+ 483 0124 50574D5F 		.ascii	"PWM_1_Start\000"
+ 483      315F5374 
+ 483      61727400 
+ 484              	.LASF29:
+ 485 0130 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 485      52784275 
+ 485      66666572 
+ 485      00
+ 486              	.LASF13:
+ 487 013d 646F7562 		.ascii	"double\000"
+ 487      6C6500
+ 488              	.LASF27:
+ 489 0144 6D61696E 		.ascii	"main\000"
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccgRqwde.s 			page 11
+
+
+ 489      00
+ 490              	.LASF11:
+ 491 0149 75696E74 		.ascii	"uint16\000"
+ 491      313600
+ 492              	.LASF20:
+ 493 0150 43617053 		.ascii	"CapSense_1_Start\000"
+ 493      656E7365 
+ 493      5F315F53 
+ 493      74617274 
+ 493      00
+ 494              	.LASF8:
+ 495 0161 756E7369 		.ascii	"unsigned int\000"
+ 495      676E6564 
+ 495      20696E74 
+ 495      00
+ 496              	.LASF7:
+ 497 016e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 497      206C6F6E 
+ 497      6720756E 
+ 497      7369676E 
+ 497      65642069 
+ 498              	.LASF10:
+ 499 0185 696E7433 		.ascii	"int32_t\000"
+ 499      325F7400 
+ 500              	.LASF16:
+ 501 018d 73697A65 		.ascii	"sizetype\000"
+ 501      74797065 
+ 501      00
+ 502              	.LASF17:
+ 503 0196 50574D5F 		.ascii	"PWM_1_WriteCompare\000"
+ 503      315F5772 
+ 503      69746543 
+ 503      6F6D7061 
+ 503      726500
+ 504              	.LASF6:
+ 505 01a9 6C6F6E67 		.ascii	"long long int\000"
+ 505      206C6F6E 
+ 505      6720696E 
+ 505      7400
+ 506              	.LASF25:
+ 507 01b7 6D61696E 		.ascii	"main.c\000"
+ 507      2E6300
+ 508              	.LASF14:
+ 509 01be 63686172 		.ascii	"char\000"
+ 509      00
+ 510              	.LASF2:
+ 511 01c3 73686F72 		.ascii	"short int\000"
+ 511      7420696E 
+ 511      7400
+ 512              	.LASF23:
+ 513 01cd 43617053 		.ascii	"CapSense_1_IsBusy\000"
+ 513      656E7365 
+ 513      5F315F49 
+ 513      73427573 
+ 513      7900
+ 514              	.LASF15:
+ 515 01df 6C6F6E67 		.ascii	"long double\000"
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccgRqwde.s 			page 12
+
+
+ 515      20646F75 
+ 515      626C6500 
+ 516              	.LASF0:
+ 517 01eb 7369676E 		.ascii	"signed char\000"
+ 517      65642063 
+ 517      68617200 
+ 518              	.LASF26:
+ 519 01f7 433A5C55 		.ascii	"C:\\Users\\holge\\Desktop\\cypress_PsOC_5LP\\Worksp"
+ 519      73657273 
+ 519      5C686F6C 
+ 519      67655C44 
+ 519      65736B74 
+ 520 0225 61636530 		.ascii	"ace01\\CapSense_PWM_LED.cydsn\000"
+ 520      315C4361 
+ 520      7053656E 
+ 520      73655F50 
+ 520      574D5F4C 
+ 521              	.LASF19:
+ 522 0242 43617053 		.ascii	"CapSense_1_ScanEnabledWidgets\000"
+ 522      656E7365 
+ 522      5F315F53 
+ 522      63616E45 
+ 522      6E61626C 
+ 523              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
