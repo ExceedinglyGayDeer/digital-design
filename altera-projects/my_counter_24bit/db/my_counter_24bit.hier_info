@@ -1,0 +1,35 @@
+|my_counter_24bit
+i_enable => r_count[0].ENA
+i_enable => r_count[7].ENA
+i_enable => r_count[6].ENA
+i_enable => r_count[5].ENA
+i_enable => r_count[4].ENA
+i_enable => r_count[3].ENA
+i_enable => r_count[2].ENA
+i_enable => r_count[1].ENA
+clock => r_count[0].CLK
+clock => r_count[1].CLK
+clock => r_count[2].CLK
+clock => r_count[3].CLK
+clock => r_count[4].CLK
+clock => r_count[5].CLK
+clock => r_count[6].CLK
+clock => r_count[7].CLK
+i_reset => r_count[0].ACLR
+i_reset => r_count[1].ACLR
+i_reset => r_count[2].ACLR
+i_reset => r_count[3].ACLR
+i_reset => r_count[4].ACLR
+i_reset => r_count[5].ACLR
+i_reset => r_count[6].ACLR
+i_reset => r_count[7].ACLR
+o_c[0] << r_count[0].DB_MAX_OUTPUT_PORT_TYPE
+o_c[1] << r_count[1].DB_MAX_OUTPUT_PORT_TYPE
+o_c[2] << r_count[2].DB_MAX_OUTPUT_PORT_TYPE
+o_c[3] << r_count[3].DB_MAX_OUTPUT_PORT_TYPE
+o_c[4] << r_count[4].DB_MAX_OUTPUT_PORT_TYPE
+o_c[5] << r_count[5].DB_MAX_OUTPUT_PORT_TYPE
+o_c[6] << r_count[6].DB_MAX_OUTPUT_PORT_TYPE
+o_c[7] << r_count[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

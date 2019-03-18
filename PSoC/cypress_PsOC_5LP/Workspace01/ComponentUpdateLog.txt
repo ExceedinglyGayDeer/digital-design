@@ -1,0 +1,28 @@
+Last Modified Date & Time: 03/08/2019 17:52:53
+
+lek4_ex1: lek4_ex1.cydwr
+	cy_boot [v5.70] to [v5.80]
+	Em_EEPROM_Dynamic [v2.0] to [v2.20]
+
+
+Last Modified Date & Time: 03/08/2019 17:53:15
+
+Lek1_ex4: Lek1_ex4.cydwr
+	cy_boot [v5.70] to [v5.80]
+	Em_EEPROM_Dynamic [v2.0] to [v2.20]
+
+
+Last Modified Date & Time: 03/08/2019 17:54:02
+
+Design01: Design01.cydwr
+	cy_boot [v5.70] to [v5.80]
+	Em_EEPROM_Dynamic [v2.0] to [v2.20]
+
+
+Last Modified Date & Time: 03/08/2019 17:54:22
+
+CapSense_CSD_Design01: CapSense_CSD_Design01.cydwr
+	cy_boot [v5.60] to [v5.80]
+	Em_EEPROM_Dynamic [v2.0] to [v2.20]
+
+
