@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
   29:Generated_Source\PSoC5/cyfitter_cfg.c **** 
   30:Generated_Source\PSoC5/cyfitter_cfg.c **** #if defined(__GNUC__) || defined(__ARMCC_VERSION)
   31:Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CYPACKED 
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 2
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 2
 
 
   32:Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CYPACKED_ATTR __attribute__ ((packed))
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
   34              		.cfi_offset 14, -4
   35 0002 82B0     		sub	sp, sp, #8
   36              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 3
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 3
 
 
   37 0004 00AF     		add	r7, sp, #0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
   83 0012 FFF7FEFF 		bl	memcpy
   87:Generated_Source\PSoC5/cyfitter_cfg.c **** }
   84              		.loc 1 87 0
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 4
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 4
 
 
   85 0016 00BF     		nop
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  132              		.size	CYCONFIGCPYCODE, .-CYCONFIGCPYCODE
  133 001e 00BF     		.section	.text.CyClockStartupError,"ax",%progbits
  134              		.align	2
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 5
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 5
 
 
  135              		.thumb
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  129:Generated_Source\PSoC5/cyfitter_cfg.c ****     /* To remove the compiler warning if errorCode not used.                */
  130:Generated_Source\PSoC5/cyfitter_cfg.c ****     errorCode = errorCode;
  131:Generated_Source\PSoC5/cyfitter_cfg.c **** 
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 6
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 6
 
 
  132:Generated_Source\PSoC5/cyfitter_cfg.c ****     /* If we have a clock startup error (bad MHz crystal, PLL lock, etc.),  */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  174:Generated_Source\PSoC5/cyfitter_cfg.c **** * Summary:
  175:Generated_Source\PSoC5/cyfitter_cfg.c **** *  This function is used for setting up the chip configuration areas that
  176:Generated_Source\PSoC5/cyfitter_cfg.c **** *  contain relatively sparse data.
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 7
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 7
 
 
  177:Generated_Source\PSoC5/cyfitter_cfg.c **** *
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  203 002a BB60     		str	r3, [r7, #8]
  195:Generated_Source\PSoC5/cyfitter_cfg.c **** 		while (count != 0u)
  204              		.loc 1 195 0
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 8
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 8
 
 
  205 002c 14E0     		b	.L8
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  249              		.cfi_def_cfa_offset 4
  250 006e BD46     		mov	sp, r7
  251              		.cfi_def_cfa_register 13
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 9
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 9
 
 
  252              		@ sp needed
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  280 0006 334B     		ldr	r3, .L16
  281 0008 0122     		movs	r2, #1
  282 000a 1A80     		strh	r2, [r3]	@ movhi
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 10
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 10
 
 
  229:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_DCFG0_CFG0 + 0x2u), 0x18u);
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  245:Generated_Source\PSoC5/cyfitter_cfg.c **** 	pllLock = 0u;
  321              		.loc 1 245 0
  322 004a 0023     		movs	r3, #0
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 11
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 11
 
 
  323 004c FB70     		strb	r3, [r7, #3]
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  365 0092 FFF7FEFF 		bl	CyClockStartupError
  366              	.L15:
  255:Generated_Source\PSoC5/cyfitter_cfg.c **** 	}
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 12
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 12
 
 
  256:Generated_Source\PSoC5/cyfitter_cfg.c **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  410 00d4 80400040 		.word	1073758336
  411 00d8 82400040 		.word	1073758338
  412 00dc 84400040 		.word	1073758340
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 13
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 13
 
 
  413 00e0 86400040 		.word	1073758342
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  444 0002 83B0     		sub	sp, sp, #12
  445              		.cfi_def_cfa_offset 16
  446 0004 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 14
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 14
 
 
  447              		.cfi_def_cfa_register 7
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  493              	.L19:
  494 0044 CF010049 		.word	1224737231
  495 0048 6E580040 		.word	1073764462
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 15
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 15
 
 
  496 004c 6F580040 		.word	1073764463
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  528 000c 1B78     		ldrb	r3, [r3]
  529 000e FB73     		strb	r3, [r7, #15]
  320:Generated_Source\PSoC5/cyfitter_cfg.c **** 	if (enabled != 0u)
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 16
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 16
 
 
  530              		.loc 1 320 0
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  575 0008 3C510040 		.word	1073762620
  576 000c 3C510040 		.word	1073762620
  577 0010 3C510040 		.word	1073762620
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 17
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 17
 
 
  578 0014 1C510040 		.word	1073762588
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  360:Generated_Source\PSoC5/cyfitter_cfg.c **** * Function Name: CapSense_CSD_AMuxCH0_Set
  361:Generated_Source\PSoC5/cyfitter_cfg.c **** ********************************************************************************
  362:Generated_Source\PSoC5/cyfitter_cfg.c **** * Summary:
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 18
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 18
 
 
  363:Generated_Source\PSoC5/cyfitter_cfg.c **** *  This function is used to set a particular channel as active on the AMux.
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  640              		.cfi_def_cfa_register 13
  641              		@ sp needed
  642 0034 80BC     		pop	{r7}
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 19
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 19
 
 
  643              		.cfi_restore 7
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  679 000e 10D8     		bhi	.L33
  397:Generated_Source\PSoC5/cyfitter_cfg.c **** 	{
  398:Generated_Source\PSoC5/cyfitter_cfg.c **** 		*CapSense_CSD_AMuxCH0__addrTable[channel] &= (uint8)~CapSense_CSD_AMuxCH0__maskTable[channel];
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 20
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 20
 
 
  680              		.loc 1 398 0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  409:Generated_Source\PSoC5/cyfitter_cfg.c **** *  performs all of the necessary device configuration based on the design
  410:Generated_Source\PSoC5/cyfitter_cfg.c **** *  settings.  This includes settings from the Design Wide Resources (DWR) such
  411:Generated_Source\PSoC5/cyfitter_cfg.c **** *  as Clocks and Pins as well as any component configuration that is necessary.
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 21
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 21
 
 
  412:Generated_Source\PSoC5/cyfitter_cfg.c **** *
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  438:Generated_Source\PSoC5/cyfitter_cfg.c **** 		static const cfg_memset_t CYCODE cfg_memset_list[] = {
  439:Generated_Source\PSoC5/cyfitter_cfg.c **** 			/* address, size */
  440:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYREG_PRT0_DR), 16u},
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 22
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 22
 
 
  441:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYREG_PRT4_DR), 48u},
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  459:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  460:Generated_Source\PSoC5/cyfitter_cfg.c **** 		cfg_write_bytes32(cy_cfg_addr_table, cy_cfg_data_table);
  786              		.loc 1 460 0 is_stmt 1
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 23
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 23
 
 
  787 004c 3049     		ldr	r1, .L39+8
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  826              		.loc 1 475 0
  827 009c 244A     		ldr	r2, .L39+40
  828 009e 244B     		ldr	r3, .L39+40
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 24
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 24
 
 
  829 00a0 1B78     		ldrb	r3, [r3]
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  867 00e8 1A70     		strb	r2, [r3]
  492:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_PANTHER_WAITPIPE), 0x01u);
  868              		.loc 1 492 0
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 25
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 25
 
 
  869 00ea 1A4B     		ldr	r3, .L39+76
@@ -1470,7 +1470,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  888 0106 00BF     		.align	2
  889              	.L39:
  890 0108 E8460040 		.word	1073759976
- 891 010c 28000000 		.word	cfg_memset_list.5017
+ 891 010c 28000000 		.word	cfg_memset_list.5027
  892 0110 50000048 		.word	1207959632
  893 0114 72580040 		.word	1073764466
  894 0118 4A580040 		.word	1073764426
@@ -1495,10 +1495,10 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  913              		.size	cyfitter_cfg, .-cyfitter_cfg
  914              		.section	.rodata
  915              		.align	2
- 916              		.type	cfg_memset_list.5017, %object
- 917              		.size	cfg_memset_list.5017, 54
- 918              	cfg_memset_list.5017:
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 26
+ 916              		.type	cfg_memset_list.5027, %object
+ 917              		.size	cfg_memset_list.5027, 54
+ 918              	cfg_memset_list.5027:
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 26
 
 
  919 0028 00510040 		.word	1073762560
@@ -1533,7 +1533,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  948 000c 13000000 		.4byte	.LASF53
  949 0010 0C       		.byte	0xc
  950 0011 B2000000 		.4byte	.LASF54
- 951 0015 5E020000 		.4byte	.LASF55
+ 951 0015 AA020000 		.4byte	.LASF55
  952 0019 00000000 		.4byte	.Ldebug_ranges0+0
  953 001d 00000000 		.4byte	0
  954 0021 00000000 		.4byte	.Ldebug_line0
@@ -1549,30 +1549,30 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  964 0037 04       		.uleb128 0x4
  965 0038 04       		.byte	0x4
  966 0039 07       		.byte	0x7
- 967 003a 44020000 		.4byte	.LASF0
+ 967 003a 3C020000 		.4byte	.LASF0
  968 003e 04       		.uleb128 0x4
  969 003f 08       		.byte	0x8
  970 0040 05       		.byte	0x5
- 971 0041 E4020000 		.4byte	.LASF1
+ 971 0041 94020000 		.4byte	.LASF1
  972 0045 04       		.uleb128 0x4
  973 0046 08       		.byte	0x8
  974 0047 04       		.byte	0x4
- 975 0048 34030000 		.4byte	.LASF2
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 27
+ 975 0048 7A030000 		.4byte	.LASF2
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 27
 
 
  976 004c 04       		.uleb128 0x4
  977 004d 01       		.byte	0x1
  978 004e 06       		.byte	0x6
- 979 004f 52030000 		.4byte	.LASF3
+ 979 004f 98030000 		.4byte	.LASF3
  980 0053 04       		.uleb128 0x4
  981 0054 01       		.byte	0x1
  982 0055 08       		.byte	0x8
- 983 0056 D6010000 		.4byte	.LASF4
+ 983 0056 CE010000 		.4byte	.LASF4
  984 005a 04       		.uleb128 0x4
  985 005b 02       		.byte	0x2
  986 005c 05       		.byte	0x5
- 987 005d 14030000 		.4byte	.LASF5
+ 987 005d 5A030000 		.4byte	.LASF5
  988 0061 04       		.uleb128 0x4
  989 0062 02       		.byte	0x2
  990 0063 07       		.byte	0x7
@@ -1580,69 +1580,69 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  992 0068 04       		.uleb128 0x4
  993 0069 04       		.byte	0x4
  994 006a 05       		.byte	0x5
- 995 006b 26030000 		.4byte	.LASF7
+ 995 006b 6C030000 		.4byte	.LASF7
  996 006f 04       		.uleb128 0x4
  997 0070 04       		.byte	0x4
  998 0071 07       		.byte	0x7
- 999 0072 9E010000 		.4byte	.LASF8
+ 999 0072 96010000 		.4byte	.LASF8
  1000 0076 04       		.uleb128 0x4
  1001 0077 08       		.byte	0x8
  1002 0078 07       		.byte	0x7
- 1003 0079 AE020000 		.4byte	.LASF9
+ 1003 0079 5E020000 		.4byte	.LASF9
  1004 007d 04       		.uleb128 0x4
  1005 007e 04       		.byte	0x4
  1006 007f 07       		.byte	0x7
- 1007 0080 DB020000 		.4byte	.LASF10
+ 1007 0080 8B020000 		.4byte	.LASF10
  1008 0084 05       		.uleb128 0x5
  1009 0085 04       		.byte	0x4
  1010 0086 04       		.uleb128 0x4
  1011 0087 01       		.byte	0x1
  1012 0088 08       		.byte	0x8
- 1013 0089 2F030000 		.4byte	.LASF11
+ 1013 0089 75030000 		.4byte	.LASF11
  1014 008d 06       		.uleb128 0x6
- 1015 008e B0010000 		.4byte	.LASF13
+ 1015 008e A8010000 		.4byte	.LASF13
  1016 0092 03       		.byte	0x3
- 1017 0093 9201     		.2byte	0x192
+ 1017 0093 E401     		.2byte	0x1e4
  1018 0095 53000000 		.4byte	0x53
  1019 0099 06       		.uleb128 0x6
- 1020 009a 21020000 		.4byte	.LASF14
+ 1020 009a 19020000 		.4byte	.LASF14
  1021 009e 03       		.byte	0x3
- 1022 009f 9301     		.2byte	0x193
+ 1022 009f E501     		.2byte	0x1e5
  1023 00a1 61000000 		.4byte	0x61
  1024 00a5 06       		.uleb128 0x6
- 1025 00a6 3D020000 		.4byte	.LASF15
+ 1025 00a6 35020000 		.4byte	.LASF15
  1026 00aa 03       		.byte	0x3
- 1027 00ab 9401     		.2byte	0x194
+ 1027 00ab E601     		.2byte	0x1e6
  1028 00ad 6F000000 		.4byte	0x6f
  1029 00b1 04       		.uleb128 0x4
  1030 00b2 04       		.byte	0x4
  1031 00b3 04       		.byte	0x4
  1032 00b4 5D010000 		.4byte	.LASF16
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 28
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 28
 
 
  1033 00b8 04       		.uleb128 0x4
  1034 00b9 08       		.byte	0x8
  1035 00ba 04       		.byte	0x4
- 1036 00bb E4010000 		.4byte	.LASF17
+ 1036 00bb DC010000 		.4byte	.LASF17
  1037 00bf 06       		.uleb128 0x6
  1038 00c0 91010000 		.4byte	.LASF18
  1039 00c4 03       		.byte	0x3
- 1040 00c5 3C02     		.2byte	0x23c
+ 1040 00c5 8E02     		.2byte	0x28e
  1041 00c7 CB000000 		.4byte	0xcb
  1042 00cb 07       		.uleb128 0x7
  1043 00cc 8D000000 		.4byte	0x8d
  1044 00d0 06       		.uleb128 0x6
  1045 00d1 00000000 		.4byte	.LASF19
  1046 00d5 03       		.byte	0x3
- 1047 00d6 3D02     		.2byte	0x23d
+ 1047 00d6 8F02     		.2byte	0x28f
  1048 00d8 DC000000 		.4byte	0xdc
  1049 00dc 07       		.uleb128 0x7
  1050 00dd 99000000 		.4byte	0x99
  1051 00e1 06       		.uleb128 0x6
  1052 00e2 06000000 		.4byte	.LASF20
  1053 00e6 03       		.byte	0x3
- 1054 00e7 3E02     		.2byte	0x23e
+ 1054 00e7 9002     		.2byte	0x290
  1055 00e9 ED000000 		.4byte	0xed
  1056 00ed 07       		.uleb128 0x7
  1057 00ee A5000000 		.4byte	0xa5
@@ -1652,7 +1652,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1061 00f5 98       		.byte	0x98
  1062 00f6 13010000 		.4byte	0x113
  1063 00fa 09       		.uleb128 0x9
- 1064 00fb 0D030000 		.4byte	.LASF21
+ 1064 00fb 53030000 		.4byte	.LASF21
  1065 00ff 01       		.byte	0x1
  1066 0100 9A       		.byte	0x9a
  1067 0101 8D000000 		.4byte	0x8d
@@ -1665,12 +1665,12 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1074 0111 01       		.byte	0x1
  1075 0112 00       		.byte	0
  1076 0113 03       		.uleb128 0x3
- 1077 0114 FA020000 		.4byte	.LASF23
+ 1077 0114 40030000 		.4byte	.LASF23
  1078 0118 01       		.byte	0x1
  1079 0119 9C       		.byte	0x9c
  1080 011a F2000000 		.4byte	0xf2
  1081 011e 0A       		.uleb128 0xa
- 1082 011f B6010000 		.4byte	.LASF24
+ 1082 011f AE010000 		.4byte	.LASF24
  1083 0123 01       		.byte	0x1
  1084 0124 4D       		.byte	0x4d
  1085 0125 00000000 		.4byte	.LFB0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1087 012d 01       		.uleb128 0x1
  1088 012e 9C       		.byte	0x9c
  1089 012f 4C010000 		.4byte	0x14c
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 29
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 29
 
 
  1090 0133 0B       		.uleb128 0xb
@@ -1699,7 +1699,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1105 014a 70       		.sleb128 -16
  1106 014b 00       		.byte	0
  1107 014c 0A       		.uleb128 0xa
- 1108 014d 87030000 		.4byte	.LASF25
+ 1108 014d CD030000 		.4byte	.LASF25
  1109 0151 01       		.byte	0x1
  1110 0152 54       		.byte	0x54
  1111 0153 00000000 		.4byte	.LFB1
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1144 0190 0E       		.uleb128 0xe
  1145 0191 0A       		.uleb128 0xa
  1146 0192 1D010000 		.4byte	.LASF27
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 30
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 30
 
 
  1147 0196 01       		.byte	0x1
@@ -1783,7 +1783,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1186 01df 9C       		.byte	0x9c
  1187 01e0 F3010000 		.4byte	0x1f3
  1188 01e4 0C       		.uleb128 0xc
- 1189 01e5 33020000 		.4byte	.LASF29
+ 1189 01e5 2B020000 		.4byte	.LASF29
  1190 01e9 01       		.byte	0x1
  1191 01ea 7F       		.byte	0x7f
  1192 01eb 8D000000 		.4byte	0x8d
@@ -1792,19 +1792,19 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1195 01f1 77       		.sleb128 -9
  1196 01f2 00       		.byte	0
  1197 01f3 0F       		.uleb128 0xf
- 1198 01f4 EB010000 		.4byte	.LASF30
+ 1198 01f4 E3010000 		.4byte	.LASF30
  1199 01f8 01       		.byte	0x1
  1200 01f9 BA       		.byte	0xba
  1201 01fa 00000000 		.4byte	.LFB4
  1202 01fe 74000000 		.4byte	.LFE4-.LFB4
  1203 0202 01       		.uleb128 0x1
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 31
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 31
 
 
  1204 0203 9C       		.byte	0x9c
  1205 0204 63020000 		.4byte	0x263
  1206 0208 0C       		.uleb128 0xc
- 1207 0209 16020000 		.4byte	.LASF31
+ 1207 0209 0E020000 		.4byte	.LASF31
  1208 020d 01       		.byte	0x1
  1209 020e BA       		.byte	0xba
  1210 020f 63020000 		.4byte	0x263
@@ -1812,7 +1812,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1212 0214 91       		.byte	0x91
  1213 0215 64       		.sleb128 -28
  1214 0216 0C       		.uleb128 0xc
- 1215 0217 28020000 		.4byte	.LASF32
+ 1215 0217 20020000 		.4byte	.LASF32
  1216 021b 01       		.byte	0x1
  1217 021c BA       		.byte	0xba
  1218 021d 6E020000 		.4byte	0x26e
@@ -1839,7 +1839,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1239 023d 14000000 		.4byte	.LBB2
  1240 0241 4A000000 		.4byte	.LBE2-.LBB2
  1241 0245 12       		.uleb128 0x12
- 1242 0246 D2020000 		.4byte	.LASF33
+ 1242 0246 82020000 		.4byte	.LASF33
  1243 024a 01       		.byte	0x1
  1244 024b C0       		.byte	0xc0
  1245 024c A5000000 		.4byte	0xa5
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1258 0262 00       		.byte	0
  1259 0263 0D       		.uleb128 0xd
  1260 0264 04       		.byte	0x4
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 32
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 32
 
 
  1261 0265 69020000 		.4byte	0x269
@@ -1879,7 +1879,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1276 0289 9C       		.byte	0x9c
  1277 028a AB020000 		.4byte	0x2ab
  1278 028e 12       		.uleb128 0x12
- 1279 028f F2020000 		.4byte	.LASF36
+ 1279 028f A2020000 		.4byte	.LASF36
  1280 0293 01       		.byte	0x1
  1281 0294 DF       		.byte	0xdf
  1282 0295 A5000000 		.4byte	0xa5
@@ -1905,7 +1905,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1302 02bc 9C       		.byte	0x9c
  1303 02bd D1020000 		.4byte	0x2d1
  1304 02c1 15       		.uleb128 0x15
- 1305 02c2 40030000 		.4byte	.LASF39
+ 1305 02c2 86030000 		.4byte	.LASF39
  1306 02c6 01       		.byte	0x1
  1307 02c7 2201     		.2byte	0x122
  1308 02c9 8D000000 		.4byte	0x8d
@@ -1914,11 +1914,11 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1311 02cf 77       		.sleb128 -9
  1312 02d0 00       		.byte	0
  1313 02d1 16       		.uleb128 0x16
- 1314 02d2 C0010000 		.4byte	.LASF42
+ 1314 02d2 B8010000 		.4byte	.LASF42
  1315 02d6 01       		.byte	0x1
  1316 02d7 3D01     		.2byte	0x13d
  1317 02d9 00000000 		.4byte	.LFB7
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 33
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 33
 
 
  1318 02dd 3C000000 		.4byte	.LFE7-.LFB7
@@ -1926,7 +1926,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1320 02e2 9C       		.byte	0x9c
  1321 02e3 06030000 		.4byte	0x306
  1322 02e7 17       		.uleb128 0x17
- 1323 02e8 1E030000 		.4byte	.LASF40
+ 1323 02e8 64030000 		.4byte	.LASF40
  1324 02ec 01       		.byte	0x1
  1325 02ed 3D01     		.2byte	0x13d
  1326 02ef 8D000000 		.4byte	0x8d
@@ -1934,7 +1934,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1328 02f4 91       		.byte	0x91
  1329 02f5 6F       		.sleb128 -17
  1330 02f6 15       		.uleb128 0x15
- 1331 02f7 7E030000 		.4byte	.LASF41
+ 1331 02f7 C4030000 		.4byte	.LASF41
  1332 02fb 01       		.byte	0x1
  1333 02fc 3F01     		.2byte	0x13f
  1334 02fe 8D000000 		.4byte	0x8d
@@ -1943,7 +1943,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1337 0304 77       		.sleb128 -9
  1338 0305 00       		.byte	0
  1339 0306 16       		.uleb128 0x16
- 1340 0307 FD010000 		.4byte	.LASF43
+ 1340 0307 F5010000 		.4byte	.LASF43
  1341 030b 01       		.byte	0x1
  1342 030c 7401     		.2byte	0x174
  1343 030e 00000000 		.4byte	.LFB8
@@ -1978,11 +1978,11 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1372 034f 91       		.byte	0x91
  1373 0350 77       		.sleb128 -9
  1374 0351 00       		.byte	0
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 34
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 34
 
 
  1375 0352 18       		.uleb128 0x18
- 1376 0353 51020000 		.4byte	.LASF46
+ 1376 0353 49020000 		.4byte	.LASF46
  1377 0357 01       		.byte	0x1
  1378 0358 A501     		.2byte	0x1a5
  1379 035a 00000000 		.4byte	.LFB10
@@ -1999,7 +1999,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1390 0374 B101     		.2byte	0x1b1
  1391 0376 95030000 		.4byte	0x395
  1392 037a 1A       		.uleb128 0x1a
- 1393 037b 96010000 		.4byte	.LASF47
+ 1393 037b 56020000 		.4byte	.LASF47
  1394 037f 01       		.byte	0x1
  1395 0380 B201     		.2byte	0x1b2
  1396 0382 84000000 		.4byte	0x84
@@ -2012,7 +2012,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1403 0393 04       		.byte	0x4
  1404 0394 00       		.byte	0
  1405 0395 06       		.uleb128 0x6
- 1406 0396 C5020000 		.4byte	.LASF49
+ 1406 0396 75020000 		.4byte	.LASF49
  1407 039a 01       		.byte	0x1
  1408 039b B401     		.2byte	0x1b4
  1409 039d 71030000 		.4byte	0x371
@@ -2032,13 +2032,13 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1423 03be C8030000 		.4byte	0x3c8
  1424 03c2 05       		.uleb128 0x5
  1425 03c3 03       		.byte	0x3
- 1426 03c4 28000000 		.4byte	cfg_memset_list.5017
+ 1426 03c4 28000000 		.4byte	cfg_memset_list.5027
  1427 03c8 13       		.uleb128 0x13
  1428 03c9 A1030000 		.4byte	0x3a1
  1429 03cd 1D       		.uleb128 0x1d
  1430 03ce 6900     		.ascii	"i\000"
  1431 03d0 01       		.byte	0x1
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 35
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 35
 
 
  1432 03d1 C301     		.2byte	0x1c3
@@ -2076,7 +2076,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1464 0410 13       		.uleb128 0x13
  1465 0411 0A040000 		.4byte	0x40a
  1466 0415 1E       		.uleb128 0x1e
- 1467 0416 5E030000 		.4byte	.LASF51
+ 1467 0416 A4030000 		.4byte	.LASF51
  1468 041a 01       		.byte	0x1
  1469 041b 4F01     		.2byte	0x14f
  1470 041d 27040000 		.4byte	0x427
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1486 0442 3D010000 		.4byte	.LASF52
  1487 0446 01       		.byte	0x1
  1488 0447 5C01     		.2byte	0x15c
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 36
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 36
 
 
  1489 0449 53040000 		.4byte	0x453
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1543 002d 00       		.byte	0
  1544 002e 0B       		.uleb128 0xb
  1545 002f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 37
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 37
 
 
  1546 0030 3E       		.uleb128 0x3e
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1600 0066 0B       		.uleb128 0xb
  1601 0067 49       		.uleb128 0x49
  1602 0068 13       		.uleb128 0x13
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 38
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 38
 
 
  1603 0069 38       		.uleb128 0x38
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1657 00a0 18       		.uleb128 0x18
  1658 00a1 00       		.byte	0
  1659 00a2 00       		.byte	0
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 39
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 39
 
 
  1660 00a3 0D       		.uleb128 0xd
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1714 00da 01       		.byte	0x1
  1715 00db 11       		.uleb128 0x11
  1716 00dc 01       		.uleb128 0x1
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 40
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 40
 
 
  1717 00dd 12       		.uleb128 0x12
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1771 0114 3A       		.uleb128 0x3a
  1772 0115 0B       		.uleb128 0xb
  1773 0116 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 41
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 41
 
 
  1774 0117 05       		.uleb128 0x5
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1828 014e 3A       		.uleb128 0x3a
  1829 014f 0B       		.uleb128 0xb
  1830 0150 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 42
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 42
 
 
  1831 0151 05       		.uleb128 0x5
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1885 0188 00       		.byte	0
  1886 0189 49       		.uleb128 0x49
  1887 018a 13       		.uleb128 0x13
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 43
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 43
 
 
  1888 018b 2F       		.uleb128 0x2f
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1942 0034 74000000 		.4byte	.LFE4-.LFB4
  1943 0038 00000000 		.4byte	.LFB5
  1944 003c 14010000 		.4byte	.LFE5-.LFB5
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 44
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 44
 
 
  1945 0040 00000000 		.4byte	.LFB6
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  1992              	.LASF53:
  1993 0013 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
  1993      43313120 
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 45
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 45
 
 
  1993      352E342E 
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  2013      6F636B00 
  2014              	.LASF44:
  2015 0135 6368616E 		.ascii	"channel\000"
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 46
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 46
 
 
  2015      6E656C00 
@@ -2731,172 +2731,179 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 1
  2028              	.LASF18:
  2029 0191 72656738 		.ascii	"reg8\000"
  2029      00
- 2030              	.LASF47:
- 2031 0196 61646472 		.ascii	"address\000"
- 2031      65737300 
- 2032              	.LASF8:
- 2033 019e 6C6F6E67 		.ascii	"long unsigned int\000"
- 2033      20756E73 
- 2033      69676E65 
- 2033      6420696E 
- 2033      7400
- 2034              	.LASF13:
- 2035 01b0 75696E74 		.ascii	"uint8\000"
- 2035      3800
- 2036              	.LASF24:
- 2037 01b6 43594D45 		.ascii	"CYMEMZERO\000"
- 2037      4D5A4552 
- 2037      4F00
- 2038              	.LASF42:
- 2039 01c0 53657441 		.ascii	"SetAnalogRoutingPumps\000"
- 2039      6E616C6F 
- 2039      67526F75 
- 2039      74696E67 
- 2039      50756D70 
- 2040              	.LASF4:
- 2041 01d6 756E7369 		.ascii	"unsigned char\000"
- 2041      676E6564 
- 2041      20636861 
- 2041      7200
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 47
+ 2030              	.LASF8:
+ 2031 0196 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2031      20756E73 
+ 2031      69676E65 
+ 2031      6420696E 
+ 2031      7400
+ 2032              	.LASF13:
+ 2033 01a8 75696E74 		.ascii	"uint8\000"
+ 2033      3800
+ 2034              	.LASF24:
+ 2035 01ae 43594D45 		.ascii	"CYMEMZERO\000"
+ 2035      4D5A4552 
+ 2035      4F00
+ 2036              	.LASF42:
+ 2037 01b8 53657441 		.ascii	"SetAnalogRoutingPumps\000"
+ 2037      6E616C6F 
+ 2037      67526F75 
+ 2037      74696E67 
+ 2037      50756D70 
+ 2038              	.LASF4:
+ 2039 01ce 756E7369 		.ascii	"unsigned char\000"
+ 2039      676E6564 
+ 2039      20636861 
+ 2039      7200
+ 2040              	.LASF17:
+ 2041 01dc 646F7562 		.ascii	"double\000"
+ 2041      6C6500
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 47
 
 
- 2042              	.LASF17:
- 2043 01e4 646F7562 		.ascii	"double\000"
- 2043      6C6500
- 2044              	.LASF30:
- 2045 01eb 6366675F 		.ascii	"cfg_write_bytes32\000"
- 2045      77726974 
- 2045      655F6279 
- 2045      74657333 
- 2045      3200
- 2046              	.LASF43:
- 2047 01fd 43617053 		.ascii	"CapSense_CSD_AMuxCH0_Set\000"
- 2047      656E7365 
- 2047      5F435344 
- 2047      5F414D75 
- 2047      78434830 
- 2048              	.LASF31:
- 2049 0216 61646472 		.ascii	"addr_table\000"
- 2049      5F746162 
- 2049      6C6500
- 2050              	.LASF14:
- 2051 0221 75696E74 		.ascii	"uint16\000"
- 2051      313600
- 2052              	.LASF32:
- 2053 0228 64617461 		.ascii	"data_table\000"
- 2053      5F746162 
- 2053      6C6500
- 2054              	.LASF29:
- 2055 0233 6572726F 		.ascii	"errorCode\000"
- 2055      72436F64 
- 2055      6500
- 2056              	.LASF15:
- 2057 023d 75696E74 		.ascii	"uint32\000"
- 2057      333200
- 2058              	.LASF0:
- 2059 0244 756E7369 		.ascii	"unsigned int\000"
- 2059      676E6564 
- 2059      20696E74 
+ 2042              	.LASF30:
+ 2043 01e3 6366675F 		.ascii	"cfg_write_bytes32\000"
+ 2043      77726974 
+ 2043      655F6279 
+ 2043      74657333 
+ 2043      3200
+ 2044              	.LASF43:
+ 2045 01f5 43617053 		.ascii	"CapSense_CSD_AMuxCH0_Set\000"
+ 2045      656E7365 
+ 2045      5F435344 
+ 2045      5F414D75 
+ 2045      78434830 
+ 2046              	.LASF31:
+ 2047 020e 61646472 		.ascii	"addr_table\000"
+ 2047      5F746162 
+ 2047      6C6500
+ 2048              	.LASF14:
+ 2049 0219 75696E74 		.ascii	"uint16\000"
+ 2049      313600
+ 2050              	.LASF32:
+ 2051 0220 64617461 		.ascii	"data_table\000"
+ 2051      5F746162 
+ 2051      6C6500
+ 2052              	.LASF29:
+ 2053 022b 6572726F 		.ascii	"errorCode\000"
+ 2053      72436F64 
+ 2053      6500
+ 2054              	.LASF15:
+ 2055 0235 75696E74 		.ascii	"uint32\000"
+ 2055      333200
+ 2056              	.LASF0:
+ 2057 023c 756E7369 		.ascii	"unsigned int\000"
+ 2057      676E6564 
+ 2057      20696E74 
+ 2057      00
+ 2058              	.LASF46:
+ 2059 0249 63796669 		.ascii	"cyfitter_cfg\000"
+ 2059      74746572 
+ 2059      5F636667 
  2059      00
- 2060              	.LASF46:
- 2061 0251 63796669 		.ascii	"cyfitter_cfg\000"
- 2061      74746572 
- 2061      5F636667 
- 2061      00
- 2062              	.LASF55:
- 2063 025e 433A5C55 		.ascii	"C:\\Users\\holge\\Desktop\\cypress_PsOC_5LP\\Worksp"
- 2063      73657273 
- 2063      5C686F6C 
- 2063      67655C44 
- 2063      65736B74 
- 2064 028c 61636530 		.ascii	"ace01\\CapSense_CSD_Design01.cydsn\000"
- 2064      315C4361 
- 2064      7053656E 
- 2064      73655F43 
- 2064      53445F44 
- 2065              	.LASF9:
- 2066 02ae 6C6F6E67 		.ascii	"long long unsigned int\000"
- 2066      206C6F6E 
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 48
+ 2060              	.LASF47:
+ 2061 0256 61646472 		.ascii	"address\000"
+ 2061      65737300 
+ 2062              	.LASF9:
+ 2063 025e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2063      206C6F6E 
+ 2063      6720756E 
+ 2063      7369676E 
+ 2063      65642069 
+ 2064              	.LASF49:
+ 2065 0275 6366675F 		.ascii	"cfg_memset_t\000"
+ 2065      6D656D73 
+ 2065      65745F74 
+ 2065      00
+ 2066              	.LASF33:
+ 2067 0282 62617365 		.ascii	"baseAddr\000"
+ 2067      41646472 
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 48
 
 
- 2066      6720756E 
- 2066      7369676E 
- 2066      65642069 
- 2067              	.LASF49:
- 2068 02c5 6366675F 		.ascii	"cfg_memset_t\000"
- 2068      6D656D73 
- 2068      65745F74 
- 2068      00
- 2069              	.LASF33:
- 2070 02d2 62617365 		.ascii	"baseAddr\000"
- 2070      41646472 
- 2070      00
- 2071              	.LASF10:
- 2072 02db 73697A65 		.ascii	"sizetype\000"
- 2072      74797065 
- 2072      00
- 2073              	.LASF1:
- 2074 02e4 6C6F6E67 		.ascii	"long long int\000"
- 2074      206C6F6E 
- 2074      6720696E 
- 2074      7400
- 2075              	.LASF36:
- 2076 02f2 74696D65 		.ascii	"timeout\000"
- 2076      6F757400 
- 2077              	.LASF23:
- 2078 02fa 63795F63 		.ascii	"cy_cfg_addrvalue_t\000"
- 2078      66675F61 
- 2078      64647276 
- 2078      616C7565 
- 2078      5F7400
- 2079              	.LASF21:
- 2080 030d 6F666673 		.ascii	"offset\000"
- 2080      657400
- 2081              	.LASF5:
- 2082 0314 73686F72 		.ascii	"short int\000"
- 2082      7420696E 
- 2082      7400
- 2083              	.LASF40:
- 2084 031e 656E6162 		.ascii	"enabled\000"
- 2084      6C656400 
- 2085              	.LASF7:
- 2086 0326 6C6F6E67 		.ascii	"long int\000"
- 2086      20696E74 
- 2086      00
- 2087              	.LASF11:
- 2088 032f 63686172 		.ascii	"char\000"
+ 2067      00
+ 2068              	.LASF10:
+ 2069 028b 73697A65 		.ascii	"sizetype\000"
+ 2069      74797065 
+ 2069      00
+ 2070              	.LASF1:
+ 2071 0294 6C6F6E67 		.ascii	"long long int\000"
+ 2071      206C6F6E 
+ 2071      6720696E 
+ 2071      7400
+ 2072              	.LASF36:
+ 2073 02a2 74696D65 		.ascii	"timeout\000"
+ 2073      6F757400 
+ 2074              	.LASF55:
+ 2075 02aa 433A5C55 		.ascii	"C:\\Users\\holge\\Dropbox\\AAU - Elektronik og IT\\"
+ 2075      73657273 
+ 2075      5C686F6C 
+ 2075      67655C44 
+ 2075      726F7062 
+ 2076 02d8 342E2073 		.ascii	"4. semester\\Digital Design\\digital-design\\PSoC\\"
+ 2076      656D6573 
+ 2076      7465725C 
+ 2076      44696769 
+ 2076      74616C20 
+ 2077 0307 63797072 		.ascii	"cypress_PsOC_5LP\\Workspace01\\CapSense_CSD_Design0"
+ 2077      6573735F 
+ 2077      50734F43 
+ 2077      5F354C50 
+ 2077      5C576F72 
+ 2078 0338 312E6379 		.ascii	"1.cydsn\000"
+ 2078      64736E00 
+ 2079              	.LASF23:
+ 2080 0340 63795F63 		.ascii	"cy_cfg_addrvalue_t\000"
+ 2080      66675F61 
+ 2080      64647276 
+ 2080      616C7565 
+ 2080      5F7400
+ 2081              	.LASF21:
+ 2082 0353 6F666673 		.ascii	"offset\000"
+ 2082      657400
+ 2083              	.LASF5:
+ 2084 035a 73686F72 		.ascii	"short int\000"
+ 2084      7420696E 
+ 2084      7400
+ 2085              	.LASF40:
+ 2086 0364 656E6162 		.ascii	"enabled\000"
+ 2086      6C656400 
+ 2087              	.LASF7:
+ 2088 036c 6C6F6E67 		.ascii	"long int\000"
+ 2088      20696E74 
  2088      00
- 2089              	.LASF2:
- 2090 0334 6C6F6E67 		.ascii	"long double\000"
- 2090      20646F75 
- 2090      626C6500 
- 2091              	.LASF39:
- 2092 0340 62675F78 		.ascii	"bg_xover_inl_trim\000"
- 2092      6F766572 
- 2092      5F696E6C 
- 2092      5F747269 
- 2092      6D00
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccT5l1k5.s 			page 49
+ 2089              	.LASF11:
+ 2090 0375 63686172 		.ascii	"char\000"
+ 2090      00
+ 2091              	.LASF2:
+ 2092 037a 6C6F6E67 		.ascii	"long double\000"
+ 2092      20646F75 
+ARM GAS  C:\Users\holge\AppData\Local\Temp\cctoG1NW.s 			page 49
 
 
- 2093              	.LASF3:
- 2094 0352 7369676E 		.ascii	"signed char\000"
- 2094      65642063 
- 2094      68617200 
- 2095              	.LASF51:
- 2096 035e 43617053 		.ascii	"CapSense_CSD_AMuxCH0__addrTable\000"
- 2096      656E7365 
- 2096      5F435344 
- 2096      5F414D75 
- 2096      78434830 
- 2097              	.LASF41:
- 2098 037e 72656756 		.ascii	"regValue\000"
- 2098      616C7565 
- 2098      00
- 2099              	.LASF25:
- 2100 0387 4359434F 		.ascii	"CYCONFIGCPY\000"
- 2100      4E464947 
- 2100      43505900 
- 2101              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 2092      626C6500 
+ 2093              	.LASF39:
+ 2094 0386 62675F78 		.ascii	"bg_xover_inl_trim\000"
+ 2094      6F766572 
+ 2094      5F696E6C 
+ 2094      5F747269 
+ 2094      6D00
+ 2095              	.LASF3:
+ 2096 0398 7369676E 		.ascii	"signed char\000"
+ 2096      65642063 
+ 2096      68617200 
+ 2097              	.LASF51:
+ 2098 03a4 43617053 		.ascii	"CapSense_CSD_AMuxCH0__addrTable\000"
+ 2098      656E7365 
+ 2098      5F435344 
+ 2098      5F414D75 
+ 2098      78434830 
+ 2099              	.LASF41:
+ 2100 03c4 72656756 		.ascii	"regValue\000"
+ 2100      616C7565 
+ 2100      00
+ 2101              	.LASF25:
+ 2102 03cd 4359434F 		.ascii	"CYCONFIGCPY\000"
+ 2102      4E464947 
+ 2102      43505900 
+ 2103              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

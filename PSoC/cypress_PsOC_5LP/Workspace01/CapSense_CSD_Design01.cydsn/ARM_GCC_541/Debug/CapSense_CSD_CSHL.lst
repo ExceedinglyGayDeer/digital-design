@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
   55 0000 00       		.space	1
   56              		.global	CapSense_CSD_rawDataIndex
   57              		.section	.rodata
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 2
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 2
 
 
   58 000d 000000   		.align	2
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
   29:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****         (CapSense_CSD_RAW_FILTER_MASK & CapSense_CSD_JITTER_FILTER) | \
   30:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****         (CapSense_CSD_RAW_FILTER_MASK & CapSense_CSD_IIR8_FILTER)   | \
   31:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****         (CapSense_CSD_RAW_FILTER_MASK & CapSense_CSD_IIR16_FILTER) )
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 3
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 3
 
 
   32:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****         
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
   86:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** * Function Name: CapSense_CSD_BaseInit
   87:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** ********************************************************************************
   88:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 4
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 4
 
 
   89:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** * Summary:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  129:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****         uint8 widget = CapSense_CSD_widgetNumber[sensor];
  130:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     #endif /* ((CapSense_CSD_TOTAL_MATRIX_BUTTONS_COUNT) || (CapSense_CSD_TOTAL_MATRIX_BUTTONS_COUN
  131:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 5
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 5
 
 
  132:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     #if (CapSense_CSD_TOTAL_MATRIX_BUTTONS_COUNT)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  169:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     #if (CapSense_CSD_TOTAL_GENERICS_COUNT)
  170:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****         /* Exclude generic widget */
  171:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****         }
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 6
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 6
 
 
  172:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     #endif  /* CapSense_CSD_TOTAL_GENERICS_COUNT */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  197:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** void CapSense_CSD_InitializeSensorBaseline(uint8 sensor)
  198:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                           
  199:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** {
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 7
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 7
 
 
  144              		.loc 1 199 0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  224:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     
  225:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     #endif  /* (CapSense_CSD_DESIGN_TYPE == CapSense_CSD_ONE_CHANNEL_DESIGN) */
  226:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** }
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 8
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 8
 
 
  174              		.loc 1 226 0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  203 0004 00AF     		add	r7, sp, #0
  204              		.cfi_def_cfa_register 7
  252:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     uint8 i;
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 9
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 9
 
 
  253:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  268:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *  baseline array for all sensors enabled in scanning process. Baselines 
  269:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *  initialize with zero values for sensors disabled from scanning process. 
  270:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *  The raw data filters are initialized if enabled.
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 10
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 10
 
 
  271:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  269              		.loc 1 297 0
  270 001c FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
  271 001e DB08     		lsrs	r3, r3, #3
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 11
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 11
 
 
  272 0020 BB71     		strb	r3, [r7, #6]
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  312              		.cfi_def_cfa_register 13
  313              		@ sp needed
  314 0064 80BD     		pop	{r7, pc}
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 12
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 12
 
 
  315              	.L15:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  348:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *******************************************************************************/
  349:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****  void CapSense_CSD_UpdateSensorBaseline(uint8 sensor)
  350:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                                  
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 13
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 13
 
 
  351:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** {
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  378:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****         CapSense_CSD_rawFilterData1[sensor] = tempRaw;
  379:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****         
  380:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     #elif (CapSense_CSD_RAW_FILTER_MASK & CapSense_CSD_IIR2_FILTER)
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 14
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 14
 
 
  381:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****         filteredRawData = CapSense_CSD_IIR2Filter(filteredRawData, CapSense_CSD_rawFilterData1[sens
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  416:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     else
  417:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     {
  418:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****         tempRaw = CapSense_CSD_sensorBaseline[sensor] - filteredRawData;
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 15
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 15
 
 
  377              		.loc 1 418 0
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  417 0080 D25C     		ldrb	r2, [r2, r3]	@ zero_extendqisi2
  418 0082 0132     		adds	r2, r2, #1
  419 0084 D1B2     		uxtb	r1, r2
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 16
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 16
 
 
  420 0086 294A     		ldr	r2, .L26+12
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  456 00be 1344     		add	r3, r3, r2
  457 00c0 FB60     		str	r3, [r7, #12]
  449:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** 
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 17
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 17
 
 
  450:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                 /* Sub the high Baseline */
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  468:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****             if (tempRaw > 0xFFu)
  469:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****             {
  470:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                 CapSense_CSD_sensorSignal[sensor] = 0xFFu;
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 18
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 18
 
 
  471:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****             }    
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  528              		.align	2
  529              		.global	CapSense_CSD_UpdateEnabledBaselines
  530              		.thumb
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 19
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 19
 
 
  531              		.thumb_func
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  529:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     for(i = 0u; i < CapSense_CSD_TOTAL_SENSOR_COUNT; i++)
  547              		.loc 1 529 0
  548 0006 0023     		movs	r3, #0
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 20
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 20
 
 
  549 0008 FB71     		strb	r3, [r7, #7]
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  592 004a 80BD     		pop	{r7, pc}
  593              	.L33:
  594              		.align	2
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 21
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 21
 
 
  595              	.L32:
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  580:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** uint8 CapSense_CSD_CheckIsSensorActive(uint8 sensor)
  581:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                                   
  582:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** {
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 22
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 22
 
 
  608              		.loc 1 582 0
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  650 0036 BB7B     		ldrb	r3, [r7, #14]	@ zero_extendqisi2
  651 0038 2D4A     		ldr	r2, .L43+4
  652 003a 0121     		movs	r1, #1
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 23
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 23
 
 
  653 003c D154     		strb	r1, [r2, r3]
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  610:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****         if (CapSense_CSD_sensorSignal[sensor] > (fingerThreshold + hysteresis))
  692              		.loc 1 610 0
  693 0082 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 24
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 24
 
 
  694 0084 1C4A     		ldr	r2, .L43+12
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  624:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     }
  625:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     
  626:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     return (((CapSense_CSD_sensorOnMask[pos] & onMask) != 0u) ? 1u : 0u);
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 25
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 25
 
 
  735              		.loc 1 626 0
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  636:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *  CapSense_CSD_sensorOnMask[] for all sensors within the widget.
  637:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *  If one of sensors within widget is active the function return that widget is 
  638:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *  active.
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 26
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 26
 
 
  639:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *  The touch pad and matrix buttons widgets need to have active sensor within 
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  809 001e FFF7FEFF 		bl	CapSense_CSD_CheckIsSensorActive
  810 0022 0346     		mov	r3, r0
  811 0024 002B     		cmp	r3, #0
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 27
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 27
 
 
  812 0026 01D0     		beq	.L46
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  683:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *  threshold. Calls CapSense_CSD_CheckIsWidgetActive() for each widget so 
  684:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *  the CapSense_CSD_SensorOnMask[] array is up to date after calling this 
  685:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *  function.
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 28
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 28
 
 
  686:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  878              		.loc 1 703 0 discriminator 2
  879 0022 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
  880 0024 0133     		adds	r3, r3, #1
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 29
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 29
 
 
  881 0026 FB71     		strb	r3, [r7, #7]
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  734:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *  CapSense_CSD_sensorEnableMask[1] contains the masked bits for 
  735:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *  sensors 8 through 15 (if needed), and so on.
  736:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *  0 - sensor doesn't scan by CapSense_CSD_ScanEnabledWidgets().
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 30
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 30
 
 
  737:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *  1 - sensor scans by CapSense_CSD_ScanEnabledWidgets().
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  941              		.loc 1 757 0 discriminator 1
  942 002a 7B7B     		ldrb	r3, [r7, #13]	@ zero_extendqisi2
  943 002c 7A7B     		ldrb	r2, [r7, #13]	@ zero_extendqisi2
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 31
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 31
 
 
  944 002e 0949     		ldr	r1, .L56
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  770:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** * Summary:
  771:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *  Disable all widget elements (sensors) from scanning process.
  772:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** *
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 32
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 32
 
 
  773:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** * Parameters:
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  804:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****         pos = (rawIndex >> 3u);
  1009              		.loc 1 804 0 discriminator 1
  1010 0016 FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 33
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 33
 
 
  1011 0018 DB08     		lsrs	r3, r3, #3
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1056              	.LFE10:
  1057              		.size	CapSense_CSD_DisableWidget, .-CapSense_CSD_DisableWidget
  1058              		.section	.text.CapSense_CSD_FindMaximum,"ax",%progbits
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 34
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 34
 
 
  1059              		.align	2
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1080 000a 0B46     		mov	r3, r1
  1081 000c BB71     		strb	r3, [r7, #6]
  1082 000e 1346     		mov	r3, r2	@ movhi
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 35
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 35
 
 
  1083 0010 BB80     		strh	r3, [r7, #4]	@ movhi
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  888:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                             /* We are in the end of current */
  889:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                             if(curCntrdSize > biggestCtrdSize)
  890:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                             {
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 36
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 36
 
 
  891:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                                 biggestCtrdSize = curCntrdSize;
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  945:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                         if(startOfSlider[curPos] > fingerThreshold)
  946:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                         {
  947:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                             if(startOfSlider[curPos] > temp)
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 37
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 37
 
 
  948:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                             {
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1132 005c 0133     		adds	r3, r3, #1
  1133 005e FB73     		strb	r3, [r7, #15]
  1134              	.L63:
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 38
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 38
 
 
  956:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****             {                      
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  985:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     *  offset:   Start index of cetroid in CapSense_CSD_SensorSignal[] array.
  986:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     *  count:    Number of elements within centroid.
  987:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     *  resolution:  multiplicator calculated according to centroid type and
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 39
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 39
 
 
  988:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     *  API resolution.
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
 1011:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****         
 1012:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****         /* Helps while centroid calulation */
 1013:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****         static uint16 CapSense_CSD_centroid[3u];
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 40
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 40
 
 
 1014:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** 
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
 1062:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                     else
 1063:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                     {
 1064:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                         pos     = diplex[maximum];
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 41
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 41
 
 
 1065:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                         posPrev = diplex[maximum - 1u];
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
 1094:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                     CapSense_CSD_centroid[CapSense_CSD_POS_PREV] = 0u;
  1230              		.loc 1 1094 0
  1231 0056 3F4B     		ldr	r3, .L79+4
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 42
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 42
 
 
  1232 0058 0022     		movs	r2, #0
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1275 009e BA69     		ldr	r2, [r7, #24]
  1276 00a0 1344     		add	r3, r3, r2
  1277 00a2 1A88     		ldrh	r2, [r3]
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 43
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 43
 
 
  1278 00a4 2B4B     		ldr	r3, .L79+4
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1310              		.loc 1 1127 0
  1311 00d6 1F4B     		ldr	r3, .L79+4
  1312 00d8 9B88     		ldrh	r3, [r3, #4]
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 44
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 44
 
 
  1313 00da 3A8D     		ldrh	r2, [r7, #40]
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1349 010e 1344     		add	r3, r3, r2
 1144:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                       (int32) CapSense_CSD_centroid[CapSense_CSD_POS_NEXT];
  1350              		.loc 1 1144 0
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 45
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 45
 
 
  1351 0110 104A     		ldr	r2, .L79+4
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1385              		@ sp needed
  1386 014c 90BC     		pop	{r4, r7}
  1387              		.cfi_restore 7
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 46
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 46
 
 
  1388              		.cfi_restore 4
@@ -2708,7 +2708,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1392              		.align	2
  1393              	.L79:
  1394 0150 00000000 		.word	CapSense_CSD_sensorSignal
- 1395 0154 04000000 		.word	CapSense_CSD_centroid.5248
+ 1395 0154 04000000 		.word	CapSense_CSD_centroid.5258
  1396              		.cfi_endproc
  1397              	.LFE12:
  1398              		.size	CapSense_CSD_CalcCentroid, .-CapSense_CSD_CalcCentroid
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
 1199:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     *
 1200:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     * Reentrant:
 1201:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     *  No.
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 47
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 47
 
 
 1202:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****     *
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
 1235:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****             {
 1236:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                 diplex = 0u;
 1237:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****             }
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 48
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 48
 
 
 1238:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****         #endif /* (CapSense_CSD_IS_DIPLEX_SLIDER) */
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
 1267:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                                      CapSense_CSD_LINEAR_SLIDERS_POS_FILTERS_MASK)))
 1268:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** 
 1269:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                             if ( (0u != (posFiltersMask & CapSense_CSD_MEDIAN_FILTER)) || 
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 49
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 49
 
 
 1270:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                                  (0u != (posFiltersMask & CapSense_CSD_AVERAGING_FILTER)) )
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
 1324:Generated_Source\PSoC5/CapSense_CSD_CSHL.c **** 
 1325:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                         #if (0u != (CapSense_CSD_IIR4_FILTER & CapSense_CSD_LINEAR_SLIDERS_POS_FILT
 1326:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                             if (0u != (posFiltersMask & CapSense_CSD_IIR4_FILTER))
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 50
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 50
 
 
 1327:Generated_Source\PSoC5/CapSense_CSD_CSHL.c ****                             {
@@ -2998,13 +2998,13 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1466 0050 90BD     		pop	{r4, r7, pc}
  1467              		.cfi_endproc
  1468              	.LFE13:
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 51
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 51
 
 
  1469              		.size	CapSense_CSD_GetCentroidPos, .-CapSense_CSD_GetCentroidPos
  1470 0052 00BF     		.bss
  1471 0001 000000   		.align	2
- 1472              	CapSense_CSD_centroid.5248:
+ 1472              	CapSense_CSD_centroid.5258:
  1473 0004 00000000 		.space	6
  1473      0000
  1474              		.text
@@ -3022,7 +3022,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1486 000c 9A000000 		.4byte	.LASF76
  1487 0010 0C       		.byte	0xc
  1488 0011 00000000 		.4byte	.LASF77
- 1489 0015 3D050000 		.4byte	.LASF78
+ 1489 0015 F6040000 		.4byte	.LASF78
  1490 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1491 001d 00000000 		.4byte	0
  1492 0021 00000000 		.4byte	.Ldebug_line0
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1522 0057 08       		.byte	0x8
  1523 0058 07       		.byte	0x7
  1524 0059 30010000 		.4byte	.LASF7
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 52
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 52
 
 
  1525 005d 03       		.uleb128 0x3
@@ -3072,27 +3072,27 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1533 006b 04       		.uleb128 0x4
  1534 006c E0010000 		.4byte	.LASF9
  1535 0070 02       		.byte	0x2
- 1536 0071 9201     		.2byte	0x192
+ 1536 0071 E401     		.2byte	0x1e4
  1537 0073 2C000000 		.4byte	0x2c
  1538 0077 04       		.uleb128 0x4
  1539 0078 4D000000 		.4byte	.LASF10
  1540 007c 02       		.byte	0x2
- 1541 007d 9301     		.2byte	0x193
+ 1541 007d E501     		.2byte	0x1e5
  1542 007f 3A000000 		.4byte	0x3a
  1543 0083 04       		.uleb128 0x4
  1544 0084 ED010000 		.4byte	.LASF11
  1545 0088 02       		.byte	0x2
- 1546 0089 9401     		.2byte	0x194
+ 1546 0089 E601     		.2byte	0x1e6
  1547 008b 48000000 		.4byte	0x48
  1548 008f 04       		.uleb128 0x4
- 1549 0090 D2050000 		.4byte	.LASF12
+ 1549 0090 18060000 		.4byte	.LASF12
  1550 0094 02       		.byte	0x2
- 1551 0095 9601     		.2byte	0x196
+ 1551 0095 E801     		.2byte	0x1e8
  1552 0097 33000000 		.4byte	0x33
  1553 009b 04       		.uleb128 0x4
  1554 009c 7A010000 		.4byte	.LASF13
  1555 00a0 02       		.byte	0x2
- 1556 00a1 9701     		.2byte	0x197
+ 1556 00a1 E901     		.2byte	0x1e9
  1557 00a3 41000000 		.4byte	0x41
  1558 00a7 02       		.uleb128 0x2
  1559 00a8 04       		.byte	0x4
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1579 00cb FF010000 		.4byte	.LASF19
  1580 00cf 01       		.byte	0x1
  1581 00d0 7D       		.byte	0x7d
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 53
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 53
 
 
  1582 00d1 00000000 		.4byte	.LFB0
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1636 013c 00000000 		.4byte	.LFB3
  1637 0140 70000000 		.4byte	.LFE3-.LFB3
  1638 0144 01       		.uleb128 0x1
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 54
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 54
 
 
  1639 0145 9C       		.byte	0x9c
@@ -3234,11 +3234,11 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1689 01a8 91       		.byte	0x91
  1690 01a9 6C       		.sleb128 -20
  1691 01aa 0B       		.uleb128 0xb
- 1692 01ab 14060000 		.4byte	.LASF27
+ 1692 01ab 5A060000 		.4byte	.LASF27
  1693 01af 01       		.byte	0x1
  1694 01b0 6101     		.2byte	0x161
  1695 01b2 77000000 		.4byte	0x77
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 55
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 55
 
 
  1696 01b6 02       		.uleb128 0x2
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1750 021a 53030000 		.4byte	.LASF24
  1751 021e 01       		.byte	0x1
  1752 021f 0F02     		.2byte	0x20f
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 56
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 56
 
 
  1753 0221 6B000000 		.4byte	0x6b
@@ -3325,7 +3325,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1774 0250 91       		.byte	0x91
  1775 0251 67       		.sleb128 -25
  1776 0252 0B       		.uleb128 0xb
- 1777 0253 2F050000 		.4byte	.LASF32
+ 1777 0253 C5050000 		.4byte	.LASF32
  1778 0257 01       		.byte	0x1
  1779 0258 4702     		.2byte	0x247
  1780 025a 6B000000 		.4byte	0x6b
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1807 028d 75       		.sleb128 -11
  1808 028e 0B       		.uleb128 0xb
  1809 028f 64000000 		.4byte	.LASF34
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 57
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 57
 
 
  1810 0293 01       		.byte	0x1
@@ -3385,7 +3385,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1831 02ba 6F       		.sleb128 -17
  1832 02bb 00       		.byte	0
  1833 02bc 0E       		.uleb128 0xe
- 1834 02bd B1050000 		.4byte	.LASF38
+ 1834 02bd F7050000 		.4byte	.LASF38
  1835 02c1 01       		.byte	0x1
  1836 02c2 8D02     		.2byte	0x28d
  1837 02c4 6B000000 		.4byte	0x6b
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1864 0300 02       		.uleb128 0x2
  1865 0301 91       		.byte	0x91
  1866 0302 75       		.sleb128 -11
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 58
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 58
 
 
  1867 0303 0B       		.uleb128 0xb
@@ -3431,7 +3431,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1874 0311 76       		.sleb128 -10
  1875 0312 00       		.byte	0
  1876 0313 0E       		.uleb128 0xe
- 1877 0314 8D050000 		.4byte	.LASF42
+ 1877 0314 D3050000 		.4byte	.LASF42
  1878 0318 01       		.byte	0x1
  1879 0319 B902     		.2byte	0x2b9
  1880 031b 6B000000 		.4byte	0x6b
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1921 0370 706F7300 		.ascii	"pos\000"
  1922 0374 01       		.byte	0x1
  1923 0375 EA02     		.2byte	0x2ea
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 59
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 59
 
 
  1924 0377 6B000000 		.4byte	0x6b
@@ -3511,7 +3511,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1951 03aa 76       		.sleb128 -10
  1952 03ab 00       		.byte	0
  1953 03ac 0F       		.uleb128 0xf
- 1954 03ad 1C060000 		.4byte	.LASF44
+ 1954 03ad 62060000 		.4byte	.LASF44
  1955 03b1 01       		.byte	0x1
  1956 03b2 1903     		.2byte	0x319
  1957 03b4 00000000 		.4byte	.LFB10
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  1978 03e0 0B       		.uleb128 0xb
  1979 03e1 53030000 		.4byte	.LASF24
  1980 03e5 01       		.byte	0x1
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 60
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 60
 
 
  1981 03e6 1D03     		.2byte	0x31d
@@ -3574,7 +3574,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2011 0423 9C       		.byte	0x9c
  2012 0424 90040000 		.4byte	0x490
  2013 0428 0C       		.uleb128 0xc
- 2014 0429 F6040000 		.4byte	.LASF46
+ 2014 0429 8C050000 		.4byte	.LASF46
  2015 042d 01       		.byte	0x1
  2016 042e 4B03     		.2byte	0x34b
  2017 0430 6B000000 		.4byte	0x6b
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2035 0453 91       		.byte	0x91
  2036 0454 6C       		.sleb128 -20
  2037 0455 0A       		.uleb128 0xa
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 61
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 61
 
 
  2038 0456 6900     		.ascii	"i\000"
@@ -3655,10 +3655,10 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2089 04bd 91       		.byte	0x91
  2090 04be 5F       		.sleb128 -33
  2091 04bf 0C       		.uleb128 0xc
- 2092 04c0 F6040000 		.4byte	.LASF46
+ 2092 04c0 8C050000 		.4byte	.LASF46
  2093 04c4 01       		.byte	0x1
  2094 04c5 E703     		.2byte	0x3e7
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 62
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 62
 
 
  2095 04c7 6B000000 		.4byte	0x6b
@@ -3712,13 +3712,13 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2143 0521 68050000 		.4byte	0x568
  2144 0525 05       		.uleb128 0x5
  2145 0526 03       		.byte	0x3
- 2146 0527 04000000 		.4byte	CapSense_CSD_centroid.5248
+ 2146 0527 04000000 		.4byte	CapSense_CSD_centroid.5258
  2147 052b 0B       		.uleb128 0xb
  2148 052c 6F020000 		.4byte	.LASF56
  2149 0530 01       		.byte	0x1
  2150 0531 F703     		.2byte	0x3f7
  2151 0533 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 63
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 63
 
 
  2152 0537 02       		.uleb128 0x2
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2206 05a2 2E040000 		.4byte	.LASF48
  2207 05a6 01       		.byte	0x1
  2208 05a7 C704     		.2byte	0x4c7
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 64
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 64
 
 
  2209 05a9 6B000000 		.4byte	0x6b
@@ -3794,7 +3794,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2219 05bd 91       		.byte	0x91
  2220 05be 6E       		.sleb128 -18
  2221 05bf 0B       		.uleb128 0xb
- 2222 05c0 F6040000 		.4byte	.LASF46
+ 2222 05c0 8C050000 		.4byte	.LASF46
  2223 05c4 01       		.byte	0x1
  2224 05c5 C904     		.2byte	0x4c9
  2225 05c7 6B000000 		.4byte	0x6b
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2263 0617 26060000 		.4byte	0x626
  2264 061b 26060000 		.4byte	0x626
  2265 061f 12       		.uleb128 0x12
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 65
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 65
 
 
  2266 0620 C3000000 		.4byte	0xc3
@@ -3869,7 +3869,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2291 065b 04       		.byte	0x4
  2292 065c 00       		.byte	0
  2293 065d 15       		.uleb128 0x15
- 2294 065e F5050000 		.4byte	.LASF64
+ 2294 065e 3B060000 		.4byte	.LASF64
  2295 0662 01       		.byte	0x1
  2296 0663 2A       		.byte	0x2a
  2297 0664 4D060000 		.4byte	0x64d
@@ -3885,7 +3885,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2307 067a 03       		.byte	0x3
  2308 067b 00000000 		.4byte	CapSense_CSD_sensorSignal
  2309 067f 15       		.uleb128 0x15
- 2310 0680 37060000 		.4byte	.LASF66
+ 2310 0680 7D060000 		.4byte	.LASF66
  2311 0684 01       		.byte	0x1
  2312 0685 2C       		.byte	0x2c
  2313 0686 FA050000 		.4byte	0x5fa
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2320 0696 2E       		.byte	0x2e
  2321 0697 4D060000 		.4byte	0x64d
  2322 069b 05       		.uleb128 0x5
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 66
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 66
 
 
  2323 069c 03       		.byte	0x3
@@ -3933,7 +3933,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2352 06dd 14       		.uleb128 0x14
  2353 06de A1060000 		.4byte	0x6a1
  2354 06e2 15       		.uleb128 0x15
- 2355 06e3 17050000 		.4byte	.LASF70
+ 2355 06e3 AD050000 		.4byte	.LASF70
  2356 06e7 01       		.byte	0x1
  2357 06e8 38       		.byte	0x38
  2358 06e9 F3060000 		.4byte	0x6f3
@@ -3958,12 +3958,12 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2377 0714 03       		.byte	0x3
  2378 0715 00000000 		.4byte	CapSense_CSD_debounce
  2379 0719 14       		.uleb128 0x14
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 67
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 67
 
 
  2380 071a F8060000 		.4byte	0x6f8
  2381 071e 15       		.uleb128 0x15
- 2382 071f D8050000 		.4byte	.LASF72
+ 2382 071f 1E060000 		.4byte	.LASF72
  2383 0723 01       		.byte	0x1
  2384 0724 40       		.byte	0x40
  2385 0725 FA050000 		.4byte	0x5fa
@@ -3991,7 +3991,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2407 0756 14       		.uleb128 0x14
  2408 0757 F8060000 		.4byte	0x6f8
  2409 075b 15       		.uleb128 0x15
- 2410 075c FD040000 		.4byte	.LASF75
+ 2410 075c 93050000 		.4byte	.LASF75
  2411 0760 01       		.byte	0x1
  2412 0761 4E       		.byte	0x4e
  2413 0762 6C070000 		.4byte	0x76c
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2434 000c 17       		.uleb128 0x17
  2435 000d 11       		.uleb128 0x11
  2436 000e 01       		.uleb128 0x1
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 68
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 68
 
 
  2437 000f 10       		.uleb128 0x10
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2491 0045 12       		.uleb128 0x12
  2492 0046 06       		.uleb128 0x6
  2493 0047 40       		.uleb128 0x40
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 69
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 69
 
 
  2494 0048 18       		.uleb128 0x18
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2548 0080 3B       		.uleb128 0x3b
  2549 0081 0B       		.uleb128 0xb
  2550 0082 49       		.uleb128 0x49
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 70
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 70
 
 
  2551 0083 13       		.uleb128 0x13
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2605 00ba 49       		.uleb128 0x49
  2606 00bb 13       		.uleb128 0x13
  2607 00bc 02       		.uleb128 0x2
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 71
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 71
 
 
  2608 00bd 18       		.uleb128 0x18
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2662 00f4 3B       		.uleb128 0x3b
  2663 00f5 05       		.uleb128 0x5
  2664 00f6 27       		.uleb128 0x27
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 72
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 72
 
 
  2665 00f7 19       		.uleb128 0x19
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2719 012f 01       		.uleb128 0x1
  2720 0130 13       		.uleb128 0x13
  2721 0131 00       		.byte	0
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 73
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 73
 
 
  2722 0132 00       		.byte	0
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2776 0004 0200     		.2byte	0x2
  2777 0006 00000000 		.4byte	.Ldebug_info0
  2778 000a 04       		.byte	0x4
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 74
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 74
 
 
  2779 000b 00       		.byte	0
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2833 004c 58000000 		.4byte	.LFE9
  2834 0050 00000000 		.4byte	.LFB10
  2835 0054 5C000000 		.4byte	.LFE10
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 75
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 75
 
 
  2836 0058 00000000 		.4byte	.LFB11
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2862      31363036 
  2863 00cd 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
  2863      20726576 
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 76
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 76
 
 
  2863      6973696F 
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2886      7200
  2887              	.LASF58:
  2888 01ba 64656E6F 		.ascii	"denominator\000"
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 77
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 77
 
 
  2888      6D696E61 
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2912      00
  2913              	.LASF56:
  2914 026f 706F7369 		.ascii	"position\000"
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 78
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 78
 
 
  2914      74696F6E 
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2936      5F496E69 
  2936      7469616C 
  2937              	.LASF73:
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 79
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 79
 
 
  2938 0339 43617053 		.ascii	"CapSense_CSD_rawDataIndex\000"
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2958      7400
  2959              	.LASF29:
  2960 0420 77696467 		.ascii	"widget\000"
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 80
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 80
 
 
  2960      657400
@@ -4791,83 +4791,90 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 1
  2980      5F435344 
  2980      5F557064 
  2980      61746545 
- 2981              	.LASF46:
- 2982 04f6 6F666673 		.ascii	"offset\000"
- 2982      657400
- 2983              	.LASF75:
- 2984 04fd 43617053 		.ascii	"CapSense_CSD_centroidMult\000"
- 2984      656E7365 
- 2984      5F435344 
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 81
+ 2981              	.LASF78:
+ 2982 04f6 433A5C55 		.ascii	"C:\\Users\\holge\\Dropbox\\AAU - Elektronik og IT\\"
+ 2982      73657273 
+ 2982      5C686F6C 
+ 2982      67655C44 
+ 2982      726F7062 
+ 2983 0524 342E2073 		.ascii	"4. semester\\Digital Design\\digital-design\\PSoC\\"
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 81
 
 
- 2984      5F63656E 
- 2984      74726F69 
- 2985              	.LASF70:
- 2986 0517 43617053 		.ascii	"CapSense_CSD_hysteresis\000"
- 2986      656E7365 
- 2986      5F435344 
- 2986      5F687973 
- 2986      74657265 
- 2987              	.LASF32:
- 2988 052f 6465626F 		.ascii	"debounceIndex\000"
- 2988      756E6365 
- 2988      496E6465 
- 2988      7800
- 2989              	.LASF78:
- 2990 053d 433A5C55 		.ascii	"C:\\Users\\holge\\Desktop\\cypress_PsOC_5LP\\Worksp"
- 2990      73657273 
- 2990      5C686F6C 
- 2990      67655C44 
- 2990      65736B74 
- 2991 056b 61636530 		.ascii	"ace01\\CapSense_CSD_Design01.cydsn\000"
- 2991      315C4361 
- 2991      7053656E 
- 2991      73655F43 
- 2991      53445F44 
- 2992              	.LASF42:
- 2993 058d 43617053 		.ascii	"CapSense_CSD_CheckIsAnyWidgetActive\000"
- 2993      656E7365 
- 2993      5F435344 
- 2993      5F436865 
- 2993      636B4973 
- 2994              	.LASF38:
- 2995 05b1 43617053 		.ascii	"CapSense_CSD_CheckIsWidgetActive\000"
+ 2983      656D6573 
+ 2983      7465725C 
+ 2983      44696769 
+ 2983      74616C20 
+ 2984 0553 63797072 		.ascii	"cypress_PsOC_5LP\\Workspace01\\CapSense_CSD_Design0"
+ 2984      6573735F 
+ 2984      50734F43 
+ 2984      5F354C50 
+ 2984      5C576F72 
+ 2985 0584 312E6379 		.ascii	"1.cydsn\000"
+ 2985      64736E00 
+ 2986              	.LASF46:
+ 2987 058c 6F666673 		.ascii	"offset\000"
+ 2987      657400
+ 2988              	.LASF75:
+ 2989 0593 43617053 		.ascii	"CapSense_CSD_centroidMult\000"
+ 2989      656E7365 
+ 2989      5F435344 
+ 2989      5F63656E 
+ 2989      74726F69 
+ 2990              	.LASF70:
+ 2991 05ad 43617053 		.ascii	"CapSense_CSD_hysteresis\000"
+ 2991      656E7365 
+ 2991      5F435344 
+ 2991      5F687973 
+ 2991      74657265 
+ 2992              	.LASF32:
+ 2993 05c5 6465626F 		.ascii	"debounceIndex\000"
+ 2993      756E6365 
+ 2993      496E6465 
+ 2993      7800
+ 2994              	.LASF42:
+ 2995 05d3 43617053 		.ascii	"CapSense_CSD_CheckIsAnyWidgetActive\000"
  2995      656E7365 
  2995      5F435344 
  2995      5F436865 
  2995      636B4973 
- 2996              	.LASF12:
- 2997 05d2 696E7431 		.ascii	"int16\000"
- 2997      3600
- 2998              	.LASF72:
- 2999 05d8 43617053 		.ascii	"CapSense_CSD_debounceCounter\000"
- 2999      656E7365 
- 2999      5F435344 
- 2999      5F646562 
- 2999      6F756E63 
- 3000              	.LASF64:
- 3001 05f5 43617053 		.ascii	"CapSense_CSD_sensorBaselineLow\000"
+ 2996              	.LASF38:
+ 2997 05f7 43617053 		.ascii	"CapSense_CSD_CheckIsWidgetActive\000"
+ 2997      656E7365 
+ 2997      5F435344 
+ 2997      5F436865 
+ 2997      636B4973 
+ 2998              	.LASF12:
+ 2999 0618 696E7431 		.ascii	"int16\000"
+ 2999      3600
+ 3000              	.LASF72:
+ 3001 061e 43617053 		.ascii	"CapSense_CSD_debounceCounter\000"
  3001      656E7365 
  3001      5F435344 
- 3001      5F73656E 
- 3001      736F7242 
- 3002              	.LASF27:
- 3003 0614 74656D70 		.ascii	"tempRaw\000"
- 3003      52617700 
- 3004              	.LASF44:
- 3005 061c 43617053 		.ascii	"CapSense_CSD_DisableWidget\000"
- 3005      656E7365 
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccV9JI0t.s 			page 82
+ 3001      5F646562 
+ 3001      6F756E63 
+ 3002              	.LASF64:
+ 3003 063b 43617053 		.ascii	"CapSense_CSD_sensorBaselineLow\000"
+ 3003      656E7365 
+ 3003      5F435344 
+ 3003      5F73656E 
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccfhesHk.s 			page 82
 
 
- 3005      5F435344 
- 3005      5F446973 
- 3005      61626C65 
- 3006              	.LASF66:
- 3007 0637 43617053 		.ascii	"CapSense_CSD_sensorOnMask\000"
+ 3003      736F7242 
+ 3004              	.LASF27:
+ 3005 065a 74656D70 		.ascii	"tempRaw\000"
+ 3005      52617700 
+ 3006              	.LASF44:
+ 3007 0662 43617053 		.ascii	"CapSense_CSD_DisableWidget\000"
  3007      656E7365 
  3007      5F435344 
- 3007      5F73656E 
- 3007      736F724F 
- 3008              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 3007      5F446973 
+ 3007      61626C65 
+ 3008              	.LASF66:
+ 3009 067d 43617053 		.ascii	"CapSense_CSD_sensorOnMask\000"
+ 3009      656E7365 
+ 3009      5F435344 
+ 3009      5F73656E 
+ 3009      736F724F 
+ 3010              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

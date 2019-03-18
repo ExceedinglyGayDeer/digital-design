@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 1
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccO2EdHh.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 1
   28:Generated_Source\PSoC5/CapSense_CSD_TunerHelper.c **** *
   29:Generated_Source\PSoC5/CapSense_CSD_TunerHelper.c **** * Summary:
   30:Generated_Source\PSoC5/CapSense_CSD_TunerHelper.c **** *  Initializes CapSense CSD component and EzI2C communication componenet to use
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 2
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccO2EdHh.s 			page 2
 
 
   31:Generated_Source\PSoC5/CapSense_CSD_TunerHelper.c **** *  mailbox data structure for communication with Tuner GUI.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 1
   75:Generated_Source\PSoC5/CapSense_CSD_TunerHelper.c **** }
   38              		.loc 1 75 0
   39 0004 00BF     		nop
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 3
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccO2EdHh.s 			page 3
 
 
   40 0006 BD46     		mov	sp, r7
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 1
  102:Generated_Source\PSoC5/CapSense_CSD_TunerHelper.c ****         if (0u == CapSense_CSD_IsBusy())
  103:Generated_Source\PSoC5/CapSense_CSD_TunerHelper.c ****         {   
  104:Generated_Source\PSoC5/CapSense_CSD_TunerHelper.c ****             /* Apply new settings */
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 4
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccO2EdHh.s 			page 4
 
 
  105:Generated_Source\PSoC5/CapSense_CSD_TunerHelper.c ****             #if (CapSense_CSD_TUNING_METHOD == CapSense_CSD_MANUAL_TUNING)
@@ -225,40 +225,40 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 1
   86 0006 00000000 		.4byte	.Ldebug_abbrev0
   87 000a 04       		.byte	0x4
   88 000b 01       		.uleb128 0x1
-  89 000c B2000000 		.4byte	.LASF16
+  89 000c 62000000 		.4byte	.LASF16
   90 0010 0C       		.byte	0xc
-  91 0011 82010000 		.4byte	.LASF17
-  92 0015 1B000000 		.4byte	.LASF18
+  91 0011 C8010000 		.4byte	.LASF17
+  92 0015 0C010000 		.4byte	.LASF18
   93 0019 00000000 		.4byte	.Ldebug_ranges0+0
   94 001d 00000000 		.4byte	0
   95 0021 00000000 		.4byte	.Ldebug_line0
   96 0025 02       		.uleb128 0x2
   97 0026 01       		.byte	0x1
   98 0027 06       		.byte	0x6
-  99 0028 76010000 		.4byte	.LASF0
+  99 0028 BC010000 		.4byte	.LASF0
  100 002c 02       		.uleb128 0x2
  101 002d 01       		.byte	0x1
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 5
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccO2EdHh.s 			page 5
 
 
  102 002e 08       		.byte	0x8
- 103 002f 40010000 		.4byte	.LASF1
+ 103 002f F0000000 		.4byte	.LASF1
  104 0033 02       		.uleb128 0x2
  105 0034 02       		.byte	0x2
  106 0035 05       		.byte	0x5
- 107 0036 C0010000 		.4byte	.LASF2
+ 107 0036 06020000 		.4byte	.LASF2
  108 003a 02       		.uleb128 0x2
  109 003b 02       		.byte	0x2
  110 003c 07       		.byte	0x7
- 111 003d 63010000 		.4byte	.LASF3
+ 111 003d A9010000 		.4byte	.LASF3
  112 0041 02       		.uleb128 0x2
  113 0042 04       		.byte	0x4
  114 0043 05       		.byte	0x5
- 115 0044 53010000 		.4byte	.LASF4
+ 115 0044 03010000 		.4byte	.LASF4
  116 0048 02       		.uleb128 0x2
  117 0049 04       		.byte	0x4
  118 004a 07       		.byte	0x7
- 119 004b 6B000000 		.4byte	.LASF5
+ 119 004b 1B000000 		.4byte	.LASF5
  120 004f 02       		.uleb128 0x2
  121 0050 08       		.byte	0x8
  122 0051 05       		.byte	0x5
@@ -266,7 +266,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 1
  124 0056 02       		.uleb128 0x2
  125 0057 08       		.byte	0x8
  126 0058 07       		.byte	0x7
- 127 0059 7D000000 		.4byte	.LASF7
+ 127 0059 2D000000 		.4byte	.LASF7
  128 005d 03       		.uleb128 0x3
  129 005e 04       		.byte	0x4
  130 005f 05       		.byte	0x5
@@ -278,27 +278,27 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 1
  136 006b 02       		.uleb128 0x2
  137 006c 04       		.byte	0x4
  138 006d 04       		.byte	0x4
- 139 006e 94000000 		.4byte	.LASF9
+ 139 006e 44000000 		.4byte	.LASF9
  140 0072 02       		.uleb128 0x2
  141 0073 08       		.byte	0x8
  142 0074 04       		.byte	0x4
- 143 0075 5C010000 		.4byte	.LASF10
+ 143 0075 A2010000 		.4byte	.LASF10
  144 0079 02       		.uleb128 0x2
  145 007a 01       		.byte	0x1
  146 007b 08       		.byte	0x8
- 147 007c 4E010000 		.4byte	.LASF11
+ 147 007c FE000000 		.4byte	.LASF11
  148 0080 02       		.uleb128 0x2
  149 0081 08       		.byte	0x8
  150 0082 04       		.byte	0x4
- 151 0083 B4010000 		.4byte	.LASF12
+ 151 0083 FA010000 		.4byte	.LASF12
  152 0087 02       		.uleb128 0x2
  153 0088 04       		.byte	0x4
  154 0089 07       		.byte	0x7
- 155 008a E1010000 		.4byte	.LASF13
+ 155 008a 27020000 		.4byte	.LASF13
  156 008e 04       		.uleb128 0x4
- 157 008f 9A000000 		.4byte	.LASF14
+ 157 008f 4A000000 		.4byte	.LASF14
  158 0093 01       		.byte	0x1
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 6
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccO2EdHh.s 			page 6
 
 
  159 0094 31       		.byte	0x31
@@ -307,7 +307,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 1
  162 009d 01       		.uleb128 0x1
  163 009e 9C       		.byte	0x9c
  164 009f 04       		.uleb128 0x4
- 165 00a0 CA010000 		.4byte	.LASF15
+ 165 00a0 10020000 		.4byte	.LASF15
  166 00a4 01       		.byte	0x1
  167 00a5 63       		.byte	0x63
  168 00a6 00000000 		.4byte	.LFB1
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 1
  213 0026 08       		.uleb128 0x8
  214 0027 00       		.byte	0
  215 0028 00       		.byte	0
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 7
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccO2EdHh.s 			page 7
 
 
  216 0029 04       		.uleb128 0x4
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 1
  266 0000 6C6F6E67 		.ascii	"long long int\000"
  266      206C6F6E 
  266      6720696E 
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 8
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccO2EdHh.s 			page 8
 
 
  266      7400
@@ -427,105 +427,112 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 1
  268      676E6564 
  268      20696E74 
  268      00
- 269              	.LASF18:
- 270 001b 433A5C55 		.ascii	"C:\\Users\\holge\\Desktop\\cypress_PsOC_5LP\\Worksp"
- 270      73657273 
- 270      5C686F6C 
- 270      67655C44 
- 270      65736B74 
- 271 0049 61636530 		.ascii	"ace01\\CapSense_CSD_Design01.cydsn\000"
- 271      315C4361 
- 271      7053656E 
- 271      73655F43 
- 271      53445F44 
- 272              	.LASF5:
- 273 006b 6C6F6E67 		.ascii	"long unsigned int\000"
- 273      20756E73 
- 273      69676E65 
- 273      6420696E 
- 273      7400
- 274              	.LASF7:
- 275 007d 6C6F6E67 		.ascii	"long long unsigned int\000"
- 275      206C6F6E 
- 275      6720756E 
- 275      7369676E 
- 275      65642069 
- 276              	.LASF9:
- 277 0094 666C6F61 		.ascii	"float\000"
- 277      7400
- 278              	.LASF14:
- 279 009a 43617053 		.ascii	"CapSense_CSD_TunerStart\000"
- 279      656E7365 
- 279      5F435344 
- 279      5F54756E 
- 279      65725374 
- 280              	.LASF16:
- 281 00b2 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 281      43313120 
- 281      352E342E 
- 281      31203230 
- 281      31363036 
- 282 00e5 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 282      20726576 
- 282      6973696F 
- 282      6E203233 
- 282      37373135 
- 283 0118 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 283      66756E63 
- 283      74696F6E 
- 283      2D736563 
- 283      74696F6E 
- 284              	.LASF1:
- 285 0140 756E7369 		.ascii	"unsigned char\000"
- 285      676E6564 
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccHp0XKu.s 			page 9
+ 269              	.LASF5:
+ 270 001b 6C6F6E67 		.ascii	"long unsigned int\000"
+ 270      20756E73 
+ 270      69676E65 
+ 270      6420696E 
+ 270      7400
+ 271              	.LASF7:
+ 272 002d 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 272      206C6F6E 
+ 272      6720756E 
+ 272      7369676E 
+ 272      65642069 
+ 273              	.LASF9:
+ 274 0044 666C6F61 		.ascii	"float\000"
+ 274      7400
+ 275              	.LASF14:
+ 276 004a 43617053 		.ascii	"CapSense_CSD_TunerStart\000"
+ 276      656E7365 
+ 276      5F435344 
+ 276      5F54756E 
+ 276      65725374 
+ 277              	.LASF16:
+ 278 0062 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 278      43313120 
+ 278      352E342E 
+ 278      31203230 
+ 278      31363036 
+ 279 0095 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 279      20726576 
+ 279      6973696F 
+ 279      6E203233 
+ 279      37373135 
+ 280 00c8 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 280      66756E63 
+ 280      74696F6E 
+ 280      2D736563 
+ 280      74696F6E 
+ 281              	.LASF1:
+ 282 00f0 756E7369 		.ascii	"unsigned char\000"
+ 282      676E6564 
+ 282      20636861 
+ 282      7200
+ 283              	.LASF11:
+ 284 00fe 63686172 		.ascii	"char\000"
+ 284      00
+ 285              	.LASF4:
+ 286 0103 6C6F6E67 		.ascii	"long int\000"
+ 286      20696E74 
+ 286      00
+ 287              	.LASF18:
+ 288 010c 433A5C55 		.ascii	"C:\\Users\\holge\\Dropbox\\AAU - Elektronik og IT\\"
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccO2EdHh.s 			page 9
 
 
- 285      20636861 
- 285      7200
- 286              	.LASF11:
- 287 014e 63686172 		.ascii	"char\000"
- 287      00
- 288              	.LASF4:
- 289 0153 6C6F6E67 		.ascii	"long int\000"
- 289      20696E74 
- 289      00
- 290              	.LASF10:
- 291 015c 646F7562 		.ascii	"double\000"
- 291      6C6500
- 292              	.LASF3:
- 293 0163 73686F72 		.ascii	"short unsigned int\000"
- 293      7420756E 
- 293      7369676E 
- 293      65642069 
- 293      6E7400
- 294              	.LASF0:
- 295 0176 7369676E 		.ascii	"signed char\000"
- 295      65642063 
- 295      68617200 
- 296              	.LASF17:
- 297 0182 47656E65 		.ascii	"Generated_Source\\PSoC5\\CapSense_CSD_TunerHelper.c"
- 297      72617465 
- 297      645F536F 
- 297      75726365 
- 297      5C50536F 
- 298 01b3 00       		.ascii	"\000"
- 299              	.LASF12:
- 300 01b4 6C6F6E67 		.ascii	"long double\000"
- 300      20646F75 
- 300      626C6500 
- 301              	.LASF2:
- 302 01c0 73686F72 		.ascii	"short int\000"
- 302      7420696E 
- 302      7400
- 303              	.LASF15:
- 304 01ca 43617053 		.ascii	"CapSense_CSD_TunerComm\000"
- 304      656E7365 
- 304      5F435344 
- 304      5F54756E 
- 304      6572436F 
- 305              	.LASF13:
- 306 01e1 73697A65 		.ascii	"sizetype\000"
- 306      74797065 
- 306      00
- 307              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 288      73657273 
+ 288      5C686F6C 
+ 288      67655C44 
+ 288      726F7062 
+ 289 013a 342E2073 		.ascii	"4. semester\\Digital Design\\digital-design\\PSoC\\"
+ 289      656D6573 
+ 289      7465725C 
+ 289      44696769 
+ 289      74616C20 
+ 290 0169 63797072 		.ascii	"cypress_PsOC_5LP\\Workspace01\\CapSense_CSD_Design0"
+ 290      6573735F 
+ 290      50734F43 
+ 290      5F354C50 
+ 290      5C576F72 
+ 291 019a 312E6379 		.ascii	"1.cydsn\000"
+ 291      64736E00 
+ 292              	.LASF10:
+ 293 01a2 646F7562 		.ascii	"double\000"
+ 293      6C6500
+ 294              	.LASF3:
+ 295 01a9 73686F72 		.ascii	"short unsigned int\000"
+ 295      7420756E 
+ 295      7369676E 
+ 295      65642069 
+ 295      6E7400
+ 296              	.LASF0:
+ 297 01bc 7369676E 		.ascii	"signed char\000"
+ 297      65642063 
+ 297      68617200 
+ 298              	.LASF17:
+ 299 01c8 47656E65 		.ascii	"Generated_Source\\PSoC5\\CapSense_CSD_TunerHelper.c"
+ 299      72617465 
+ 299      645F536F 
+ 299      75726365 
+ 299      5C50536F 
+ 300 01f9 00       		.ascii	"\000"
+ 301              	.LASF12:
+ 302 01fa 6C6F6E67 		.ascii	"long double\000"
+ 302      20646F75 
+ 302      626C6500 
+ 303              	.LASF2:
+ 304 0206 73686F72 		.ascii	"short int\000"
+ 304      7420696E 
+ 304      7400
+ 305              	.LASF15:
+ 306 0210 43617053 		.ascii	"CapSense_CSD_TunerComm\000"
+ 306      656E7365 
+ 306      5F435344 
+ 306      5F54756E 
+ 306      6572436F 
+ 307              	.LASF13:
+ 308 0227 73697A65 		.ascii	"sizetype\000"
+ 308      74797065 
+ 308      00
+ 309              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

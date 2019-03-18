@@ -48,8 +48,8 @@
       </field>
     </register>
   </block>
-  <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Em_EEPROM_Dynamic" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="CapSense_CSD" BASE="0x0" SIZE="0x0" desc="CapSense" visible="true" hidden="false">
     <block name="Select_VrefCH1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="Select_VrefOutput" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />

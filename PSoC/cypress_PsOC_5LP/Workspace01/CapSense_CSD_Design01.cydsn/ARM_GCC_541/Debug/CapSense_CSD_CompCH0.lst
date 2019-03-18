@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
   22:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** /* Internal functions definitoin */
   23:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** static void CapSense_CSD_CompCH0_trimAdjust(uint8 nibble) ;
   24:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** 
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 2
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 2
 
 
   25:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** /* static CapSense_CSD_CompCH0_backupStruct  CapSense_CSD_CompCH0_backup; */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
   54 0018 1370     		strb	r3, [r2]
   59:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****     #else
   60:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****         CapSense_CSD_CompCH0_CR &= (uint8)(~CapSense_CSD_CompCH0_HYST_OFF);
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 3
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 3
 
 
   61:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****     #endif /* CapSense_CSD_CompCH0_DEFAULT_HYSTERESIS == 0u */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
   87              		.loc 1 82 0
   88 005a 00BF     		nop
   89 005c 80BD     		pop	{r7, pc}
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 4
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 4
 
 
   90              	.L3:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  124              		.loc 1 102 0
  125 0014 064A     		ldr	r2, .L5+4
  126 0016 064B     		ldr	r3, .L5+4
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 5
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 5
 
 
  127 0018 1B78     		ldrb	r3, [r3]
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  127:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** *
  128:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** * Return:
  129:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** *  void 
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 6
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 6
 
 
  130:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** *
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  192              		.align	2
  193              		.global	CapSense_CSD_CompCH0_Stop
  194              		.thumb
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 7
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 7
 
 
  195              		.thumb_func
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  173:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****         CapSense_CSD_CompCH0_restoreReg = 1u;
  174:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** 
  175:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****         /* Save the control register before clearing it */
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 8
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 8
 
 
  176:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****         CapSense_CSD_CompCH0_lowPowerBackup.compCRReg = CapSense_CSD_CompCH0_CR;
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  256              		.cfi_def_cfa_offset 4
  257              		.cfi_offset 7, -4
  258 0002 83B0     		sub	sp, sp, #12
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 9
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 9
 
 
  259              		.cfi_def_cfa_offset 16
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  217:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****     else
  218:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****     {
  219:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****     /* PSoC5A */
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 10
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 10
 
 
  220:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****         #if (CY_PSOC5A)
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  335              		.section	.text.CapSense_CSD_CompCH0_GetCompare,"ax",%progbits
  336              		.align	2
  337              		.global	CapSense_CSD_CompCH0_GetCompare
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 11
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 11
 
 
  338              		.thumb
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  369              		.align	2
  370              	.L22:
  371 0018 965B0040 		.word	1073765270
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 12
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 12
 
 
  372              		.cfi_endproc
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  285:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****     uint8 cmpState;   
  286:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** 
  287:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****     /* get current state of comparator output */
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 13
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 13
 
 
  288:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****     cmpState = CapSense_CSD_CompCH0_WRK & CapSense_CSD_CompCH0_CMP_OUT_MASK;
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  314:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****             #endif /* CY_PSOC5A */
  315:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****             
  316:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****             /* PSoC3, PSoC5LP or later */
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 14
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 14
 
 
  317:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****             #if (CY_PSOC3 || CY_PSOC5LP)
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  344:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****         if (nibble == 0u)
  451              		.loc 1 344 0
  452 0060 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 15
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 15
 
 
  453 0062 002B     		cmp	r3, #0
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  479 008c 1B78     		ldrb	r3, [r3]
  480 008e DBB2     		uxtb	r3, r3
  481 0090 03F00202 		and	r2, r3, #2
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 16
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 16
 
 
  482 0094 7B7B     		ldrb	r3, [r7, #13]	@ zero_extendqisi2
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  380:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** /*******************************************************************************
  381:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** * Function Name: CapSense_CSD_CompCH0_ZeroCal
  382:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** ********************************************************************************
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 17
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 17
 
 
  383:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** *
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  437:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** *     to a 1.
  438:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** *  9) Increment the fine trim field until the compare output changes
  439:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** *  ** FAST MODE - skip the steps 8,9
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 18
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 18
 
 
  440:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c **** *
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  462:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****     CapSense_CSD_CompCH0_SW3 = tmpSW3 & (uint8)(~CapSense_CSD_CompCH0_CMP_SW3_INPCTL_MASK);
  558              		.loc 1 462 0
  559 0024 234A     		ldr	r2, .L43+8
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 19
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 19
 
 
  560 0026 7B79     		ldrb	r3, [r7, #5]
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  486:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****         CapSense_CSD_CompCH0_trimAdjust(0u);
  591              		.loc 1 486 0
  592 0060 0020     		movs	r0, #0
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 20
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 20
 
 
  593 0062 FFF7FEFF 		bl	CapSense_CSD_CompCH0_trimAdjust
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  624 0094 1B02     		lsls	r3, r3, #8
  625 0096 9AB2     		uxth	r2, r3
  626 0098 084B     		ldr	r3, .L43+16
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 21
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 21
 
 
  627 009a 1B78     		ldrb	r3, [r3]
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  660              		.loc 1 530 0
  661              		.cfi_startproc
  662              		@ args = 0, pretend = 0, frame = 8
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 22
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 22
 
 
  663              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  702              		.cfi_endproc
  703              	.LFE8:
  704              		.size	CapSense_CSD_CompCH0_LoadTrim, .-CapSense_CSD_CompCH0_LoadTrim
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 23
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 23
 
 
  705              		.section	.text.CapSense_CSD_CompCH0_PwrDwnOverrideEnable,"ax",%progbits
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  735              		@ sp needed
  736 0018 80BC     		pop	{r7}
  737              		.cfi_restore 7
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 24
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 24
 
 
  738              		.cfi_def_cfa_offset 0
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  771 0010 DBB2     		uxtb	r3, r3
  772 0012 1370     		strb	r3, [r2]
  591:Generated_Source\PSoC5/CapSense_CSD_CompCH0.c ****     }
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 25
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 25
 
 
  773              		.loc 1 591 0
@@ -1467,48 +1467,48 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  796 0006 00000000 		.4byte	.Ldebug_abbrev0
  797 000a 04       		.byte	0x4
  798 000b 01       		.uleb128 0x1
- 799 000c 5E000000 		.4byte	.LASF36
+ 799 000c 0E000000 		.4byte	.LASF36
  800 0010 0C       		.byte	0xc
- 801 0011 05030000 		.4byte	.LASF37
- 802 0015 08000000 		.4byte	.LASF38
+ 801 0011 4B030000 		.4byte	.LASF37
+ 802 0015 64020000 		.4byte	.LASF38
  803 0019 00000000 		.4byte	.Ldebug_ranges0+0
  804 001d 00000000 		.4byte	0
  805 0021 00000000 		.4byte	.Ldebug_line0
  806 0025 02       		.uleb128 0x2
  807 0026 01       		.byte	0x1
  808 0027 06       		.byte	0x6
- 809 0028 65030000 		.4byte	.LASF0
+ 809 0028 AB030000 		.4byte	.LASF0
  810 002c 02       		.uleb128 0x2
  811 002d 01       		.byte	0x1
  812 002e 08       		.byte	0x8
- 813 002f 56010000 		.4byte	.LASF1
+ 813 002f 06010000 		.4byte	.LASF1
  814 0033 02       		.uleb128 0x2
  815 0034 02       		.byte	0x2
  816 0035 05       		.byte	0x5
- 817 0036 D1020000 		.4byte	.LASF2
+ 817 0036 17030000 		.4byte	.LASF2
  818 003a 02       		.uleb128 0x2
  819 003b 02       		.byte	0x2
  820 003c 07       		.byte	0x7
- 821 003d F3000000 		.4byte	.LASF3
+ 821 003d A3000000 		.4byte	.LASF3
  822 0041 02       		.uleb128 0x2
  823 0042 04       		.byte	0x4
  824 0043 05       		.byte	0x5
- 825 0044 33030000 		.4byte	.LASF4
+ 825 0044 79030000 		.4byte	.LASF4
  826 0048 02       		.uleb128 0x2
  827 0049 04       		.byte	0x4
  828 004a 07       		.byte	0x7
- 829 004b 2E020000 		.4byte	.LASF5
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 26
+ 829 004b DE010000 		.4byte	.LASF5
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 26
 
 
  830 004f 02       		.uleb128 0x2
  831 0050 08       		.byte	0x8
  832 0051 05       		.byte	0x5
- 833 0052 A1020000 		.4byte	.LASF6
+ 833 0052 51020000 		.4byte	.LASF6
  834 0056 02       		.uleb128 0x2
  835 0057 08       		.byte	0x8
  836 0058 07       		.byte	0x7
- 837 0059 56020000 		.4byte	.LASF7
+ 837 0059 06020000 		.4byte	.LASF7
  838 005d 03       		.uleb128 0x3
  839 005e 04       		.byte	0x4
  840 005f 05       		.byte	0x5
@@ -1516,54 +1516,54 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  842 0064 02       		.uleb128 0x2
  843 0065 04       		.byte	0x4
  844 0066 07       		.byte	0x7
- 845 0067 40020000 		.4byte	.LASF8
+ 845 0067 F0010000 		.4byte	.LASF8
  846 006b 04       		.uleb128 0x4
- 847 006c 9C010000 		.4byte	.LASF9
+ 847 006c 4C010000 		.4byte	.LASF9
  848 0070 02       		.byte	0x2
- 849 0071 9201     		.2byte	0x192
+ 849 0071 E401     		.2byte	0x1e4
  850 0073 2C000000 		.4byte	0x2c
  851 0077 04       		.uleb128 0x4
- 852 0078 05020000 		.4byte	.LASF10
+ 852 0078 B5010000 		.4byte	.LASF10
  853 007c 02       		.byte	0x2
- 854 007d 9301     		.2byte	0x193
+ 854 007d E501     		.2byte	0x1e5
  855 007f 3A000000 		.4byte	0x3a
  856 0083 04       		.uleb128 0x4
- 857 0084 27020000 		.4byte	.LASF11
+ 857 0084 D7010000 		.4byte	.LASF11
  858 0088 02       		.byte	0x2
- 859 0089 9401     		.2byte	0x194
+ 859 0089 E601     		.2byte	0x1e6
  860 008b 48000000 		.4byte	0x48
  861 008f 02       		.uleb128 0x2
  862 0090 04       		.byte	0x4
  863 0091 04       		.byte	0x4
- 864 0092 2B010000 		.4byte	.LASF12
+ 864 0092 DB000000 		.4byte	.LASF12
  865 0096 02       		.uleb128 0x2
  866 0097 08       		.byte	0x8
  867 0098 04       		.byte	0x4
- 868 0099 FE010000 		.4byte	.LASF13
+ 868 0099 AE010000 		.4byte	.LASF13
  869 009d 02       		.uleb128 0x2
  870 009e 01       		.byte	0x1
  871 009f 08       		.byte	0x8
- 872 00a0 AF020000 		.4byte	.LASF14
+ 872 00a0 5F020000 		.4byte	.LASF14
  873 00a4 04       		.uleb128 0x4
- 874 00a5 64010000 		.4byte	.LASF15
+ 874 00a5 14010000 		.4byte	.LASF15
  875 00a9 02       		.byte	0x2
- 876 00aa 3C02     		.2byte	0x23c
+ 876 00aa 8E02     		.2byte	0x28e
  877 00ac B0000000 		.4byte	0xb0
  878 00b0 05       		.uleb128 0x5
  879 00b1 6B000000 		.4byte	0x6b
  880 00b5 02       		.uleb128 0x2
  881 00b6 08       		.byte	0x8
  882 00b7 04       		.byte	0x4
- 883 00b8 3C030000 		.4byte	.LASF16
+ 883 00b8 82030000 		.4byte	.LASF16
  884 00bc 02       		.uleb128 0x2
  885 00bd 04       		.byte	0x4
  886 00be 07       		.byte	0x7
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 27
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 27
 
 
- 887 00bf 8D020000 		.4byte	.LASF17
+ 887 00bf 3D020000 		.4byte	.LASF17
  888 00c3 06       		.uleb128 0x6
- 889 00c4 6D020000 		.4byte	.LASF18
+ 889 00c4 1D020000 		.4byte	.LASF18
  890 00c8 01       		.byte	0x1
  891 00c9 33       		.byte	0x33
  892 00ca 00000000 		.4byte	.LFB0
@@ -1571,7 +1571,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  894 00d2 01       		.uleb128 0x1
  895 00d3 9C       		.byte	0x9c
  896 00d4 07       		.uleb128 0x7
- 897 00d5 E2010000 		.4byte	.LASF19
+ 897 00d5 92010000 		.4byte	.LASF19
  898 00d9 01       		.byte	0x1
  899 00da 63       		.byte	0x63
  900 00db 00000000 		.4byte	.LFB1
@@ -1579,7 +1579,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  902 00e3 01       		.uleb128 0x1
  903 00e4 9C       		.byte	0x9c
  904 00e5 06       		.uleb128 0x6
- 905 00e6 0C020000 		.4byte	.LASF20
+ 905 00e6 BC010000 		.4byte	.LASF20
  906 00ea 01       		.byte	0x1
  907 00eb 88       		.byte	0x88
  908 00ec 00000000 		.4byte	.LFB2
@@ -1587,7 +1587,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  910 00f4 01       		.uleb128 0x1
  911 00f5 9C       		.byte	0x9c
  912 00f6 07       		.uleb128 0x7
- 913 00f7 71030000 		.4byte	.LASF21
+ 913 00f7 B7030000 		.4byte	.LASF21
  914 00fb 01       		.byte	0x1
  915 00fc A5       		.byte	0xa5
  916 00fd 00000000 		.4byte	.LFB3
@@ -1595,7 +1595,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  918 0105 01       		.uleb128 0x1
  919 0106 9C       		.byte	0x9c
  920 0107 08       		.uleb128 0x8
- 921 0108 06010000 		.4byte	.LASF31
+ 921 0108 B6000000 		.4byte	.LASF31
  922 010c 01       		.byte	0x1
  923 010d C5       		.byte	0xc5
  924 010e 00000000 		.4byte	.LFB4
@@ -1604,7 +1604,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  927 0117 9C       		.byte	0x9c
  928 0118 2B010000 		.4byte	0x12b
  929 011c 09       		.uleb128 0x9
- 930 011d 87020000 		.4byte	.LASF22
+ 930 011d 37020000 		.4byte	.LASF22
  931 0121 01       		.byte	0x1
  932 0122 C5       		.byte	0xc5
  933 0123 6B000000 		.4byte	0x6b
@@ -1613,19 +1613,19 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  936 0129 77       		.sleb128 -9
  937 012a 00       		.byte	0
  938 012b 0A       		.uleb128 0xa
- 939 012c C2010000 		.4byte	.LASF39
+ 939 012c 72010000 		.4byte	.LASF39
  940 0130 01       		.byte	0x1
  941 0131 FB       		.byte	0xfb
  942 0132 6B000000 		.4byte	0x6b
  943 0136 00000000 		.4byte	.LFB5
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 28
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 28
 
 
  944 013a 1C000000 		.4byte	.LFE5-.LFB5
  945 013e 01       		.uleb128 0x1
  946 013f 9C       		.byte	0x9c
  947 0140 0B       		.uleb128 0xb
- 948 0141 A2010000 		.4byte	.LASF40
+ 948 0141 52010000 		.4byte	.LASF40
  949 0145 01       		.byte	0x1
  950 0146 1A01     		.2byte	0x11a
  951 0148 00000000 		.4byte	.LFB6
@@ -1634,7 +1634,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  954 0151 9C       		.byte	0x9c
  955 0152 93010000 		.4byte	0x193
  956 0156 0C       		.uleb128 0xc
- 957 0157 8B030000 		.4byte	.LASF23
+ 957 0157 D1030000 		.4byte	.LASF23
  958 015b 01       		.byte	0x1
  959 015c 1A01     		.2byte	0x11a
  960 015e 6B000000 		.4byte	0x6b
@@ -1642,7 +1642,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  962 0163 91       		.byte	0x91
  963 0164 6F       		.sleb128 -17
  964 0165 0D       		.uleb128 0xd
- 965 0166 69010000 		.4byte	.LASF24
+ 965 0166 19010000 		.4byte	.LASF24
  966 016a 01       		.byte	0x1
  967 016b 1C01     		.2byte	0x11c
  968 016d 6B000000 		.4byte	0x6b
@@ -1650,7 +1650,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  970 0172 91       		.byte	0x91
  971 0173 77       		.sleb128 -9
  972 0174 0D       		.uleb128 0xd
- 973 0175 96020000 		.4byte	.LASF25
+ 973 0175 46020000 		.4byte	.LASF25
  974 0179 01       		.byte	0x1
  975 017a 1C01     		.2byte	0x11c
  976 017c 6B000000 		.4byte	0x6b
@@ -1658,7 +1658,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  978 0181 91       		.byte	0x91
  979 0182 76       		.sleb128 -10
  980 0183 0D       		.uleb128 0xd
- 981 0184 4D020000 		.4byte	.LASF26
+ 981 0184 FD010000 		.4byte	.LASF26
  982 0188 01       		.byte	0x1
  983 0189 1D01     		.2byte	0x11d
  984 018b 6B000000 		.4byte	0x6b
@@ -1667,7 +1667,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  987 0191 75       		.sleb128 -11
  988 0192 00       		.byte	0
  989 0193 0E       		.uleb128 0xe
- 990 0194 B4020000 		.4byte	.LASF41
+ 990 0194 FA020000 		.4byte	.LASF41
  991 0198 01       		.byte	0x1
  992 0199 BF01     		.2byte	0x1bf
  993 019b 77000000 		.4byte	0x77
@@ -1677,8 +1677,8 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  997 01a8 9C       		.byte	0x9c
  998 01a9 EA010000 		.4byte	0x1ea
  999 01ad 0D       		.uleb128 0xd
- 1000 01ae 24010000 		.4byte	.LASF27
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 29
+ 1000 01ae D4000000 		.4byte	.LASF27
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 29
 
 
  1001 01b2 01       		.byte	0x1
@@ -1688,7 +1688,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  1005 01ba 91       		.byte	0x91
  1006 01bb 77       		.sleb128 -9
  1007 01bc 0D       		.uleb128 0xd
- 1008 01bd EC000000 		.4byte	.LASF28
+ 1008 01bd 9C000000 		.4byte	.LASF28
  1009 01c1 01       		.byte	0x1
  1010 01c2 C201     		.2byte	0x1c2
  1011 01c4 6B000000 		.4byte	0x6b
@@ -1696,7 +1696,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  1013 01c9 91       		.byte	0x91
  1014 01ca 76       		.sleb128 -10
  1015 01cb 0D       		.uleb128 0xd
- 1016 01cc 31010000 		.4byte	.LASF29
+ 1016 01cc E1000000 		.4byte	.LASF29
  1017 01d0 01       		.byte	0x1
  1018 01d1 C301     		.2byte	0x1c3
  1019 01d3 6B000000 		.4byte	0x6b
@@ -1704,7 +1704,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  1021 01d8 91       		.byte	0x91
  1022 01d9 75       		.sleb128 -11
  1023 01da 0D       		.uleb128 0xd
- 1024 01db 58000000 		.4byte	.LASF30
+ 1024 01db 08000000 		.4byte	.LASF30
  1025 01df 01       		.byte	0x1
  1026 01e0 C401     		.2byte	0x1c4
  1027 01e2 6B000000 		.4byte	0x6b
@@ -1713,7 +1713,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  1030 01e8 74       		.sleb128 -12
  1031 01e9 00       		.byte	0
  1032 01ea 0F       		.uleb128 0xf
- 1033 01eb 38010000 		.4byte	.LASF32
+ 1033 01eb E8000000 		.4byte	.LASF32
  1034 01ef 01       		.byte	0x1
  1035 01f0 1102     		.2byte	0x211
  1036 01f2 00000000 		.4byte	.LFB8
@@ -1731,18 +1731,18 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  1048 020e 76       		.sleb128 -10
  1049 020f 00       		.byte	0
  1050 0210 10       		.uleb128 0x10
- 1051 0211 DB020000 		.4byte	.LASF34
+ 1051 0211 21030000 		.4byte	.LASF34
  1052 0215 01       		.byte	0x1
  1053 0216 3502     		.2byte	0x235
  1054 0218 00000000 		.4byte	.LFB9
  1055 021c 20000000 		.4byte	.LFE9-.LFB9
  1056 0220 01       		.uleb128 0x1
  1057 0221 9C       		.byte	0x9c
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 30
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 30
 
 
  1058 0222 10       		.uleb128 0x10
- 1059 0223 71010000 		.4byte	.LASF35
+ 1059 0223 21010000 		.4byte	.LASF35
  1060 0227 01       		.byte	0x1
  1061 0228 4B02     		.2byte	0x24b
  1062 022a 00000000 		.4byte	.LFB10
@@ -1750,7 +1750,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  1064 0232 01       		.uleb128 0x1
  1065 0233 9C       		.byte	0x9c
  1066 0234 11       		.uleb128 0x11
- 1067 0235 48030000 		.4byte	.LASF42
+ 1067 0235 8E030000 		.4byte	.LASF42
  1068 0239 01       		.byte	0x1
  1069 023a 14       		.byte	0x14
  1070 023b 6B000000 		.4byte	0x6b
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  1112 0023 3E       		.uleb128 0x3e
  1113 0024 0B       		.uleb128 0xb
  1114 0025 03       		.uleb128 0x3
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 31
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 31
 
 
  1115 0026 08       		.uleb128 0x8
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  1169 005d 0B       		.uleb128 0xb
  1170 005e 3B       		.uleb128 0x3b
  1171 005f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 32
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 32
 
 
  1172 0060 27       		.uleb128 0x27
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  1226 0098 00       		.byte	0
  1227 0099 3F       		.uleb128 0x3f
  1228 009a 19       		.uleb128 0x19
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 33
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 33
 
 
  1229 009b 03       		.uleb128 0x3
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  1283 00d3 02       		.uleb128 0x2
  1284 00d4 18       		.uleb128 0x18
  1285 00d5 00       		.byte	0
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 34
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 34
 
 
  1286 00d6 00       		.byte	0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  1340 010d 27       		.uleb128 0x27
  1341 010e 19       		.uleb128 0x19
  1342 010f 11       		.uleb128 0x11
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 35
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 35
 
 
  1343 0110 01       		.uleb128 0x1
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  1397 0004 0200     		.2byte	0x2
  1398 0006 00000000 		.4byte	.Ldebug_info0
  1399 000a 04       		.byte	0x4
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 36
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 36
 
 
  1400 000b 00       		.byte	0
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  1454              	.Ldebug_line0:
  1455 0000 78010000 		.section	.debug_str,"MS",%progbits,1
  1455      02005100 
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 37
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 37
 
 
  1455      00000201 
@@ -2167,221 +2167,228 @@ ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 1
  1456              	.LASF33:
  1457 0000 7472696D 		.ascii	"trimVal\000"
  1457      56616C00 
- 1458              	.LASF38:
- 1459 0008 433A5C55 		.ascii	"C:\\Users\\holge\\Desktop\\cypress_PsOC_5LP\\Worksp"
- 1459      73657273 
- 1459      5C686F6C 
- 1459      67655C44 
- 1459      65736B74 
- 1460 0036 61636530 		.ascii	"ace01\\CapSense_CSD_Design01.cydsn\000"
- 1460      315C4361 
- 1460      7053656E 
- 1460      73655F43 
- 1460      53445F44 
- 1461              	.LASF30:
- 1462 0058 746D7043 		.ascii	"tmpCR\000"
- 1462      5200
- 1463              	.LASF36:
- 1464 005e 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1464      43313120 
- 1464      352E342E 
- 1464      31203230 
- 1464      31363036 
- 1465 0091 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 1465      20726576 
- 1465      6973696F 
- 1465      6E203233 
- 1465      37373135 
- 1466 00c4 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 1466      66756E63 
- 1466      74696F6E 
- 1466      2D736563 
- 1466      74696F6E 
- 1467              	.LASF28:
- 1468 00ec 746D7053 		.ascii	"tmpSW2\000"
- 1468      573200
- 1469              	.LASF3:
- 1470 00f3 73686F72 		.ascii	"short unsigned int\000"
- 1470      7420756E 
- 1470      7369676E 
- 1470      65642069 
- 1470      6E7400
- 1471              	.LASF31:
- 1472 0106 43617053 		.ascii	"CapSense_CSD_CompCH0_SetSpeed\000"
- 1472      656E7365 
- 1472      5F435344 
- 1472      5F436F6D 
- 1472      70434830 
- 1473              	.LASF27:
- 1474 0124 746D7053 		.ascii	"tmpSW0\000"
- 1474      573000
- 1475              	.LASF12:
- 1476 012b 666C6F61 		.ascii	"float\000"
- 1476      7400
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 38
+ 1458              	.LASF30:
+ 1459 0008 746D7043 		.ascii	"tmpCR\000"
+ 1459      5200
+ 1460              	.LASF36:
+ 1461 000e 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1461      43313120 
+ 1461      352E342E 
+ 1461      31203230 
+ 1461      31363036 
+ 1462 0041 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1462      20726576 
+ 1462      6973696F 
+ 1462      6E203233 
+ 1462      37373135 
+ 1463 0074 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1463      66756E63 
+ 1463      74696F6E 
+ 1463      2D736563 
+ 1463      74696F6E 
+ 1464              	.LASF28:
+ 1465 009c 746D7053 		.ascii	"tmpSW2\000"
+ 1465      573200
+ 1466              	.LASF3:
+ 1467 00a3 73686F72 		.ascii	"short unsigned int\000"
+ 1467      7420756E 
+ 1467      7369676E 
+ 1467      65642069 
+ 1467      6E7400
+ 1468              	.LASF31:
+ 1469 00b6 43617053 		.ascii	"CapSense_CSD_CompCH0_SetSpeed\000"
+ 1469      656E7365 
+ 1469      5F435344 
+ 1469      5F436F6D 
+ 1469      70434830 
+ 1470              	.LASF27:
+ 1471 00d4 746D7053 		.ascii	"tmpSW0\000"
+ 1471      573000
+ 1472              	.LASF12:
+ 1473 00db 666C6F61 		.ascii	"float\000"
+ 1473      7400
+ 1474              	.LASF29:
+ 1475 00e1 746D7053 		.ascii	"tmpSW3\000"
+ 1475      573300
+ 1476              	.LASF32:
+ 1477 00e8 43617053 		.ascii	"CapSense_CSD_CompCH0_LoadTrim\000"
+ 1477      656E7365 
+ 1477      5F435344 
+ 1477      5F436F6D 
+ 1477      70434830 
+ 1478              	.LASF1:
+ 1479 0106 756E7369 		.ascii	"unsigned char\000"
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 38
 
 
- 1477              	.LASF29:
- 1478 0131 746D7053 		.ascii	"tmpSW3\000"
- 1478      573300
- 1479              	.LASF32:
- 1480 0138 43617053 		.ascii	"CapSense_CSD_CompCH0_LoadTrim\000"
- 1480      656E7365 
- 1480      5F435344 
- 1480      5F436F6D 
- 1480      70434830 
- 1481              	.LASF1:
- 1482 0156 756E7369 		.ascii	"unsigned char\000"
- 1482      676E6564 
- 1482      20636861 
- 1482      7200
- 1483              	.LASF15:
- 1484 0164 72656738 		.ascii	"reg8\000"
- 1484      00
- 1485              	.LASF24:
- 1486 0169 7472696D 		.ascii	"trimCnt\000"
- 1486      436E7400 
- 1487              	.LASF35:
- 1488 0171 43617053 		.ascii	"CapSense_CSD_CompCH0_PwrDwnOverrideDisable\000"
- 1488      656E7365 
- 1488      5F435344 
- 1488      5F436F6D 
- 1488      70434830 
- 1489              	.LASF9:
- 1490 019c 75696E74 		.ascii	"uint8\000"
- 1490      3800
- 1491              	.LASF40:
- 1492 01a2 43617053 		.ascii	"CapSense_CSD_CompCH0_trimAdjust\000"
- 1492      656E7365 
- 1492      5F435344 
- 1492      5F436F6D 
- 1492      70434830 
- 1493              	.LASF39:
- 1494 01c2 43617053 		.ascii	"CapSense_CSD_CompCH0_GetCompare\000"
- 1494      656E7365 
- 1494      5F435344 
- 1494      5F436F6D 
- 1494      70434830 
- 1495              	.LASF19:
- 1496 01e2 43617053 		.ascii	"CapSense_CSD_CompCH0_Enable\000"
- 1496      656E7365 
- 1496      5F435344 
- 1496      5F436F6D 
- 1496      70434830 
- 1497              	.LASF13:
- 1498 01fe 646F7562 		.ascii	"double\000"
- 1498      6C6500
- 1499              	.LASF10:
- 1500 0205 75696E74 		.ascii	"uint16\000"
- 1500      313600
- 1501              	.LASF20:
- 1502 020c 43617053 		.ascii	"CapSense_CSD_CompCH0_Start\000"
- 1502      656E7365 
- 1502      5F435344 
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 39
+ 1479      676E6564 
+ 1479      20636861 
+ 1479      7200
+ 1480              	.LASF15:
+ 1481 0114 72656738 		.ascii	"reg8\000"
+ 1481      00
+ 1482              	.LASF24:
+ 1483 0119 7472696D 		.ascii	"trimCnt\000"
+ 1483      436E7400 
+ 1484              	.LASF35:
+ 1485 0121 43617053 		.ascii	"CapSense_CSD_CompCH0_PwrDwnOverrideDisable\000"
+ 1485      656E7365 
+ 1485      5F435344 
+ 1485      5F436F6D 
+ 1485      70434830 
+ 1486              	.LASF9:
+ 1487 014c 75696E74 		.ascii	"uint8\000"
+ 1487      3800
+ 1488              	.LASF40:
+ 1489 0152 43617053 		.ascii	"CapSense_CSD_CompCH0_trimAdjust\000"
+ 1489      656E7365 
+ 1489      5F435344 
+ 1489      5F436F6D 
+ 1489      70434830 
+ 1490              	.LASF39:
+ 1491 0172 43617053 		.ascii	"CapSense_CSD_CompCH0_GetCompare\000"
+ 1491      656E7365 
+ 1491      5F435344 
+ 1491      5F436F6D 
+ 1491      70434830 
+ 1492              	.LASF19:
+ 1493 0192 43617053 		.ascii	"CapSense_CSD_CompCH0_Enable\000"
+ 1493      656E7365 
+ 1493      5F435344 
+ 1493      5F436F6D 
+ 1493      70434830 
+ 1494              	.LASF13:
+ 1495 01ae 646F7562 		.ascii	"double\000"
+ 1495      6C6500
+ 1496              	.LASF10:
+ 1497 01b5 75696E74 		.ascii	"uint16\000"
+ 1497      313600
+ 1498              	.LASF20:
+ 1499 01bc 43617053 		.ascii	"CapSense_CSD_CompCH0_Start\000"
+ 1499      656E7365 
+ 1499      5F435344 
+ 1499      5F436F6D 
+ 1499      70434830 
+ 1500              	.LASF11:
+ 1501 01d7 75696E74 		.ascii	"uint32\000"
+ 1501      333200
+ 1502              	.LASF5:
+ 1503 01de 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1503      20756E73 
+ 1503      69676E65 
+ 1503      6420696E 
+ 1503      7400
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 39
 
 
- 1502      5F436F6D 
- 1502      70434830 
- 1503              	.LASF11:
- 1504 0227 75696E74 		.ascii	"uint32\000"
- 1504      333200
- 1505              	.LASF5:
- 1506 022e 6C6F6E67 		.ascii	"long unsigned int\000"
- 1506      20756E73 
- 1506      69676E65 
- 1506      6420696E 
- 1506      7400
- 1507              	.LASF8:
- 1508 0240 756E7369 		.ascii	"unsigned int\000"
- 1508      676E6564 
- 1508      20696E74 
- 1508      00
- 1509              	.LASF26:
- 1510 024d 636D7053 		.ascii	"cmpState\000"
- 1510      74617465 
- 1510      00
- 1511              	.LASF7:
- 1512 0256 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1512      206C6F6E 
- 1512      6720756E 
- 1512      7369676E 
- 1512      65642069 
- 1513              	.LASF18:
- 1514 026d 43617053 		.ascii	"CapSense_CSD_CompCH0_Init\000"
- 1514      656E7365 
- 1514      5F435344 
- 1514      5F436F6D 
- 1514      70434830 
- 1515              	.LASF22:
- 1516 0287 73706565 		.ascii	"speed\000"
- 1516      6400
- 1517              	.LASF17:
- 1518 028d 73697A65 		.ascii	"sizetype\000"
- 1518      74797065 
- 1518      00
- 1519              	.LASF25:
- 1520 0296 7472696D 		.ascii	"trimCntMax\000"
- 1520      436E744D 
- 1520      617800
- 1521              	.LASF6:
- 1522 02a1 6C6F6E67 		.ascii	"long long int\000"
- 1522      206C6F6E 
- 1522      6720696E 
- 1522      7400
- 1523              	.LASF14:
- 1524 02af 63686172 		.ascii	"char\000"
- 1524      00
- 1525              	.LASF41:
- 1526 02b4 43617053 		.ascii	"CapSense_CSD_CompCH0_ZeroCal\000"
- 1526      656E7365 
- 1526      5F435344 
- 1526      5F436F6D 
- 1526      70434830 
-ARM GAS  C:\Users\holge\AppData\Local\Temp\ccb5THJU.s 			page 40
+ 1504              	.LASF8:
+ 1505 01f0 756E7369 		.ascii	"unsigned int\000"
+ 1505      676E6564 
+ 1505      20696E74 
+ 1505      00
+ 1506              	.LASF26:
+ 1507 01fd 636D7053 		.ascii	"cmpState\000"
+ 1507      74617465 
+ 1507      00
+ 1508              	.LASF7:
+ 1509 0206 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1509      206C6F6E 
+ 1509      6720756E 
+ 1509      7369676E 
+ 1509      65642069 
+ 1510              	.LASF18:
+ 1511 021d 43617053 		.ascii	"CapSense_CSD_CompCH0_Init\000"
+ 1511      656E7365 
+ 1511      5F435344 
+ 1511      5F436F6D 
+ 1511      70434830 
+ 1512              	.LASF22:
+ 1513 0237 73706565 		.ascii	"speed\000"
+ 1513      6400
+ 1514              	.LASF17:
+ 1515 023d 73697A65 		.ascii	"sizetype\000"
+ 1515      74797065 
+ 1515      00
+ 1516              	.LASF25:
+ 1517 0246 7472696D 		.ascii	"trimCntMax\000"
+ 1517      436E744D 
+ 1517      617800
+ 1518              	.LASF6:
+ 1519 0251 6C6F6E67 		.ascii	"long long int\000"
+ 1519      206C6F6E 
+ 1519      6720696E 
+ 1519      7400
+ 1520              	.LASF14:
+ 1521 025f 63686172 		.ascii	"char\000"
+ 1521      00
+ 1522              	.LASF38:
+ 1523 0264 433A5C55 		.ascii	"C:\\Users\\holge\\Dropbox\\AAU - Elektronik og IT\\"
+ 1523      73657273 
+ 1523      5C686F6C 
+ 1523      67655C44 
+ 1523      726F7062 
+ 1524 0292 342E2073 		.ascii	"4. semester\\Digital Design\\digital-design\\PSoC\\"
+ 1524      656D6573 
+ 1524      7465725C 
+ 1524      44696769 
+ 1524      74616C20 
+ 1525 02c1 63797072 		.ascii	"cypress_PsOC_5LP\\Workspace01\\CapSense_CSD_Design0"
+ 1525      6573735F 
+ 1525      50734F43 
+ 1525      5F354C50 
+ 1525      5C576F72 
+ 1526 02f2 312E6379 		.ascii	"1.cydsn\000"
+ARM GAS  C:\Users\holge\AppData\Local\Temp\ccbgl3ik.s 			page 40
 
 
- 1527              	.LASF2:
- 1528 02d1 73686F72 		.ascii	"short int\000"
- 1528      7420696E 
- 1528      7400
- 1529              	.LASF34:
- 1530 02db 43617053 		.ascii	"CapSense_CSD_CompCH0_PwrDwnOverrideEnable\000"
- 1530      656E7365 
- 1530      5F435344 
- 1530      5F436F6D 
- 1530      70434830 
- 1531              	.LASF37:
- 1532 0305 47656E65 		.ascii	"Generated_Source\\PSoC5\\CapSense_CSD_CompCH0.c\000"
- 1532      72617465 
- 1532      645F536F 
- 1532      75726365 
- 1532      5C50536F 
- 1533              	.LASF4:
- 1534 0333 6C6F6E67 		.ascii	"long int\000"
- 1534      20696E74 
- 1534      00
- 1535              	.LASF16:
- 1536 033c 6C6F6E67 		.ascii	"long double\000"
- 1536      20646F75 
- 1536      626C6500 
- 1537              	.LASF42:
- 1538 0348 43617053 		.ascii	"CapSense_CSD_CompCH0_initVar\000"
- 1538      656E7365 
- 1538      5F435344 
- 1538      5F436F6D 
- 1538      70434830 
- 1539              	.LASF0:
- 1540 0365 7369676E 		.ascii	"signed char\000"
- 1540      65642063 
- 1540      68617200 
- 1541              	.LASF21:
- 1542 0371 43617053 		.ascii	"CapSense_CSD_CompCH0_Stop\000"
- 1542      656E7365 
- 1542      5F435344 
- 1542      5F436F6D 
- 1542      70434830 
- 1543              	.LASF23:
- 1544 038b 6E696262 		.ascii	"nibble\000"
- 1544      6C6500
- 1545              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1526      64736E00 
+ 1527              	.LASF41:
+ 1528 02fa 43617053 		.ascii	"CapSense_CSD_CompCH0_ZeroCal\000"
+ 1528      656E7365 
+ 1528      5F435344 
+ 1528      5F436F6D 
+ 1528      70434830 
+ 1529              	.LASF2:
+ 1530 0317 73686F72 		.ascii	"short int\000"
+ 1530      7420696E 
+ 1530      7400
+ 1531              	.LASF34:
+ 1532 0321 43617053 		.ascii	"CapSense_CSD_CompCH0_PwrDwnOverrideEnable\000"
+ 1532      656E7365 
+ 1532      5F435344 
+ 1532      5F436F6D 
+ 1532      70434830 
+ 1533              	.LASF37:
+ 1534 034b 47656E65 		.ascii	"Generated_Source\\PSoC5\\CapSense_CSD_CompCH0.c\000"
+ 1534      72617465 
+ 1534      645F536F 
+ 1534      75726365 
+ 1534      5C50536F 
+ 1535              	.LASF4:
+ 1536 0379 6C6F6E67 		.ascii	"long int\000"
+ 1536      20696E74 
+ 1536      00
+ 1537              	.LASF16:
+ 1538 0382 6C6F6E67 		.ascii	"long double\000"
+ 1538      20646F75 
+ 1538      626C6500 
+ 1539              	.LASF42:
+ 1540 038e 43617053 		.ascii	"CapSense_CSD_CompCH0_initVar\000"
+ 1540      656E7365 
+ 1540      5F435344 
+ 1540      5F436F6D 
+ 1540      70434830 
+ 1541              	.LASF0:
+ 1542 03ab 7369676E 		.ascii	"signed char\000"
+ 1542      65642063 
+ 1542      68617200 
+ 1543              	.LASF21:
+ 1544 03b7 43617053 		.ascii	"CapSense_CSD_CompCH0_Stop\000"
+ 1544      656E7365 
+ 1544      5F435344 
+ 1544      5F436F6D 
+ 1544      70434830 
+ 1545              	.LASF23:
+ 1546 03d1 6E696262 		.ascii	"nibble\000"
+ 1546      6C6500
+ 1547              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

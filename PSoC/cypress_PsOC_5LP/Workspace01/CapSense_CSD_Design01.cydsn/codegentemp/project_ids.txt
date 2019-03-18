@@ -1,8 +1,10 @@
-C:\Users\holge\OneDrive\Skrivebord\cypress_PsOC_5LP\Workspace01\Design01.cydsn\Design01.cyprj|dfa79aed-717b-45de-9e66-fe0ac58809e1
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|3da93317-5b2b-4fb3-94bf-06c1faf43abb
-C:\Users\holge\OneDrive\Dokumenter\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|d5f160cf-7629-4690-8f39-b62399889f50
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|c92638b7-bfa6-4c06-8341-6fbea3179598
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|47cad2ec-e590-4942-a87d-da26df794be8
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|6493ac40-4fce-445b-b63c-b48fc848bdd4
-C:\Users\holge\OneDrive\Skrivebord\cypress_PsOC_5LP\Workspace01\CapSense_CSD_Design01.cydsn\CapSense_CSD_Design01.cyprj|2ce9989a-675b-44d2-91ae-04798f901360
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|1f584471-f793-451f-b625-f75de52b728f
+C:\Users\holge\Dropbox\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\Design01.cydsn\Design01.cyprj|151ecae7-5962-48d9-8495-1a3f9ed46629
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|a9841a88-c5e3-45ab-b5bb-bc9891d575f9
+C:\Users\holge\OneDrive\Dokumenter\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|486677fc-cbf6-4a95-9f53-26bfafd6dd83
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|41b8093d-9161-4c01-a3dd-61f0b5c2fe2d
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|7614caf1-6501-4193-8f5c-10289f662a6c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|231c1172-46ec-41b4-9dec-2b86a1b731ec
+C:\Users\holge\Dropbox\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\CapSense_CSD_Design01.cydsn\CapSense_CSD_Design01.cyprj|4288528f-e6f3-4571-aabb-510a312535fa
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|fa35d769-6449-45b4-b85c-bc3e7d554527
+C:\Users\holge\Dropbox\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\Lek1_ex4.cydsn\Lek1_ex4.cyprj|0d9b2c67-2297-4107-8221-8d82653f234d
+C:\Users\holge\Dropbox\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\lek4_ex1.cydsn\lek4_ex1.cyprj|f3b5074e-be16-4ff7-b7ef-5a705c1298cb

@@ -31,6 +31,7 @@
 #include "CapSense_CSD_IdacCH0.h"
 #include "CapSense_CSD_AMuxCH0.h"
 #include "CapSense_CSD_IntClock.h"
+#include "cy_em_eeprom.h"
 #include "core_cm3_psoc5.h"
 #include "CyDmac.h"
 #include "CyFlash.h"
@@ -39,7 +40,6 @@
 #include "cyPm.h"
 #include "CySpc.h"
 #include "cytypes.h"
-#include "cy_em_eeprom.h"
 
 /*[]*/
 

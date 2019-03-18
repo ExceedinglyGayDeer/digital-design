@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Workspace01\lek4_ex1\Source Files\main.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Workspace01\lek4_ex1\lek4_ex1.cydwr">
 <ExpandedNodeIds>
 <v>Workspace01</v>
 <v>Workspace01\CapSense_CSD_Design01\TopDesign</v>
@@ -34,6 +34,7 @@
 <v>Workspace01\CapSense_CSD_Design01\Source Files</v>
 <v>Workspace01\CapSense_CSD_Design01\Source Files\main.c</v>
 <v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design.pdf</v>
+<v>Workspace01\CapSense_CSD_Design01\Generated_Source</v>
 <v>Workspace01\CapSense_CSD_Design01\Generated_Source\PSoC5</v>
 <v>Workspace01\Design01\TopDesign</v>
 <v>Workspace01\Design01\Design01.cydwr</v>
@@ -361,7 +362,7 @@
 <v>Workspace01\CapSense_CSD_Design01\PSoC 5LP Architecture TRM</v>
 <v>Workspace01\CapSense_CSD_Design01\CY8C58LP Family Datasheet</v>
 <v>Workspace01\CapSense_CSD_Design01\System Reference Guides</v>
-<v>Workspace01\CapSense_CSD_Design01\System Reference Guides\cy_boot_v5_60</v>
+<v>Workspace01\CapSense_CSD_Design01\System Reference Guides\cy_boot_v5_80</v>
 <v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_v3_50.pdf</v>
 <v>Workspace01\CapSense_CSD_Design01\cy_clock_v2_20.pdf</v>
 <v>Workspace01\CapSense_CSD_Design01\cy_pins_v2_20.pdf</v>
@@ -370,7 +371,7 @@
 <v>Workspace01\Design01\PSoC 5LP Architecture TRM</v>
 <v>Workspace01\Design01\CY8C58LP Family Datasheet</v>
 <v>Workspace01\Design01\System Reference Guides</v>
-<v>Workspace01\Design01\System Reference Guides\cy_boot_v5_70</v>
+<v>Workspace01\Design01\System Reference Guides\cy_boot_v5_80</v>
 <v>Workspace01\Design01\cy_clock_v2_20.pdf</v>
 <v>Workspace01\Design01\cy_pins_v2_20</v>
 <v>Workspace01\Design01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
@@ -385,7 +386,7 @@
 <v>Workspace01\Lek1_ex4\PSoC 5LP Architecture TRM</v>
 <v>Workspace01\Lek1_ex4\CY8C58LP Family Datasheet</v>
 <v>Workspace01\Lek1_ex4\System Reference Guides</v>
-<v>Workspace01\Lek1_ex4\System Reference Guides\cy_boot_v5_70</v>
+<v>Workspace01\Lek1_ex4\System Reference Guides\cy_boot_v5_80</v>
 <v>Workspace01\Lek1_ex4\cy_pins_v2_20</v>
 <v>Workspace01\Lek1_ex4\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Workspace01\Lek1_ex4\Gnd_v1_0</v>
@@ -401,7 +402,7 @@
 <v>Workspace01\lek4_ex1\PSoC 5LP Architecture TRM</v>
 <v>Workspace01\lek4_ex1\CY8C58LP Family Datasheet</v>
 <v>Workspace01\lek4_ex1\System Reference Guides</v>
-<v>Workspace01\lek4_ex1\System Reference Guides\cy_boot_v5_70</v>
+<v>Workspace01\lek4_ex1\System Reference Guides\cy_boot_v5_80</v>
 <v>Workspace01\lek4_ex1\cy_pins_v2_20</v>
 <v>Workspace01\lek4_ex1\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Workspace01\lek4_ex1\cydff_v1_30</v>
@@ -417,7 +418,7 @@
 <v>Workspace01\CapSense_CSD_Design01\PSoC 5LP Architecture TRM</v>
 <v>Workspace01\CapSense_CSD_Design01\CY8C58LP Family Datasheet</v>
 <v>Workspace01\CapSense_CSD_Design01\System Reference Guides</v>
-<v>Workspace01\CapSense_CSD_Design01\System Reference Guides\cy_boot_v5_60</v>
+<v>Workspace01\CapSense_CSD_Design01\System Reference Guides\cy_boot_v5_80</v>
 <v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_v3_50.pdf</v>
 <v>Workspace01\CapSense_CSD_Design01\cy_clock_v2_20.pdf</v>
 <v>Workspace01\CapSense_CSD_Design01\cy_pins_v2_20.pdf</v>
@@ -426,7 +427,7 @@
 <v>Workspace01\Design01\PSoC 5LP Architecture TRM</v>
 <v>Workspace01\Design01\CY8C58LP Family Datasheet</v>
 <v>Workspace01\Design01\System Reference Guides</v>
-<v>Workspace01\Design01\System Reference Guides\cy_boot_v5_70</v>
+<v>Workspace01\Design01\System Reference Guides\cy_boot_v5_80</v>
 <v>Workspace01\Design01\cy_clock_v2_20.pdf</v>
 <v>Workspace01\Design01\cy_pins_v2_20</v>
 <v>Workspace01\Design01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
@@ -441,7 +442,7 @@
 <v>Workspace01\Lek1_ex4\PSoC 5LP Architecture TRM</v>
 <v>Workspace01\Lek1_ex4\CY8C58LP Family Datasheet</v>
 <v>Workspace01\Lek1_ex4\System Reference Guides</v>
-<v>Workspace01\Lek1_ex4\System Reference Guides\cy_boot_v5_70</v>
+<v>Workspace01\Lek1_ex4\System Reference Guides\cy_boot_v5_80</v>
 <v>Workspace01\Lek1_ex4\cy_pins_v2_20</v>
 <v>Workspace01\Lek1_ex4\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Workspace01\Lek1_ex4\Gnd_v1_0</v>
@@ -457,7 +458,7 @@
 <v>Workspace01\lek4_ex1\PSoC 5LP Architecture TRM</v>
 <v>Workspace01\lek4_ex1\CY8C58LP Family Datasheet</v>
 <v>Workspace01\lek4_ex1\System Reference Guides</v>
-<v>Workspace01\lek4_ex1\System Reference Guides\cy_boot_v5_70</v>
+<v>Workspace01\lek4_ex1\System Reference Guides\cy_boot_v5_80</v>
 <v>Workspace01\lek4_ex1\cy_pins_v2_20</v>
 <v>Workspace01\lek4_ex1\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 </VisibleNodeIds>
@@ -476,7 +477,6 @@
 <OpenDocs>
 <name v=".\lek4_ex1.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\lek4_ex1.cydsn\lek4_ex1.cydwr" />
-<name v=".\lek4_ex1.cydsn\main.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -484,7 +484,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1439, 711" SelectedTabbedMdiWindow="98a89db9-5b36-4d9f-b099-611631846e1b"><DocumentWindow Key="C:\Users\holge\OneDrive\Skrivebord\cypress_PsOC_5LP\Workspace01\lek4_ex1.cydsn\TopDesign\TopDesign.cysch" Guid="98a89db9-5b36-4d9f-b099-611631846e1b" /><DocumentWindow Key="C:\Users\holge\OneDrive\Skrivebord\cypress_PsOC_5LP\Workspace01\lek4_ex1.cydsn\lek4_ex1.cydwr" Guid="b8e3218f-92a5-4315-a203-5dccf81cd3e5" /><DocumentWindow Key="C:\Users\holge\OneDrive\Skrivebord\cypress_PsOC_5LP\Workspace01\lek4_ex1.cydsn\main.c" Guid="e1da0bec-6af0-439d-a665-37aaecc18804" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1616, 711" SelectedTabbedMdiWindow="d392acdd-a016-420b-941b-6d8212f4f6a9"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="6d0f3007-81ac-410d-8f40-808e4560523c" /><DocumentWindow Key="C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\lek4_ex1.cydsn\TopDesign\TopDesign.cysch" Guid="10b8548b-8fba-43f5-a3a5-036d6fbeb44e" /><DocumentWindow Key="C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\lek4_ex1.cydsn\lek4_ex1.cydwr" Guid="d392acdd-a016-420b-941b-6d8212f4f6a9" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

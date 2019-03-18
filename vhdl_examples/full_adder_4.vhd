@@ -9,7 +9,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 	           o_carry : out  STD_LOGIC);
 	end full_adder_4;
 
-	architecture rtl of full_adder_4 is
+	architecture structural of full_adder_4 is
 	
 		component full_adder is
             port (
@@ -56,4 +56,4 @@ use IEEE.STD_LOGIC_1164.ALL;
 		w_carry(0) <= i_carry;
 		o_carry <= w_carry(4);
 
-	end rtl;
+	end structural;
