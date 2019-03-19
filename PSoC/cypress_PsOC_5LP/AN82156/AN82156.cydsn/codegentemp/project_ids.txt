@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|21f1ade0-fbb4-4566-a71a-971fd135fc94
+C:\Users\holge\OneDrive\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|dcd43658-2d85-42c5-86ed-ff7bc4d83c11
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|51f807a7-a2b3-4e9e-83e0-f74c57ae04fc
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|9e399e06-bf86-4fb8-b7ff-29372b0b2062
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|e18ac058-45f7-40fe-a9c0-88c05fb76ad0
+C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\AN82156\AN82156.cydsn\AN82156.cyprj|f17298d5-dfe6-41a6-b861-64157cace07a

@@ -1,0 +1,8 @@
+dont_use_io iocell 1 0
+dont_use_io iocell 1 1
+dont_use_io iocell 1 3
+set_location "\SimpleCntr8_1:cntr8:u0\" datapathcell 3 4 2 
+set_io "P0_2_cmp(0)" iocell 0 2
+set_location "ClockBlock" clockblockcell -1 -1 0
+set_io "P_0_0_clk(0)" iocell 0 0
+set_io "P0_1_tc(0)" iocell 0 1
