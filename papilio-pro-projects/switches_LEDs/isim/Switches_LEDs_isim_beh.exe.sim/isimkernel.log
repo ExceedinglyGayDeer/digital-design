@@ -1,0 +1,29 @@
+Command line:
+   Switches_LEDs_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50640
+
+Wed Mar 20 10:56:02 2019
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5175.29 Meg
+
+ Total Signals          : 4
+ Total Nets             : 4
+ Total Signal Drivers   : 2
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 2
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 364
+Total Line Count : 2
+
+ Total Simulation Time: 0.171875 sec
+
+ Current Memory Usage: 5489.86 Meg
+
+Wed Mar 20 10:56:41 2019
+

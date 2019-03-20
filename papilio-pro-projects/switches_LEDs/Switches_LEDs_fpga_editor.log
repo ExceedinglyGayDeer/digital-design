@@ -1,0 +1,22 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Users\holge\OneDrive\Documents\DesignLab\New_Blank_Circuit\switches_LEDs
+#Date/Time:
+#:T   Wed Mar 20 11:14:18 2019
+#------------------------------
+	#Reading Switches_LEDs.ncd...
+	#Loading device for application Rf_Device from file '6slx9.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "Switches_LEDs" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -2
+	#Design creation date: 2019.03.20.09.51.46
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+autoroute
+	#WARNING:FPGAEditor:356 - Nothing found to autoroute.

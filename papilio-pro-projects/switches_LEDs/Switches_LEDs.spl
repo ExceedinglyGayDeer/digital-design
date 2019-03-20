@@ -1,0 +1,7 @@
+[Inputs]
+switch_0
+switch_1
+[Outputs]
+LED_0
+LED_1
+[BiDir]

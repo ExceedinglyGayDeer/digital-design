@@ -1,0 +1,46 @@
+xst -intstyle ise -ifn "C:/Users/holge/OneDrive/Documents/DesignLab/New_Blank_Circuit/switches_LEDs/Switches_LEDs.xst" -ofn "C:/Users/holge/OneDrive/Documents/DesignLab/New_Blank_Circuit/switches_LEDs/Switches_LEDs.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 Switches_LEDs.ngc Switches_LEDs.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Switches_LEDs_map.ncd Switches_LEDs.ngd Switches_LEDs.pcf 
+par -w -intstyle ise -ol high -mt off Switches_LEDs_map.ncd Switches_LEDs.ncd Switches_LEDs.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Switches_LEDs.twx Switches_LEDs.ncd -o Switches_LEDs.twr Switches_LEDs.pcf 
+xst -intstyle ise -ifn "C:/Users/holge/OneDrive/Documents/DesignLab/New_Blank_Circuit/switches_LEDs/Switches_LEDs.xst" -ofn "C:/Users/holge/OneDrive/Documents/DesignLab/New_Blank_Circuit/switches_LEDs/Switches_LEDs.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 Switches_LEDs.ngc Switches_LEDs.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Switches_LEDs_map.ncd Switches_LEDs.ngd Switches_LEDs.pcf 
+par -w -intstyle ise -ol high -mt off Switches_LEDs_map.ncd Switches_LEDs.ncd Switches_LEDs.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Switches_LEDs.twx Switches_LEDs.ncd -o Switches_LEDs.twr Switches_LEDs.pcf 
+xst -intstyle ise -ifn "C:/Users/holge/OneDrive/Documents/DesignLab/New_Blank_Circuit/switches_LEDs/Switches_LEDs.xst" -ofn "C:/Users/holge/OneDrive/Documents/DesignLab/New_Blank_Circuit/switches_LEDs/Switches_LEDs.syr" 
+xst -intstyle ise -ifn "C:/Users/holge/OneDrive/Documents/DesignLab/New_Blank_Circuit/switches_LEDs/Switches_LEDs.xst" -ofn "C:/Users/holge/OneDrive/Documents/DesignLab/New_Blank_Circuit/switches_LEDs/Switches_LEDs.syr" 
+xst -intstyle ise -ifn "C:/Users/holge/OneDrive/Documents/DesignLab/New_Blank_Circuit/switches_LEDs/Switches_LEDs.xst" -ofn "C:/Users/holge/OneDrive/Documents/DesignLab/New_Blank_Circuit/switches_LEDs/Switches_LEDs.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 Switches_LEDs.ngc Switches_LEDs.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Switches_LEDs_map.ncd Switches_LEDs.ngd Switches_LEDs.pcf 
+par -w -intstyle ise -ol high -mt off Switches_LEDs_map.ncd Switches_LEDs.ncd Switches_LEDs.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Switches_LEDs.twx Switches_LEDs.ncd -o Switches_LEDs.twr Switches_LEDs.pcf 
+xst -intstyle ise -ifn "C:/Users/holge/OneDrive/Documents/DesignLab/New_Blank_Circuit/switches_LEDs/Switches_LEDs.xst" -ofn "C:/Users/holge/OneDrive/Documents/DesignLab/New_Blank_Circuit/switches_LEDs/Switches_LEDs.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 Switches_LEDs.ngc Switches_LEDs.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Switches_LEDs_map.ncd Switches_LEDs.ngd Switches_LEDs.pcf 
+par -w -intstyle ise -ol high -mt off Switches_LEDs_map.ncd Switches_LEDs.ncd Switches_LEDs.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Switches_LEDs.twx Switches_LEDs.ncd -o Switches_LEDs.twr Switches_LEDs.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 Switches_LEDs.ngc Switches_LEDs.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Switches_LEDs_map.ncd Switches_LEDs.ngd Switches_LEDs.pcf 
+par -w -intstyle ise -ol high -mt off Switches_LEDs_map.ncd Switches_LEDs.ncd Switches_LEDs.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Switches_LEDs.twx Switches_LEDs.ncd -o Switches_LEDs.twr Switches_LEDs.pcf 
+bitgen -intstyle ise -f Switches_LEDs.ut Switches_LEDs.ncd 
+xst -intstyle ise -ifn "C:/Users/holge/OneDrive/Documents/DesignLab/New_Blank_Circuit/switches_LEDs/Switches_LEDs.xst" -ofn "C:/Users/holge/OneDrive/Documents/DesignLab/New_Blank_Circuit/switches_LEDs/Switches_LEDs.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx9-tqg144-2 Switches_LEDs.ngc Switches_LEDs.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx9-tqg144-2 Switches_LEDs.ngc Switches_LEDs.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx9-tqg144-2 Switches_LEDs.ngc Switches_LEDs.ngd  
+vhdtdtfi -lib work Switches_LEDs.vhd -prj switches_LEDs -o Switches_LEDs.spl -module Switches_LEDs -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Switches_LEDs.spl C:/Users/holge/OneDrive/Documents/DesignLab/New_Blank_Circuit/switches_LEDs/Switches_LEDs.sym 
+vhdtdtfi -prj switches_LEDs -o C:/Users/holge/OneDrive/Documents/DesignLab/New_Blank_Circuit/switches_LEDs/Switches_LEDs.vhi -module Switches_LEDs -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Switches_LEDs.vhd 
+vhdtdtfi -prj switches_LEDs -o C:/Users/holge/OneDrive/Documents/DesignLab/New_Blank_Circuit/switches_LEDs/Switches_LEDs.vhi -module Switches_LEDs -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Switches_LEDs.vhd 
+netgen -intstyle ise -ar Structure -tm Switches_LEDs -w -dir netgen/synthesis -ofmt vhdl -sim Switches_LEDs.ngc Switches_LEDs_synthesis.vhd 
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm Switches_LEDs -w -dir netgen/translate -ofmt vhdl -sim Switches_LEDs.ngd Switches_LEDs_translate.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx9-tqg144-2 Switches_LEDs.ngc Switches_LEDs.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx9-tqg144-2 Switches_LEDs.ngc Switches_LEDs.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Switches_LEDs_map.ncd Switches_LEDs.ngd Switches_LEDs.pcf 
+par -w -intstyle ise -ol high -mt off Switches_LEDs_map.ncd Switches_LEDs.ncd Switches_LEDs.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Switches_LEDs.twx Switches_LEDs.ncd -o Switches_LEDs.twr Switches_LEDs.pcf -ucf constraints.ucf 
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm Switches_LEDs -w -dir netgen/translate -ofmt vhdl -sim Switches_LEDs.ngd Switches_LEDs_translate.vhd 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Switches_LEDs_preroute.twx Switches_LEDs_map.ncd -o Switches_LEDs_preroute.twr Switches_LEDs.pcf -ucf constraints.ucf 
+netgen -intstyle ise -s 2  -pcf Switches_LEDs.pcf -rpw 100 -tpw 0 -ar Structure -tm Switches_LEDs -w -dir netgen/map -ofmt vhdl -sim Switches_LEDs_map.ncd Switches_LEDs_map.vhd 
+bitgen -intstyle ise -f Switches_LEDs.ut Switches_LEDs.ncd 

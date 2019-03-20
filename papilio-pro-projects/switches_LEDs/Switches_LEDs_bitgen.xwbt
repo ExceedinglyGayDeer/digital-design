@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\holge\OneDrive\Documents\DesignLab\New_Blank_Circuit\switches_LEDs\Switches_LEDs.ncd
+OUTFILE=C:\Users\holge\OneDrive\Documents\DesignLab\New_Blank_Circuit\switches_LEDs\Switches_LEDs.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=C:\Users\holge\OneDrive\Documents\DesignLab\New_Blank_Circuit\switches_LEDs
+LICENSE=WebPack
+USER_INFO=211679383_0_0_333
