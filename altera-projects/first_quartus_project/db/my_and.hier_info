@@ -1,0 +1,6 @@
+|my_and
+and_result << and_result.DB_MAX_OUTPUT_PORT_TYPE
+input_1 => and_result.IN0
+input_2 => and_result.IN1
+
+

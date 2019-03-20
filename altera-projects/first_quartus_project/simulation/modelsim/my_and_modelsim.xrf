@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/holge/OneDrive/Skrivebord/first_quartus_project/my_and.vhd
+source_file = 1, C:/Users/holge/OneDrive/Skrivebord/first_quartus_project/db/my_and.cbx.xml
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = my_and
+instance = comp, \and_result~output\, and_result~output, my_and, 1
+instance = comp, \input_2~input\, input_2~input, my_and, 1
+instance = comp, \input_1~input\, input_1~input, my_and, 1
+instance = comp, \and_result~0\, and_result~0, my_and, 1

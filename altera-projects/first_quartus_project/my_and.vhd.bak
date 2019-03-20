@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+ 
+entity my_and is
+  port (
+    input_1    : in  std_logic;
+    input_2    : in  std_logic;
+    and_result : out std_logic
+    );
+end my_and;
+ 
+architecture rtl of my_and is
+  signal o_and_gate : std_logic;
+begin
+  o_and_gate   <= input_1 and input_2;
+  and_result <= o_and_gate;
+end rtl;
