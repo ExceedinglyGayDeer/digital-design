@@ -21,12 +21,31 @@
 #       [C14] P133         [B14] P50    P51 [A01] [2V5]
 #       [C15] P134         [B15] P47    P48 [A00] [GND]
 
+
+#Clock constraints
+NET "CLK" TNM_NET = CLK;
+TIMESPEC TS_clk = PERIOD "CLK" 4 ns HIGH 50%;
+
 ## Prohibit the automatic placement of pins that are connected to VCC or GND for configuration.
 CONFIG PROHIBIT=P144;
 CONFIG PROHIBIT=P69;
 CONFIG PROHIBIT=P60;
 
-NET LED_0           LOC="P123" | IOSTANDARD=LVTTL;                               # Led0
-NET LED_1           LOC="P124" | IOSTANDARD=LVTTL;                               # Led1
-NET switch_0        LOC="P114" | IOSTANDARD=LVTTL;                              	# SW0
-NET switch_1        LOC="P115" | IOSTANDARD=LVTTL;                               # SW0
+#Pin connections on FPGA
+NET CLK            	LOC = "P94"  | IOSTANDARD=LVTTL | PERIOD=31.25ns; #Onboard clock
+NET LEDs(7) 			LOC = "P123" | IOSTANDARD=LVTTL;
+NET LEDs(6) 			LOC = "P124" | IOSTANDARD=LVTTL;
+NET LEDs(5) 			LOC = "P126" | IOSTANDARD=LVTTL;
+NET LEDs(4) 			LOC = "P127" | IOSTANDARD=LVTTL;
+NET LEDs(3) 			LOC = "P131" | IOSTANDARD=LVTTL;
+NET LEDs(2) 			LOC = "P132" | IOSTANDARD=LVTTL;
+NET LEDs(1) 			LOC = "P133" | IOSTANDARD=LVTTL;
+NET LEDs(0) 			LOC = "P134" | IOSTANDARD=LVTTL;
+NET switches(7) 		LOC = "P114" | IOSTANDARD=LVTTL;
+NET switches(6) 		LOC = "P115" | IOSTANDARD=LVTTL;
+NET switches(5) 		LOC = "P116" | IOSTANDARD=LVTTL;
+NET switches(4) 		LOC = "P117" | IOSTANDARD=LVTTL;
+NET switches(3) 		LOC = "P118" | IOSTANDARD=LVTTL;
+NET switches(2) 		LOC = "P119" | IOSTANDARD=LVTTL;
+NET switches(1) 		LOC = "P120" | IOSTANDARD=LVTTL;
+NET switches(0) 		LOC = "P121" | IOSTANDARD=LVTTL;

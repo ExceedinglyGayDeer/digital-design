@@ -1,7 +1,6 @@
 [Inputs]
-switch_0
-switch_1
+CLK
+=switches[7:0]=
 [Outputs]
-LED_0
-LED_1
+=LEDs[7:0]=
 [BiDir]
