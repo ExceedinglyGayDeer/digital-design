@@ -1,0 +1,2 @@
+vhdl work "Switches_LEDs.vhd"
+vhdl work "tb_switches_LEDs.vhd"

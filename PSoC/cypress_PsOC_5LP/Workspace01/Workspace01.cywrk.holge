@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Workspace01\lek4_ex1\lek4_ex1.cydwr">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Workspace01\Control_register\Source Files\main.c">
 <ExpandedNodeIds>
 <v>Workspace01</v>
 <v>Workspace01\CapSense_CSD_Design01\TopDesign</v>
@@ -36,6 +36,24 @@
 <v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design.pdf</v>
 <v>Workspace01\CapSense_CSD_Design01\Generated_Source</v>
 <v>Workspace01\CapSense_CSD_Design01\Generated_Source\PSoC5</v>
+<v>Workspace01\Control_register</v>
+<v>Workspace01\Control_register\TopDesign</v>
+<v>Workspace01\Control_register\Control_register.cydwr</v>
+<v>Workspace01\Control_register\Control_register.cydwr\Pins</v>
+<v>Workspace01\Control_register\Control_register.cydwr\Analog</v>
+<v>Workspace01\Control_register\Control_register.cydwr\Clocks</v>
+<v>Workspace01\Control_register\Control_register.cydwr\Interrupts</v>
+<v>Workspace01\Control_register\Control_register.cydwr\DMA</v>
+<v>Workspace01\Control_register\Control_register.cydwr\System</v>
+<v>Workspace01\Control_register\Control_register.cydwr\Directives</v>
+<v>Workspace01\Control_register\Control_register.cydwr\Flash Security</v>
+<v>Workspace01\Control_register\Control_register.cydwr\EEPROM</v>
+<v>Workspace01\Control_register\Header Files</v>
+<v>Workspace01\Control_register\Header Files\cyapicallbacks.h</v>
+<v>Workspace01\Control_register\Source Files</v>
+<v>Workspace01\Control_register\Source Files\main.c</v>
+<v>Workspace01\Control_register\Generated_Source</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5</v>
 <v>Workspace01\Design01\TopDesign</v>
 <v>Workspace01\Design01\Design01.cydwr</v>
 <v>Workspace01\Design01\Design01.cydwr\Pins</v>
@@ -69,7 +87,6 @@
 <v>Workspace01\Lek1_ex4\Source Files\main.c</v>
 <v>Workspace01\Lek1_ex4\Generated_Source</v>
 <v>Workspace01\Lek1_ex4\Generated_Source\PSoC5</v>
-<v>Workspace01\lek4_ex1</v>
 <v>Workspace01\lek4_ex1\TopDesign</v>
 <v>Workspace01\lek4_ex1\lek4_ex1.cydwr</v>
 <v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Pins</v>
@@ -91,52 +108,52 @@
 <VisibleNodeIds>
 <v>Workspace01</v>
 <v>Workspace01\CapSense_CSD_Design01</v>
+<v>Workspace01\Control_register</v>
+<v>Workspace01\Control_register\TopDesign</v>
+<v>Workspace01\Control_register\Control_register.cydwr</v>
+<v>Workspace01\Control_register\Control_register.cydwr\Pins</v>
+<v>Workspace01\Control_register\Control_register.cydwr\Analog</v>
+<v>Workspace01\Control_register\Control_register.cydwr\Clocks</v>
+<v>Workspace01\Control_register\Control_register.cydwr\Interrupts</v>
+<v>Workspace01\Control_register\Control_register.cydwr\DMA</v>
+<v>Workspace01\Control_register\Control_register.cydwr\System</v>
+<v>Workspace01\Control_register\Control_register.cydwr\Directives</v>
+<v>Workspace01\Control_register\Control_register.cydwr\Flash Security</v>
+<v>Workspace01\Control_register\Control_register.cydwr\EEPROM</v>
+<v>Workspace01\Control_register\Header Files</v>
+<v>Workspace01\Control_register\Header Files\cyapicallbacks.h</v>
+<v>Workspace01\Control_register\Source Files</v>
+<v>Workspace01\Control_register\Source Files\main.c</v>
+<v>Workspace01\Control_register\Generated_Source</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\Clock_1</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\Control_Reg_1</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cy_boot</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\LED1</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\PWM_1</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cydevice.h</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cydeviceiar.inc</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cydevicerv.inc</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cydisabledsheets.h</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cyfitter.h</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cyfitter_cfg.c</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cyfitter_cfg.h</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cyfittergnu.inc</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cyfitteriar.inc</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cyfitterrv.inc</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\cymetadata.c</v>
+<v>Workspace01\Control_register\Generated_Source\PSoC5\project.h</v>
 <v>Workspace01\Design01</v>
 <v>Workspace01\Lek1_ex4</v>
-<v>Workspace01\lek4_ex1</v>
-<v>Workspace01\lek4_ex1\TopDesign</v>
-<v>Workspace01\lek4_ex1\lek4_ex1.cydwr</v>
-<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Pins</v>
-<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Analog</v>
-<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Clocks</v>
-<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Interrupts</v>
-<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\DMA</v>
-<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\System</v>
-<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Directives</v>
-<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\Flash Security</v>
-<v>Workspace01\lek4_ex1\lek4_ex1.cydwr\EEPROM</v>
-<v>Workspace01\lek4_ex1\Header Files</v>
-<v>Workspace01\lek4_ex1\Header Files\cyapicallbacks.h</v>
-<v>Workspace01\lek4_ex1\Source Files</v>
-<v>Workspace01\lek4_ex1\Source Files\main.c</v>
-<v>Workspace01\lek4_ex1\Generated_Source</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\clock_pin</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cy_boot</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\init</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\Pin_A</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\Pin_B</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\Pin_C</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\Pin_D</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cycodeshareexport.ld</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cycodeshareimport.ld</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cycodeshareimport.scat</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydevice.h</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydevice_trm.h</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydevicegnu.inc</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydeviceiar.inc</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydevicerv.inc</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cydisabledsheets.h</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cyfitter.h</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cyfitter_cfg.c</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cyfitter_cfg.h</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cyfittergnu.inc</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cyfitteriar.inc</v>
-<v>Workspace01\lek4_ex1\Generated_Source\PSoC5\cyfitterrv.inc</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -145,6 +162,9 @@
 <v>Workspace01\CapSense_CSD_Design01</v>
 <v>Workspace01\CapSense_CSD_Design01\TopDesign</v>
 <v>Workspace01\CapSense_CSD_Design01\TopDesign\TopDesign.cysch</v>
+<v>Workspace01\Control_register</v>
+<v>Workspace01\Control_register\TopDesign</v>
+<v>Workspace01\Control_register\TopDesign\TopDesign.cysch</v>
 <v>Workspace01\Design01</v>
 <v>Workspace01\Design01\TopDesign</v>
 <v>Workspace01\Design01\TopDesign\TopDesign.cysch</v>
@@ -160,6 +180,9 @@
 <v>Workspace01\CapSense_CSD_Design01</v>
 <v>Workspace01\CapSense_CSD_Design01\TopDesign</v>
 <v>Workspace01\CapSense_CSD_Design01\TopDesign\TopDesign.cysch</v>
+<v>Workspace01\Control_register</v>
+<v>Workspace01\Control_register\TopDesign</v>
+<v>Workspace01\Control_register\TopDesign\TopDesign.cysch</v>
 <v>Workspace01\Design01</v>
 <v>Workspace01\Design01\TopDesign</v>
 <v>Workspace01\Design01\TopDesign\TopDesign.cysch</v>
@@ -214,6 +237,35 @@
 <v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.gpdsc</v>
 <v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.rpt</v>
 <v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01_timing.html</v>
+<v>Workspace01\Control_register</v>
+<v>Workspace01\Control_register\CortexM3</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\Control_Reg_1.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\Control_Reg_1_PM.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\LED1.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_1.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_1_PM.lst</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Control_register.elf</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Control_register.hex</v>
+<v>Workspace01\Control_register\CortexM3\ARM_GCC_541\Debug\Control_register.map</v>
+<v>Workspace01\Control_register\Control_register.gpdsc</v>
+<v>Workspace01\Control_register\Control_register.rpt</v>
+<v>Workspace01\Control_register\Control_register_timing.html</v>
 <v>Workspace01\Design01</v>
 <v>Workspace01\Design01\CortexM3</v>
 <v>Workspace01\Design01\CortexM3\ARM_GCC_541</v>
@@ -302,52 +354,9 @@
 <VisibleNodeIds>
 <v>Workspace01</v>
 <v>Workspace01\CapSense_CSD_Design01</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_AMuxCH0.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_CompCH0.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_CompCH0_PM.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_CSHL.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_IdacCH0.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_IdacCH0_PM.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_INT.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_IntClock.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_Pins.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_PM.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_SMS_Wrapper.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CapSense_CSD_TunerHelper.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\LED.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_1.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_1_PM.lst</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\CapSense_CSD_Design01.elf</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\CapSense_CSD_Design01.hex</v>
-<v>Workspace01\CapSense_CSD_Design01\CortexM3\ARM_GCC_541\Debug\CapSense_CSD_Design01.map</v>
-<v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.gpdsc</v>
 <v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01.rpt</v>
 <v>Workspace01\CapSense_CSD_Design01\CapSense_CSD_Design01_timing.html</v>
-<v>Workspace01\Design01</v>
-<v>Workspace01\Design01\CortexM3</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_541</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
-<v>Workspace01\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Workspace01\Control_register</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -367,6 +376,18 @@
 <v>Workspace01\CapSense_CSD_Design01\cy_clock_v2_20.pdf</v>
 <v>Workspace01\CapSense_CSD_Design01\cy_pins_v2_20.pdf</v>
 <v>Workspace01\CapSense_CSD_Design01\PWM_v3_30.pdf</v>
+<v>Workspace01\Control_register</v>
+<v>Workspace01\Control_register\PSoC 5LP Architecture TRM</v>
+<v>Workspace01\Control_register\CY8C58LP Family Datasheet</v>
+<v>Workspace01\Control_register\System Reference Guides</v>
+<v>Workspace01\Control_register\System Reference Guides\cy_boot_v5_80</v>
+<v>Workspace01\Control_register\cy_clock_v2_20.pdf</v>
+<v>Workspace01\Control_register\cy_constant_v1_0</v>
+<v>Workspace01\Control_register\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
+<v>Workspace01\Control_register\cy_pins_v2_20.pdf</v>
+<v>Workspace01\Control_register\CyControlReg_v1_80.pdf</v>
+<v>Workspace01\Control_register\mux_v1_10.pdf</v>
+<v>Workspace01\Control_register\PWM_v3_30.pdf</v>
 <v>Workspace01\Design01</v>
 <v>Workspace01\Design01\PSoC 5LP Architecture TRM</v>
 <v>Workspace01\Design01\CY8C58LP Family Datasheet</v>
@@ -423,6 +444,18 @@
 <v>Workspace01\CapSense_CSD_Design01\cy_clock_v2_20.pdf</v>
 <v>Workspace01\CapSense_CSD_Design01\cy_pins_v2_20.pdf</v>
 <v>Workspace01\CapSense_CSD_Design01\PWM_v3_30.pdf</v>
+<v>Workspace01\Control_register</v>
+<v>Workspace01\Control_register\PSoC 5LP Architecture TRM</v>
+<v>Workspace01\Control_register\CY8C58LP Family Datasheet</v>
+<v>Workspace01\Control_register\System Reference Guides</v>
+<v>Workspace01\Control_register\System Reference Guides\cy_boot_v5_80</v>
+<v>Workspace01\Control_register\cy_clock_v2_20.pdf</v>
+<v>Workspace01\Control_register\cy_constant_v1_0</v>
+<v>Workspace01\Control_register\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
+<v>Workspace01\Control_register\cy_pins_v2_20.pdf</v>
+<v>Workspace01\Control_register\CyControlReg_v1_80.pdf</v>
+<v>Workspace01\Control_register\mux_v1_10.pdf</v>
+<v>Workspace01\Control_register\PWM_v3_30.pdf</v>
 <v>Workspace01\Design01</v>
 <v>Workspace01\Design01\PSoC 5LP Architecture TRM</v>
 <v>Workspace01\Design01\CY8C58LP Family Datasheet</v>
@@ -449,18 +482,6 @@
 <v>Workspace01\Lek1_ex4\Gnd_v1_0\Gnd_v1_0.pdf</v>
 <v>Workspace01\Lek1_ex4\LED_v1_0</v>
 <v>Workspace01\Lek1_ex4\LED_v1_0\LED_v1_0.pdf</v>
-<v>Workspace01\Lek1_ex4\nand_v1_0</v>
-<v>Workspace01\Lek1_ex4\nand_v1_0\nand_v1_0.pdf</v>
-<v>Workspace01\Lek1_ex4\not_v1_0.pdf</v>
-<v>Workspace01\Lek1_ex4\Resistor_v1_0</v>
-<v>Workspace01\Lek1_ex4\Resistor_v1_0\Resistor_v1_0.pdf</v>
-<v>Workspace01\lek4_ex1</v>
-<v>Workspace01\lek4_ex1\PSoC 5LP Architecture TRM</v>
-<v>Workspace01\lek4_ex1\CY8C58LP Family Datasheet</v>
-<v>Workspace01\lek4_ex1\System Reference Guides</v>
-<v>Workspace01\lek4_ex1\System Reference Guides\cy_boot_v5_80</v>
-<v>Workspace01\lek4_ex1\cy_pins_v2_20</v>
-<v>Workspace01\lek4_ex1\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -475,8 +496,9 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\lek4_ex1.cydsn\TopDesign\TopDesign.cysch" />
-<name v=".\lek4_ex1.cydsn\lek4_ex1.cydwr" />
+<name v=".\Control_register.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Control_register.cydsn\main.c" />
+<name v=".\Control_register.cydsn\Control_register.cydwr" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -484,7 +506,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1616, 711" SelectedTabbedMdiWindow="d392acdd-a016-420b-941b-6d8212f4f6a9"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="6d0f3007-81ac-410d-8f40-808e4560523c" /><DocumentWindow Key="C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\lek4_ex1.cydsn\TopDesign\TopDesign.cysch" Guid="10b8548b-8fba-43f5-a3a5-036d6fbeb44e" /><DocumentWindow Key="C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\lek4_ex1.cydsn\lek4_ex1.cydwr" Guid="d392acdd-a016-420b-941b-6d8212f4f6a9" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1362, 711" SelectedTabbedMdiWindow="2c23eb21-6560-4596-b351-19459602be50"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="6d0f3007-81ac-410d-8f40-808e4560523c" /><DocumentWindow Key="C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\Control_register.cydsn\TopDesign\TopDesign.cysch" Guid="2c23eb21-6560-4596-b351-19459602be50" /><DocumentWindow Key="C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\Control_register.cydsn\main.c" Guid="87ed3443-935d-4a97-8a00-5ee6de4de069" /><DocumentWindow Key="C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\Control_register.cydsn\Control_register.cydwr" Guid="f51f1506-7cfc-4e88-8aec-f5a213279ae6" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

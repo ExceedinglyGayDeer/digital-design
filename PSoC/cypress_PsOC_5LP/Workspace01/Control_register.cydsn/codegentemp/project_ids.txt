@@ -1,0 +1,11 @@
+C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\Design01.cydsn\Design01.cyprj|ada63fac-c749-4212-9d66-bd6f89458ad8
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|a6e13646-f82c-4d33-9a93-49837b190d24
+C:\Users\holge\OneDrive\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|e945815c-a5cf-4643-89f8-7350a697807c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|b573e80b-f666-460b-9415-71f4a4d19f38
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|ef7696dd-c2fe-4165-9fc7-df812d6128b4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|3bbe25d0-9b77-4d9c-aac6-fb8bdbfdf8e7
+C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\CapSense_CSD_Design01.cydsn\CapSense_CSD_Design01.cyprj|b123feec-1768-4348-8d3e-65687fb7afad
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|e336174d-5725-4b06-9e8b-ded3a69b220e
+C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\Lek1_ex4.cydsn\Lek1_ex4.cyprj|d6f748fa-14e2-4779-82f3-2785cdacf304
+C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\lek4_ex1.cydsn\lek4_ex1.cyprj|b5bb075b-4476-4d5d-a08d-5d9edbafae7f
+C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\Control_register.cydsn\Control_register.cyprj|72348174-51ce-4ea0-86f8-2b085999320a

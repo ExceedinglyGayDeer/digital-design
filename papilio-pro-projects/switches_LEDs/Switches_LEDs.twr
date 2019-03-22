@@ -29,19 +29,19 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
 Timing constraint: NET "CLK_BUFGP/IBUFG" PERIOD = 31.25 ns HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 900 paths analyzed, 99 endpoints analyzed, 0 failing endpoints
+ 930 paths analyzed, 198 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   2.798ns.
+ Minimum period is   2.666ns.
 --------------------------------------------------------------------------------
 
-Paths for end point counter_29 (SLICE_X14Y59.CIN), 56 paths
+Paths for end point Inst_counter30/count_buff_29 (SLICE_X8Y59.CIN), 28 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     28.452ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               counter_0 (FF)
-  Destination:          counter_29 (FF)
+Slack (setup path):     28.782ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_counter30/count_buff_0 (FF)
+  Destination:          Inst_counter30/count_buff_29 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      2.746ns (Levels of Logic = 8)
-  Clock Path Skew:      -0.017ns (0.291 - 0.308)
+  Data Path Delay:      2.416ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.017ns (0.320 - 0.337)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -52,49 +52,49 @@ Slack (setup path):     28.452ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: counter_0 to counter_29
+  Maximum Data Path at Slow Process Corner: Inst_counter30/count_buff_0 to Inst_counter30/count_buff_29
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y52.AQ      Tcko                  0.476   counter<3>
-                                                       counter_0
-    SLICE_X14Y52.A5      net (fanout=1)        0.822   counter<0>
-    SLICE_X14Y52.COUT    Topcya                0.495   counter<3>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_A<0>_mand1
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<3>
-    SLICE_X14Y53.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<3>
-    SLICE_X14Y53.COUT    Tbyp                  0.091   counter<7>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<7>
-    SLICE_X14Y54.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<7>
-    SLICE_X14Y54.COUT    Tbyp                  0.091   counter<11>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<11>
-    SLICE_X14Y55.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<11>
-    SLICE_X14Y55.COUT    Tbyp                  0.091   counter<15>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<15>
-    SLICE_X14Y56.CIN     net (fanout=1)        0.082   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<15>
-    SLICE_X14Y56.COUT    Tbyp                  0.091   counter<19>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.COUT    Tbyp                  0.091   counter<23>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.COUT    Tbyp                  0.091   counter<27>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<27>
-    SLICE_X14Y59.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<27>
-    SLICE_X14Y59.CLK     Tcinck                0.307   counter<29>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_xor<29>
-                                                       counter_29
+    SLICE_X8Y52.AQ       Tcko                  0.525   Inst_counter30/count_buff<3>
+                                                       Inst_counter30/count_buff_0
+    SLICE_X8Y52.A5       net (fanout=1)        0.456   Inst_counter30/count_buff<0>
+    SLICE_X8Y52.COUT     Topcya                0.474   Inst_counter30/count_buff<3>
+                                                       Inst_counter30/Mcount_count_buff_lut<0>_INV_0
+                                                       Inst_counter30/Mcount_count_buff_cy<3>
+    SLICE_X8Y53.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<3>
+    SLICE_X8Y53.COUT     Tbyp                  0.093   Inst_counter30/count_buff<7>
+                                                       Inst_counter30/Mcount_count_buff_cy<7>
+    SLICE_X8Y54.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<7>
+    SLICE_X8Y54.COUT     Tbyp                  0.093   Inst_counter30/count_buff<11>
+                                                       Inst_counter30/Mcount_count_buff_cy<11>
+    SLICE_X8Y55.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<11>
+    SLICE_X8Y55.COUT     Tbyp                  0.093   Inst_counter30/count_buff<15>
+                                                       Inst_counter30/Mcount_count_buff_cy<15>
+    SLICE_X8Y56.CIN      net (fanout=1)        0.082   Inst_counter30/Mcount_count_buff_cy<15>
+    SLICE_X8Y56.COUT     Tbyp                  0.093   Inst_counter30/count_buff<19>
+                                                       Inst_counter30/Mcount_count_buff_cy<19>
+    SLICE_X8Y57.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<19>
+    SLICE_X8Y57.COUT     Tbyp                  0.093   Inst_counter30/count_buff<23>
+                                                       Inst_counter30/Mcount_count_buff_cy<23>
+    SLICE_X8Y58.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<23>
+    SLICE_X8Y58.COUT     Tbyp                  0.093   Inst_counter30/count_buff<27>
+                                                       Inst_counter30/Mcount_count_buff_cy<27>
+    SLICE_X8Y59.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<27>
+    SLICE_X8Y59.CLK      Tcinck                0.303   Inst_counter30/count_buff<29>
+                                                       Inst_counter30/Mcount_count_buff_xor<29>
+                                                       Inst_counter30/count_buff_29
     -------------------------------------------------  ---------------------------
-    Total                                      2.746ns (1.824ns logic, 0.922ns route)
-                                                       (66.4% logic, 33.6% route)
+    Total                                      2.416ns (1.860ns logic, 0.556ns route)
+                                                       (77.0% logic, 23.0% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     28.475ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               counter_0 (FF)
-  Destination:          counter_29 (FF)
+Slack (setup path):     28.881ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_counter30/count_buff_4 (FF)
+  Destination:          Inst_counter30/count_buff_29 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      2.723ns (Levels of Logic = 8)
-  Clock Path Skew:      -0.017ns (0.291 - 0.308)
+  Data Path Delay:      2.320ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.014ns (0.320 - 0.334)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -105,49 +105,46 @@ Slack (setup path):     28.475ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: counter_0 to counter_29
+  Maximum Data Path at Slow Process Corner: Inst_counter30/count_buff_4 to Inst_counter30/count_buff_29
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y52.AQ      Tcko                  0.476   counter<3>
-                                                       counter_0
-    SLICE_X14Y52.A5      net (fanout=1)        0.822   counter<0>
-    SLICE_X14Y52.COUT    Topcya                0.472   counter<3>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_lut<0>1
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<3>
-    SLICE_X14Y53.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<3>
-    SLICE_X14Y53.COUT    Tbyp                  0.091   counter<7>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<7>
-    SLICE_X14Y54.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<7>
-    SLICE_X14Y54.COUT    Tbyp                  0.091   counter<11>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<11>
-    SLICE_X14Y55.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<11>
-    SLICE_X14Y55.COUT    Tbyp                  0.091   counter<15>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<15>
-    SLICE_X14Y56.CIN     net (fanout=1)        0.082   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<15>
-    SLICE_X14Y56.COUT    Tbyp                  0.091   counter<19>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.COUT    Tbyp                  0.091   counter<23>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.COUT    Tbyp                  0.091   counter<27>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<27>
-    SLICE_X14Y59.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<27>
-    SLICE_X14Y59.CLK     Tcinck                0.307   counter<29>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_xor<29>
-                                                       counter_29
+    SLICE_X8Y53.AQ       Tcko                  0.525   Inst_counter30/count_buff<7>
+                                                       Inst_counter30/count_buff_4
+    SLICE_X8Y53.A5       net (fanout=1)        0.456   Inst_counter30/count_buff<4>
+    SLICE_X8Y53.COUT     Topcya                0.474   Inst_counter30/count_buff<7>
+                                                       Inst_counter30/count_buff<4>_rt
+                                                       Inst_counter30/Mcount_count_buff_cy<7>
+    SLICE_X8Y54.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<7>
+    SLICE_X8Y54.COUT     Tbyp                  0.093   Inst_counter30/count_buff<11>
+                                                       Inst_counter30/Mcount_count_buff_cy<11>
+    SLICE_X8Y55.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<11>
+    SLICE_X8Y55.COUT     Tbyp                  0.093   Inst_counter30/count_buff<15>
+                                                       Inst_counter30/Mcount_count_buff_cy<15>
+    SLICE_X8Y56.CIN      net (fanout=1)        0.082   Inst_counter30/Mcount_count_buff_cy<15>
+    SLICE_X8Y56.COUT     Tbyp                  0.093   Inst_counter30/count_buff<19>
+                                                       Inst_counter30/Mcount_count_buff_cy<19>
+    SLICE_X8Y57.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<19>
+    SLICE_X8Y57.COUT     Tbyp                  0.093   Inst_counter30/count_buff<23>
+                                                       Inst_counter30/Mcount_count_buff_cy<23>
+    SLICE_X8Y58.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<23>
+    SLICE_X8Y58.COUT     Tbyp                  0.093   Inst_counter30/count_buff<27>
+                                                       Inst_counter30/Mcount_count_buff_cy<27>
+    SLICE_X8Y59.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<27>
+    SLICE_X8Y59.CLK      Tcinck                0.303   Inst_counter30/count_buff<29>
+                                                       Inst_counter30/Mcount_count_buff_xor<29>
+                                                       Inst_counter30/count_buff_29
     -------------------------------------------------  ---------------------------
-    Total                                      2.723ns (1.801ns logic, 0.922ns route)
-                                                       (66.1% logic, 33.9% route)
+    Total                                      2.320ns (1.767ns logic, 0.553ns route)
+                                                       (76.2% logic, 23.8% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     28.808ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               counter_19 (FF)
-  Destination:          counter_29 (FF)
+Slack (setup path):     28.952ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_counter30/count_buff_3 (FF)
+  Destination:          Inst_counter30/count_buff_29 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      2.403ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.004ns (0.190 - 0.194)
+  Data Path Delay:      2.246ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.017ns (0.320 - 0.337)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -158,40 +155,52 @@ Slack (setup path):     28.808ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: counter_19 to counter_29
+  Maximum Data Path at Slow Process Corner: Inst_counter30/count_buff_3 to Inst_counter30/count_buff_29
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y56.DQ      Tcko                  0.476   counter<19>
-                                                       counter_19
-    SLICE_X14Y56.D3      net (fanout=1)        1.094   counter<19>
-    SLICE_X14Y56.COUT    Topcyd                0.335   counter<19>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_A<19>_mand1
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.COUT    Tbyp                  0.091   counter<23>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.COUT    Tbyp                  0.091   counter<27>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<27>
-    SLICE_X14Y59.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<27>
-    SLICE_X14Y59.CLK     Tcinck                0.307   counter<29>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_xor<29>
-                                                       counter_29
+    SLICE_X8Y52.DQ       Tcko                  0.525   Inst_counter30/count_buff<3>
+                                                       Inst_counter30/count_buff_3
+    SLICE_X8Y52.D5       net (fanout=1)        0.448   Inst_counter30/count_buff<3>
+    SLICE_X8Y52.COUT     Topcyd                0.312   Inst_counter30/count_buff<3>
+                                                       Inst_counter30/count_buff<3>_rt
+                                                       Inst_counter30/Mcount_count_buff_cy<3>
+    SLICE_X8Y53.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<3>
+    SLICE_X8Y53.COUT     Tbyp                  0.093   Inst_counter30/count_buff<7>
+                                                       Inst_counter30/Mcount_count_buff_cy<7>
+    SLICE_X8Y54.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<7>
+    SLICE_X8Y54.COUT     Tbyp                  0.093   Inst_counter30/count_buff<11>
+                                                       Inst_counter30/Mcount_count_buff_cy<11>
+    SLICE_X8Y55.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<11>
+    SLICE_X8Y55.COUT     Tbyp                  0.093   Inst_counter30/count_buff<15>
+                                                       Inst_counter30/Mcount_count_buff_cy<15>
+    SLICE_X8Y56.CIN      net (fanout=1)        0.082   Inst_counter30/Mcount_count_buff_cy<15>
+    SLICE_X8Y56.COUT     Tbyp                  0.093   Inst_counter30/count_buff<19>
+                                                       Inst_counter30/Mcount_count_buff_cy<19>
+    SLICE_X8Y57.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<19>
+    SLICE_X8Y57.COUT     Tbyp                  0.093   Inst_counter30/count_buff<23>
+                                                       Inst_counter30/Mcount_count_buff_cy<23>
+    SLICE_X8Y58.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<23>
+    SLICE_X8Y58.COUT     Tbyp                  0.093   Inst_counter30/count_buff<27>
+                                                       Inst_counter30/Mcount_count_buff_cy<27>
+    SLICE_X8Y59.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<27>
+    SLICE_X8Y59.CLK      Tcinck                0.303   Inst_counter30/count_buff<29>
+                                                       Inst_counter30/Mcount_count_buff_xor<29>
+                                                       Inst_counter30/count_buff_29
     -------------------------------------------------  ---------------------------
-    Total                                      2.403ns (1.300ns logic, 1.103ns route)
-                                                       (54.1% logic, 45.9% route)
+    Total                                      2.246ns (1.698ns logic, 0.548ns route)
+                                                       (75.6% logic, 24.4% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point counter_28 (SLICE_X14Y59.CIN), 56 paths
+Paths for end point Inst2_counter30/count_buff_29 (SLICE_X12Y60.CIN), 28 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     28.519ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               counter_0 (FF)
-  Destination:          counter_28 (FF)
+Slack (setup path):     28.787ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst2_counter30/count_buff_0 (FF)
+  Destination:          Inst2_counter30/count_buff_29 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      2.679ns (Levels of Logic = 8)
-  Clock Path Skew:      -0.017ns (0.291 - 0.308)
+  Data Path Delay:      2.416ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.012ns (0.293 - 0.305)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -202,49 +211,49 @@ Slack (setup path):     28.519ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: counter_0 to counter_28
+  Maximum Data Path at Slow Process Corner: Inst2_counter30/count_buff_0 to Inst2_counter30/count_buff_29
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y52.AQ      Tcko                  0.476   counter<3>
-                                                       counter_0
-    SLICE_X14Y52.A5      net (fanout=1)        0.822   counter<0>
-    SLICE_X14Y52.COUT    Topcya                0.495   counter<3>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_A<0>_mand1
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<3>
-    SLICE_X14Y53.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<3>
-    SLICE_X14Y53.COUT    Tbyp                  0.091   counter<7>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<7>
-    SLICE_X14Y54.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<7>
-    SLICE_X14Y54.COUT    Tbyp                  0.091   counter<11>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<11>
-    SLICE_X14Y55.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<11>
-    SLICE_X14Y55.COUT    Tbyp                  0.091   counter<15>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<15>
-    SLICE_X14Y56.CIN     net (fanout=1)        0.082   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<15>
-    SLICE_X14Y56.COUT    Tbyp                  0.091   counter<19>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.COUT    Tbyp                  0.091   counter<23>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.COUT    Tbyp                  0.091   counter<27>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<27>
-    SLICE_X14Y59.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<27>
-    SLICE_X14Y59.CLK     Tcinck                0.240   counter<29>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_xor<29>
-                                                       counter_28
+    SLICE_X12Y53.AQ      Tcko                  0.525   Inst2_counter30/count_buff<3>
+                                                       Inst2_counter30/count_buff_0
+    SLICE_X12Y53.A5      net (fanout=1)        0.456   Inst2_counter30/count_buff<0>
+    SLICE_X12Y53.COUT    Topcya                0.474   Inst2_counter30/count_buff<3>
+                                                       Inst2_counter30/Mcount_count_buff_lut<0>_INV_0
+                                                       Inst2_counter30/Mcount_count_buff_cy<3>
+    SLICE_X12Y54.CIN     net (fanout=1)        0.003   Inst2_counter30/Mcount_count_buff_cy<3>
+    SLICE_X12Y54.COUT    Tbyp                  0.093   Inst2_counter30/count_buff<7>
+                                                       Inst2_counter30/Mcount_count_buff_cy<7>
+    SLICE_X12Y55.CIN     net (fanout=1)        0.003   Inst2_counter30/Mcount_count_buff_cy<7>
+    SLICE_X12Y55.COUT    Tbyp                  0.093   Inst2_counter30/count_buff<11>
+                                                       Inst2_counter30/Mcount_count_buff_cy<11>
+    SLICE_X12Y56.CIN     net (fanout=1)        0.082   Inst2_counter30/Mcount_count_buff_cy<11>
+    SLICE_X12Y56.COUT    Tbyp                  0.093   Inst2_counter30/count_buff<15>
+                                                       Inst2_counter30/Mcount_count_buff_cy<15>
+    SLICE_X12Y57.CIN     net (fanout=1)        0.003   Inst2_counter30/Mcount_count_buff_cy<15>
+    SLICE_X12Y57.COUT    Tbyp                  0.093   Inst2_counter30/count_buff<19>
+                                                       Inst2_counter30/Mcount_count_buff_cy<19>
+    SLICE_X12Y58.CIN     net (fanout=1)        0.003   Inst2_counter30/Mcount_count_buff_cy<19>
+    SLICE_X12Y58.COUT    Tbyp                  0.093   Inst2_counter30/count_buff<23>
+                                                       Inst2_counter30/Mcount_count_buff_cy<23>
+    SLICE_X12Y59.CIN     net (fanout=1)        0.003   Inst2_counter30/Mcount_count_buff_cy<23>
+    SLICE_X12Y59.COUT    Tbyp                  0.093   Inst2_counter30/count_buff<27>
+                                                       Inst2_counter30/Mcount_count_buff_cy<27>
+    SLICE_X12Y60.CIN     net (fanout=1)        0.003   Inst2_counter30/Mcount_count_buff_cy<27>
+    SLICE_X12Y60.CLK     Tcinck                0.303   Inst2_counter30/count_buff<29>
+                                                       Inst2_counter30/Mcount_count_buff_xor<29>
+                                                       Inst2_counter30/count_buff_29
     -------------------------------------------------  ---------------------------
-    Total                                      2.679ns (1.757ns logic, 0.922ns route)
-                                                       (65.6% logic, 34.4% route)
+    Total                                      2.416ns (1.860ns logic, 0.556ns route)
+                                                       (77.0% logic, 23.0% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     28.542ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               counter_0 (FF)
-  Destination:          counter_28 (FF)
+Slack (setup path):     28.886ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst2_counter30/count_buff_4 (FF)
+  Destination:          Inst2_counter30/count_buff_29 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      2.656ns (Levels of Logic = 8)
-  Clock Path Skew:      -0.017ns (0.291 - 0.308)
+  Data Path Delay:      2.320ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.009ns (0.293 - 0.302)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -255,49 +264,46 @@ Slack (setup path):     28.542ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: counter_0 to counter_28
+  Maximum Data Path at Slow Process Corner: Inst2_counter30/count_buff_4 to Inst2_counter30/count_buff_29
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y52.AQ      Tcko                  0.476   counter<3>
-                                                       counter_0
-    SLICE_X14Y52.A5      net (fanout=1)        0.822   counter<0>
-    SLICE_X14Y52.COUT    Topcya                0.472   counter<3>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_lut<0>1
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<3>
-    SLICE_X14Y53.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<3>
-    SLICE_X14Y53.COUT    Tbyp                  0.091   counter<7>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<7>
-    SLICE_X14Y54.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<7>
-    SLICE_X14Y54.COUT    Tbyp                  0.091   counter<11>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<11>
-    SLICE_X14Y55.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<11>
-    SLICE_X14Y55.COUT    Tbyp                  0.091   counter<15>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<15>
-    SLICE_X14Y56.CIN     net (fanout=1)        0.082   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<15>
-    SLICE_X14Y56.COUT    Tbyp                  0.091   counter<19>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.COUT    Tbyp                  0.091   counter<23>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.COUT    Tbyp                  0.091   counter<27>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<27>
-    SLICE_X14Y59.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<27>
-    SLICE_X14Y59.CLK     Tcinck                0.240   counter<29>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_xor<29>
-                                                       counter_28
+    SLICE_X12Y54.AQ      Tcko                  0.525   Inst2_counter30/count_buff<7>
+                                                       Inst2_counter30/count_buff_4
+    SLICE_X12Y54.A5      net (fanout=1)        0.456   Inst2_counter30/count_buff<4>
+    SLICE_X12Y54.COUT    Topcya                0.474   Inst2_counter30/count_buff<7>
+                                                       Inst2_counter30/count_buff<4>_rt
+                                                       Inst2_counter30/Mcount_count_buff_cy<7>
+    SLICE_X12Y55.CIN     net (fanout=1)        0.003   Inst2_counter30/Mcount_count_buff_cy<7>
+    SLICE_X12Y55.COUT    Tbyp                  0.093   Inst2_counter30/count_buff<11>
+                                                       Inst2_counter30/Mcount_count_buff_cy<11>
+    SLICE_X12Y56.CIN     net (fanout=1)        0.082   Inst2_counter30/Mcount_count_buff_cy<11>
+    SLICE_X12Y56.COUT    Tbyp                  0.093   Inst2_counter30/count_buff<15>
+                                                       Inst2_counter30/Mcount_count_buff_cy<15>
+    SLICE_X12Y57.CIN     net (fanout=1)        0.003   Inst2_counter30/Mcount_count_buff_cy<15>
+    SLICE_X12Y57.COUT    Tbyp                  0.093   Inst2_counter30/count_buff<19>
+                                                       Inst2_counter30/Mcount_count_buff_cy<19>
+    SLICE_X12Y58.CIN     net (fanout=1)        0.003   Inst2_counter30/Mcount_count_buff_cy<19>
+    SLICE_X12Y58.COUT    Tbyp                  0.093   Inst2_counter30/count_buff<23>
+                                                       Inst2_counter30/Mcount_count_buff_cy<23>
+    SLICE_X12Y59.CIN     net (fanout=1)        0.003   Inst2_counter30/Mcount_count_buff_cy<23>
+    SLICE_X12Y59.COUT    Tbyp                  0.093   Inst2_counter30/count_buff<27>
+                                                       Inst2_counter30/Mcount_count_buff_cy<27>
+    SLICE_X12Y60.CIN     net (fanout=1)        0.003   Inst2_counter30/Mcount_count_buff_cy<27>
+    SLICE_X12Y60.CLK     Tcinck                0.303   Inst2_counter30/count_buff<29>
+                                                       Inst2_counter30/Mcount_count_buff_xor<29>
+                                                       Inst2_counter30/count_buff_29
     -------------------------------------------------  ---------------------------
-    Total                                      2.656ns (1.734ns logic, 0.922ns route)
-                                                       (65.3% logic, 34.7% route)
+    Total                                      2.320ns (1.767ns logic, 0.553ns route)
+                                                       (76.2% logic, 23.8% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     28.875ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               counter_19 (FF)
-  Destination:          counter_28 (FF)
+Slack (setup path):     28.957ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst2_counter30/count_buff_3 (FF)
+  Destination:          Inst2_counter30/count_buff_29 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      2.336ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.004ns (0.190 - 0.194)
+  Data Path Delay:      2.246ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.012ns (0.293 - 0.305)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -308,40 +314,52 @@ Slack (setup path):     28.875ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: counter_19 to counter_28
+  Maximum Data Path at Slow Process Corner: Inst2_counter30/count_buff_3 to Inst2_counter30/count_buff_29
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y56.DQ      Tcko                  0.476   counter<19>
-                                                       counter_19
-    SLICE_X14Y56.D3      net (fanout=1)        1.094   counter<19>
-    SLICE_X14Y56.COUT    Topcyd                0.335   counter<19>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_A<19>_mand1
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.COUT    Tbyp                  0.091   counter<23>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.COUT    Tbyp                  0.091   counter<27>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<27>
-    SLICE_X14Y59.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<27>
-    SLICE_X14Y59.CLK     Tcinck                0.240   counter<29>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_xor<29>
-                                                       counter_28
+    SLICE_X12Y53.DQ      Tcko                  0.525   Inst2_counter30/count_buff<3>
+                                                       Inst2_counter30/count_buff_3
+    SLICE_X12Y53.D5      net (fanout=1)        0.448   Inst2_counter30/count_buff<3>
+    SLICE_X12Y53.COUT    Topcyd                0.312   Inst2_counter30/count_buff<3>
+                                                       Inst2_counter30/count_buff<3>_rt
+                                                       Inst2_counter30/Mcount_count_buff_cy<3>
+    SLICE_X12Y54.CIN     net (fanout=1)        0.003   Inst2_counter30/Mcount_count_buff_cy<3>
+    SLICE_X12Y54.COUT    Tbyp                  0.093   Inst2_counter30/count_buff<7>
+                                                       Inst2_counter30/Mcount_count_buff_cy<7>
+    SLICE_X12Y55.CIN     net (fanout=1)        0.003   Inst2_counter30/Mcount_count_buff_cy<7>
+    SLICE_X12Y55.COUT    Tbyp                  0.093   Inst2_counter30/count_buff<11>
+                                                       Inst2_counter30/Mcount_count_buff_cy<11>
+    SLICE_X12Y56.CIN     net (fanout=1)        0.082   Inst2_counter30/Mcount_count_buff_cy<11>
+    SLICE_X12Y56.COUT    Tbyp                  0.093   Inst2_counter30/count_buff<15>
+                                                       Inst2_counter30/Mcount_count_buff_cy<15>
+    SLICE_X12Y57.CIN     net (fanout=1)        0.003   Inst2_counter30/Mcount_count_buff_cy<15>
+    SLICE_X12Y57.COUT    Tbyp                  0.093   Inst2_counter30/count_buff<19>
+                                                       Inst2_counter30/Mcount_count_buff_cy<19>
+    SLICE_X12Y58.CIN     net (fanout=1)        0.003   Inst2_counter30/Mcount_count_buff_cy<19>
+    SLICE_X12Y58.COUT    Tbyp                  0.093   Inst2_counter30/count_buff<23>
+                                                       Inst2_counter30/Mcount_count_buff_cy<23>
+    SLICE_X12Y59.CIN     net (fanout=1)        0.003   Inst2_counter30/Mcount_count_buff_cy<23>
+    SLICE_X12Y59.COUT    Tbyp                  0.093   Inst2_counter30/count_buff<27>
+                                                       Inst2_counter30/Mcount_count_buff_cy<27>
+    SLICE_X12Y60.CIN     net (fanout=1)        0.003   Inst2_counter30/Mcount_count_buff_cy<27>
+    SLICE_X12Y60.CLK     Tcinck                0.303   Inst2_counter30/count_buff<29>
+                                                       Inst2_counter30/Mcount_count_buff_xor<29>
+                                                       Inst2_counter30/count_buff_29
     -------------------------------------------------  ---------------------------
-    Total                                      2.336ns (1.233ns logic, 1.103ns route)
-                                                       (52.8% logic, 47.2% route)
+    Total                                      2.246ns (1.698ns logic, 0.548ns route)
+                                                       (75.6% logic, 24.4% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point counter_26 (SLICE_X14Y58.CIN), 48 paths
+Paths for end point Inst_counter30/count_buff_27 (SLICE_X8Y58.CIN), 24 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     28.532ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               counter_0 (FF)
-  Destination:          counter_26 (FF)
+Slack (setup path):     28.865ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_counter30/count_buff_0 (FF)
+  Destination:          Inst_counter30/count_buff_27 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      2.664ns (Levels of Logic = 7)
-  Clock Path Skew:      -0.019ns (0.289 - 0.308)
+  Data Path Delay:      2.330ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.020ns (0.317 - 0.337)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -352,46 +370,46 @@ Slack (setup path):     28.532ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: counter_0 to counter_26
+  Maximum Data Path at Slow Process Corner: Inst_counter30/count_buff_0 to Inst_counter30/count_buff_27
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y52.AQ      Tcko                  0.476   counter<3>
-                                                       counter_0
-    SLICE_X14Y52.A5      net (fanout=1)        0.822   counter<0>
-    SLICE_X14Y52.COUT    Topcya                0.495   counter<3>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_A<0>_mand1
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<3>
-    SLICE_X14Y53.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<3>
-    SLICE_X14Y53.COUT    Tbyp                  0.091   counter<7>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<7>
-    SLICE_X14Y54.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<7>
-    SLICE_X14Y54.COUT    Tbyp                  0.091   counter<11>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<11>
-    SLICE_X14Y55.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<11>
-    SLICE_X14Y55.COUT    Tbyp                  0.091   counter<15>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<15>
-    SLICE_X14Y56.CIN     net (fanout=1)        0.082   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<15>
-    SLICE_X14Y56.COUT    Tbyp                  0.091   counter<19>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.COUT    Tbyp                  0.091   counter<23>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.CLK     Tcinck                0.319   counter<27>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<27>
-                                                       counter_26
+    SLICE_X8Y52.AQ       Tcko                  0.525   Inst_counter30/count_buff<3>
+                                                       Inst_counter30/count_buff_0
+    SLICE_X8Y52.A5       net (fanout=1)        0.456   Inst_counter30/count_buff<0>
+    SLICE_X8Y52.COUT     Topcya                0.474   Inst_counter30/count_buff<3>
+                                                       Inst_counter30/Mcount_count_buff_lut<0>_INV_0
+                                                       Inst_counter30/Mcount_count_buff_cy<3>
+    SLICE_X8Y53.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<3>
+    SLICE_X8Y53.COUT     Tbyp                  0.093   Inst_counter30/count_buff<7>
+                                                       Inst_counter30/Mcount_count_buff_cy<7>
+    SLICE_X8Y54.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<7>
+    SLICE_X8Y54.COUT     Tbyp                  0.093   Inst_counter30/count_buff<11>
+                                                       Inst_counter30/Mcount_count_buff_cy<11>
+    SLICE_X8Y55.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<11>
+    SLICE_X8Y55.COUT     Tbyp                  0.093   Inst_counter30/count_buff<15>
+                                                       Inst_counter30/Mcount_count_buff_cy<15>
+    SLICE_X8Y56.CIN      net (fanout=1)        0.082   Inst_counter30/Mcount_count_buff_cy<15>
+    SLICE_X8Y56.COUT     Tbyp                  0.093   Inst_counter30/count_buff<19>
+                                                       Inst_counter30/Mcount_count_buff_cy<19>
+    SLICE_X8Y57.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<19>
+    SLICE_X8Y57.COUT     Tbyp                  0.093   Inst_counter30/count_buff<23>
+                                                       Inst_counter30/Mcount_count_buff_cy<23>
+    SLICE_X8Y58.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<23>
+    SLICE_X8Y58.CLK      Tcinck                0.313   Inst_counter30/count_buff<27>
+                                                       Inst_counter30/Mcount_count_buff_cy<27>
+                                                       Inst_counter30/count_buff_27
     -------------------------------------------------  ---------------------------
-    Total                                      2.664ns (1.745ns logic, 0.919ns route)
-                                                       (65.5% logic, 34.5% route)
+    Total                                      2.330ns (1.777ns logic, 0.553ns route)
+                                                       (76.3% logic, 23.7% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     28.555ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               counter_0 (FF)
-  Destination:          counter_26 (FF)
+Slack (setup path):     28.964ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_counter30/count_buff_4 (FF)
+  Destination:          Inst_counter30/count_buff_27 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      2.641ns (Levels of Logic = 7)
-  Clock Path Skew:      -0.019ns (0.289 - 0.308)
+  Data Path Delay:      2.234ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.017ns (0.317 - 0.334)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -402,46 +420,43 @@ Slack (setup path):     28.555ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: counter_0 to counter_26
+  Maximum Data Path at Slow Process Corner: Inst_counter30/count_buff_4 to Inst_counter30/count_buff_27
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y52.AQ      Tcko                  0.476   counter<3>
-                                                       counter_0
-    SLICE_X14Y52.A5      net (fanout=1)        0.822   counter<0>
-    SLICE_X14Y52.COUT    Topcya                0.472   counter<3>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_lut<0>1
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<3>
-    SLICE_X14Y53.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<3>
-    SLICE_X14Y53.COUT    Tbyp                  0.091   counter<7>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<7>
-    SLICE_X14Y54.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<7>
-    SLICE_X14Y54.COUT    Tbyp                  0.091   counter<11>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<11>
-    SLICE_X14Y55.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<11>
-    SLICE_X14Y55.COUT    Tbyp                  0.091   counter<15>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<15>
-    SLICE_X14Y56.CIN     net (fanout=1)        0.082   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<15>
-    SLICE_X14Y56.COUT    Tbyp                  0.091   counter<19>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.COUT    Tbyp                  0.091   counter<23>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.CLK     Tcinck                0.319   counter<27>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<27>
-                                                       counter_26
+    SLICE_X8Y53.AQ       Tcko                  0.525   Inst_counter30/count_buff<7>
+                                                       Inst_counter30/count_buff_4
+    SLICE_X8Y53.A5       net (fanout=1)        0.456   Inst_counter30/count_buff<4>
+    SLICE_X8Y53.COUT     Topcya                0.474   Inst_counter30/count_buff<7>
+                                                       Inst_counter30/count_buff<4>_rt
+                                                       Inst_counter30/Mcount_count_buff_cy<7>
+    SLICE_X8Y54.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<7>
+    SLICE_X8Y54.COUT     Tbyp                  0.093   Inst_counter30/count_buff<11>
+                                                       Inst_counter30/Mcount_count_buff_cy<11>
+    SLICE_X8Y55.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<11>
+    SLICE_X8Y55.COUT     Tbyp                  0.093   Inst_counter30/count_buff<15>
+                                                       Inst_counter30/Mcount_count_buff_cy<15>
+    SLICE_X8Y56.CIN      net (fanout=1)        0.082   Inst_counter30/Mcount_count_buff_cy<15>
+    SLICE_X8Y56.COUT     Tbyp                  0.093   Inst_counter30/count_buff<19>
+                                                       Inst_counter30/Mcount_count_buff_cy<19>
+    SLICE_X8Y57.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<19>
+    SLICE_X8Y57.COUT     Tbyp                  0.093   Inst_counter30/count_buff<23>
+                                                       Inst_counter30/Mcount_count_buff_cy<23>
+    SLICE_X8Y58.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<23>
+    SLICE_X8Y58.CLK      Tcinck                0.313   Inst_counter30/count_buff<27>
+                                                       Inst_counter30/Mcount_count_buff_cy<27>
+                                                       Inst_counter30/count_buff_27
     -------------------------------------------------  ---------------------------
-    Total                                      2.641ns (1.722ns logic, 0.919ns route)
-                                                       (65.2% logic, 34.8% route)
+    Total                                      2.234ns (1.684ns logic, 0.550ns route)
+                                                       (75.4% logic, 24.6% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     28.888ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               counter_19 (FF)
-  Destination:          counter_26 (FF)
+Slack (setup path):     29.035ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_counter30/count_buff_3 (FF)
+  Destination:          Inst_counter30/count_buff_27 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      2.321ns (Levels of Logic = 3)
-  Clock Path Skew:      -0.006ns (0.188 - 0.194)
+  Data Path Delay:      2.160ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.020ns (0.317 - 0.337)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -452,116 +467,128 @@ Slack (setup path):     28.888ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: counter_19 to counter_26
+  Maximum Data Path at Slow Process Corner: Inst_counter30/count_buff_3 to Inst_counter30/count_buff_27
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y56.DQ      Tcko                  0.476   counter<19>
-                                                       counter_19
-    SLICE_X14Y56.D3      net (fanout=1)        1.094   counter<19>
-    SLICE_X14Y56.COUT    Topcyd                0.335   counter<19>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_A<19>_mand1
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>
-    SLICE_X14Y57.COUT    Tbyp                  0.091   counter<23>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.CIN     net (fanout=1)        0.003   Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>
-    SLICE_X14Y58.CLK     Tcinck                0.319   counter<27>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<27>
-                                                       counter_26
+    SLICE_X8Y52.DQ       Tcko                  0.525   Inst_counter30/count_buff<3>
+                                                       Inst_counter30/count_buff_3
+    SLICE_X8Y52.D5       net (fanout=1)        0.448   Inst_counter30/count_buff<3>
+    SLICE_X8Y52.COUT     Topcyd                0.312   Inst_counter30/count_buff<3>
+                                                       Inst_counter30/count_buff<3>_rt
+                                                       Inst_counter30/Mcount_count_buff_cy<3>
+    SLICE_X8Y53.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<3>
+    SLICE_X8Y53.COUT     Tbyp                  0.093   Inst_counter30/count_buff<7>
+                                                       Inst_counter30/Mcount_count_buff_cy<7>
+    SLICE_X8Y54.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<7>
+    SLICE_X8Y54.COUT     Tbyp                  0.093   Inst_counter30/count_buff<11>
+                                                       Inst_counter30/Mcount_count_buff_cy<11>
+    SLICE_X8Y55.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<11>
+    SLICE_X8Y55.COUT     Tbyp                  0.093   Inst_counter30/count_buff<15>
+                                                       Inst_counter30/Mcount_count_buff_cy<15>
+    SLICE_X8Y56.CIN      net (fanout=1)        0.082   Inst_counter30/Mcount_count_buff_cy<15>
+    SLICE_X8Y56.COUT     Tbyp                  0.093   Inst_counter30/count_buff<19>
+                                                       Inst_counter30/Mcount_count_buff_cy<19>
+    SLICE_X8Y57.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<19>
+    SLICE_X8Y57.COUT     Tbyp                  0.093   Inst_counter30/count_buff<23>
+                                                       Inst_counter30/Mcount_count_buff_cy<23>
+    SLICE_X8Y58.CIN      net (fanout=1)        0.003   Inst_counter30/Mcount_count_buff_cy<23>
+    SLICE_X8Y58.CLK      Tcinck                0.313   Inst_counter30/count_buff<27>
+                                                       Inst_counter30/Mcount_count_buff_cy<27>
+                                                       Inst_counter30/count_buff_27
     -------------------------------------------------  ---------------------------
-    Total                                      2.321ns (1.221ns logic, 1.100ns route)
-                                                       (52.6% logic, 47.4% route)
+    Total                                      2.160ns (1.615ns logic, 0.545ns route)
+                                                       (74.8% logic, 25.2% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: NET "CLK_BUFGP/IBUFG" PERIOD = 31.25 ns HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point counter_1 (SLICE_X14Y52.B5), 1 path
+Paths for end point Inst_counter30/count_buff_1 (SLICE_X8Y52.B5), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.505ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               counter_1 (FF)
-  Destination:          counter_1 (FF)
+Slack (hold path):      0.530ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_counter30/count_buff_1 (FF)
+  Destination:          Inst_counter30/count_buff_1 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.505ns (Levels of Logic = 1)
+  Data Path Delay:      0.530ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         CLK_BUFGP rising at 31.250ns
   Destination Clock:    CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: counter_1 to counter_1
+  Minimum Data Path at Fast Process Corner: Inst_counter30/count_buff_1 to Inst_counter30/count_buff_1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y52.BQ      Tcko                  0.200   counter<3>
-                                                       counter_1
-    SLICE_X14Y52.B5      net (fanout=1)        0.071   counter<1>
-    SLICE_X14Y52.CLK     Tah         (-Th)    -0.234   counter<3>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_lut<1>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<3>
-                                                       counter_1
+    SLICE_X8Y52.BQ       Tcko                  0.234   Inst_counter30/count_buff<3>
+                                                       Inst_counter30/count_buff_1
+    SLICE_X8Y52.B5       net (fanout=1)        0.059   Inst_counter30/count_buff<1>
+    SLICE_X8Y52.CLK      Tah         (-Th)    -0.237   Inst_counter30/count_buff<3>
+                                                       Inst_counter30/count_buff<1>_rt
+                                                       Inst_counter30/Mcount_count_buff_cy<3>
+                                                       Inst_counter30/count_buff_1
     -------------------------------------------------  ---------------------------
-    Total                                      0.505ns (0.434ns logic, 0.071ns route)
-                                                       (85.9% logic, 14.1% route)
+    Total                                      0.530ns (0.471ns logic, 0.059ns route)
+                                                       (88.9% logic, 11.1% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point counter_5 (SLICE_X14Y53.B5), 1 path
+Paths for end point Inst_counter30/count_buff_5 (SLICE_X8Y53.B5), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.505ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               counter_5 (FF)
-  Destination:          counter_5 (FF)
+Slack (hold path):      0.530ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_counter30/count_buff_5 (FF)
+  Destination:          Inst_counter30/count_buff_5 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.505ns (Levels of Logic = 1)
+  Data Path Delay:      0.530ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         CLK_BUFGP rising at 31.250ns
   Destination Clock:    CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: counter_5 to counter_5
+  Minimum Data Path at Fast Process Corner: Inst_counter30/count_buff_5 to Inst_counter30/count_buff_5
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y53.BQ      Tcko                  0.200   counter<7>
-                                                       counter_5
-    SLICE_X14Y53.B5      net (fanout=1)        0.071   counter<5>
-    SLICE_X14Y53.CLK     Tah         (-Th)    -0.234   counter<7>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_lut<5>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<7>
-                                                       counter_5
+    SLICE_X8Y53.BQ       Tcko                  0.234   Inst_counter30/count_buff<7>
+                                                       Inst_counter30/count_buff_5
+    SLICE_X8Y53.B5       net (fanout=1)        0.059   Inst_counter30/count_buff<5>
+    SLICE_X8Y53.CLK      Tah         (-Th)    -0.237   Inst_counter30/count_buff<7>
+                                                       Inst_counter30/count_buff<5>_rt
+                                                       Inst_counter30/Mcount_count_buff_cy<7>
+                                                       Inst_counter30/count_buff_5
     -------------------------------------------------  ---------------------------
-    Total                                      0.505ns (0.434ns logic, 0.071ns route)
-                                                       (85.9% logic, 14.1% route)
+    Total                                      0.530ns (0.471ns logic, 0.059ns route)
+                                                       (88.9% logic, 11.1% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point counter_9 (SLICE_X14Y54.B5), 1 path
+Paths for end point Inst_counter30/count_buff_9 (SLICE_X8Y54.B5), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.505ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               counter_9 (FF)
-  Destination:          counter_9 (FF)
+Slack (hold path):      0.530ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_counter30/count_buff_9 (FF)
+  Destination:          Inst_counter30/count_buff_9 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.505ns (Levels of Logic = 1)
+  Data Path Delay:      0.530ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         CLK_BUFGP rising at 31.250ns
   Destination Clock:    CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: counter_9 to counter_9
+  Minimum Data Path at Fast Process Corner: Inst_counter30/count_buff_9 to Inst_counter30/count_buff_9
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y54.BQ      Tcko                  0.200   counter<11>
-                                                       counter_9
-    SLICE_X14Y54.B5      net (fanout=1)        0.071   counter<9>
-    SLICE_X14Y54.CLK     Tah         (-Th)    -0.234   counter<11>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_lut<9>
-                                                       Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<11>
-                                                       counter_9
+    SLICE_X8Y54.BQ       Tcko                  0.234   Inst_counter30/count_buff<11>
+                                                       Inst_counter30/count_buff_9
+    SLICE_X8Y54.B5       net (fanout=1)        0.059   Inst_counter30/count_buff<9>
+    SLICE_X8Y54.CLK      Tah         (-Th)    -0.237   Inst_counter30/count_buff<11>
+                                                       Inst_counter30/count_buff<9>_rt
+                                                       Inst_counter30/Mcount_count_buff_cy<11>
+                                                       Inst_counter30/count_buff_9
     -------------------------------------------------  ---------------------------
-    Total                                      0.505ns (0.434ns logic, 0.071ns route)
-                                                       (85.9% logic, 14.1% route)
+    Total                                      0.530ns (0.471ns logic, 0.059ns route)
+                                                       (88.9% logic, 11.1% route)
 
 --------------------------------------------------------------------------------
 
@@ -575,20 +602,20 @@ Slack: 28.584ns (period - min period limit)
   Location pin: BUFGMUX_X2Y2.I0
   Clock network: CLK_BUFGP/IBUFG
 --------------------------------------------------------------------------------
-Slack: 30.775ns (period - min period limit)
+Slack: 30.770ns (period - min period limit)
   Period: 31.250ns
-  Min period limit: 0.475ns (2105.263MHz) (Tcp)
-  Physical resource: counter<3>/CLK
-  Logical resource: counter_0/CK
-  Location pin: SLICE_X14Y52.CLK
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: Inst_counter30/count_buff<3>/CLK
+  Logical resource: Inst_counter30/count_buff_0/CK
+  Location pin: SLICE_X8Y52.CLK
   Clock network: CLK_BUFGP
 --------------------------------------------------------------------------------
-Slack: 30.775ns (period - min period limit)
+Slack: 30.770ns (period - min period limit)
   Period: 31.250ns
-  Min period limit: 0.475ns (2105.263MHz) (Tcp)
-  Physical resource: counter<3>/CLK
-  Logical resource: counter_1/CK
-  Location pin: SLICE_X14Y52.CLK
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: Inst_counter30/count_buff<3>/CLK
+  Logical resource: Inst_counter30/count_buff_1/CK
+  Location pin: SLICE_X8Y52.CLK
   Clock network: CLK_BUFGP
 --------------------------------------------------------------------------------
 
@@ -611,20 +638,20 @@ Slack: 1.334ns (period - min period limit)
   Location pin: BUFGMUX_X2Y2.I0
   Clock network: CLK_BUFGP/IBUFG
 --------------------------------------------------------------------------------
-Slack: 3.525ns (period - min period limit)
+Slack: 3.520ns (period - min period limit)
   Period: 4.000ns
-  Min period limit: 0.475ns (2105.263MHz) (Tcp)
-  Physical resource: counter<3>/CLK
-  Logical resource: counter_0/CK
-  Location pin: SLICE_X14Y52.CLK
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: Inst_counter30/count_buff<3>/CLK
+  Logical resource: Inst_counter30/count_buff_0/CK
+  Location pin: SLICE_X8Y52.CLK
   Clock network: CLK_BUFGP
 --------------------------------------------------------------------------------
-Slack: 3.525ns (period - min period limit)
+Slack: 3.520ns (period - min period limit)
   Period: 4.000ns
-  Min period limit: 0.475ns (2105.263MHz) (Tcp)
-  Physical resource: counter<3>/CLK
-  Logical resource: counter_1/CK
-  Location pin: SLICE_X14Y52.CLK
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: Inst_counter30/count_buff<3>/CLK
+  Logical resource: Inst_counter30/count_buff_1/CK
+  Location pin: SLICE_X8Y52.CLK
   Clock network: CLK_BUFGP
 --------------------------------------------------------------------------------
 
@@ -641,7 +668,7 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    2.798|         |         |         |
+CLK            |    2.468|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -650,16 +677,16 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 900 paths, 0 nets, and 46 connections
+Constraints cover 930 paths, 0 nets, and 91 connections
 
 Design statistics:
-   Minimum period:   2.798ns{1}   (Maximum frequency: 357.398MHz)
+   Minimum period:   2.666ns{1}   (Maximum frequency: 375.094MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Wed Mar 20 22:38:10 2019 
+Analysis completed Thu Mar 21 09:39:33 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:

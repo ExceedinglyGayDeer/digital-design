@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: Switches_LEDs.prj
 
@@ -105,6 +105,9 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Parsing VHDL file "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\switches_LEDs\counter30.vhd" into library work
+Parsing entity <counter30>.
+Parsing architecture <Behavioral> of entity <counter30>.
 Parsing VHDL file "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\switches_LEDs\Switches_LEDs.vhd" into library work
 Parsing entity <Switches_LEDs>.
 Parsing architecture <Behavioral> of entity <switches_leds>.
@@ -115,56 +118,54 @@ Parsing architecture <Behavioral> of entity <switches_leds>.
 
 Elaborating entity <Switches_LEDs> (architecture <Behavioral>) from library <work>.
 
+Elaborating entity <counter30> (architecture <Behavioral>) from library <work>.
+
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <Switches_LEDs>.
     Related source file is "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\switches_LEDs\Switches_LEDs.vhd".
-    Found 30-bit register for signal <counter>.
-    Found 5-bit adder for signal <result> created at line 49.
-    Found 30-bit adder for signal <counter[29]_GND_4_o_add_4_OUT> created at line 1241.
-    Found 30-bit subtractor for signal <GND_4_o_GND_4_o_sub_7_OUT<29:0>> created at line 1308.
+WARNING:Xst:647 - Input <switches<7:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred  30 D-type flip-flop(s).
-	inferred   5 Multiplexer(s).
+	no macro.
 Unit <Switches_LEDs> synthesized.
+
+Synthesizing Unit <counter30>.
+    Related source file is "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\switches_LEDs\counter30.vhd".
+    Found 30-bit register for signal <count_buff>.
+    Found 30-bit adder for signal <count_buff[29]_GND_5_o_add_0_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  30 D-type flip-flop(s).
+Unit <counter30> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 2
- 30-bit addsub                                         : 1
- 5-bit adder                                           : 1
-# Registers                                            : 1
- 30-bit register                                       : 1
-# Multiplexers                                         : 5
- 30-bit 2-to-1 multiplexer                             : 4
- 8-bit 2-to-1 multiplexer                              : 1
+ 30-bit adder                                          : 2
+# Registers                                            : 2
+ 30-bit register                                       : 2
 
 =========================================================================
-INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
 
+Synthesizing (advanced) Unit <counter30>.
+The following registers are absorbed into counter <count_buff>: 1 register on signal <count_buff>.
+Unit <counter30> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
- 30-bit addsub                                         : 1
- 5-bit adder                                           : 1
-# Registers                                            : 30
- Flip-Flops                                            : 30
-# Multiplexers                                         : 34
- 1-bit 2-to-1 multiplexer                              : 30
- 30-bit 2-to-1 multiplexer                             : 3
- 8-bit 2-to-1 multiplexer                              : 1
+# Counters                                             : 2
+ 30-bit up counter                                     : 2
 
 =========================================================================
 
@@ -184,8 +185,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 30
- Flip-Flops                                            : 30
+# Registers                                            : 60
+ Flip-Flops                                            : 60
 
 =========================================================================
 
@@ -208,19 +209,19 @@ Top Level Output File Name         : Switches_LEDs.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 131
-#      LUT2                        : 7
-#      LUT3                        : 59
-#      LUT4                        : 3
-#      LUT6                        : 3
-#      MUXCY                       : 29
-#      XORCY                       : 30
-# FlipFlops/Latches                : 30
-#      FDE                         : 30
+# BELS                             : 180
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 58
+#      MUXCY                       : 58
+#      VCC                         : 1
+#      XORCY                       : 60
+# FlipFlops/Latches                : 60
+#      FDE                         : 60
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 16
-#      IBUF                        : 8
+# IO Buffers                       : 10
+#      IBUF                        : 2
 #      OBUF                        : 8
 
 Device utilization summary:
@@ -230,20 +231,20 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              30  out of  11440     0%  
- Number of Slice LUTs:                   72  out of   5720     1%  
-    Number used as Logic:                72  out of   5720     1%  
+ Number of Slice Registers:              60  out of  11440     0%  
+ Number of Slice LUTs:                   60  out of   5720     1%  
+    Number used as Logic:                60  out of   5720     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     72
-   Number with an unused Flip Flop:      42  out of     72    58%  
-   Number with an unused LUT:             0  out of     72     0%  
-   Number of fully used LUT-FF pairs:    30  out of     72    41%  
-   Number of unique control sets:         1
+ Number of LUT Flip Flop pairs used:     60
+   Number with an unused Flip Flop:       0  out of     60     0%  
+   Number with an unused LUT:             0  out of     60     0%  
+   Number of fully used LUT-FF pairs:    60  out of     60   100%  
+   Number of unique control sets:         2
 
 IO Utilization: 
  Number of IOs:                          17
- Number of bonded IOBs:                  17  out of    102    16%  
+ Number of bonded IOBs:                  11  out of    102    10%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -269,7 +270,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 30    |
+CLK                                | BUFGP                  | 60    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -280,10 +281,10 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 2.651ns (Maximum Frequency: 377.216MHz)
-   Minimum input arrival time before clock: 5.411ns
-   Maximum output required time after clock: 5.568ns
-   Maximum combinational path delay: 8.465ns
+   Minimum period: 2.607ns (Maximum Frequency: 383.582MHz)
+   Minimum input arrival time before clock: 3.116ns
+   Maximum output required time after clock: 4.162ns
+   Maximum combinational path delay: No path found
 
 Timing Details:
 ---------------
@@ -291,115 +292,93 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 2.651ns (frequency: 377.216MHz)
-  Total number of paths / destination ports: 900 / 30
+  Clock period: 2.607ns (frequency: 383.582MHz)
+  Total number of paths / destination ports: 930 / 60
 -------------------------------------------------------------------------
-Delay:               2.651ns (Levels of Logic = 31)
-  Source:            counter_0 (FF)
-  Destination:       counter_29 (FF)
+Delay:               2.607ns (Levels of Logic = 31)
+  Source:            Inst2_counter30/count_buff_0 (FF)
+  Destination:       Inst2_counter30/count_buff_29 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: counter_0 to counter_29
+  Data Path: Inst2_counter30/count_buff_0 to Inst2_counter30/count_buff_29
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              2   0.525   0.726  counter_0 (counter_0)
-     LUT3:I2->O            1   0.254   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_lut<0>1 (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<0> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<1> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<2> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<3> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<4> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<5> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<6> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<7> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<8> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<9> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<10> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<11> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<11>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<12> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<12>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<13> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<13>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<14> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<14>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<15> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<15>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<16> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<16>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<17> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<17>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<18> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<18>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<19>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<20> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<20>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<21> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<21>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<22> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<22>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<23>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<24> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<24>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<25> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<25>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<26> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<26>)
-     MUXCY:CI->O           1   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<27> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<27>)
-     MUXCY:CI->O           0   0.023   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<28> (Mmux_counter[29]_counter[29]_mux_10_OUT_rs_cy<28>)
-     XORCY:CI->O           1   0.206   0.000  Mmux_counter[29]_counter[29]_mux_10_OUT_rs_xor<29> (counter[29]_counter[29]_mux_10_OUT<29>)
-     FDE:D                     0.074          counter_29
+     FDE:C->Q              1   0.525   0.681  Inst2_counter30/count_buff_0 (Inst2_counter30/count_buff_0)
+     INV:I->O              1   0.255   0.000  Inst2_counter30/Mcount_count_buff_lut<0>_INV_0 (Inst2_counter30/Mcount_count_buff_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Inst2_counter30/Mcount_count_buff_cy<0> (Inst2_counter30/Mcount_count_buff_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<1> (Inst2_counter30/Mcount_count_buff_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<2> (Inst2_counter30/Mcount_count_buff_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<3> (Inst2_counter30/Mcount_count_buff_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<4> (Inst2_counter30/Mcount_count_buff_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<5> (Inst2_counter30/Mcount_count_buff_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<6> (Inst2_counter30/Mcount_count_buff_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<7> (Inst2_counter30/Mcount_count_buff_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<8> (Inst2_counter30/Mcount_count_buff_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<9> (Inst2_counter30/Mcount_count_buff_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<10> (Inst2_counter30/Mcount_count_buff_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<11> (Inst2_counter30/Mcount_count_buff_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<12> (Inst2_counter30/Mcount_count_buff_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<13> (Inst2_counter30/Mcount_count_buff_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<14> (Inst2_counter30/Mcount_count_buff_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<15> (Inst2_counter30/Mcount_count_buff_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<16> (Inst2_counter30/Mcount_count_buff_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<17> (Inst2_counter30/Mcount_count_buff_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<18> (Inst2_counter30/Mcount_count_buff_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<19> (Inst2_counter30/Mcount_count_buff_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<20> (Inst2_counter30/Mcount_count_buff_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<21> (Inst2_counter30/Mcount_count_buff_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<22> (Inst2_counter30/Mcount_count_buff_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<23> (Inst2_counter30/Mcount_count_buff_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<24> (Inst2_counter30/Mcount_count_buff_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<25> (Inst2_counter30/Mcount_count_buff_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<26> (Inst2_counter30/Mcount_count_buff_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<27> (Inst2_counter30/Mcount_count_buff_cy<27>)
+     MUXCY:CI->O           0   0.023   0.000  Inst2_counter30/Mcount_count_buff_cy<28> (Inst2_counter30/Mcount_count_buff_cy<28>)
+     XORCY:CI->O           1   0.206   0.000  Inst2_counter30/Mcount_count_buff_xor<29> (Result<29>)
+     FDE:D                     0.074          Inst2_counter30/count_buff_29
     ----------------------------------------
-    Total                      2.651ns (1.925ns logic, 0.726ns route)
-                                       (72.6% logic, 27.4% route)
+    Total                      2.607ns (1.926ns logic, 0.681ns route)
+                                       (73.9% logic, 26.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 1890 / 60
+  Total number of paths / destination ports: 60 / 60
 -------------------------------------------------------------------------
-Offset:              5.411ns (Levels of Logic = 2)
+Offset:              3.116ns (Levels of Logic = 1)
   Source:            switches<1> (PAD)
-  Destination:       counter_0 (FF)
+  Destination:       Inst2_counter30/count_buff_0 (FF)
   Destination Clock: CLK rising
 
-  Data Path: switches<1> to counter_0
+  Data Path: switches<1> to Inst2_counter30/count_buff_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            65   1.328   2.045  switches_1_IBUF (switches_1_IBUF)
-     LUT2:I0->O           30   0.250   1.486  _n0046_inv1 (_n0046_inv)
-     FDE:CE                    0.302          counter_0
+     IBUF:I->O            30   1.328   1.486  switches_1_IBUF (switches_1_IBUF)
+     FDE:CE                    0.302          Inst2_counter30/count_buff_0
     ----------------------------------------
-    Total                      5.411ns (1.880ns logic, 3.531ns route)
-                                       (34.7% logic, 65.3% route)
+    Total                      3.116ns (1.630ns logic, 1.486ns route)
+                                       (52.3% logic, 47.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
   Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
-Offset:              5.568ns (Levels of Logic = 2)
-  Source:            counter_23 (FF)
-  Destination:       LEDs<1> (PAD)
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            Inst2_counter30/count_buff_29 (FF)
+  Destination:       LEDs<7> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: counter_23 to LEDs<1>
+  Data Path: Inst2_counter30/count_buff_29 to LEDs<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              3   0.525   1.196  counter_23 (counter_23)
-     LUT6:I1->O            1   0.254   0.681  Mmux_LEDs21 (LEDs_1_OBUF)
-     OBUF:I->O                 2.912          LEDs_1_OBUF (LEDs<1>)
+     FDE:C->Q              2   0.525   0.725  Inst2_counter30/count_buff_29 (Inst2_counter30/count_buff_29)
+     OBUF:I->O                 2.912          LEDs_7_OBUF (LEDs<7>)
     ----------------------------------------
-    Total                      5.568ns (3.691ns logic, 1.877ns route)
-                                       (66.3% logic, 33.7% route)
-
-=========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 35 / 8
--------------------------------------------------------------------------
-Delay:               8.465ns (Levels of Logic = 4)
-  Source:            switches<0> (PAD)
-  Destination:       LEDs<4> (PAD)
-
-  Data Path: switches<0> to LEDs<4>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            64   1.328   2.206  switches_0_IBUF (switches_0_IBUF)
-     LUT6:I2->O            2   0.254   0.834  Madd_result_cy<2>11 (Madd_result_cy<2>)
-     LUT4:I2->O            1   0.250   0.681  Mmux_LEDs51 (LEDs_4_OBUF)
-     OBUF:I->O                 2.912          LEDs_4_OBUF (LEDs<4>)
-    ----------------------------------------
-    Total                      8.465ns (4.744ns logic, 3.721ns route)
-                                       (56.0% logic, 44.0% route)
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
 
 =========================================================================
 
@@ -411,20 +390,20 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    2.651|         |         |         |
+CLK            |    2.607|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.29 secs
+Total CPU time to Xst completion: 4.92 secs
  
 --> 
 
 Total memory usage is 4508168 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 

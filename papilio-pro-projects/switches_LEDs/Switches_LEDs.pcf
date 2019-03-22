@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Mar 20 22:38:01 2019
+// Written by: Map P.20131013 on Thu Mar 21 09:39:15 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -23,14 +23,40 @@ COMP "LEDs<4>" LOCATE = SITE "P127" LEVEL 1;
 COMP "LEDs<5>" LOCATE = SITE "P126" LEVEL 1;
 COMP "LEDs<6>" LOCATE = SITE "P124" LEVEL 1;
 COMP "LEDs<7>" LOCATE = SITE "P123" LEVEL 1;
-TIMEGRP CLK = BEL "counter_0" BEL "counter_1" BEL "counter_2" BEL "counter_3"
-        BEL "counter_4" BEL "counter_5" BEL "counter_6" BEL "counter_7" BEL
-        "counter_8" BEL "counter_9" BEL "counter_10" BEL "counter_11" BEL
-        "counter_12" BEL "counter_13" BEL "counter_14" BEL "counter_15" BEL
-        "counter_16" BEL "counter_17" BEL "counter_18" BEL "counter_19" BEL
-        "counter_20" BEL "counter_21" BEL "counter_22" BEL "counter_23" BEL
-        "counter_24" BEL "counter_25" BEL "counter_26" BEL "counter_27" BEL
-        "counter_28" BEL "counter_29" BEL "CLK_BUFGP/BUFG";
+TIMEGRP CLK = BEL "Inst2_counter30/count_buff_0" BEL
+        "Inst2_counter30/count_buff_1" BEL "Inst2_counter30/count_buff_2" BEL
+        "Inst2_counter30/count_buff_3" BEL "Inst2_counter30/count_buff_4" BEL
+        "Inst2_counter30/count_buff_5" BEL "Inst2_counter30/count_buff_6" BEL
+        "Inst2_counter30/count_buff_7" BEL "Inst2_counter30/count_buff_8" BEL
+        "Inst2_counter30/count_buff_9" BEL "Inst2_counter30/count_buff_10" BEL
+        "Inst2_counter30/count_buff_11" BEL "Inst2_counter30/count_buff_12"
+        BEL "Inst2_counter30/count_buff_13" BEL
+        "Inst2_counter30/count_buff_14" BEL "Inst2_counter30/count_buff_15"
+        BEL "Inst2_counter30/count_buff_16" BEL
+        "Inst2_counter30/count_buff_17" BEL "Inst2_counter30/count_buff_18"
+        BEL "Inst2_counter30/count_buff_19" BEL
+        "Inst2_counter30/count_buff_20" BEL "Inst2_counter30/count_buff_21"
+        BEL "Inst2_counter30/count_buff_22" BEL
+        "Inst2_counter30/count_buff_23" BEL "Inst2_counter30/count_buff_24"
+        BEL "Inst2_counter30/count_buff_25" BEL
+        "Inst2_counter30/count_buff_26" BEL "Inst2_counter30/count_buff_27"
+        BEL "Inst2_counter30/count_buff_28" BEL
+        "Inst2_counter30/count_buff_29" BEL "Inst_counter30/count_buff_0" BEL
+        "Inst_counter30/count_buff_1" BEL "Inst_counter30/count_buff_2" BEL
+        "Inst_counter30/count_buff_3" BEL "Inst_counter30/count_buff_4" BEL
+        "Inst_counter30/count_buff_5" BEL "Inst_counter30/count_buff_6" BEL
+        "Inst_counter30/count_buff_7" BEL "Inst_counter30/count_buff_8" BEL
+        "Inst_counter30/count_buff_9" BEL "Inst_counter30/count_buff_10" BEL
+        "Inst_counter30/count_buff_11" BEL "Inst_counter30/count_buff_12" BEL
+        "Inst_counter30/count_buff_13" BEL "Inst_counter30/count_buff_14" BEL
+        "Inst_counter30/count_buff_15" BEL "Inst_counter30/count_buff_16" BEL
+        "Inst_counter30/count_buff_17" BEL "Inst_counter30/count_buff_18" BEL
+        "Inst_counter30/count_buff_19" BEL "Inst_counter30/count_buff_20" BEL
+        "Inst_counter30/count_buff_21" BEL "Inst_counter30/count_buff_22" BEL
+        "Inst_counter30/count_buff_23" BEL "Inst_counter30/count_buff_24" BEL
+        "Inst_counter30/count_buff_25" BEL "Inst_counter30/count_buff_26" BEL
+        "Inst_counter30/count_buff_27" BEL "Inst_counter30/count_buff_28" BEL
+        "Inst_counter30/count_buff_29" BEL "CLK_BUFGP/BUFG";
 NET "CLK_BUFGP/IBUFG" PERIOD = 31.25 ns HIGH 50%;
 TS_clk = PERIOD TIMEGRP "CLK" 4 ns HIGH 50%;
 SCHEMATIC END;
