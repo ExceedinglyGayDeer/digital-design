@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/my_single_port_RAM/my_single_port_RAM.xst" -ofn "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/my_single_port_RAM/my_single_port_RAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 "my_single_port_RAM.ngc" my_single_port_RAM.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o my_single_port_RAM_map.ncd my_single_port_RAM.ngd my_single_port_RAM.pcf 
+par -w -intstyle ise -ol high -mt off my_single_port_RAM_map.ncd my_single_port_RAM.ncd my_single_port_RAM.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml my_single_port_RAM.twx my_single_port_RAM.ncd -o my_single_port_RAM.twr my_single_port_RAM.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc papilio_pro_single_port_RAM_constraints.ucf -p xc6slx9-tqg144-2 "my_single_port_RAM.ngc" my_single_port_RAM.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc papilio_pro_single_port_RAM_constraints.ucf -p xc6slx9-tqg144-2 "my_single_port_RAM.ngc" my_single_port_RAM.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o my_single_port_RAM_map.ncd my_single_port_RAM.ngd my_single_port_RAM.pcf 
+par -w -intstyle ise -ol high -mt off my_single_port_RAM_map.ncd my_single_port_RAM.ncd my_single_port_RAM.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml my_single_port_RAM.twx my_single_port_RAM.ncd -o my_single_port_RAM.twr my_single_port_RAM.pcf -ucf papilio_pro_single_port_RAM_constraints.ucf 
+bitgen -intstyle ise -f my_single_port_RAM.ut my_single_port_RAM.ncd 
+xst -intstyle ise -ifn "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/my_single_port_RAM/my_single_port_RAM.xst" -ofn "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/my_single_port_RAM/my_single_port_RAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc papilio_pro_single_port_RAM_constraints.ucf -p xc6slx9-tqg144-2 "my_single_port_RAM.ngc" my_single_port_RAM.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o my_single_port_RAM_map.ncd my_single_port_RAM.ngd my_single_port_RAM.pcf 
+par -w -intstyle ise -ol high -mt off my_single_port_RAM_map.ncd my_single_port_RAM.ncd my_single_port_RAM.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml my_single_port_RAM.twx my_single_port_RAM.ncd -o my_single_port_RAM.twr my_single_port_RAM.pcf -ucf papilio_pro_single_port_RAM_constraints.ucf 
+bitgen -intstyle ise -f my_single_port_RAM.ut my_single_port_RAM.ncd 

@@ -1,0 +1,2 @@
+vhdl work "my_single_port_RAM.vhd"
+vhdl work "my_single_port_RAM_tb.vhd"

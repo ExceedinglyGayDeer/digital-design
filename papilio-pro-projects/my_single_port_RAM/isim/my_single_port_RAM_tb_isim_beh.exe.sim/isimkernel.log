@@ -1,0 +1,29 @@
+Command line:
+   my_single_port_RAM_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60429
+
+Sat Mar 23 20:41:23 2019
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5175.39 Meg
+
+ Total Signals          : 11
+ Total Nets             : 1049
+ Total Signal Drivers   : 6
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 4
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 1533
+Total Line Count : 24
+
+ Total Simulation Time: 0.734375 sec
+
+ Current Memory Usage: 5018.1 Meg
+
+Sat Mar 23 20:42:46 2019
+
