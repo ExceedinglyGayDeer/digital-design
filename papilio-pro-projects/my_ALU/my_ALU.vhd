@@ -79,13 +79,13 @@ begin
 					if(i_A > i_B) then
 						ALU_result <= x"01";
 					else
-						ALU_result <= x"01";
+						ALU_result <= x"00";
 					end if;
 				when "1111" => -- Greater than compare
 					if(i_A > i_B) then
 						ALU_result <= x"01";
 					else
-						ALU_result <= x"01";
+						ALU_result <= x"00";
 					end if;
 				when others => ALU_result <= i_A + i_B;
 				-- 14 out of 16 possible ALU function slots used (4-bit -> 16 possible select signals)

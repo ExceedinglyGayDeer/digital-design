@@ -36,186 +36,186 @@ Pad to Pad
 ---------------+----------------+---------+
 Source Pad     |Destination Pad |  Delay  |
 ---------------+----------------+---------+
-i_A<0>         |o_ALU_carry_flag|   10.139|
-i_A<0>         |o_ALU_out<0>    |   18.762|
-i_A<0>         |o_ALU_out<1>    |   18.551|
-i_A<0>         |o_ALU_out<2>    |   19.360|
-i_A<0>         |o_ALU_out<3>    |   17.815|
-i_A<0>         |o_ALU_out<4>    |   18.082|
-i_A<0>         |o_ALU_out<5>    |   18.566|
-i_A<0>         |o_ALU_out<6>    |   17.821|
-i_A<0>         |o_ALU_out<7>    |   17.452|
-i_A<1>         |o_ALU_carry_flag|    9.782|
-i_A<1>         |o_ALU_out<0>    |   20.041|
-i_A<1>         |o_ALU_out<1>    |   19.044|
-i_A<1>         |o_ALU_out<2>    |   19.853|
-i_A<1>         |o_ALU_out<3>    |   18.308|
-i_A<1>         |o_ALU_out<4>    |   18.575|
-i_A<1>         |o_ALU_out<5>    |   19.059|
-i_A<1>         |o_ALU_out<6>    |   18.314|
-i_A<1>         |o_ALU_out<7>    |   17.945|
-i_A<2>         |o_ALU_carry_flag|   10.110|
-i_A<2>         |o_ALU_out<0>    |   23.988|
-i_A<2>         |o_ALU_out<1>    |   20.570|
-i_A<2>         |o_ALU_out<2>    |   20.351|
-i_A<2>         |o_ALU_out<3>    |   18.806|
-i_A<2>         |o_ALU_out<4>    |   19.073|
-i_A<2>         |o_ALU_out<5>    |   19.557|
-i_A<2>         |o_ALU_out<6>    |   18.812|
-i_A<2>         |o_ALU_out<7>    |   18.443|
-i_A<3>         |o_ALU_carry_flag|   10.491|
-i_A<3>         |o_ALU_out<0>    |   28.040|
-i_A<3>         |o_ALU_out<1>    |   24.622|
-i_A<3>         |o_ALU_out<2>    |   20.948|
-i_A<3>         |o_ALU_out<3>    |   17.219|
-i_A<3>         |o_ALU_out<4>    |   17.486|
-i_A<3>         |o_ALU_out<5>    |   17.970|
-i_A<3>         |o_ALU_out<6>    |   17.225|
-i_A<3>         |o_ALU_out<7>    |   16.856|
-i_A<4>         |o_ALU_carry_flag|   10.168|
-i_A<4>         |o_ALU_out<0>    |   30.819|
-i_A<4>         |o_ALU_out<1>    |   27.401|
-i_A<4>         |o_ALU_out<2>    |   23.727|
-i_A<4>         |o_ALU_out<3>    |   18.615|
-i_A<4>         |o_ALU_out<4>    |   18.882|
-i_A<4>         |o_ALU_out<5>    |   19.366|
-i_A<4>         |o_ALU_out<6>    |   18.621|
-i_A<4>         |o_ALU_out<7>    |   18.252|
-i_A<5>         |o_ALU_carry_flag|    9.653|
-i_A<5>         |o_ALU_out<0>    |   33.084|
-i_A<5>         |o_ALU_out<1>    |   29.666|
-i_A<5>         |o_ALU_out<2>    |   25.992|
-i_A<5>         |o_ALU_out<3>    |   19.977|
-i_A<5>         |o_ALU_out<4>    |   18.830|
-i_A<5>         |o_ALU_out<5>    |   19.314|
-i_A<5>         |o_ALU_out<6>    |   18.569|
-i_A<5>         |o_ALU_out<7>    |   18.200|
-i_A<6>         |o_ALU_carry_flag|    9.636|
-i_A<6>         |o_ALU_out<0>    |   34.585|
-i_A<6>         |o_ALU_out<1>    |   31.167|
-i_A<6>         |o_ALU_out<2>    |   27.493|
-i_A<6>         |o_ALU_out<3>    |   21.478|
-i_A<6>         |o_ALU_out<4>    |   19.070|
-i_A<6>         |o_ALU_out<5>    |   19.554|
-i_A<6>         |o_ALU_out<6>    |   18.809|
-i_A<6>         |o_ALU_out<7>    |   18.440|
-i_A<7>         |o_ALU_carry_flag|   13.285|
-i_A<7>         |o_ALU_out<0>    |   35.967|
-i_A<7>         |o_ALU_out<1>    |   32.549|
-i_A<7>         |o_ALU_out<2>    |   28.875|
-i_A<7>         |o_ALU_out<3>    |   22.860|
-i_A<7>         |o_ALU_out<4>    |   19.143|
-i_A<7>         |o_ALU_out<5>    |   17.847|
-i_A<7>         |o_ALU_out<6>    |   17.102|
-i_A<7>         |o_ALU_out<7>    |   16.733|
-i_ALU_sel<0>   |o_ALU_out<0>    |   15.733|
-i_ALU_sel<0>   |o_ALU_out<1>    |   15.305|
-i_ALU_sel<0>   |o_ALU_out<2>    |   15.177|
-i_ALU_sel<0>   |o_ALU_out<3>    |   14.745|
-i_ALU_sel<0>   |o_ALU_out<4>    |   14.546|
-i_ALU_sel<0>   |o_ALU_out<5>    |   14.536|
-i_ALU_sel<0>   |o_ALU_out<6>    |   15.379|
-i_ALU_sel<0>   |o_ALU_out<7>    |   14.091|
-i_ALU_sel<1>   |o_ALU_out<0>    |   15.360|
-i_ALU_sel<1>   |o_ALU_out<1>    |   15.540|
-i_ALU_sel<1>   |o_ALU_out<2>    |   15.213|
-i_ALU_sel<1>   |o_ALU_out<3>    |   14.411|
-i_ALU_sel<1>   |o_ALU_out<4>    |   13.942|
-i_ALU_sel<1>   |o_ALU_out<5>    |   14.166|
-i_ALU_sel<1>   |o_ALU_out<6>    |   15.114|
-i_ALU_sel<1>   |o_ALU_out<7>    |   14.012|
-i_ALU_sel<2>   |o_ALU_out<0>    |   11.734|
-i_ALU_sel<2>   |o_ALU_out<1>    |   13.432|
-i_ALU_sel<2>   |o_ALU_out<2>    |   12.904|
-i_ALU_sel<2>   |o_ALU_out<3>    |   11.316|
-i_ALU_sel<2>   |o_ALU_out<4>    |   11.261|
-i_ALU_sel<2>   |o_ALU_out<5>    |   11.954|
-i_ALU_sel<2>   |o_ALU_out<6>    |   11.946|
-i_ALU_sel<2>   |o_ALU_out<7>    |   10.178|
-i_ALU_sel<3>   |o_ALU_out<0>    |   12.065|
-i_ALU_sel<3>   |o_ALU_out<1>    |   13.060|
-i_ALU_sel<3>   |o_ALU_out<2>    |   12.946|
-i_ALU_sel<3>   |o_ALU_out<3>    |   11.455|
-i_ALU_sel<3>   |o_ALU_out<4>    |   11.311|
-i_ALU_sel<3>   |o_ALU_out<5>    |   11.846|
-i_ALU_sel<3>   |o_ALU_out<6>    |   12.081|
-i_ALU_sel<3>   |o_ALU_out<7>    |   10.712|
-i_B<0>         |o_ALU_carry_flag|    9.896|
-i_B<0>         |o_ALU_out<0>    |   35.043|
-i_B<0>         |o_ALU_out<1>    |   31.625|
-i_B<0>         |o_ALU_out<2>    |   27.951|
-i_B<0>         |o_ALU_out<3>    |   21.936|
-i_B<0>         |o_ALU_out<4>    |   18.230|
-i_B<0>         |o_ALU_out<5>    |   18.714|
-i_B<0>         |o_ALU_out<6>    |   17.969|
-i_B<0>         |o_ALU_out<7>    |   17.600|
-i_B<1>         |o_ALU_carry_flag|   10.357|
-i_B<1>         |o_ALU_out<0>    |   34.658|
-i_B<1>         |o_ALU_out<1>    |   31.240|
-i_B<1>         |o_ALU_out<2>    |   27.566|
-i_B<1>         |o_ALU_out<3>    |   21.551|
-i_B<1>         |o_ALU_out<4>    |   18.500|
-i_B<1>         |o_ALU_out<5>    |   18.984|
-i_B<1>         |o_ALU_out<6>    |   18.239|
-i_B<1>         |o_ALU_out<7>    |   17.870|
-i_B<2>         |o_ALU_carry_flag|   10.120|
-i_B<2>         |o_ALU_out<0>    |   34.354|
-i_B<2>         |o_ALU_out<1>    |   30.936|
-i_B<2>         |o_ALU_out<2>    |   27.262|
-i_B<2>         |o_ALU_out<3>    |   21.247|
-i_B<2>         |o_ALU_out<4>    |   18.131|
-i_B<2>         |o_ALU_out<5>    |   18.615|
-i_B<2>         |o_ALU_out<6>    |   17.870|
-i_B<2>         |o_ALU_out<7>    |   17.501|
-i_B<3>         |o_ALU_carry_flag|   10.969|
-i_B<3>         |o_ALU_out<0>    |   36.349|
-i_B<3>         |o_ALU_out<1>    |   32.931|
-i_B<3>         |o_ALU_out<2>    |   29.257|
-i_B<3>         |o_ALU_out<3>    |   23.242|
-i_B<3>         |o_ALU_out<4>    |   19.525|
-i_B<3>         |o_ALU_out<5>    |   18.486|
-i_B<3>         |o_ALU_out<6>    |   17.741|
-i_B<3>         |o_ALU_out<7>    |   17.372|
-i_B<4>         |o_ALU_carry_flag|   10.768|
-i_B<4>         |o_ALU_out<0>    |   36.143|
-i_B<4>         |o_ALU_out<1>    |   32.725|
-i_B<4>         |o_ALU_out<2>    |   29.051|
-i_B<4>         |o_ALU_out<3>    |   23.036|
-i_B<4>         |o_ALU_out<4>    |   19.319|
-i_B<4>         |o_ALU_out<5>    |   18.832|
-i_B<4>         |o_ALU_out<6>    |   18.087|
-i_B<4>         |o_ALU_out<7>    |   17.718|
-i_B<5>         |o_ALU_carry_flag|   10.335|
-i_B<5>         |o_ALU_out<0>    |   35.033|
-i_B<5>         |o_ALU_out<1>    |   31.615|
-i_B<5>         |o_ALU_out<2>    |   27.941|
-i_B<5>         |o_ALU_out<3>    |   21.926|
-i_B<5>         |o_ALU_out<4>    |   18.209|
-i_B<5>         |o_ALU_out<5>    |   17.271|
-i_B<5>         |o_ALU_out<6>    |   16.526|
-i_B<5>         |o_ALU_out<7>    |   16.157|
-i_B<6>         |o_ALU_carry_flag|   10.431|
-i_B<6>         |o_ALU_out<0>    |   35.814|
-i_B<6>         |o_ALU_out<1>    |   32.396|
-i_B<6>         |o_ALU_out<2>    |   28.722|
-i_B<6>         |o_ALU_out<3>    |   22.707|
-i_B<6>         |o_ALU_out<4>    |   18.990|
-i_B<6>         |o_ALU_out<5>    |   17.542|
-i_B<6>         |o_ALU_out<6>    |   16.797|
-i_B<6>         |o_ALU_out<7>    |   16.428|
-i_B<7>         |o_ALU_carry_flag|   10.108|
-i_B<7>         |o_ALU_out<0>    |   35.951|
-i_B<7>         |o_ALU_out<1>    |   32.533|
-i_B<7>         |o_ALU_out<2>    |   28.859|
-i_B<7>         |o_ALU_out<3>    |   22.844|
-i_B<7>         |o_ALU_out<4>    |   19.127|
-i_B<7>         |o_ALU_out<5>    |   17.222|
-i_B<7>         |o_ALU_out<6>    |   16.477|
-i_B<7>         |o_ALU_out<7>    |   16.108|
+i_A<0>         |o_ALU_carry_flag|   11.547|
+i_A<0>         |o_ALU_out<0>    |   17.576|
+i_A<0>         |o_ALU_out<1>    |   17.418|
+i_A<0>         |o_ALU_out<2>    |   17.987|
+i_A<0>         |o_ALU_out<3>    |   17.670|
+i_A<0>         |o_ALU_out<4>    |   18.022|
+i_A<0>         |o_ALU_out<5>    |   18.266|
+i_A<0>         |o_ALU_out<6>    |   17.572|
+i_A<0>         |o_ALU_out<7>    |   17.525|
+i_A<1>         |o_ALU_carry_flag|   12.194|
+i_A<1>         |o_ALU_out<0>    |   17.152|
+i_A<1>         |o_ALU_out<1>    |   16.071|
+i_A<1>         |o_ALU_out<2>    |   16.640|
+i_A<1>         |o_ALU_out<3>    |   16.323|
+i_A<1>         |o_ALU_out<4>    |   16.675|
+i_A<1>         |o_ALU_out<5>    |   16.919|
+i_A<1>         |o_ALU_out<6>    |   16.225|
+i_A<1>         |o_ALU_out<7>    |   16.178|
+i_A<2>         |o_ALU_carry_flag|   11.668|
+i_A<2>         |o_ALU_out<0>    |   21.404|
+i_A<2>         |o_ALU_out<1>    |   18.546|
+i_A<2>         |o_ALU_out<2>    |   18.316|
+i_A<2>         |o_ALU_out<3>    |   17.999|
+i_A<2>         |o_ALU_out<4>    |   18.351|
+i_A<2>         |o_ALU_out<5>    |   18.595|
+i_A<2>         |o_ALU_out<6>    |   17.901|
+i_A<2>         |o_ALU_out<7>    |   17.854|
+i_A<3>         |o_ALU_carry_flag|   11.897|
+i_A<3>         |o_ALU_out<0>    |   24.091|
+i_A<3>         |o_ALU_out<1>    |   21.233|
+i_A<3>         |o_ALU_out<2>    |   18.129|
+i_A<3>         |o_ALU_out<3>    |   17.812|
+i_A<3>         |o_ALU_out<4>    |   18.164|
+i_A<3>         |o_ALU_out<5>    |   18.408|
+i_A<3>         |o_ALU_out<6>    |   17.714|
+i_A<3>         |o_ALU_out<7>    |   17.667|
+i_A<4>         |o_ALU_carry_flag|   10.709|
+i_A<4>         |o_ALU_out<0>    |   26.852|
+i_A<4>         |o_ALU_out<1>    |   23.994|
+i_A<4>         |o_ALU_out<2>    |   20.099|
+i_A<4>         |o_ALU_out<3>    |   16.666|
+i_A<4>         |o_ALU_out<4>    |   17.018|
+i_A<4>         |o_ALU_out<5>    |   17.262|
+i_A<4>         |o_ALU_out<6>    |   16.568|
+i_A<4>         |o_ALU_out<7>    |   16.521|
+i_A<5>         |o_ALU_carry_flag|   13.699|
+i_A<5>         |o_ALU_out<0>    |   31.035|
+i_A<5>         |o_ALU_out<1>    |   28.177|
+i_A<5>         |o_ALU_out<2>    |   24.282|
+i_A<5>         |o_ALU_out<3>    |   20.206|
+i_A<5>         |o_ALU_out<4>    |   17.598|
+i_A<5>         |o_ALU_out<5>    |   17.842|
+i_A<5>         |o_ALU_out<6>    |   17.148|
+i_A<5>         |o_ALU_out<7>    |   17.101|
+i_A<6>         |o_ALU_carry_flag|   11.330|
+i_A<6>         |o_ALU_out<0>    |   31.219|
+i_A<6>         |o_ALU_out<1>    |   28.361|
+i_A<6>         |o_ALU_out<2>    |   24.466|
+i_A<6>         |o_ALU_out<3>    |   20.390|
+i_A<6>         |o_ALU_out<4>    |   17.149|
+i_A<6>         |o_ALU_out<5>    |   16.436|
+i_A<6>         |o_ALU_out<6>    |   15.742|
+i_A<6>         |o_ALU_out<7>    |   15.695|
+i_A<7>         |o_ALU_carry_flag|   11.571|
+i_A<7>         |o_ALU_out<0>    |   30.829|
+i_A<7>         |o_ALU_out<1>    |   27.971|
+i_A<7>         |o_ALU_out<2>    |   24.076|
+i_A<7>         |o_ALU_out<3>    |   20.000|
+i_A<7>         |o_ALU_out<4>    |   16.759|
+i_A<7>         |o_ALU_out<5>    |   16.311|
+i_A<7>         |o_ALU_out<6>    |   15.617|
+i_A<7>         |o_ALU_out<7>    |   15.570|
+i_ALU_sel<0>   |o_ALU_out<0>    |   12.907|
+i_ALU_sel<0>   |o_ALU_out<1>    |   12.743|
+i_ALU_sel<0>   |o_ALU_out<2>    |   12.378|
+i_ALU_sel<0>   |o_ALU_out<3>    |   12.933|
+i_ALU_sel<0>   |o_ALU_out<4>    |   12.372|
+i_ALU_sel<0>   |o_ALU_out<5>    |   13.701|
+i_ALU_sel<0>   |o_ALU_out<6>    |   14.320|
+i_ALU_sel<0>   |o_ALU_out<7>    |   12.588|
+i_ALU_sel<1>   |o_ALU_out<0>    |   13.284|
+i_ALU_sel<1>   |o_ALU_out<1>    |   12.417|
+i_ALU_sel<1>   |o_ALU_out<2>    |   12.611|
+i_ALU_sel<1>   |o_ALU_out<3>    |   13.383|
+i_ALU_sel<1>   |o_ALU_out<4>    |   12.785|
+i_ALU_sel<1>   |o_ALU_out<5>    |   13.817|
+i_ALU_sel<1>   |o_ALU_out<6>    |   15.124|
+i_ALU_sel<1>   |o_ALU_out<7>    |   13.571|
+i_ALU_sel<2>   |o_ALU_out<0>    |   13.177|
+i_ALU_sel<2>   |o_ALU_out<1>    |   11.378|
+i_ALU_sel<2>   |o_ALU_out<2>    |    9.897|
+i_ALU_sel<2>   |o_ALU_out<3>    |   11.495|
+i_ALU_sel<2>   |o_ALU_out<4>    |   12.794|
+i_ALU_sel<2>   |o_ALU_out<5>    |   12.764|
+i_ALU_sel<2>   |o_ALU_out<6>    |   12.731|
+i_ALU_sel<2>   |o_ALU_out<7>    |   10.930|
+i_ALU_sel<3>   |o_ALU_out<0>    |   11.209|
+i_ALU_sel<3>   |o_ALU_out<1>    |   12.637|
+i_ALU_sel<3>   |o_ALU_out<2>    |   10.235|
+i_ALU_sel<3>   |o_ALU_out<3>    |   11.759|
+i_ALU_sel<3>   |o_ALU_out<4>    |   12.914|
+i_ALU_sel<3>   |o_ALU_out<5>    |   12.215|
+i_ALU_sel<3>   |o_ALU_out<6>    |   12.890|
+i_ALU_sel<3>   |o_ALU_out<7>    |   10.804|
+i_B<0>         |o_ALU_carry_flag|   11.645|
+i_B<0>         |o_ALU_out<0>    |   32.283|
+i_B<0>         |o_ALU_out<1>    |   29.425|
+i_B<0>         |o_ALU_out<2>    |   25.530|
+i_B<0>         |o_ALU_out<3>    |   21.454|
+i_B<0>         |o_ALU_out<4>    |   18.213|
+i_B<0>         |o_ALU_out<5>    |   17.964|
+i_B<0>         |o_ALU_out<6>    |   17.270|
+i_B<0>         |o_ALU_out<7>    |   17.223|
+i_B<1>         |o_ALU_carry_flag|   12.302|
+i_B<1>         |o_ALU_out<0>    |   32.278|
+i_B<1>         |o_ALU_out<1>    |   29.420|
+i_B<1>         |o_ALU_out<2>    |   25.525|
+i_B<1>         |o_ALU_out<3>    |   21.449|
+i_B<1>         |o_ALU_out<4>    |   18.208|
+i_B<1>         |o_ALU_out<5>    |   18.150|
+i_B<1>         |o_ALU_out<6>    |   17.456|
+i_B<1>         |o_ALU_out<7>    |   17.409|
+i_B<2>         |o_ALU_carry_flag|   11.391|
+i_B<2>         |o_ALU_out<0>    |   31.554|
+i_B<2>         |o_ALU_out<1>    |   28.696|
+i_B<2>         |o_ALU_out<2>    |   24.801|
+i_B<2>         |o_ALU_out<3>    |   20.725|
+i_B<2>         |o_ALU_out<4>    |   17.484|
+i_B<2>         |o_ALU_out<5>    |   17.293|
+i_B<2>         |o_ALU_out<6>    |   16.599|
+i_B<2>         |o_ALU_out<7>    |   16.552|
+i_B<3>         |o_ALU_carry_flag|   11.902|
+i_B<3>         |o_ALU_out<0>    |   32.353|
+i_B<3>         |o_ALU_out<1>    |   29.495|
+i_B<3>         |o_ALU_out<2>    |   25.600|
+i_B<3>         |o_ALU_out<3>    |   21.524|
+i_B<3>         |o_ALU_out<4>    |   18.283|
+i_B<3>         |o_ALU_out<5>    |   16.358|
+i_B<3>         |o_ALU_out<6>    |   15.243|
+i_B<3>         |o_ALU_out<7>    |   15.196|
+i_B<4>         |o_ALU_carry_flag|   11.124|
+i_B<4>         |o_ALU_out<0>    |   31.494|
+i_B<4>         |o_ALU_out<1>    |   28.636|
+i_B<4>         |o_ALU_out<2>    |   24.741|
+i_B<4>         |o_ALU_out<3>    |   20.665|
+i_B<4>         |o_ALU_out<4>    |   17.424|
+i_B<4>         |o_ALU_out<5>    |   16.073|
+i_B<4>         |o_ALU_out<6>    |   15.379|
+i_B<4>         |o_ALU_out<7>    |   15.332|
+i_B<5>         |o_ALU_carry_flag|   11.945|
+i_B<5>         |o_ALU_out<0>    |   32.199|
+i_B<5>         |o_ALU_out<1>    |   29.341|
+i_B<5>         |o_ALU_out<2>    |   25.446|
+i_B<5>         |o_ALU_out<3>    |   21.370|
+i_B<5>         |o_ALU_out<4>    |   18.129|
+i_B<5>         |o_ALU_out<5>    |   16.204|
+i_B<5>         |o_ALU_out<6>    |   14.740|
+i_B<5>         |o_ALU_out<7>    |   14.693|
+i_B<6>         |o_ALU_carry_flag|   11.184|
+i_B<6>         |o_ALU_out<0>    |   32.058|
+i_B<6>         |o_ALU_out<1>    |   29.200|
+i_B<6>         |o_ALU_out<2>    |   25.305|
+i_B<6>         |o_ALU_out<3>    |   21.229|
+i_B<6>         |o_ALU_out<4>    |   17.988|
+i_B<6>         |o_ALU_out<5>    |   16.411|
+i_B<6>         |o_ALU_out<6>    |   15.717|
+i_B<6>         |o_ALU_out<7>    |   15.670|
+i_B<7>         |o_ALU_carry_flag|   11.955|
+i_B<7>         |o_ALU_out<0>    |   31.869|
+i_B<7>         |o_ALU_out<1>    |   29.011|
+i_B<7>         |o_ALU_out<2>    |   25.116|
+i_B<7>         |o_ALU_out<3>    |   21.040|
+i_B<7>         |o_ALU_out<4>    |   17.799|
+i_B<7>         |o_ALU_out<5>    |   15.874|
+i_B<7>         |o_ALU_out<6>    |   15.137|
+i_B<7>         |o_ALU_out<7>    |   15.090|
 ---------------+----------------+---------+
 
 
-Analysis completed Sat Mar 23 17:43:01 2019 
+Analysis completed Sat Mar 23 18:23:14 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:

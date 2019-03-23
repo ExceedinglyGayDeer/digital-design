@@ -41,3 +41,9 @@ map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -reg
 par -w -intstyle ise -ol high -mt off my_ALU_map.ncd my_ALU.ncd my_ALU.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml my_ALU.twx my_ALU.ncd -o my_ALU.twr my_ALU.pcf -ucf papilio_pro_ALU_constraints.ucf 
 bitgen -intstyle ise -f my_ALU.ut my_ALU.ncd 
+xst -intstyle ise -ifn "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/my_ALU/my_ALU.xst" -ofn "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/my_ALU/my_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc papilio_pro_ALU_constraints.ucf -p xc6slx9-tqg144-2 "my_ALU.ngc" my_ALU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o my_ALU_map.ncd my_ALU.ngd my_ALU.pcf 
+par -w -intstyle ise -ol high -mt off my_ALU_map.ncd my_ALU.ncd my_ALU.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml my_ALU.twx my_ALU.ncd -o my_ALU.twr my_ALU.pcf -ucf papilio_pro_ALU_constraints.ucf 
+bitgen -intstyle ise -f my_ALU.ut my_ALU.ncd 

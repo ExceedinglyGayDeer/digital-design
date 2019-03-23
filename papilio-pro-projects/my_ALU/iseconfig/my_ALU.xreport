@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-03-23T16:59:38</DateModified>
+  <DateModified>2019-03-23T18:22:46</DateModified>
   <ModuleName>my_ALU</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2019-03-22T18:47:36</SummaryTimeStamp>
   <SavedFilePath>C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/my_ALU/iseconfig/my_ALU.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/my_ALU\</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/my_ALU</ImplementationReportsDirectory>
   <DateInitialized>2019-03-22T18:10:46</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
