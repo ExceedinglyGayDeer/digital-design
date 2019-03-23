@@ -1,0 +1,65 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/sdram_vhd_134/test_sdrm_isim_beh.exe -prj C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/sdram_vhd_134/test_sdrm_beh.prj work.test_sdrm 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/sdram_vhd_134/sdrmc_state.vhd" into library work
+Parsing VHDL file "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/sdram_vhd_134/ref_cntr.vhd" into library work
+Parsing VHDL file "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/sdram_vhd_134/rcd_cntr.vhd" into library work
+Parsing VHDL file "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/sdram_vhd_134/ki_cntr.vhd" into library work
+Parsing VHDL file "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/sdram_vhd_134/cslt_cntr.vhd" into library work
+Parsing VHDL file "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/sdram_vhd_134/brst_cntr.vhd" into library work
+Parsing VHDL file "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/sdram_vhd_134/sys_int.vhd" into library work
+Parsing VHDL file "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/sdram_vhd_134/sdrm_t.vhd" into library work
+Parsing VHDL file "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/sdram_vhd_134/micron/mti_pkg.vhd" into library micron
+Parsing VHDL file "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/sdram_vhd_134/vrlgutil.vhd" into library micron
+Parsing VHDL file "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/sdram_vhd_134/sdrm.vhd" into library work
+Parsing VHDL file "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/sdram_vhd_134/micron/mt48lc1m16a1-8a.vhd" into library micron
+Parsing VHDL file "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/sdram_vhd_134/ihdlutil.vhd" into library micron
+Parsing VHDL file "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/sdram_vhd_134/sdrm_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package textio
+Compiling package vcomponents
+Compiling package ihdlutil
+Compiling package vrlgutil
+Compiling package mti_pkg
+Compiling package mt48lc1m16a1_pkg
+Compiling package numeric_std
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling package std_logic_unsigned
+Compiling architecture sdrmc_state_arch of entity sdrmc_state [sdrmc_state_default]
+Compiling architecture cslt_cntr_arch of entity cslt_cntr [cslt_cntr_default]
+Compiling architecture brst_cntr_arch of entity brst_cntr [brst_cntr_default]
+Compiling architecture rcd_cntr_arch of entity rcd_cntr [rcd_cntr_default]
+Compiling architecture ref_cntr_arch of entity ref_cntr [ref_cntr_default]
+Compiling architecture ki_cntr_arch of entity ki_cntr [ki_cntr_default]
+Compiling architecture srl16_v of entity SRL16 [\SRL16("0000000000000000")(0,15)...]
+Compiling architecture sdrm_t_arch of entity sdrm_t [sdrm_t_default]
+Compiling architecture sys_int_arch of entity sys_int [\sys_int(31,31,8,4)\]
+Compiling architecture ibufg_v of entity IBUFG [\IBUFG("DONT_CARE","0",true,"DEF...]
+Compiling architecture dcm_adv_clock_divide_by_2_v of entity dcm_adv_clock_divide_by_2 [dcm_adv_clock_divide_by_2_defaul...]
+Compiling architecture dcm_adv_maximum_period_check_v of entity dcm_adv_maximum_period_check [\dcm_adv_maximum_period_check(" ...]
+Compiling architecture dcm_adv_maximum_period_check_v of entity dcm_adv_maximum_period_check [\dcm_adv_maximum_period_check(" ...]
+Compiling architecture dcm_adv_clock_lost_v of entity dcm_adv_clock_lost [dcm_adv_clock_lost_default]
+Compiling architecture dcm_adv_v of entity DCM_ADV [\DCM_ADV(true," ",true,false,2.0...]
+Compiling architecture dcm_base_v of entity DCM_BASE [\DCM_BASE(2.0,1,4,false,10.0,"NO...]
+Compiling architecture obuf_f_16_v of entity OBUF_F_16 [obuf_f_16_default]
+Compiling architecture bufg_v of entity BUFG [bufg_default]
+Compiling architecture iobuf_f_12_v of entity IOBUF_F_12 [iobuf_f_12_default]
+Compiling architecture obuf_f_12_v of entity OBUF_F_12 [obuf_f_12_default]
+Compiling architecture ibuf_v of entity IBUF [\IBUF("DONT_CARE","0",true,"AUTO...]
+Compiling architecture sdrm_arch of entity sdrm [sdrm_default]
+Compiling architecture behave of entity mt48lc1m16a1 [\mt48lc1m16a1(6000,1000,2000,300...]
+Compiling architecture test_sdrm_arch of entity test_sdrm
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 61 VHDL Units
+Built simulation executable C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/sdram_vhd_134/test_sdrm_isim_beh.exe
+Fuse Memory Usage: 66828 KB
+Fuse CPU Usage: 1406 ms

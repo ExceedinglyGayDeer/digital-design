@@ -1,0 +1,29 @@
+Command line:
+   test_sdrm_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55925
+
+Fri Mar 22 18:02:11 2019
+
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 5188.52 Meg
+
+ Total Signals          : 1447
+ Total Nets             : 5402
+ Total Signal Drivers   : 739
+ Total Blocks           : 169
+ Total Primitive Blocks : 161
+ Total Processes        : 500
+ Total Traceable Variables  : 362
+ Total Scalar Nets and Variables : 11181
+Total Line Count : 4396
+
+ Total Simulation Time: 3.89063 sec
+
+ Current Memory Usage: 5031.23 Meg
+
+Fri Mar 22 18:04:10 2019
+
