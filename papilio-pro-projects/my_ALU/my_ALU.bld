@@ -15,22 +15,6 @@ Annotating constraints to design from ucf file "papilio_pro_ALU_constraints.ucf"
 ...
 Resolving constraint associations...
 Checking Constraint Associations...
-ERROR:ConstraintSystem:59 - Constraint <NET o_ALU_carry 			LOC = "P123" |>
-   [papilio_pro_ALU_constraints.ucf(36)]: NET "o_ALU_carry" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET o_ALU_carry 			LOC = "P123" |> [papilio_pro_ALU_constraints.ucf(36)]'
-   could not be found and so the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD=LVTTL;>
-   [papilio_pro_ALU_constraints.ucf(36)]: NET "o_ALU_carry" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
 Done...
 
 Checking expanded design ...
@@ -43,14 +27,13 @@ Partition Implementation Status
 -------------------------------
 
 NGDBUILD Design Results Summary:
-  Number of errors:     2
-  Number of warnings:   1
+  Number of errors:     0
+  Number of warnings:   0
 
 Total memory usage is 4419500 kilobytes
 
-Total REAL time to NGDBUILD completion:  2 sec
-Total CPU time to NGDBUILD completion:   2 sec
-
-One or more errors were found during NGDBUILD.  No NGD file will be written.
+Writing NGD file "my_ALU.ngd" ...
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
 
 Writing NGDBUILD log file "my_ALU.bld"...

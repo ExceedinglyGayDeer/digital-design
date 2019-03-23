@@ -1,14 +1,14 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sat Mar 23 17:09:48 2019
+// Written by: Map P.20131013 on Sat Mar 23 17:42:45 2019
 //! **************************************************************************
 
 SCHEMATIC START;
 PROHIBIT = SITE "P144";
 PROHIBIT = SITE "P69";
 PROHIBIT = SITE "P60";
+COMP "o_ALU_carry_flag" LOCATE = SITE "P123" LEVEL 1;
 COMP "i_ALU_sel<0>" LOCATE = SITE "P115" LEVEL 1;
 COMP "i_ALU_sel<1>" LOCATE = SITE "P114" LEVEL 1;
-COMP "o_ALU_carry" LOCATE = SITE "P123" LEVEL 1;
 COMP "i_A<0>" LOCATE = SITE "P121" LEVEL 1;
 COMP "i_A<1>" LOCATE = SITE "P120" LEVEL 1;
 COMP "i_A<2>" LOCATE = SITE "P119" LEVEL 1;

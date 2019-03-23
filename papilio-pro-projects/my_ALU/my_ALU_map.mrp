@@ -10,7 +10,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Sat Mar 23 17:09:45 2019
+Mapped Date    : Sat Mar 23 17:42:39 2019
 
 Design Summary
 --------------
@@ -76,8 +76,8 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                4.13
 
 Peak Memory Usage:  4517 MB
-Total REAL time to MAP completion:  4 secs 
-Total CPU time to MAP completion:   3 secs 
+Total REAL time to MAP completion:  7 secs 
+Total CPU time to MAP completion:   7 secs 
 
 Table of Contents
 -----------------
@@ -226,7 +226,7 @@ Section 6 - IOB Properties
 | i_B<5>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | i_B<6>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | i_B<7>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| o_ALU_carry                        | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| o_ALU_carry_flag                   | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
 | o_ALU_out<0>                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
 | o_ALU_out<1>                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
 | o_ALU_out<2>                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
