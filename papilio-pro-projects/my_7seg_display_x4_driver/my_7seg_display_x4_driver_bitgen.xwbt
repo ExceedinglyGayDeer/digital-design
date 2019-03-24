@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\my_7seg_display_x4_driver\my_7seg_display_x4_driver.ncd
+OUTFILE=C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\my_7seg_display_x4_driver\my_7seg_display_x4_driver.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\my_7seg_display_x4_driver
+LICENSE=WebPack
+USER_INFO=211679383_0_0_333
