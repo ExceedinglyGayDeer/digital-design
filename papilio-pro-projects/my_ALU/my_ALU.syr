@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: my_ALU.prj
 
@@ -125,13 +125,14 @@ Synthesizing Unit <my_ALU>.
     Found 8-bit adder for signal <i_A[7]_i_B[7]_add_14_OUT> created at line 90.
     Found 9-bit adder for signal <tmp> created at line 96.
     Found 8-bit subtractor for signal <GND_6_o_GND_6_o_sub_2_OUT<7:0>> created at line 57.
-    Found 8x8-bit multiplier for signal <n0019> created at line 59.
-    Found 8-bit 13-to-1 multiplexer for signal <o_ALU_out> created at line 53.
-    Found 8-bit comparator greater for signal <i_B[7]_i_A[7]_LessThan_13_o> created at line 85
+    Found 8x8-bit multiplier for signal <n0021> created at line 59.
+    Found 8-bit 14-to-1 multiplexer for signal <o_ALU_out> created at line 53.
+    Found 8-bit comparator greater for signal <i_B[7]_i_A[7]_LessThan_11_o> created at line 79
+    Found 8-bit comparator equal for signal <i_A[7]_i_B[7]_equal_13_o> created at line 85
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   3 Adder/Subtractor(s).
-	inferred   1 Comparator(s).
+	inferred   2 Comparator(s).
 	inferred   1 Multiplexer(s).
 Unit <my_ALU> synthesized.
 
@@ -185,7 +186,7 @@ Macro Statistics
  8-bit adder                                           : 1
  8-bit subtractor                                      : 1
  9-bit adder                                           : 3
-# Comparators                                          : 10
+# Comparators                                          : 11
  10-bit comparator lessequal                           : 1
  11-bit comparator lessequal                           : 1
  12-bit comparator lessequal                           : 1
@@ -193,12 +194,13 @@ Macro Statistics
  14-bit comparator lessequal                           : 1
  15-bit comparator lessequal                           : 1
  16-bit comparator lessequal                           : 1
+ 8-bit comparator equal                                : 1
  8-bit comparator greater                              : 1
  8-bit comparator lessequal                            : 1
  9-bit comparator lessequal                            : 1
 # Multiplexers                                         : 58
  1-bit 2-to-1 multiplexer                              : 56
- 8-bit 13-to-1 multiplexer                             : 1
+ 8-bit 14-to-1 multiplexer                             : 1
  8-bit 2-to-1 multiplexer                              : 1
 # Xors                                                 : 1
  8-bit xor2                                            : 1
@@ -221,7 +223,7 @@ Macro Statistics
  8-bit adder carry in                                  : 8
  8-bit subtractor                                      : 1
  9-bit adder                                           : 1
-# Comparators                                          : 10
+# Comparators                                          : 11
  10-bit comparator lessequal                           : 1
  11-bit comparator lessequal                           : 1
  12-bit comparator lessequal                           : 1
@@ -229,12 +231,13 @@ Macro Statistics
  14-bit comparator lessequal                           : 1
  15-bit comparator lessequal                           : 1
  16-bit comparator lessequal                           : 1
+ 8-bit comparator equal                                : 1
  8-bit comparator greater                              : 1
  8-bit comparator lessequal                            : 1
  9-bit comparator lessequal                            : 1
 # Multiplexers                                         : 58
  1-bit 2-to-1 multiplexer                              : 56
- 8-bit 13-to-1 multiplexer                             : 1
+ 8-bit 14-to-1 multiplexer                             : 1
  8-bit 2-to-1 multiplexer                              : 1
 # Xors                                                 : 1
  8-bit xor2                                            : 1
@@ -280,15 +283,15 @@ Top Level Output File Name         : my_ALU.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 202
+# BELS                             : 208
 #      GND                         : 1
-#      LUT2                        : 31
+#      LUT2                        : 35
 #      LUT3                        : 13
-#      LUT4                        : 14
-#      LUT5                        : 25
-#      LUT6                        : 50
+#      LUT4                        : 9
+#      LUT5                        : 26
+#      LUT6                        : 52
 #      MUXCY                       : 33
-#      MUXF7                       : 5
+#      MUXF7                       : 9
 #      VCC                         : 1
 #      XORCY                       : 29
 # IO Buffers                       : 29
@@ -304,14 +307,14 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                  133  out of   5720     2%  
-    Number used as Logic:               133  out of   5720     2%  
+ Number of Slice LUTs:                  135  out of   5720     2%  
+    Number used as Logic:               135  out of   5720     2%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    133
-   Number with an unused Flip Flop:     133  out of    133   100%  
-   Number with an unused LUT:             0  out of    133     0%  
-   Number of fully used LUT-FF pairs:     0  out of    133     0%  
+ Number of LUT Flip Flop pairs used:    135
+   Number with an unused Flip Flop:     135  out of    135   100%  
+   Number with an unused LUT:             0  out of    135     0%  
+   Number of fully used LUT-FF pairs:     0  out of    135     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
@@ -352,7 +355,7 @@ Speed Grade: -2
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 35.101ns
+   Maximum combinational path delay: 35.892ns
 
 Timing Details:
 ---------------
@@ -360,9 +363,9 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1079562 / 9
+  Total number of paths / destination ports: 1719488 / 9
 -------------------------------------------------------------------------
-Delay:               35.101ns (Levels of Logic = 26)
+Delay:               35.892ns (Levels of Logic = 28)
   Source:            i_B<3> (PAD)
   Destination:       o_ALU_out<0> (PAD)
 
@@ -370,7 +373,7 @@ Delay:               35.101ns (Levels of Logic = 26)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            22   1.328   1.764  i_B_3_IBUF (i_B_3_IBUF)
+     IBUF:I->O            23   1.328   1.788  i_B_3_IBUF (i_B_3_IBUF)
      LUT5:I0->O            6   0.254   1.306  i_A[7]_i_B[7]_div_3/o<7>121 (i_A[7]_i_B[7]_div_3/o<7>12)
      LUT6:I1->O            2   0.254   1.002  i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_8_o_MUX_90_o161 (i_A[7]_i_B[7]_div_3/a[6]_GND_8_o_MUX_84_o)
      LUT6:I2->O            4   0.254   1.259  i_A[7]_i_B[7]_div_3/o<5>12 (i_A[7]_i_B[7]_div_3_OUT<5>)
@@ -380,25 +383,27 @@ Delay:               35.101ns (Levels of Logic = 26)
      LUT6:I0->O            2   0.254   1.181  i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_8_o_MUX_140_o151 (i_A[7]_i_B[7]_div_3/a[5]_GND_8_o_MUX_135_o)
      LUT6:I0->O            5   0.254   1.117  i_A[7]_i_B[7]_div_3/o<3>1 (i_A[7]_i_B[7]_div_3/Madd_GND_8_o_b[7]_add_11_OUT_Madd_Madd_cy<5>)
      LUT6:I2->O           13   0.254   1.553  i_A[7]_i_B[7]_div_3/o<3>11 (i_A[7]_i_B[7]_div_3_OUT<3>)
-     LUT6:I0->O            2   0.254   1.181  i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_8_o_MUX_162_o141 (i_A[7]_i_B[7]_div_3/a[4]_GND_8_o_MUX_158_o)
+     LUT6:I0->O            3   0.254   1.221  i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_8_o_MUX_162_o141 (i_A[7]_i_B[7]_div_3/a[4]_GND_8_o_MUX_158_o)
      LUT6:I0->O            1   0.254   0.910  i_A[7]_i_B[7]_div_3/o<2>1 (i_A[7]_i_B[7]_div_3/o<2>1)
-     LUT3:I0->O            1   0.235   0.790  i_A[7]_i_B[7]_div_3/o<2>24_SW0 (N11)
-     LUT6:I4->O           15   0.250   1.585  i_A[7]_i_B[7]_div_3/o<2>24 (i_A[7]_i_B[7]_div_3_OUT<2>)
-     LUT5:I0->O            2   0.254   1.181  i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_8_o_MUX_182_o131 (i_A[7]_i_B[7]_div_3/a[3]_GND_8_o_MUX_179_o)
+     LUT3:I0->O            1   0.235   0.790  i_A[7]_i_B[7]_div_3/o<2>24_SW0 (N10)
+     LUT6:I4->O           18   0.250   1.665  i_A[7]_i_B[7]_div_3/o<2>24 (i_A[7]_i_B[7]_div_3_OUT<2>)
+     LUT5:I0->O            1   0.254   1.137  i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_8_o_MUX_182_o131 (i_A[7]_i_B[7]_div_3/a[3]_GND_8_o_MUX_179_o)
      LUT6:I0->O            2   0.254   0.954  i_A[7]_i_B[7]_div_3/o<1>3 (i_A[7]_i_B[7]_div_3/o<1>1)
-     LUT6:I3->O            1   0.235   0.000  i_A[7]_i_B[7]_div_3/o<1>1_G (N22)
-     MUXF7:I1->O           5   0.175   0.841  i_A[7]_i_B[7]_div_3/o<1>1 (i_A[7]_i_B[7]_div_3/o<1>2)
-     LUT6:I5->O            3   0.254   0.765  i_A[7]_i_B[7]_div_3/o<1>21 (i_A[7]_i_B[7]_div_3_OUT<1>)
-     MUXF7:S->O            2   0.185   1.181  i_A[7]_i_B[7]_div_3/o<0>6 (i_A[7]_i_B[7]_div_3/o<0>1)
-     LUT6:I0->O            1   0.254   0.000  i_A[7]_i_B[7]_div_3/o<0>1_G (N24)
-     MUXF7:I1->O           1   0.175   0.682  i_A[7]_i_B[7]_div_3/o<0>1 (i_A[7]_i_B[7]_div_3/o<0>2)
-     LUT5:I4->O            1   0.254   0.682  Mmux_o_ALU_out39_SW0 (N13)
-     LUT5:I4->O            1   0.254   1.112  Mmux_o_ALU_out39 (Mmux_o_ALU_out38)
-     LUT6:I1->O            1   0.254   0.681  Mmux_o_ALU_out310 (o_ALU_out_0_OBUF)
+     LUT6:I3->O            1   0.235   0.000  i_A[7]_i_B[7]_div_3/o<1>1_G (N23)
+     MUXF7:I1->O           1   0.175   0.682  i_A[7]_i_B[7]_div_3/o<1>1 (i_A[7]_i_B[7]_div_3/o<1>2)
+     LUT6:I5->O            6   0.254   1.306  i_A[7]_i_B[7]_div_3/o<1>21 (i_A[7]_i_B[7]_div_3_OUT<1>)
+     LUT5:I0->O            2   0.254   1.156  i_A[7]_i_B[7]_div_3/Mmux_n028651 (i_A[7]_i_B[7]_div_3/n0286<4>)
+     LUT6:I1->O            1   0.254   0.000  i_A[7]_i_B[7]_div_3/o<0>1_G (N25)
+     MUXF7:I1->O           2   0.175   0.834  i_A[7]_i_B[7]_div_3/o<0>1 (i_A[7]_i_B[7]_div_3/o<0>2)
+     LUT5:I3->O            1   0.250   0.000  i_A[7]_i_B[7]_div_3/o<0>2_G (N21)
+     MUXF7:I1->O           1   0.175   0.910  i_A[7]_i_B[7]_div_3/o<0>2 (i_A[7]_i_B[7]_div_3_OUT<0>)
+     LUT6:I3->O            1   0.235   0.682  Mmux_o_ALU_out_6 (Mmux_o_ALU_out_6)
+     LUT6:I5->O            1   0.254   0.000  i_ALU_sel<3>1_F (N28)
+     MUXF7:I0->O           1   0.163   0.681  i_ALU_sel<3>1 (o_ALU_out_0_OBUF)
      OBUF:I->O                 2.912          o_ALU_out_0_OBUF (o_ALU_out<0>)
     ----------------------------------------
-    Total                     35.101ns (10.063ns logic, 25.038ns route)
-                                       (28.7% logic, 71.3% route)
+    Total                     35.892ns (10.447ns logic, 25.445ns route)
+                                       (29.1% logic, 70.9% route)
 
 =========================================================================
 
@@ -408,8 +413,8 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.92 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.96 secs
  
 --> 
 

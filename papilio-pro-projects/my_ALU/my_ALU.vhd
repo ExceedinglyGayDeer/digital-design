@@ -32,7 +32,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity my_ALU is
 	generic ( 
-     constant N: natural := 1  -- number of shited or rotated bits
+     constant N: natural := 1  -- number of shifted or rotated bits
     );
 	 
     Port ( i_A : in  STD_LOGIC_VECTOR (7 downto 0); -- 8-bit input
@@ -81,8 +81,8 @@ begin
 					else
 						ALU_result <= x"00";
 					end if;
-				when "1111" => -- Greater than compare
-					if(i_A > i_B) then
+				when "1111" => -- Equal than compare
+					if(i_A = i_B) then
 						ALU_result <= x"01";
 					else
 						ALU_result <= x"00";
