@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-03-21T08:19:44</DateModified>
+  <DateModified>2019-03-25T08:25:39</DateModified>
   <ModuleName>counter30</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/counter30/iseconfig/counter30.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/counter30</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/counter30\</ImplementationReportsDirectory>
   <DateInitialized>2019-03-21T08:19:44</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

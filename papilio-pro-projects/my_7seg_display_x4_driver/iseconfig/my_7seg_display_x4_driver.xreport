@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-03-24T13:40:29</DateModified>
+  <DateModified>2019-03-25T08:57:26</DateModified>
   <ModuleName>my_7seg_display_x4_driver</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/my_7seg_display_x4_driver/iseconfig/my_7seg_display_x4_driver.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/my_7seg_display_x4_driver</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/my_7seg_display_x4_driver\</ImplementationReportsDirectory>
   <DateInitialized>2019-03-24T13:40:28</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

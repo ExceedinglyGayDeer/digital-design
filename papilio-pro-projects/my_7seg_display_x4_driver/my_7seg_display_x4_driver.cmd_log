@@ -41,3 +41,4 @@ map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -reg
 par -w -intstyle ise -ol high -mt off my_7seg_display_x4_driver_map.ncd my_7seg_display_x4_driver.ncd my_7seg_display_x4_driver.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml my_7seg_display_x4_driver.twx my_7seg_display_x4_driver.ncd -o my_7seg_display_x4_driver.twr my_7seg_display_x4_driver.pcf -ucf papilio_pro_7seg_driver_constraints.ucf 
 bitgen -intstyle ise -f my_7seg_display_x4_driver.ut my_7seg_display_x4_driver.ncd 
+bitgen -intstyle ise -f my_7seg_display_x4_driver.ut my_7seg_display_x4_driver.ncd 

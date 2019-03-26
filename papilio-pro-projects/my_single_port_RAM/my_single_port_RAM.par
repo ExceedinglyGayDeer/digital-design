@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-HSB-XPS15::  Sat Mar 23 20:37:14 2019
+HSB-XPS15::  Mon Mar 25 08:51:30 2019
 
 par -w -intstyle ise -ol high -mt off my_single_port_RAM_map.ncd
 my_single_port_RAM.ncd my_single_port_RAM.pcf 

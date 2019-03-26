@@ -1,0 +1,581 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: CPU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CPU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CPU"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : CPU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\register_32x8\register_32x8.vhd" into library work
+Parsing entity <register_32x8>.
+Parsing architecture <Behavioral> of entity <register_32x8>.
+Parsing VHDL file "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\my_ALU\my_ALU.vhd" into library work
+Parsing entity <my_ALU>.
+Parsing architecture <Behavioral> of entity <my_alu>.
+Parsing VHDL file "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" into library work
+Parsing entity <CPU>.
+Parsing architecture <Behavioral> of entity <cpu>.
+WARNING:HDLCompiler:946 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" Line 90: Actual for formal port i_write_enable is neither a static name nor a globally static expression
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <CPU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <my_ALU> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <register_32x8> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" Line 95: Assignment to r_unused ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <CPU>.
+    Related source file is "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd".
+WARNING:Xst:647 - Input <i_INSTRUCTION<6:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" line 73: Output port <o_ALU_carry_flag> of the instance <Inst_my_ALU> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <CPU> synthesized.
+
+Synthesizing Unit <my_ALU>.
+    Related source file is "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\my_ALU\my_ALU.vhd".
+        N = 1
+    Found 8-bit register for signal <ALU_Result>.
+    Found 8-bit adder for signal <i_A[7]_i_B[7]_add_14_OUT> created at line 92.
+    Found 9-bit adder for signal <tmp> created at line 99.
+    Found 8-bit subtractor for signal <GND_7_o_GND_7_o_sub_2_OUT<7:0>> created at line 59.
+    Found 8x8-bit multiplier for signal <n0022> created at line 61.
+    Found 8-bit 14-to-1 multiplexer for signal <i_ALU_sel[3]_GND_7_o_wide_mux_15_OUT> created at line 55.
+    Found 8-bit comparator greater for signal <i_B[7]_i_A[7]_LessThan_11_o> created at line 81
+    Found 8-bit comparator equal for signal <i_A[7]_i_B[7]_equal_13_o> created at line 87
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <my_ALU> synthesized.
+
+Synthesizing Unit <div_8u_8u>.
+    Related source file is "".
+    Found 16-bit adder for signal <n0292> created at line 0.
+    Found 16-bit adder for signal <GND_9_o_b[7]_add_1_OUT> created at line 0.
+    Found 15-bit adder for signal <n0296> created at line 0.
+    Found 15-bit adder for signal <GND_9_o_b[7]_add_3_OUT> created at line 0.
+    Found 14-bit adder for signal <n0300> created at line 0.
+    Found 14-bit adder for signal <GND_9_o_b[7]_add_5_OUT> created at line 0.
+    Found 13-bit adder for signal <n0304> created at line 0.
+    Found 13-bit adder for signal <GND_9_o_b[7]_add_7_OUT> created at line 0.
+    Found 12-bit adder for signal <n0308> created at line 0.
+    Found 12-bit adder for signal <GND_9_o_b[7]_add_9_OUT> created at line 0.
+    Found 11-bit adder for signal <n0312> created at line 0.
+    Found 11-bit adder for signal <GND_9_o_b[7]_add_11_OUT> created at line 0.
+    Found 10-bit adder for signal <n0316> created at line 0.
+    Found 10-bit adder for signal <GND_9_o_b[7]_add_13_OUT> created at line 0.
+    Found 9-bit adder for signal <n0320> created at line 0.
+    Found 9-bit adder for signal <GND_9_o_b[7]_add_15_OUT> created at line 0.
+    Found 16-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Summary:
+	inferred  16 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+	inferred  57 Multiplexer(s).
+Unit <div_8u_8u> synthesized.
+
+Synthesizing Unit <register_32x8>.
+    Related source file is "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\register_32x8\register_32x8.vhd".
+    Found 8-bit register for signal <o_OUT_B>.
+    Found 8-bit register for signal <o_OUT_A>.
+    Found 32x8-bit dual-port RAM <Mram_r_REGISTER> for signal <r_REGISTER>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <register_32x8> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x8-bit dual-port RAM                                : 2
+# Multipliers                                          : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 19
+ 10-bit adder                                          : 2
+ 11-bit adder                                          : 2
+ 12-bit adder                                          : 2
+ 13-bit adder                                          : 2
+ 14-bit adder                                          : 2
+ 15-bit adder                                          : 2
+ 16-bit adder                                          : 2
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 3
+# Registers                                            : 3
+ 8-bit register                                        : 3
+# Comparators                                          : 11
+ 10-bit comparator lessequal                           : 1
+ 11-bit comparator lessequal                           : 1
+ 12-bit comparator lessequal                           : 1
+ 13-bit comparator lessequal                           : 1
+ 14-bit comparator lessequal                           : 1
+ 15-bit comparator lessequal                           : 1
+ 16-bit comparator lessequal                           : 1
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 58
+ 1-bit 2-to-1 multiplexer                              : 56
+ 8-bit 14-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <register_32x8>.
+INFO:Xst:3231 - The small RAM <Mram_r_REGISTER> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <i_CLK>         | rise     |
+    |     weA            | connected to signal <i_WRITE_ENABLE> | high     |
+    |     addrA          | connected to signal <i_WRITE_ADDRESS> |          |
+    |     diA            | connected to signal <i_DATA_IN>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     addrB          | connected to signal <i_ADDRESS_A>   |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_r_REGISTER1> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <i_CLK>         | rise     |
+    |     weA            | connected to signal <i_WRITE_ENABLE> | high     |
+    |     addrA          | connected to signal <i_WRITE_ADDRESS> |          |
+    |     diA            | connected to signal <i_DATA_IN>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     addrB          | connected to signal <i_ADDRESS_B>   |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <register_32x8> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x8-bit dual-port distributed RAM                    : 2
+# Multipliers                                          : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 11
+ 8-bit adder                                           : 1
+ 8-bit adder carry in                                  : 8
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+# Comparators                                          : 11
+ 10-bit comparator lessequal                           : 1
+ 11-bit comparator lessequal                           : 1
+ 12-bit comparator lessequal                           : 1
+ 13-bit comparator lessequal                           : 1
+ 14-bit comparator lessequal                           : 1
+ 15-bit comparator lessequal                           : 1
+ 16-bit comparator lessequal                           : 1
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 58
+ 1-bit 2-to-1 multiplexer                              : 56
+ 8-bit 14-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <register_32x8> ...
+
+Optimizing unit <CPU> ...
+
+Optimizing unit <my_ALU> ...
+
+Optimizing unit <div_8u_8u> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CPU, actual ratio is 3.
+FlipFlop Inst_register_32x8/o_OUT_A_4 has been replicated 2 time(s)
+FlipFlop Inst_register_32x8/o_OUT_A_5 has been replicated 3 time(s)
+FlipFlop Inst_register_32x8/o_OUT_A_6 has been replicated 3 time(s)
+FlipFlop Inst_register_32x8/o_OUT_A_7 has been replicated 3 time(s)
+FlipFlop Inst_register_32x8/o_OUT_B_0 has been replicated 2 time(s)
+FlipFlop Inst_register_32x8/o_OUT_B_1 has been replicated 2 time(s)
+FlipFlop Inst_register_32x8/o_OUT_B_2 has been replicated 2 time(s)
+FlipFlop Inst_register_32x8/o_OUT_B_3 has been replicated 2 time(s)
+FlipFlop Inst_register_32x8/o_OUT_B_4 has been replicated 2 time(s)
+FlipFlop Inst_register_32x8/o_OUT_B_5 has been replicated 2 time(s)
+FlipFlop Inst_register_32x8/o_OUT_B_6 has been replicated 2 time(s)
+FlipFlop Inst_register_32x8/o_OUT_B_7 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 51
+ Flip-Flops                                            : 51
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : CPU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 297
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 32
+#      LUT3                        : 14
+#      LUT4                        : 15
+#      LUT5                        : 43
+#      LUT6                        : 125
+#      MUXCY                       : 25
+#      MUXF7                       : 11
+#      VCC                         : 1
+#      XORCY                       : 29
+# FlipFlops/Latches                : 51
+#      FD                          : 51
+# RAMS                             : 6
+#      RAM32M                      : 2
+#      RAM32X1D                    : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 33
+#      IBUF                        : 25
+#      OBUF                        : 8
+# DSPs                             : 1
+#      DSP48A1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              51  out of  11440     0%  
+ Number of Slice LUTs:                  246  out of   5720     4%  
+    Number used as Logic:               230  out of   5720     4%  
+    Number used as Memory:               16  out of   1440     1%  
+       Number used as RAM:               16
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    282
+   Number with an unused Flip Flop:     231  out of    282    81%  
+   Number with an unused LUT:            36  out of    282    12%  
+   Number of fully used LUT-FF pairs:    15  out of    282     5%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          41
+ Number of bonded IOBs:                  34  out of    102    33%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+i_CLK                              | BUFGP                  | 58    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 18.224ns (Maximum Frequency: 54.872MHz)
+   Minimum input arrival time before clock: 7.594ns
+   Maximum output required time after clock: 4.118ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_CLK'
+  Clock period: 18.224ns (frequency: 54.872MHz)
+  Total number of paths / destination ports: 4162464 / 67
+-------------------------------------------------------------------------
+Delay:               18.224ns (Levels of Logic = 17)
+  Source:            Inst_register_32x8/o_OUT_A_6_2 (FF)
+  Destination:       Inst_my_ALU/ALU_Result_0 (FF)
+  Source Clock:      i_CLK rising
+  Destination Clock: i_CLK rising
+
+  Data Path: Inst_register_32x8/o_OUT_A_6_2 to Inst_my_ALU/ALU_Result_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   1.156  Inst_register_32x8/o_OUT_A_6_2 (Inst_register_32x8/o_OUT_A_6_2)
+     LUT5:I0->O            1   0.254   1.112  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<6>11_SW6 (N179)
+     LUT5:I0->O            2   0.254   0.834  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<4>2_SW2 (N54)
+     LUT5:I3->O            1   0.250   0.682  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<4>2_SW4 (N116)
+     LUT5:I4->O           12   0.254   1.069  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<4>11 (Inst_my_ALU/i_A[7]_i_B[7]_div_3_OUT<4>)
+     LUT6:I5->O           11   0.254   1.039  Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_140_o161 (Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[6]_GND_9_o_MUX_134_o)
+     LUT6:I5->O            2   0.254   0.726  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11_1 (Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11)
+     LUT6:I5->O            5   0.254   0.841  Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_162_o151 (Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[5]_GND_9_o_MUX_157_o)
+     LUT3:I2->O            8   0.254   0.944  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24_SW2 (N56)
+     LUT6:I5->O           11   0.254   1.039  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24 (Inst_my_ALU/i_A[7]_i_B[7]_div_3_OUT<2>)
+     LUT6:I5->O            4   0.254   0.803  Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_182_o141 (Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[4]_GND_9_o_MUX_178_o)
+     MUXCY:DI->O           1   0.181   0.000  Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4> (Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<5> (Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<5>)
+     XORCY:CI->O           3   0.206   0.874  Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<6> (Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<6>)
+     LUT6:I4->O            1   0.250   0.790  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2_SW3 (N151)
+     LUT5:I3->O            4   0.250   0.804  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2 (N32)
+     LUT5:I4->O            1   0.254   0.958  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>1_SW6 (N155)
+     LUT6:I2->O            1   0.254   0.000  Inst_my_ALU/i_ALU_sel<3>1 (Inst_my_ALU/i_ALU_sel[3]_GND_7_o_wide_mux_15_OUT<0>)
+     FD:D                      0.074          Inst_my_ALU/ALU_Result_0
+    ----------------------------------------
+    Total                     18.224ns (4.553ns logic, 13.671ns route)
+                                       (25.0% logic, 75.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_CLK'
+  Total number of paths / destination ports: 402 / 98
+-------------------------------------------------------------------------
+Offset:              7.594ns (Levels of Logic = 6)
+  Source:            i_INSTRUCTION<8> (PAD)
+  Destination:       Inst_my_ALU/ALU_Result_0 (FF)
+  Destination Clock: i_CLK rising
+
+  Data Path: i_INSTRUCTION<8> to Inst_my_ALU/ALU_Result_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            36   1.328   1.863  i_INSTRUCTION_8_IBUF (i_INSTRUCTION_8_IBUF)
+     LUT4:I0->O            4   0.254   1.032  Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_15_OUT_7 (Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_15_OUT_7)
+     LUT6:I3->O            1   0.235   0.000  Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_15_OUT_6_SW1_G (N204)
+     MUXF7:I1->O           4   0.175   1.234  Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_15_OUT_6_SW1 (N87)
+     LUT5:I0->O            1   0.254   0.910  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>1_SW0 (N153)
+     LUT6:I3->O            1   0.235   0.000  Inst_my_ALU/i_ALU_sel<3>1 (Inst_my_ALU/i_ALU_sel[3]_GND_7_o_wide_mux_15_OUT<0>)
+     FD:D                      0.074          Inst_my_ALU/ALU_Result_0
+    ----------------------------------------
+    Total                      7.594ns (2.555ns logic, 5.039ns route)
+                                       (33.6% logic, 66.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'i_CLK'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            Inst_my_ALU/ALU_Result_7 (FF)
+  Destination:       o_DATA<7> (PAD)
+  Source Clock:      i_CLK rising
+
+  Data Path: Inst_my_ALU/ALU_Result_7 to o_DATA<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  Inst_my_ALU/ALU_Result_7 (Inst_my_ALU/ALU_Result_7)
+     OBUF:I->O                 2.912          o_DATA_7_OBUF (o_DATA<7>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock i_CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_CLK          |   18.224|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.95 secs
+ 
+--> 
+
+Total memory usage is 4527724 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

@@ -65,10 +65,10 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="my_single_port_RAM_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="my_single_port_RAM_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="my_single_port_RAM_summary.xml"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="my_single_port_RAM_tb_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="my_single_port_RAM_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="my_single_port_RAM_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="my_single_port_RAM_tb_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="my_single_port_RAM_tb_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="my_single_port_RAM_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="my_single_port_RAM_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="my_single_port_RAM_xst.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="my_single_port_ram.bgn" xil_pn:subbranch="FPGAConfiguration"/>
@@ -90,6 +90,10 @@
     <transform xil_pn:end_ts="1553370076" xil_pn:in_ck="-7069933331833130263" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1553370076">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="my_single_port_RAM.vhd"/>
       <outfile xil_pn:name="my_single_port_RAM_tb.vhd"/>
     </transform>
@@ -108,12 +112,20 @@
     <transform xil_pn:end_ts="1553370079" xil_pn:in_ck="-7069933331833130263" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1553370079">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="my_single_port_RAM.vhd"/>
       <outfile xil_pn:name="my_single_port_RAM_tb.vhd"/>
     </transform>
     <transform xil_pn:end_ts="1553370082" xil_pn:in_ck="-7069933331833130263" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5995950620652161878" xil_pn:start_ts="1553370079">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="my_single_port_RAM_tb_beh.prj"/>
@@ -123,6 +135,7 @@
     <transform xil_pn:end_ts="1553370082" xil_pn:in_ck="1643383877761964398" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8373164492948007223" xil_pn:start_ts="1553370082">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="my_single_port_RAM_tb_isim_beh.wdb"/>
     </transform>
@@ -154,12 +167,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1553369824" xil_pn:in_ck="-703713973996100102" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-8277558663571281933" xil_pn:start_ts="1553369818">
+    <transform xil_pn:end_ts="1553500279" xil_pn:in_ck="-703713973996100102" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-8277558663571281933" xil_pn:start_ts="1553500273">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="my_single_port_RAM.lso"/>
@@ -169,6 +180,8 @@
       <outfile xil_pn:name="my_single_port_RAM.stx"/>
       <outfile xil_pn:name="my_single_port_RAM.syr"/>
       <outfile xil_pn:name="my_single_port_RAM.xst"/>
+      <outfile xil_pn:name="my_single_port_RAM_tb_beh.prj"/>
+      <outfile xil_pn:name="my_single_port_RAM_tb_stx_beh.prj"/>
       <outfile xil_pn:name="my_single_port_RAM_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
@@ -177,21 +190,19 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1553369829" xil_pn:in_ck="-7915089519606719595" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5689835946247479973" xil_pn:start_ts="1553369824">
+    <transform xil_pn:end_ts="1553500284" xil_pn:in_ck="-7915089519606719595" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5689835946247479973" xil_pn:start_ts="1553500279">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="my_single_port_RAM.bld"/>
       <outfile xil_pn:name="my_single_port_RAM.ngd"/>
       <outfile xil_pn:name="my_single_port_RAM_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1553369834" xil_pn:in_ck="-5671773949869605642" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1448924893915930207" xil_pn:start_ts="1553369829">
+    <transform xil_pn:end_ts="1553500289" xil_pn:in_ck="-5671773949869605642" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1448924893915930207" xil_pn:start_ts="1553500284">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -204,10 +215,9 @@
       <outfile xil_pn:name="my_single_port_RAM_summary.xml"/>
       <outfile xil_pn:name="my_single_port_RAM_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1553369842" xil_pn:in_ck="-7810626550185943313" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1553369834">
+    <transform xil_pn:end_ts="1553500298" xil_pn:in_ck="-7810626550185943313" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1553500289">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="my_single_port_RAM.ncd"/>
       <outfile xil_pn:name="my_single_port_RAM.pad"/>
@@ -219,11 +229,9 @@
       <outfile xil_pn:name="my_single_port_RAM_pad.txt"/>
       <outfile xil_pn:name="my_single_port_RAM_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1553369852" xil_pn:in_ck="-703713973996108979" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1553369844">
+    <transform xil_pn:end_ts="1553500486" xil_pn:in_ck="-703713973996108979" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1553500477">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="my_single_port_RAM.ut"/>
       <outfile xil_pn:name="my_single_port_ram.bgn"/>
@@ -233,10 +241,9 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1553369842" xil_pn:in_ck="-6641523975815821582" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1553369839">
+    <transform xil_pn:end_ts="1553500298" xil_pn:in_ck="-6641523975815821582" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1553500294">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="my_single_port_RAM.twr"/>
       <outfile xil_pn:name="my_single_port_RAM.twx"/>

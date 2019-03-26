@@ -1,0 +1,1 @@
+vhdtdtfi -prj CPU -o "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/CPU/register_32x8.vhi" -module register_32x8 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../register_32x8/register_32x8.vhd 

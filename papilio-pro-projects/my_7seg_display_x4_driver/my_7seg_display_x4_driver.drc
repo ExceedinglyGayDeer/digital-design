@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sun Mar 24 14:53:37 2019
+Mon Mar 25 09:02:54 2019
 
 drc -z my_7seg_display_x4_driver.ncd my_7seg_display_x4_driver.pcf
 
