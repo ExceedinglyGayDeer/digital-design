@@ -114,7 +114,7 @@ Parsing architecture <Behavioral> of entity <my_alu>.
 Parsing VHDL file "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" into library work
 Parsing entity <CPU>.
 Parsing architecture <Behavioral> of entity <cpu>.
-WARNING:HDLCompiler:946 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" Line 90: Actual for formal port i_write_enable is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" Line 98: Actual for formal port i_write_enable is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -125,7 +125,7 @@ Elaborating entity <CPU> (architecture <Behavioral>) from library <work>.
 Elaborating entity <my_ALU> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <register_32x8> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" Line 95: Assignment to r_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" Line 103: Assignment to r_unused ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -134,7 +134,10 @@ WARNING:HDLCompiler:1127 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. se
 Synthesizing Unit <CPU>.
     Related source file is "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd".
 WARNING:Xst:647 - Input <i_INSTRUCTION<6:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" line 73: Output port <o_ALU_carry_flag> of the instance <Inst_my_ALU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" line 78: Output port <o_ALU_carry_flag> of the instance <Inst_my_ALU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" line 78: Output port <o_ALU_overflow_flag> of the instance <Inst_my_ALU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" line 78: Output port <o_ALU_negative_flag> of the instance <Inst_my_ALU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" line 78: Output port <o_ALU_zero_flag> of the instance <Inst_my_ALU> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <CPU> synthesized.
@@ -142,19 +145,23 @@ Unit <CPU> synthesized.
 Synthesizing Unit <my_ALU>.
     Related source file is "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\my_ALU\my_ALU.vhd".
         N = 1
+    Found 1-bit register for signal <o_ALU_overflow_flag>.
+    Found 1-bit register for signal <o_ALU_negative_flag>.
+    Found 1-bit register for signal <o_ALU_zero_flag>.
     Found 8-bit register for signal <ALU_Result>.
-    Found 8-bit adder for signal <i_A[7]_i_B[7]_add_14_OUT> created at line 92.
-    Found 9-bit adder for signal <tmp> created at line 99.
-    Found 8-bit subtractor for signal <GND_7_o_GND_7_o_sub_2_OUT<7:0>> created at line 59.
-    Found 8x8-bit multiplier for signal <n0022> created at line 61.
-    Found 8-bit 14-to-1 multiplexer for signal <i_ALU_sel[3]_GND_7_o_wide_mux_15_OUT> created at line 55.
-    Found 8-bit comparator greater for signal <i_B[7]_i_A[7]_LessThan_11_o> created at line 81
-    Found 8-bit comparator equal for signal <i_A[7]_i_B[7]_equal_13_o> created at line 87
+    Found 8-bit adder for signal <i_A[7]_i_B[7]_add_15_OUT> created at line 119.
+    Found 9-bit adder for signal <tmp> created at line 132.
+    Found 8-bit subtractor for signal <GND_7_o_GND_7_o_sub_2_OUT<7:0>> created at line 73.
+    Found 8x8-bit multiplier for signal <n0035> created at line 87.
+    Found 8-bit 14-to-1 multiplexer for signal <i_ALU_sel[3]_GND_7_o_wide_mux_16_OUT> created at line 62.
+    Found 8-bit comparator greater for signal <i_A[7]_i_B[7]_LessThan_3_o> created at line 81
+    Found 8-bit comparator greater for signal <i_B[7]_i_A[7]_LessThan_12_o> created at line 107
+    Found 8-bit comparator equal for signal <i_A[7]_i_B[7]_equal_14_o> created at line 113
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   3 Adder/Subtractor(s).
-	inferred   8 D-type flip-flop(s).
-	inferred   2 Comparator(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   3 Comparator(s).
 	inferred   1 Multiplexer(s).
 Unit <my_ALU> synthesized.
 
@@ -220,9 +227,10 @@ Macro Statistics
  8-bit adder                                           : 1
  8-bit subtractor                                      : 1
  9-bit adder                                           : 3
-# Registers                                            : 3
+# Registers                                            : 6
+ 1-bit register                                        : 3
  8-bit register                                        : 3
-# Comparators                                          : 11
+# Comparators                                          : 12
  10-bit comparator lessequal                           : 1
  11-bit comparator lessequal                           : 1
  12-bit comparator lessequal                           : 1
@@ -231,14 +239,15 @@ Macro Statistics
  15-bit comparator lessequal                           : 1
  16-bit comparator lessequal                           : 1
  8-bit comparator equal                                : 1
- 8-bit comparator greater                              : 1
+ 8-bit comparator greater                              : 2
  8-bit comparator lessequal                            : 1
  9-bit comparator lessequal                            : 1
 # Multiplexers                                         : 58
  1-bit 2-to-1 multiplexer                              : 56
  8-bit 14-to-1 multiplexer                             : 1
  8-bit 2-to-1 multiplexer                              : 1
-# Xors                                                 : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 2
  8-bit xor2                                            : 1
 
 =========================================================================
@@ -296,9 +305,9 @@ Macro Statistics
  8-bit adder carry in                                  : 8
  8-bit subtractor                                      : 1
  9-bit adder                                           : 1
-# Registers                                            : 24
- Flip-Flops                                            : 24
-# Comparators                                          : 11
+# Registers                                            : 27
+ Flip-Flops                                            : 27
+# Comparators                                          : 12
  10-bit comparator lessequal                           : 1
  11-bit comparator lessequal                           : 1
  12-bit comparator lessequal                           : 1
@@ -307,14 +316,15 @@ Macro Statistics
  15-bit comparator lessequal                           : 1
  16-bit comparator lessequal                           : 1
  8-bit comparator equal                                : 1
- 8-bit comparator greater                              : 1
+ 8-bit comparator greater                              : 2
  8-bit comparator lessequal                            : 1
  9-bit comparator lessequal                            : 1
 # Multiplexers                                         : 58
  1-bit 2-to-1 multiplexer                              : 56
  8-bit 14-to-1 multiplexer                             : 1
  8-bit 2-to-1 multiplexer                              : 1
-# Xors                                                 : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 2
  8-bit xor2                                            : 1
 
 =========================================================================
@@ -330,6 +340,9 @@ Optimizing unit <CPU> ...
 Optimizing unit <my_ALU> ...
 
 Optimizing unit <div_8u_8u> ...
+WARNING:Xst:2677 - Node <Inst_my_ALU/o_ALU_overflow_flag> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <Inst_my_ALU/o_ALU_negative_flag> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <Inst_my_ALU/o_ALU_zero_flag> of sequential type is unconnected in block <CPU>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -487,23 +500,23 @@ Delay:               18.224ns (Levels of Logic = 17)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               2   0.525   1.156  Inst_register_32x8/o_OUT_A_6_2 (Inst_register_32x8/o_OUT_A_6_2)
-     LUT5:I0->O            1   0.254   1.112  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<6>11_SW6 (N179)
-     LUT5:I0->O            2   0.254   0.834  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<4>2_SW2 (N54)
-     LUT5:I3->O            1   0.250   0.682  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<4>2_SW4 (N116)
-     LUT5:I4->O           12   0.254   1.069  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<4>11 (Inst_my_ALU/i_A[7]_i_B[7]_div_3_OUT<4>)
-     LUT6:I5->O           11   0.254   1.039  Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_140_o161 (Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[6]_GND_9_o_MUX_134_o)
-     LUT6:I5->O            2   0.254   0.726  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11_1 (Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11)
-     LUT6:I5->O            5   0.254   0.841  Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_162_o151 (Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[5]_GND_9_o_MUX_157_o)
-     LUT3:I2->O            8   0.254   0.944  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24_SW2 (N56)
-     LUT6:I5->O           11   0.254   1.039  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24 (Inst_my_ALU/i_A[7]_i_B[7]_div_3_OUT<2>)
-     LUT6:I5->O            4   0.254   0.803  Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_182_o141 (Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[4]_GND_9_o_MUX_178_o)
-     MUXCY:DI->O           1   0.181   0.000  Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4> (Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<5> (Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<5>)
-     XORCY:CI->O           3   0.206   0.874  Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<6> (Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<6>)
-     LUT6:I4->O            1   0.250   0.790  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2_SW3 (N151)
-     LUT5:I3->O            4   0.250   0.804  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2 (N32)
-     LUT5:I4->O            1   0.254   0.958  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>1_SW6 (N155)
-     LUT6:I2->O            1   0.254   0.000  Inst_my_ALU/i_ALU_sel<3>1 (Inst_my_ALU/i_ALU_sel[3]_GND_7_o_wide_mux_15_OUT<0>)
+     LUT5:I0->O            1   0.254   1.112  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<6>11_SW6 (N179)
+     LUT5:I0->O            2   0.254   0.834  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW2 (N54)
+     LUT5:I3->O            1   0.250   0.682  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW4 (N116)
+     LUT5:I4->O           12   0.254   1.069  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>11 (Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<4>)
+     LUT6:I5->O           11   0.254   1.039  Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_150_o161 (Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[6]_GND_9_o_MUX_144_o)
+     LUT6:I5->O            2   0.254   0.726  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<3>11_1 (Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<3>11)
+     LUT6:I5->O            5   0.254   0.841  Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_172_o151 (Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[5]_GND_9_o_MUX_167_o)
+     LUT3:I2->O            8   0.254   0.944  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24_SW2 (N56)
+     LUT6:I5->O           11   0.254   1.039  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24 (Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<2>)
+     LUT6:I5->O            4   0.254   0.803  Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_192_o141 (Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_188_o)
+     MUXCY:DI->O           1   0.181   0.000  Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4> (Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<5> (Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<5>)
+     XORCY:CI->O           3   0.206   0.874  Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<6> (Inst_my_ALU/i_A[7]_i_B[7]_div_4/GND_9_o_b[7]_add_15_OUT<6>)
+     LUT6:I4->O            1   0.250   0.790  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW2_SW3 (N151)
+     LUT5:I3->O            4   0.250   0.804  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW2 (N32)
+     LUT5:I4->O            1   0.254   0.958  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>1_SW6 (N155)
+     LUT6:I2->O            1   0.254   0.000  Inst_my_ALU/i_ALU_sel<3>1 (Inst_my_ALU/i_ALU_sel[3]_GND_7_o_wide_mux_16_OUT<0>)
      FD:D                      0.074          Inst_my_ALU/ALU_Result_0
     ----------------------------------------
     Total                     18.224ns (4.553ns logic, 13.671ns route)
@@ -523,11 +536,11 @@ Offset:              7.594ns (Levels of Logic = 6)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   1.328   1.863  i_INSTRUCTION_8_IBUF (i_INSTRUCTION_8_IBUF)
-     LUT4:I0->O            4   0.254   1.032  Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_15_OUT_7 (Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_15_OUT_7)
-     LUT6:I3->O            1   0.235   0.000  Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_15_OUT_6_SW1_G (N204)
-     MUXF7:I1->O           4   0.175   1.234  Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_15_OUT_6_SW1 (N87)
-     LUT5:I0->O            1   0.254   0.910  Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>1_SW0 (N153)
-     LUT6:I3->O            1   0.235   0.000  Inst_my_ALU/i_ALU_sel<3>1 (Inst_my_ALU/i_ALU_sel[3]_GND_7_o_wide_mux_15_OUT<0>)
+     LUT4:I0->O            4   0.254   1.032  Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_16_OUT_7 (Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_16_OUT_7)
+     LUT6:I3->O            1   0.235   0.000  Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_16_OUT_6_SW1_G (N204)
+     MUXF7:I1->O           4   0.175   1.234  Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_16_OUT_6_SW1 (N87)
+     LUT5:I0->O            1   0.254   0.910  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>1_SW0 (N153)
+     LUT6:I3->O            1   0.235   0.000  Inst_my_ALU/i_ALU_sel<3>1 (Inst_my_ALU/i_ALU_sel[3]_GND_7_o_wide_mux_16_OUT<0>)
      FD:D                      0.074          Inst_my_ALU/ALU_Result_0
     ----------------------------------------
     Total                      7.594ns (2.555ns logic, 5.039ns route)
@@ -573,9 +586,9 @@ Total CPU time to Xst completion: 7.95 secs
  
 --> 
 
-Total memory usage is 4527724 kilobytes
+Total memory usage is 4527740 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    3 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
 

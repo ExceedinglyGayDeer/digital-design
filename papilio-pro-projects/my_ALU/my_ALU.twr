@@ -32,190 +32,83 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Setup/Hold to clock i_CLK
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+i_A<0>      |   13.227(R)|      SLOW  |   -1.616(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_A<1>      |   13.075(R)|      SLOW  |   -1.473(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_A<2>      |   17.450(R)|      SLOW  |   -1.911(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_A<3>      |   20.402(R)|      SLOW  |   -1.760(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_A<4>      |   24.608(R)|      SLOW  |   -2.355(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_A<5>      |   28.303(R)|      SLOW  |   -2.535(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_A<6>      |   28.065(R)|      SLOW  |   -1.729(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_A<7>      |   27.649(R)|      SLOW  |   -1.656(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_ALU_sel<0>|    8.688(R)|      SLOW  |   -0.972(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_ALU_sel<1>|   10.053(R)|      SLOW  |   -0.906(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_ALU_sel<2>|    9.282(R)|      SLOW  |   -0.991(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_ALU_sel<3>|    7.761(R)|      SLOW  |   -0.876(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_B<0>      |   29.936(R)|      SLOW  |   -2.173(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_B<1>      |   28.371(R)|      SLOW  |   -2.272(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_B<2>      |   28.196(R)|      SLOW  |   -1.863(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_B<3>      |   28.877(R)|      SLOW  |   -2.277(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_B<4>      |   30.926(R)|      SLOW  |   -2.776(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_B<5>      |   28.721(R)|      SLOW  |   -2.266(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_B<6>      |   29.411(R)|      SLOW  |   -2.469(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_B<7>      |   29.184(R)|      SLOW  |   -1.652(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock i_CLK to Pad
+-------------------+-----------------+------------+-----------------+------------+------------------+--------+
+                   |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination        |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+-------------------+-----------------+------------+-----------------+------------+------------------+--------+
+o_ALU_negative_flag|         7.895(R)|      SLOW  |         2.931(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+o_ALU_out<0>       |         8.594(R)|      SLOW  |         3.597(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+o_ALU_out<1>       |         8.594(R)|      SLOW  |         3.597(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+o_ALU_out<2>       |         8.645(R)|      SLOW  |         3.648(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+o_ALU_out<3>       |         8.645(R)|      SLOW  |         3.648(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+o_ALU_out<4>       |         8.566(R)|      SLOW  |         3.569(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+o_ALU_out<5>       |         8.566(R)|      SLOW  |         3.569(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+o_ALU_out<6>       |         8.616(R)|      SLOW  |         3.619(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+o_ALU_out<7>       |         7.897(R)|      SLOW  |         2.933(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+o_ALU_overflow_flag|         9.712(R)|      SLOW  |         4.195(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+o_ALU_zero_flag    |         9.373(R)|      SLOW  |         3.905(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+-------------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock i_CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_CLK          |    3.035|         |         |         |
+---------------+---------+---------+---------+---------+
+
 Pad to Pad
 ---------------+----------------+---------+
 Source Pad     |Destination Pad |  Delay  |
 ---------------+----------------+---------+
-i_A<0>         |o_ALU_carry_flag|   11.243|
-i_A<0>         |o_ALU_out<0>    |   17.312|
-i_A<0>         |o_ALU_out<1>    |   16.822|
-i_A<0>         |o_ALU_out<2>    |   16.983|
-i_A<0>         |o_ALU_out<3>    |   16.410|
-i_A<0>         |o_ALU_out<4>    |   18.353|
-i_A<0>         |o_ALU_out<5>    |   18.236|
-i_A<0>         |o_ALU_out<6>    |   17.703|
-i_A<0>         |o_ALU_out<7>    |   17.938|
-i_A<1>         |o_ALU_carry_flag|   12.293|
-i_A<1>         |o_ALU_out<0>    |   18.599|
-i_A<1>         |o_ALU_out<1>    |   16.815|
-i_A<1>         |o_ALU_out<2>    |   16.976|
-i_A<1>         |o_ALU_out<3>    |   16.403|
-i_A<1>         |o_ALU_out<4>    |   18.346|
-i_A<1>         |o_ALU_out<5>    |   18.229|
-i_A<1>         |o_ALU_out<6>    |   17.696|
-i_A<1>         |o_ALU_out<7>    |   17.931|
-i_A<2>         |o_ALU_carry_flag|   12.852|
-i_A<2>         |o_ALU_out<0>    |   22.508|
-i_A<2>         |o_ALU_out<1>    |   18.994|
-i_A<2>         |o_ALU_out<2>    |   19.155|
-i_A<2>         |o_ALU_out<3>    |   18.582|
-i_A<2>         |o_ALU_out<4>    |   20.525|
-i_A<2>         |o_ALU_out<5>    |   20.408|
-i_A<2>         |o_ALU_out<6>    |   19.875|
-i_A<2>         |o_ALU_out<7>    |   20.110|
-i_A<3>         |o_ALU_carry_flag|   11.425|
-i_A<3>         |o_ALU_out<0>    |   25.023|
-i_A<3>         |o_ALU_out<1>    |   20.821|
-i_A<3>         |o_ALU_out<2>    |   17.359|
-i_A<3>         |o_ALU_out<3>    |   16.786|
-i_A<3>         |o_ALU_out<4>    |   18.729|
-i_A<3>         |o_ALU_out<5>    |   18.612|
-i_A<3>         |o_ALU_out<6>    |   18.079|
-i_A<3>         |o_ALU_out<7>    |   18.314|
-i_A<4>         |o_ALU_carry_flag|   10.881|
-i_A<4>         |o_ALU_out<0>    |   28.208|
-i_A<4>         |o_ALU_out<1>    |   24.006|
-i_A<4>         |o_ALU_out<2>    |   20.385|
-i_A<4>         |o_ALU_out<3>    |   16.854|
-i_A<4>         |o_ALU_out<4>    |   18.797|
-i_A<4>         |o_ALU_out<5>    |   18.680|
-i_A<4>         |o_ALU_out<6>    |   18.147|
-i_A<4>         |o_ALU_out<7>    |   18.382|
-i_A<5>         |o_ALU_carry_flag|   14.895|
-i_A<5>         |o_ALU_out<0>    |   33.033|
-i_A<5>         |o_ALU_out<1>    |   28.831|
-i_A<5>         |o_ALU_out<2>    |   25.210|
-i_A<5>         |o_ALU_out<3>    |   21.126|
-i_A<5>         |o_ALU_out<4>    |   20.370|
-i_A<5>         |o_ALU_out<5>    |   20.253|
-i_A<5>         |o_ALU_out<6>    |   19.720|
-i_A<5>         |o_ALU_out<7>    |   19.955|
-i_A<6>         |o_ALU_carry_flag|   11.139|
-i_A<6>         |o_ALU_out<0>    |   34.121|
-i_A<6>         |o_ALU_out<1>    |   29.919|
-i_A<6>         |o_ALU_out<2>    |   26.298|
-i_A<6>         |o_ALU_out<3>    |   22.214|
-i_A<6>         |o_ALU_out<4>    |   18.359|
-i_A<6>         |o_ALU_out<5>    |   17.107|
-i_A<6>         |o_ALU_out<6>    |   16.574|
-i_A<6>         |o_ALU_out<7>    |   16.809|
-i_A<7>         |o_ALU_carry_flag|   10.903|
-i_A<7>         |o_ALU_out<0>    |   34.174|
-i_A<7>         |o_ALU_out<1>    |   29.972|
-i_A<7>         |o_ALU_out<2>    |   26.351|
-i_A<7>         |o_ALU_out<3>    |   22.267|
-i_A<7>         |o_ALU_out<4>    |   18.412|
-i_A<7>         |o_ALU_out<5>    |   16.937|
-i_A<7>         |o_ALU_out<6>    |   16.404|
-i_A<7>         |o_ALU_out<7>    |   16.639|
-i_ALU_sel<0>   |o_ALU_out<0>    |   12.991|
-i_ALU_sel<0>   |o_ALU_out<1>    |   12.197|
-i_ALU_sel<0>   |o_ALU_out<2>    |   12.530|
-i_ALU_sel<0>   |o_ALU_out<3>    |   13.578|
-i_ALU_sel<0>   |o_ALU_out<4>    |   12.520|
-i_ALU_sel<0>   |o_ALU_out<5>    |   13.636|
-i_ALU_sel<0>   |o_ALU_out<6>    |   13.696|
-i_ALU_sel<0>   |o_ALU_out<7>    |   14.700|
-i_ALU_sel<1>   |o_ALU_out<0>    |   12.367|
-i_ALU_sel<1>   |o_ALU_out<1>    |   12.408|
-i_ALU_sel<1>   |o_ALU_out<2>    |   11.964|
-i_ALU_sel<1>   |o_ALU_out<3>    |   13.018|
-i_ALU_sel<1>   |o_ALU_out<4>    |   13.213|
-i_ALU_sel<1>   |o_ALU_out<5>    |   14.305|
-i_ALU_sel<1>   |o_ALU_out<6>    |   13.598|
-i_ALU_sel<1>   |o_ALU_out<7>    |   14.815|
-i_ALU_sel<2>   |o_ALU_out<0>    |   10.952|
-i_ALU_sel<2>   |o_ALU_out<1>    |   11.499|
-i_ALU_sel<2>   |o_ALU_out<2>    |   10.645|
-i_ALU_sel<2>   |o_ALU_out<3>    |   12.051|
-i_ALU_sel<2>   |o_ALU_out<4>    |   13.782|
-i_ALU_sel<2>   |o_ALU_out<5>    |   13.282|
-i_ALU_sel<2>   |o_ALU_out<6>    |   13.546|
-i_ALU_sel<2>   |o_ALU_out<7>    |   13.430|
-i_ALU_sel<3>   |o_ALU_out<0>    |   11.388|
-i_ALU_sel<3>   |o_ALU_out<1>    |   11.208|
-i_ALU_sel<3>   |o_ALU_out<2>    |   11.102|
-i_ALU_sel<3>   |o_ALU_out<3>    |   12.186|
-i_ALU_sel<3>   |o_ALU_out<4>    |   11.200|
-i_ALU_sel<3>   |o_ALU_out<5>    |   11.447|
-i_ALU_sel<3>   |o_ALU_out<6>    |   11.587|
-i_ALU_sel<3>   |o_ALU_out<7>    |   11.890|
-i_B<0>         |o_ALU_carry_flag|   12.624|
-i_B<0>         |o_ALU_out<0>    |   34.504|
-i_B<0>         |o_ALU_out<1>    |   30.302|
-i_B<0>         |o_ALU_out<2>    |   26.681|
-i_B<0>         |o_ALU_out<3>    |   22.597|
-i_B<0>         |o_ALU_out<4>    |   18.859|
-i_B<0>         |o_ALU_out<5>    |   18.742|
-i_B<0>         |o_ALU_out<6>    |   18.209|
-i_B<0>         |o_ALU_out<7>    |   18.444|
-i_B<1>         |o_ALU_carry_flag|   11.945|
-i_B<1>         |o_ALU_out<0>    |   34.183|
-i_B<1>         |o_ALU_out<1>    |   29.981|
-i_B<1>         |o_ALU_out<2>    |   26.360|
-i_B<1>         |o_ALU_out<3>    |   22.276|
-i_B<1>         |o_ALU_out<4>    |   18.579|
-i_B<1>         |o_ALU_out<5>    |   18.462|
-i_B<1>         |o_ALU_out<6>    |   17.929|
-i_B<1>         |o_ALU_out<7>    |   18.164|
-i_B<2>         |o_ALU_carry_flag|   12.443|
-i_B<2>         |o_ALU_out<0>    |   35.066|
-i_B<2>         |o_ALU_out<1>    |   30.864|
-i_B<2>         |o_ALU_out<2>    |   27.243|
-i_B<2>         |o_ALU_out<3>    |   23.159|
-i_B<2>         |o_ALU_out<4>    |   19.367|
-i_B<2>         |o_ALU_out<5>    |   19.250|
-i_B<2>         |o_ALU_out<6>    |   18.717|
-i_B<2>         |o_ALU_out<7>    |   18.952|
-i_B<3>         |o_ALU_carry_flag|   12.038|
-i_B<3>         |o_ALU_out<0>    |   35.162|
-i_B<3>         |o_ALU_out<1>    |   30.960|
-i_B<3>         |o_ALU_out<2>    |   27.339|
-i_B<3>         |o_ALU_out<3>    |   23.255|
-i_B<3>         |o_ALU_out<4>    |   19.400|
-i_B<3>         |o_ALU_out<5>    |   16.857|
-i_B<3>         |o_ALU_out<6>    |   16.324|
-i_B<3>         |o_ALU_out<7>    |   16.916|
-i_B<4>         |o_ALU_carry_flag|   11.976|
-i_B<4>         |o_ALU_out<0>    |   35.344|
-i_B<4>         |o_ALU_out<1>    |   31.142|
-i_B<4>         |o_ALU_out<2>    |   27.521|
-i_B<4>         |o_ALU_out<3>    |   23.437|
-i_B<4>         |o_ALU_out<4>    |   19.582|
-i_B<4>         |o_ALU_out<5>    |   16.920|
-i_B<4>         |o_ALU_out<6>    |   16.275|
-i_B<4>         |o_ALU_out<7>    |   17.098|
-i_B<5>         |o_ALU_carry_flag|   11.656|
-i_B<5>         |o_ALU_out<0>    |   35.043|
-i_B<5>         |o_ALU_out<1>    |   30.841|
-i_B<5>         |o_ALU_out<2>    |   27.220|
-i_B<5>         |o_ALU_out<3>    |   23.136|
-i_B<5>         |o_ALU_out<4>    |   19.281|
-i_B<5>         |o_ALU_out<5>    |   16.619|
-i_B<5>         |o_ALU_out<6>    |   15.763|
-i_B<5>         |o_ALU_out<7>    |   16.797|
-i_B<6>         |o_ALU_carry_flag|   11.573|
-i_B<6>         |o_ALU_out<0>    |   35.332|
-i_B<6>         |o_ALU_out<1>    |   31.130|
-i_B<6>         |o_ALU_out<2>    |   27.509|
-i_B<6>         |o_ALU_out<3>    |   23.425|
-i_B<6>         |o_ALU_out<4>    |   19.570|
-i_B<6>         |o_ALU_out<5>    |   16.908|
-i_B<6>         |o_ALU_out<6>    |   16.156|
-i_B<6>         |o_ALU_out<7>    |   17.086|
-i_B<7>         |o_ALU_carry_flag|   11.528|
-i_B<7>         |o_ALU_out<0>    |   35.288|
-i_B<7>         |o_ALU_out<1>    |   31.086|
-i_B<7>         |o_ALU_out<2>    |   27.465|
-i_B<7>         |o_ALU_out<3>    |   23.381|
-i_B<7>         |o_ALU_out<4>    |   19.526|
-i_B<7>         |o_ALU_out<5>    |   16.864|
-i_B<7>         |o_ALU_out<6>    |   16.317|
-i_B<7>         |o_ALU_out<7>    |   17.042|
+i_A<0>         |o_ALU_carry_flag|   11.229|
+i_A<1>         |o_ALU_carry_flag|   11.217|
+i_A<2>         |o_ALU_carry_flag|   12.309|
+i_A<3>         |o_ALU_carry_flag|   12.124|
+i_A<4>         |o_ALU_carry_flag|   12.014|
+i_A<5>         |o_ALU_carry_flag|   14.219|
+i_A<6>         |o_ALU_carry_flag|   11.123|
+i_A<7>         |o_ALU_carry_flag|   12.054|
+i_B<0>         |o_ALU_carry_flag|   12.114|
+i_B<1>         |o_ALU_carry_flag|   11.803|
+i_B<2>         |o_ALU_carry_flag|   11.668|
+i_B<3>         |o_ALU_carry_flag|   11.313|
+i_B<4>         |o_ALU_carry_flag|   13.327|
+i_B<5>         |o_ALU_carry_flag|   11.684|
+i_B<6>         |o_ALU_carry_flag|   11.478|
+i_B<7>         |o_ALU_carry_flag|   11.409|
 ---------------+----------------+---------+
 
 
-Analysis completed Mon Mar 25 07:57:27 2019 
+Analysis completed Wed Mar 27 20:50:36 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:

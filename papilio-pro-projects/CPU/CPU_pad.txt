@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Mar 26 21:16:34 2019
+Wed Mar 27 20:58:50 2019
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -26,17 +26,17 @@ Pinout by Pin Number:
 |P4        |                 |         |VCCO_3                    |         |           |3             |          |         |           |         |any******|          |           |                |
 |P5        |                 |IOBS     |IO_L52N_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |P6        |                 |IOBM     |IO_L52P_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
-|P7        |                 |IOBS     |IO_L51N_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
+|P7        |i_INSTRUCTION<30>|IOB      |IO_L51N_3                 |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
 |P8        |                 |IOBM     |IO_L51P_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
-|P9        |                 |IOBS     |IO_L50N_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
-|P10       |                 |IOBM     |IO_L50P_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
-|P11       |                 |IOBS     |IO_L49N_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
-|P12       |                 |IOBM     |IO_L49P_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
+|P9        |i_INSTRUCTION<26>|IOB      |IO_L50N_3                 |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P10       |i_INSTRUCTION<31>|IOB      |IO_L50P_3                 |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P11       |i_INSTRUCTION<18>|IOB      |IO_L49N_3                 |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P12       |i_INSTRUCTION<25>|IOB      |IO_L49P_3                 |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
 |P13       |                 |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
-|P14       |                 |IOBS     |IO_L44N_GCLK20_3          |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
-|P15       |                 |IOBM     |IO_L44P_GCLK21_3          |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
-|P16       |                 |IOBS     |IO_L43N_GCLK22_IRDY2_3    |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
-|P17       |                 |IOBM     |IO_L43P_GCLK23_3          |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
+|P14       |i_INSTRUCTION<22>|IOB      |IO_L44N_GCLK20_3          |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P15       |i_INSTRUCTION<29>|IOB      |IO_L44P_GCLK21_3          |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P16       |i_INSTRUCTION<21>|IOB      |IO_L43N_GCLK22_IRDY2_3    |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P17       |i_INSTRUCTION<16>|IOB      |IO_L43P_GCLK23_3          |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
 |P18       |                 |         |VCCO_3                    |         |           |3             |          |         |           |         |any******|          |           |                |
 |P19       |                 |         |VCCINT                    |         |           |              |          |         |           |         |1.2      |          |           |                |
 |P20       |                 |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
@@ -45,16 +45,16 @@ Pinout by Pin Number:
 |P23       |                 |IOBS     |IO_L41N_GCLK26_3          |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |P24       |                 |IOBM     |IO_L41P_GCLK27_3          |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |P25       |                 |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
-|P26       |                 |IOBS     |IO_L37N_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
+|P26       |i_INSTRUCTION<17>|IOB      |IO_L37N_3                 |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
 |P27       |                 |IOBM     |IO_L37P_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |P28       |                 |         |VCCINT                    |         |           |              |          |         |           |         |1.2      |          |           |                |
-|P29       |                 |IOBS     |IO_L36N_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
-|P30       |                 |IOBM     |IO_L36P_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
+|P29       |i_INSTRUCTION<15>|IOB      |IO_L36N_3                 |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P30       |i_INSTRUCTION<14>|IOB      |IO_L36P_3                 |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
 |P31       |                 |         |VCCO_3                    |         |           |3             |          |         |           |         |any******|          |           |                |
-|P32       |                 |IOBS     |IO_L2N_3                  |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
-|P33       |                 |IOBM     |IO_L2P_3                  |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
-|P34       |                 |IOBS     |IO_L1N_VREF_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
-|P35       |                 |IOBM     |IO_L1P_3                  |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
+|P32       |i_INSTRUCTION<10>|IOB      |IO_L2N_3                  |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P33       |i_INSTRUCTION<9> |IOB      |IO_L2P_3                  |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P34       |i_INSTRUCTION<8> |IOB      |IO_L1N_VREF_3             |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P35       |i_INSTRUCTION<7> |IOB      |IO_L1P_3                  |INPUT    |LVCMOS25*  |3             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
 |P36       |                 |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
 |P37       |                 |         |PROGRAM_B_2               |         |           |              |          |         |           |         |         |          |           |                |
 |P38       |                 |IOBS     |IO_L65N_CSO_B_2           |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
@@ -64,32 +64,32 @@ Pinout by Pin Number:
 |P42       |                 |         |VCCO_2                    |         |           |2             |          |         |           |         |any******|          |           |                |
 |P43       |                 |IOBS     |IO_L62N_D6_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P44       |                 |IOBM     |IO_L62P_D5_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|P45       |i_INSTRUCTION<30>|IOB      |IO_L49N_D4_2              |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|P46       |i_INSTRUCTION<31>|IOB      |IO_L49P_D3_2              |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P45       |                 |IOBS     |IO_L49N_D4_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|P46       |                 |IOBM     |IO_L49P_D3_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P47       |i_INSTRUCTION<11>|IOB      |IO_L48N_RDWR_B_VREF_2     |INPUT    |LVTTL      |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |P48       |                 |IOBM     |IO_L48P_D7_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P49       |                 |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
-|P50       |i_INSTRUCTION<29>|IOB      |IO_L31N_GCLK30_D15_2      |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|P51       |i_INSTRUCTION<26>|IOB      |IO_L31P_GCLK31_D14_2      |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P50       |                 |IOBS     |IO_L31N_GCLK30_D15_2      |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|P51       |                 |IOBM     |IO_L31P_GCLK31_D14_2      |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P52       |                 |         |VCCINT                    |         |           |              |          |         |           |         |1.2      |          |           |                |
 |P53       |                 |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
 |P54       |                 |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
-|P55       |i_INSTRUCTION<25>|IOB      |IO_L30N_GCLK0_USERCCLK_2  |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|P56       |i_INSTRUCTION<18>|IOB      |IO_L30P_GCLK1_D13_2       |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|P57       |i_INSTRUCTION<21>|IOB      |IO_L14N_D12_2             |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|P58       |i_INSTRUCTION<22>|IOB      |IO_L14P_D11_2             |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|P59       |i_INSTRUCTION<17>|IOB      |IO_L13N_D10_2             |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P55       |                 |IOBS     |IO_L30N_GCLK0_USERCCLK_2  |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|P56       |                 |IOBM     |IO_L30P_GCLK1_D13_2       |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|P57       |                 |IOBS     |IO_L14N_D12_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|P58       |                 |IOBM     |IO_L14P_D11_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|P59       |                 |IOBS     |IO_L13N_D10_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P60       |                 |IOBM     |IO_L13P_M1_2              |UNUSED   |           |2             |          |         |           |         |         |PROHIBITED|           |                |
-|P61       |i_INSTRUCTION<16>|IOB      |IO_L12N_D2_MISO3_2        |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|P62       |i_INSTRUCTION<15>|IOB      |IO_L12P_D1_MISO2_2        |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P61       |                 |IOBS     |IO_L12N_D2_MISO3_2        |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|P62       |                 |IOBM     |IO_L12P_D1_MISO2_2        |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P63       |                 |         |VCCO_2                    |         |           |2             |          |         |           |         |any******|          |           |                |
-|P64       |i_INSTRUCTION<14>|IOB      |IO_L3N_MOSI_CSI_B_MISO0_2 |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|P65       |i_INSTRUCTION<10>|IOB      |IO_L3P_D0_DIN_MISO_MISO1_2|INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|P66       |i_INSTRUCTION<9> |IOB      |IO_L2N_CMPMOSI_2          |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|P67       |i_INSTRUCTION<8> |IOB      |IO_L2P_CMPCLK_2           |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P64       |                 |IOBS     |IO_L3N_MOSI_CSI_B_MISO0_2 |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|P65       |                 |IOBM     |IO_L3P_D0_DIN_MISO_MISO1_2|UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|P66       |                 |IOBS     |IO_L2N_CMPMOSI_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|P67       |                 |IOBM     |IO_L2P_CMPCLK_2           |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P68       |                 |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
 |P69       |                 |IOBS     |IO_L1N_M0_CMPMISO_2       |UNUSED   |           |2             |          |         |           |         |         |PROHIBITED|           |                |
-|P70       |i_INSTRUCTION<7> |IOB      |IO_L1P_CCLK_2             |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P70       |                 |IOBM     |IO_L1P_CCLK_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P71       |                 |         |DONE_2                    |         |           |              |          |         |           |         |         |          |           |                |
 |P72       |                 |         |CMPCS_B_2                 |         |           |              |          |         |           |         |         |          |           |                |
 |P73       |                 |         |SUSPEND                   |         |           |              |          |         |           |         |         |          |           |                |

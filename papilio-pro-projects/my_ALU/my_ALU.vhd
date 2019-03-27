@@ -40,10 +40,17 @@ entity my_ALU is
            i_B : in  STD_LOGIC_VECTOR (7 downto 0); -- 8-bit input
            i_ALU_sel : in  STD_LOGIC_VECTOR (3 downto 0); -- 4-bit function select input
            o_ALU_out : out  STD_LOGIC_VECTOR (7 downto 0); -- 8-bit output
-           o_ALU_carry_flag : out  STD_LOGIC); -- output carry flag
+           o_ALU_carry_flag : out  STD_LOGIC; -- output carry flag
+			  o_ALU_overflow_flag : out  STD_LOGIC;
+			  o_ALU_negative_flag : out  STD_LOGIC;
+			  o_ALU_zero_flag : out  STD_LOGIC
+			  ); -- output overflow flag
 end my_ALU;
 
 architecture Behavioral of my_ALU is
+
+constant ADD : STD_LOGIC_VECTOR(3 DOWNTO 0):="0000"; -- Add opcode
+constant SUB : STD_LOGIC_VECTOR(3 DOWNTO 0):="0001"; -- Subtract opcode 
 
 signal ALU_Result : std_logic_vector (7 downto 0); -- Buffer signal for output
 signal tmp : std_logic_vector (8 downto 0); -- Buffer for carry flag output
@@ -53,10 +60,29 @@ begin
 	begin
 		if(rising_edge(i_CLK)) then
 			case(i_ALU_Sel) is
-				when "0000" => -- Add
+				when ADD => -- Add
 					ALU_result <= std_logic_vector(unsigned(i_A) + unsigned(i_B));
-				when "0001" => -- Subtract
+					if(i_A(7) = i_B(7)) then -- Test for addition overflow
+						if(i_A(7) /= ALU_result(7)) then
+							o_ALU_overflow_flag <= '1';
+						else 
+							o_ALU_overflow_flag <= '0';
+						end if;
+					end if;
+				when SUB => -- Subtract
 					ALU_result <= std_logic_vector(unsigned(i_A) - unsigned(i_B));
+					if(i_A(7) /= i_B(7)) then -- Test for subtraction overflow
+						if(i_A(7) /= ALU_result(7)) then
+							o_ALU_overflow_flag <= '1';
+						else 
+							o_ALU_overflow_flag <= '0';
+						end if;
+					end if;
+					if(i_A < i_B) then
+						o_ALU_negative_flag <= '1';
+					else
+						o_ALU_negative_flag <= '0';
+					end if;
 				when "0010" => -- Multiply
 					ALU_result <= std_logic_vector(to_unsigned(to_integer(unsigned(i_A)) * to_integer(unsigned(i_B)),8));
 				when "0011" => -- Divide
@@ -89,15 +115,21 @@ begin
 					else
 						ALU_result <= x"00";
 					end if;
-				when others => ALU_result <= i_A + i_B;
+				when others => 
+					ALU_result <= i_A + i_B;
 				-- 14 out of 16 possible ALU function slots used (4-bit -> 16 possible select signals)
 			end case;
+			
+			if (ALU_result="00000000") then 
+				o_ALU_zero_flag <= '1'; 
+			else 
+				o_ALU_zero_flag <= '0';
+			end if;
 		end if;
 		end process;
 		
 		o_ALU_out <= ALU_result; -- result assigned to output
 		tmp <= ('0' & i_A) + ('0' & i_B); -- Sum of inputs assigned to tmp
 		o_ALU_carry_flag <= tmp(8); -- MSB of tmp assigned to carry flag
-
 end Behavioral;
 

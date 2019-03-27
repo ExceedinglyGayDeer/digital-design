@@ -31,17 +31,17 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  4162456 paths analyzed, 88 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  16.534ns.
+ Minimum period is  18.247ns.
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_my_ALU/ALU_Result_0 (SLICE_X12Y28.A2), 916948 paths
+Paths for end point Inst_my_ALU/ALU_Result_0 (SLICE_X8Y40.A1), 916948 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     14.716ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_register_32x8/o_OUT_B_3_1 (FF)
+Slack (setup path):     13.003ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_register_32x8/o_OUT_B_1_1 (FF)
   Destination:          Inst_my_ALU/ALU_Result_0 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      16.479ns (Levels of Logic = 14)
-  Clock Path Skew:      -0.020ns (0.293 - 0.313)
+  Data Path Delay:      18.152ns (Levels of Logic = 13)
+  Clock Path Skew:      -0.060ns (0.617 - 0.677)
   Source Clock:         i_CLK_BUFGP rising at 0.000ns
   Destination Clock:    i_CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -52,66 +52,63 @@ Slack (setup path):     14.716ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_B_3_1 to Inst_my_ALU/ALU_Result_0
+  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_B_1_1 to Inst_my_ALU/ALU_Result_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X15Y30.AQ      Tcko                  0.430   Inst_register_32x8/o_OUT_B_5_1
-                                                       Inst_register_32x8/o_OUT_B_3_1
-    SLICE_X15Y34.B4      net (fanout=2)        1.343   Inst_register_32x8/o_OUT_B_3_1
-    SLICE_X15Y34.B       Tilo                  0.259   N99
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<6>11_SW1
-    SLICE_X14Y26.D5      net (fanout=8)        0.995   N99
-    SLICE_X14Y26.D       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>1
-    SLICE_X14Y16.CX      net (fanout=4)        1.168   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-    SLICE_X14Y16.CMUX    Tcxc                  0.192   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>11
-    SLICE_X15Y29.A6      net (fanout=2)        1.254   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-    SLICE_X15Y29.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[3]_GND_9_o_MUX_159_o
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_140_o171
-    SLICE_X14Y22.A1      net (fanout=7)        1.217   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[7]_GND_9_o_MUX_133_o
-    SLICE_X14Y22.A       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11_1
-    SLICE_X14Y22.C1      net (fanout=2)        0.545   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11
-    SLICE_X14Y22.C       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B1      net (fanout=1)        0.727   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B       Tilo                  0.235   N56
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24_SW2
-    SLICE_X16Y23.A5      net (fanout=8)        0.681   N56
-    SLICE_X16Y23.A       Tilo                  0.254   N89
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24
-    SLICE_X13Y26.B4      net (fanout=11)       0.856   Inst_my_ALU/i_A[7]_i_B[7]_div_3_OUT<2>
-    SLICE_X13Y26.B       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_182_o161
-    SLICE_X16Y26.BX      net (fanout=6)        0.607   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[6]_GND_9_o_MUX_176_o
-    SLICE_X16Y26.CMUX    Taxc                  0.376   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
-    SLICE_X13Y27.A1      net (fanout=3)        1.219   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-    SLICE_X13Y27.A       Tilo                  0.259   N151
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2_SW3
-    SLICE_X13Y26.D4      net (fanout=1)        0.474   N151
-    SLICE_X13Y26.D       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2
-    SLICE_X12Y27.B3      net (fanout=4)        0.617   N32
-    SLICE_X12Y27.B       Tilo                  0.254   N33
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>1_SW6
-    SLICE_X12Y28.A2      net (fanout=1)        0.696   N155
-    SLICE_X12Y28.CLK     Tas                   0.339   Inst_my_ALU/ALU_Result<1>
+    SLICE_X13Y54.AQ      Tcko                  0.430   Inst_register_32x8/o_OUT_B_1_1
+                                                       Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X12Y58.A1      net (fanout=7)        2.139   Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X12Y58.A       Tilo                  0.254   N175
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<6>11_SW2
+    SLICE_X12Y57.A5      net (fanout=1)        0.431   N174
+    SLICE_X12Y57.A       Tilo                  0.254   Inst_register_32x8/o_OUT_A_7_3
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW1
+    SLICE_X12Y57.B5      net (fanout=2)        0.422   N53
+    SLICE_X12Y57.B       Tilo                  0.254   Inst_register_32x8/o_OUT_A_7_3
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW4
+    SLICE_X13Y57.A2      net (fanout=1)        0.747   N116
+    SLICE_X13Y57.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<5>
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>11
+    SLICE_X11Y46.D3      net (fanout=12)       1.624   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<4>
+    SLICE_X11Y46.D       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_150_o141
+    SLICE_X14Y54.B2      net (fanout=6)        1.952   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+    SLICE_X14Y54.B       Tilo                  0.235   N44
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_172_o151
+    SLICE_X14Y50.B5      net (fanout=6)        0.680   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[5]_GND_9_o_MUX_167_o
+    SLICE_X14Y50.B       Tilo                  0.235   N56
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24_SW2
+    SLICE_X13Y47.A5      net (fanout=8)        0.695   N56
+    SLICE_X13Y47.A       Tilo                  0.259   N89
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24
+    SLICE_X9Y42.B3       net (fanout=11)       1.358   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<2>
+    SLICE_X9Y42.B        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_192_o161
+    SLICE_X12Y46.BX      net (fanout=6)        1.260   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[6]_GND_9_o_MUX_186_o
+    SLICE_X12Y46.CMUX    Taxc                  0.376   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_168_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
+    SLICE_X9Y41.D4       net (fanout=3)        1.120   Inst_my_ALU/i_A[7]_i_B[7]_div_4/GND_9_o_b[7]_add_15_OUT<7>
+    SLICE_X9Y41.D        Tilo                  0.259   N33
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW3
+    SLICE_X9Y42.C1       net (fanout=4)        0.716   N33
+    SLICE_X9Y42.C        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>1_SW0
+    SLICE_X8Y40.A1       net (fanout=1)        1.077   N153
+    SLICE_X8Y40.CLK      Tas                   0.339   Inst_my_ALU/ALU_Result<1>
                                                        Inst_my_ALU/i_ALU_sel<3>1
                                                        Inst_my_ALU/ALU_Result_0
     -------------------------------------------------  ---------------------------
-    Total                                     16.479ns (4.080ns logic, 12.399ns route)
-                                                       (24.8% logic, 75.2% route)
+    Total                                     18.152ns (3.931ns logic, 14.221ns route)
+                                                       (21.7% logic, 78.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     14.746ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_register_32x8/o_OUT_B_3_1 (FF)
+Slack (setup path):     13.065ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_register_32x8/o_OUT_B_1_1 (FF)
   Destination:          Inst_my_ALU/ALU_Result_0 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      16.449ns (Levels of Logic = 15)
-  Clock Path Skew:      -0.020ns (0.293 - 0.313)
+  Data Path Delay:      18.090ns (Levels of Logic = 13)
+  Clock Path Skew:      -0.060ns (0.617 - 0.677)
   Source Clock:         i_CLK_BUFGP rising at 0.000ns
   Destination Clock:    i_CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -122,69 +119,63 @@ Slack (setup path):     14.746ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_B_3_1 to Inst_my_ALU/ALU_Result_0
+  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_B_1_1 to Inst_my_ALU/ALU_Result_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X15Y30.AQ      Tcko                  0.430   Inst_register_32x8/o_OUT_B_5_1
-                                                       Inst_register_32x8/o_OUT_B_3_1
-    SLICE_X15Y34.B4      net (fanout=2)        1.343   Inst_register_32x8/o_OUT_B_3_1
-    SLICE_X15Y34.B       Tilo                  0.259   N99
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<6>11_SW1
-    SLICE_X14Y26.D5      net (fanout=8)        0.995   N99
-    SLICE_X14Y26.D       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>1
-    SLICE_X14Y16.CX      net (fanout=4)        1.168   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-    SLICE_X14Y16.CMUX    Tcxc                  0.192   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>11
-    SLICE_X15Y29.A6      net (fanout=2)        1.254   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-    SLICE_X15Y29.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[3]_GND_9_o_MUX_159_o
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_140_o171
-    SLICE_X14Y22.A1      net (fanout=7)        1.217   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[7]_GND_9_o_MUX_133_o
-    SLICE_X14Y22.A       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11_1
-    SLICE_X14Y22.C1      net (fanout=2)        0.545   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11
-    SLICE_X14Y22.C       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B1      net (fanout=1)        0.727   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B       Tilo                  0.235   N56
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24_SW2
-    SLICE_X16Y23.A5      net (fanout=8)        0.681   N56
-    SLICE_X16Y23.A       Tilo                  0.254   N89
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24
-    SLICE_X16Y23.C1      net (fanout=11)       0.584   Inst_my_ALU/i_A[7]_i_B[7]_div_3_OUT<2>
-    SLICE_X16Y23.C       Tilo                  0.255   N89
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_182_o141
-    SLICE_X16Y25.DX      net (fanout=5)        0.838   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[4]_GND_9_o_MUX_178_o
-    SLICE_X16Y25.COUT    Tdxcy                 0.109   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4>
-    SLICE_X16Y26.CIN     net (fanout=1)        0.003   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4>
-    SLICE_X16Y26.CMUX    Tcinc                 0.279   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
-    SLICE_X13Y27.A1      net (fanout=3)        1.219   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-    SLICE_X13Y27.A       Tilo                  0.259   N151
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2_SW3
-    SLICE_X13Y26.D4      net (fanout=1)        0.474   N151
-    SLICE_X13Y26.D       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2
-    SLICE_X12Y27.B3      net (fanout=4)        0.617   N32
-    SLICE_X12Y27.B       Tilo                  0.254   N33
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>1_SW6
-    SLICE_X12Y28.A2      net (fanout=1)        0.696   N155
-    SLICE_X12Y28.CLK     Tas                   0.339   Inst_my_ALU/ALU_Result<1>
+    SLICE_X13Y54.AQ      Tcko                  0.430   Inst_register_32x8/o_OUT_B_1_1
+                                                       Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X12Y58.D5      net (fanout=7)        1.812   Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X12Y58.D       Tilo                  0.254   N175
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<6>11_SW3
+    SLICE_X12Y57.A2      net (fanout=1)        0.696   N175
+    SLICE_X12Y57.A       Tilo                  0.254   Inst_register_32x8/o_OUT_A_7_3
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW1
+    SLICE_X12Y57.B5      net (fanout=2)        0.422   N53
+    SLICE_X12Y57.B       Tilo                  0.254   Inst_register_32x8/o_OUT_A_7_3
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW4
+    SLICE_X13Y57.A2      net (fanout=1)        0.747   N116
+    SLICE_X13Y57.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<5>
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>11
+    SLICE_X11Y46.D3      net (fanout=12)       1.624   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<4>
+    SLICE_X11Y46.D       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_150_o141
+    SLICE_X14Y54.B2      net (fanout=6)        1.952   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+    SLICE_X14Y54.B       Tilo                  0.235   N44
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_172_o151
+    SLICE_X14Y50.B5      net (fanout=6)        0.680   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[5]_GND_9_o_MUX_167_o
+    SLICE_X14Y50.B       Tilo                  0.235   N56
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24_SW2
+    SLICE_X13Y47.A5      net (fanout=8)        0.695   N56
+    SLICE_X13Y47.A       Tilo                  0.259   N89
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24
+    SLICE_X9Y42.B3       net (fanout=11)       1.358   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<2>
+    SLICE_X9Y42.B        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_192_o161
+    SLICE_X12Y46.BX      net (fanout=6)        1.260   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[6]_GND_9_o_MUX_186_o
+    SLICE_X12Y46.CMUX    Taxc                  0.376   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_168_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
+    SLICE_X9Y41.D4       net (fanout=3)        1.120   Inst_my_ALU/i_A[7]_i_B[7]_div_4/GND_9_o_b[7]_add_15_OUT<7>
+    SLICE_X9Y41.D        Tilo                  0.259   N33
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW3
+    SLICE_X9Y42.C1       net (fanout=4)        0.716   N33
+    SLICE_X9Y42.C        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>1_SW0
+    SLICE_X8Y40.A1       net (fanout=1)        1.077   N153
+    SLICE_X8Y40.CLK      Tas                   0.339   Inst_my_ALU/ALU_Result<1>
                                                        Inst_my_ALU/i_ALU_sel<3>1
                                                        Inst_my_ALU/ALU_Result_0
     -------------------------------------------------  ---------------------------
-    Total                                     16.449ns (4.088ns logic, 12.361ns route)
-                                                       (24.9% logic, 75.1% route)
+    Total                                     18.090ns (3.931ns logic, 14.159ns route)
+                                                       (21.7% logic, 78.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     14.825ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_register_32x8/o_OUT_A_7 (FF)
+Slack (setup path):     13.071ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_register_32x8/o_OUT_B_1_1 (FF)
   Destination:          Inst_my_ALU/ALU_Result_0 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      16.376ns (Levels of Logic = 14)
-  Clock Path Skew:      -0.014ns (0.193 - 0.207)
+  Data Path Delay:      18.084ns (Levels of Logic = 13)
+  Clock Path Skew:      -0.060ns (0.617 - 0.677)
   Source Clock:         i_CLK_BUFGP rising at 0.000ns
   Destination Clock:    i_CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -195,69 +186,66 @@ Slack (setup path):     14.825ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_A_7 to Inst_my_ALU/ALU_Result_0
+  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_B_1_1 to Inst_my_ALU/ALU_Result_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X12Y30.BQ      Tcko                  0.525   Inst_register_32x8/o_OUT_A<7>
-                                                       Inst_register_32x8/o_OUT_A_7
-    SLICE_X14Y27.B1      net (fanout=19)       1.432   Inst_register_32x8/o_OUT_A<7>
-    SLICE_X14Y27.B       Tilo                  0.235   N29
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>1_SW1
-    SLICE_X14Y26.D1      net (fanout=1)        0.732   N192
-    SLICE_X14Y26.D       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>1
-    SLICE_X14Y16.CX      net (fanout=4)        1.168   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-    SLICE_X14Y16.CMUX    Tcxc                  0.192   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>11
-    SLICE_X15Y29.A6      net (fanout=2)        1.254   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-    SLICE_X15Y29.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[3]_GND_9_o_MUX_159_o
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_140_o171
-    SLICE_X14Y22.A1      net (fanout=7)        1.217   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[7]_GND_9_o_MUX_133_o
-    SLICE_X14Y22.A       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11_1
-    SLICE_X14Y22.C1      net (fanout=2)        0.545   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11
-    SLICE_X14Y22.C       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B1      net (fanout=1)        0.727   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B       Tilo                  0.235   N56
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24_SW2
-    SLICE_X16Y23.A5      net (fanout=8)        0.681   N56
-    SLICE_X16Y23.A       Tilo                  0.254   N89
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24
-    SLICE_X13Y26.B4      net (fanout=11)       0.856   Inst_my_ALU/i_A[7]_i_B[7]_div_3_OUT<2>
-    SLICE_X13Y26.B       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_182_o161
-    SLICE_X16Y26.BX      net (fanout=6)        0.607   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[6]_GND_9_o_MUX_176_o
-    SLICE_X16Y26.CMUX    Taxc                  0.376   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
-    SLICE_X13Y27.A1      net (fanout=3)        1.219   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-    SLICE_X13Y27.A       Tilo                  0.259   N151
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2_SW3
-    SLICE_X13Y26.D4      net (fanout=1)        0.474   N151
-    SLICE_X13Y26.D       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2
-    SLICE_X12Y27.B3      net (fanout=4)        0.617   N32
-    SLICE_X12Y27.B       Tilo                  0.254   N33
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>1_SW6
-    SLICE_X12Y28.A2      net (fanout=1)        0.696   N155
-    SLICE_X12Y28.CLK     Tas                   0.339   Inst_my_ALU/ALU_Result<1>
+    SLICE_X13Y54.AQ      Tcko                  0.430   Inst_register_32x8/o_OUT_B_1_1
+                                                       Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X13Y58.D4      net (fanout=7)        1.863   Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X13Y58.D       Tilo                  0.259   N179
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<6>11_SW6
+    SLICE_X13Y55.A5      net (fanout=1)        0.662   N179
+    SLICE_X13Y55.A       Tilo                  0.259   Inst_register_32x8/o_OUT_B_3_2
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW2
+    SLICE_X12Y57.B6      net (fanout=2)        0.389   N54
+    SLICE_X12Y57.B       Tilo                  0.254   Inst_register_32x8/o_OUT_A_7_3
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW4
+    SLICE_X13Y57.A2      net (fanout=1)        0.747   N116
+    SLICE_X13Y57.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<5>
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>11
+    SLICE_X11Y46.D3      net (fanout=12)       1.624   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<4>
+    SLICE_X11Y46.D       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_150_o141
+    SLICE_X14Y54.B2      net (fanout=6)        1.952   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+    SLICE_X14Y54.B       Tilo                  0.235   N44
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_172_o151
+    SLICE_X14Y50.B5      net (fanout=6)        0.680   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[5]_GND_9_o_MUX_167_o
+    SLICE_X14Y50.B       Tilo                  0.235   N56
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24_SW2
+    SLICE_X13Y47.A5      net (fanout=8)        0.695   N56
+    SLICE_X13Y47.A       Tilo                  0.259   N89
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24
+    SLICE_X9Y42.B3       net (fanout=11)       1.358   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<2>
+    SLICE_X9Y42.B        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_192_o161
+    SLICE_X12Y46.BX      net (fanout=6)        1.260   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[6]_GND_9_o_MUX_186_o
+    SLICE_X12Y46.CMUX    Taxc                  0.376   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_168_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
+    SLICE_X9Y41.D4       net (fanout=3)        1.120   Inst_my_ALU/i_A[7]_i_B[7]_div_4/GND_9_o_b[7]_add_15_OUT<7>
+    SLICE_X9Y41.D        Tilo                  0.259   N33
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW3
+    SLICE_X9Y42.C1       net (fanout=4)        0.716   N33
+    SLICE_X9Y42.C        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>1_SW0
+    SLICE_X8Y40.A1       net (fanout=1)        1.077   N153
+    SLICE_X8Y40.CLK      Tas                   0.339   Inst_my_ALU/ALU_Result<1>
                                                        Inst_my_ALU/i_ALU_sel<3>1
                                                        Inst_my_ALU/ALU_Result_0
     -------------------------------------------------  ---------------------------
-    Total                                     16.376ns (4.151ns logic, 12.225ns route)
-                                                       (25.3% logic, 74.7% route)
+    Total                                     18.084ns (3.941ns logic, 14.143ns route)
+                                                       (21.8% logic, 78.2% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_my_ALU/ALU_Result_0 (SLICE_X12Y28.A1), 916948 paths
+Paths for end point Inst_my_ALU/ALU_Result_0 (SLICE_X8Y40.A4), 916948 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     15.086ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_register_32x8/o_OUT_B_3_1 (FF)
+Slack (setup path):     13.460ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_register_32x8/o_OUT_B_1_1 (FF)
   Destination:          Inst_my_ALU/ALU_Result_0 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      16.109ns (Levels of Logic = 14)
-  Clock Path Skew:      -0.020ns (0.293 - 0.313)
+  Data Path Delay:      17.695ns (Levels of Logic = 14)
+  Clock Path Skew:      -0.060ns (0.617 - 0.677)
   Source Clock:         i_CLK_BUFGP rising at 0.000ns
   Destination Clock:    i_CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -268,66 +256,66 @@ Slack (setup path):     15.086ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_B_3_1 to Inst_my_ALU/ALU_Result_0
+  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_B_1_1 to Inst_my_ALU/ALU_Result_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X15Y30.AQ      Tcko                  0.430   Inst_register_32x8/o_OUT_B_5_1
-                                                       Inst_register_32x8/o_OUT_B_3_1
-    SLICE_X15Y34.B4      net (fanout=2)        1.343   Inst_register_32x8/o_OUT_B_3_1
-    SLICE_X15Y34.B       Tilo                  0.259   N99
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<6>11_SW1
-    SLICE_X14Y26.D5      net (fanout=8)        0.995   N99
-    SLICE_X14Y26.D       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>1
-    SLICE_X14Y16.CX      net (fanout=4)        1.168   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-    SLICE_X14Y16.CMUX    Tcxc                  0.192   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>11
-    SLICE_X15Y29.A6      net (fanout=2)        1.254   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-    SLICE_X15Y29.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[3]_GND_9_o_MUX_159_o
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_140_o171
-    SLICE_X14Y22.A1      net (fanout=7)        1.217   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[7]_GND_9_o_MUX_133_o
-    SLICE_X14Y22.A       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11_1
-    SLICE_X14Y22.C1      net (fanout=2)        0.545   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11
-    SLICE_X14Y22.C       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B1      net (fanout=1)        0.727   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B       Tilo                  0.235   N56
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24_SW2
-    SLICE_X16Y23.A5      net (fanout=8)        0.681   N56
-    SLICE_X16Y23.A       Tilo                  0.254   N89
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24
-    SLICE_X13Y26.B4      net (fanout=11)       0.856   Inst_my_ALU/i_A[7]_i_B[7]_div_3_OUT<2>
-    SLICE_X13Y26.B       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_182_o161
-    SLICE_X16Y26.BX      net (fanout=6)        0.607   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[6]_GND_9_o_MUX_176_o
-    SLICE_X16Y26.CMUX    Taxc                  0.376   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
-    SLICE_X13Y27.A1      net (fanout=3)        1.219   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-    SLICE_X13Y27.A       Tilo                  0.259   N151
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2_SW3
-    SLICE_X13Y26.D4      net (fanout=1)        0.474   N151
-    SLICE_X13Y26.D       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2
-    SLICE_X13Y26.C6      net (fanout=4)        0.157   N32
-    SLICE_X13Y26.C       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>1_SW0
-    SLICE_X12Y28.A1      net (fanout=1)        0.781   N153
-    SLICE_X12Y28.CLK     Tas                   0.339   Inst_my_ALU/ALU_Result<1>
+    SLICE_X13Y54.AQ      Tcko                  0.430   Inst_register_32x8/o_OUT_B_1_1
+                                                       Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X12Y58.A1      net (fanout=7)        2.139   Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X12Y58.A       Tilo                  0.254   N175
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<6>11_SW2
+    SLICE_X12Y57.A5      net (fanout=1)        0.431   N174
+    SLICE_X12Y57.A       Tilo                  0.254   Inst_register_32x8/o_OUT_A_7_3
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW1
+    SLICE_X12Y57.B5      net (fanout=2)        0.422   N53
+    SLICE_X12Y57.B       Tilo                  0.254   Inst_register_32x8/o_OUT_A_7_3
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW4
+    SLICE_X13Y57.A2      net (fanout=1)        0.747   N116
+    SLICE_X13Y57.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<5>
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>11
+    SLICE_X11Y46.D3      net (fanout=12)       1.624   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<4>
+    SLICE_X11Y46.D       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_150_o141
+    SLICE_X14Y54.B2      net (fanout=6)        1.952   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+    SLICE_X14Y54.B       Tilo                  0.235   N44
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_172_o151
+    SLICE_X14Y50.B5      net (fanout=6)        0.680   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[5]_GND_9_o_MUX_167_o
+    SLICE_X14Y50.B       Tilo                  0.235   N56
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24_SW2
+    SLICE_X13Y47.A5      net (fanout=8)        0.695   N56
+    SLICE_X13Y47.A       Tilo                  0.259   N89
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24
+    SLICE_X9Y42.B3       net (fanout=11)       1.358   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<2>
+    SLICE_X9Y42.B        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_192_o161
+    SLICE_X12Y46.BX      net (fanout=6)        1.260   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[6]_GND_9_o_MUX_186_o
+    SLICE_X12Y46.CMUX    Taxc                  0.376   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_168_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
+    SLICE_X9Y42.A6       net (fanout=3)        0.789   Inst_my_ALU/i_A[7]_i_B[7]_div_4/GND_9_o_b[7]_add_15_OUT<7>
+    SLICE_X9Y42.A        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW2_SW2
+    SLICE_X9Y42.D3       net (fanout=1)        0.391   N150
+    SLICE_X9Y42.D        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW2
+    SLICE_X9Y41.C4       net (fanout=4)        0.524   N32
+    SLICE_X9Y41.C        Tilo                  0.259   N33
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>1_SW6
+    SLICE_X8Y40.A4       net (fanout=1)        0.493   N155
+    SLICE_X8Y40.CLK      Tas                   0.339   Inst_my_ALU/ALU_Result<1>
                                                        Inst_my_ALU/i_ALU_sel<3>1
                                                        Inst_my_ALU/ALU_Result_0
     -------------------------------------------------  ---------------------------
-    Total                                     16.109ns (4.085ns logic, 12.024ns route)
-                                                       (25.4% logic, 74.6% route)
+    Total                                     17.695ns (4.190ns logic, 13.505ns route)
+                                                       (23.7% logic, 76.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     15.116ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_register_32x8/o_OUT_B_3_1 (FF)
+Slack (setup path):     13.522ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_register_32x8/o_OUT_B_1_1 (FF)
   Destination:          Inst_my_ALU/ALU_Result_0 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      16.079ns (Levels of Logic = 15)
-  Clock Path Skew:      -0.020ns (0.293 - 0.313)
+  Data Path Delay:      17.633ns (Levels of Logic = 14)
+  Clock Path Skew:      -0.060ns (0.617 - 0.677)
   Source Clock:         i_CLK_BUFGP rising at 0.000ns
   Destination Clock:    i_CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -338,69 +326,66 @@ Slack (setup path):     15.116ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_B_3_1 to Inst_my_ALU/ALU_Result_0
+  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_B_1_1 to Inst_my_ALU/ALU_Result_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X15Y30.AQ      Tcko                  0.430   Inst_register_32x8/o_OUT_B_5_1
-                                                       Inst_register_32x8/o_OUT_B_3_1
-    SLICE_X15Y34.B4      net (fanout=2)        1.343   Inst_register_32x8/o_OUT_B_3_1
-    SLICE_X15Y34.B       Tilo                  0.259   N99
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<6>11_SW1
-    SLICE_X14Y26.D5      net (fanout=8)        0.995   N99
-    SLICE_X14Y26.D       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>1
-    SLICE_X14Y16.CX      net (fanout=4)        1.168   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-    SLICE_X14Y16.CMUX    Tcxc                  0.192   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>11
-    SLICE_X15Y29.A6      net (fanout=2)        1.254   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-    SLICE_X15Y29.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[3]_GND_9_o_MUX_159_o
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_140_o171
-    SLICE_X14Y22.A1      net (fanout=7)        1.217   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[7]_GND_9_o_MUX_133_o
-    SLICE_X14Y22.A       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11_1
-    SLICE_X14Y22.C1      net (fanout=2)        0.545   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11
-    SLICE_X14Y22.C       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B1      net (fanout=1)        0.727   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B       Tilo                  0.235   N56
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24_SW2
-    SLICE_X16Y23.A5      net (fanout=8)        0.681   N56
-    SLICE_X16Y23.A       Tilo                  0.254   N89
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24
-    SLICE_X16Y23.C1      net (fanout=11)       0.584   Inst_my_ALU/i_A[7]_i_B[7]_div_3_OUT<2>
-    SLICE_X16Y23.C       Tilo                  0.255   N89
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_182_o141
-    SLICE_X16Y25.DX      net (fanout=5)        0.838   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[4]_GND_9_o_MUX_178_o
-    SLICE_X16Y25.COUT    Tdxcy                 0.109   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4>
-    SLICE_X16Y26.CIN     net (fanout=1)        0.003   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4>
-    SLICE_X16Y26.CMUX    Tcinc                 0.279   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
-    SLICE_X13Y27.A1      net (fanout=3)        1.219   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-    SLICE_X13Y27.A       Tilo                  0.259   N151
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2_SW3
-    SLICE_X13Y26.D4      net (fanout=1)        0.474   N151
-    SLICE_X13Y26.D       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2
-    SLICE_X13Y26.C6      net (fanout=4)        0.157   N32
-    SLICE_X13Y26.C       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>1_SW0
-    SLICE_X12Y28.A1      net (fanout=1)        0.781   N153
-    SLICE_X12Y28.CLK     Tas                   0.339   Inst_my_ALU/ALU_Result<1>
+    SLICE_X13Y54.AQ      Tcko                  0.430   Inst_register_32x8/o_OUT_B_1_1
+                                                       Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X12Y58.D5      net (fanout=7)        1.812   Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X12Y58.D       Tilo                  0.254   N175
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<6>11_SW3
+    SLICE_X12Y57.A2      net (fanout=1)        0.696   N175
+    SLICE_X12Y57.A       Tilo                  0.254   Inst_register_32x8/o_OUT_A_7_3
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW1
+    SLICE_X12Y57.B5      net (fanout=2)        0.422   N53
+    SLICE_X12Y57.B       Tilo                  0.254   Inst_register_32x8/o_OUT_A_7_3
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW4
+    SLICE_X13Y57.A2      net (fanout=1)        0.747   N116
+    SLICE_X13Y57.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<5>
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>11
+    SLICE_X11Y46.D3      net (fanout=12)       1.624   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<4>
+    SLICE_X11Y46.D       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_150_o141
+    SLICE_X14Y54.B2      net (fanout=6)        1.952   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+    SLICE_X14Y54.B       Tilo                  0.235   N44
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_172_o151
+    SLICE_X14Y50.B5      net (fanout=6)        0.680   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[5]_GND_9_o_MUX_167_o
+    SLICE_X14Y50.B       Tilo                  0.235   N56
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24_SW2
+    SLICE_X13Y47.A5      net (fanout=8)        0.695   N56
+    SLICE_X13Y47.A       Tilo                  0.259   N89
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24
+    SLICE_X9Y42.B3       net (fanout=11)       1.358   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<2>
+    SLICE_X9Y42.B        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_192_o161
+    SLICE_X12Y46.BX      net (fanout=6)        1.260   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[6]_GND_9_o_MUX_186_o
+    SLICE_X12Y46.CMUX    Taxc                  0.376   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_168_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
+    SLICE_X9Y42.A6       net (fanout=3)        0.789   Inst_my_ALU/i_A[7]_i_B[7]_div_4/GND_9_o_b[7]_add_15_OUT<7>
+    SLICE_X9Y42.A        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW2_SW2
+    SLICE_X9Y42.D3       net (fanout=1)        0.391   N150
+    SLICE_X9Y42.D        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW2
+    SLICE_X9Y41.C4       net (fanout=4)        0.524   N32
+    SLICE_X9Y41.C        Tilo                  0.259   N33
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>1_SW6
+    SLICE_X8Y40.A4       net (fanout=1)        0.493   N155
+    SLICE_X8Y40.CLK      Tas                   0.339   Inst_my_ALU/ALU_Result<1>
                                                        Inst_my_ALU/i_ALU_sel<3>1
                                                        Inst_my_ALU/ALU_Result_0
     -------------------------------------------------  ---------------------------
-    Total                                     16.079ns (4.093ns logic, 11.986ns route)
-                                                       (25.5% logic, 74.5% route)
+    Total                                     17.633ns (4.190ns logic, 13.443ns route)
+                                                       (23.8% logic, 76.2% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     15.195ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_register_32x8/o_OUT_A_7 (FF)
+Slack (setup path):     13.528ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_register_32x8/o_OUT_B_1_1 (FF)
   Destination:          Inst_my_ALU/ALU_Result_0 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      16.006ns (Levels of Logic = 14)
-  Clock Path Skew:      -0.014ns (0.193 - 0.207)
+  Data Path Delay:      17.627ns (Levels of Logic = 14)
+  Clock Path Skew:      -0.060ns (0.617 - 0.677)
   Source Clock:         i_CLK_BUFGP rising at 0.000ns
   Destination Clock:    i_CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -411,69 +396,69 @@ Slack (setup path):     15.195ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_A_7 to Inst_my_ALU/ALU_Result_0
+  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_B_1_1 to Inst_my_ALU/ALU_Result_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X12Y30.BQ      Tcko                  0.525   Inst_register_32x8/o_OUT_A<7>
-                                                       Inst_register_32x8/o_OUT_A_7
-    SLICE_X14Y27.B1      net (fanout=19)       1.432   Inst_register_32x8/o_OUT_A<7>
-    SLICE_X14Y27.B       Tilo                  0.235   N29
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>1_SW1
-    SLICE_X14Y26.D1      net (fanout=1)        0.732   N192
-    SLICE_X14Y26.D       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>1
-    SLICE_X14Y16.CX      net (fanout=4)        1.168   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-    SLICE_X14Y16.CMUX    Tcxc                  0.192   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>11
-    SLICE_X15Y29.A6      net (fanout=2)        1.254   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-    SLICE_X15Y29.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[3]_GND_9_o_MUX_159_o
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_140_o171
-    SLICE_X14Y22.A1      net (fanout=7)        1.217   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[7]_GND_9_o_MUX_133_o
-    SLICE_X14Y22.A       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11_1
-    SLICE_X14Y22.C1      net (fanout=2)        0.545   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11
-    SLICE_X14Y22.C       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B1      net (fanout=1)        0.727   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B       Tilo                  0.235   N56
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24_SW2
-    SLICE_X16Y23.A5      net (fanout=8)        0.681   N56
-    SLICE_X16Y23.A       Tilo                  0.254   N89
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24
-    SLICE_X13Y26.B4      net (fanout=11)       0.856   Inst_my_ALU/i_A[7]_i_B[7]_div_3_OUT<2>
-    SLICE_X13Y26.B       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_182_o161
-    SLICE_X16Y26.BX      net (fanout=6)        0.607   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[6]_GND_9_o_MUX_176_o
-    SLICE_X16Y26.CMUX    Taxc                  0.376   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
-    SLICE_X13Y27.A1      net (fanout=3)        1.219   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-    SLICE_X13Y27.A       Tilo                  0.259   N151
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2_SW3
-    SLICE_X13Y26.D4      net (fanout=1)        0.474   N151
-    SLICE_X13Y26.D       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2
-    SLICE_X13Y26.C6      net (fanout=4)        0.157   N32
-    SLICE_X13Y26.C       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>1_SW0
-    SLICE_X12Y28.A1      net (fanout=1)        0.781   N153
-    SLICE_X12Y28.CLK     Tas                   0.339   Inst_my_ALU/ALU_Result<1>
+    SLICE_X13Y54.AQ      Tcko                  0.430   Inst_register_32x8/o_OUT_B_1_1
+                                                       Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X13Y58.D4      net (fanout=7)        1.863   Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X13Y58.D       Tilo                  0.259   N179
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<6>11_SW6
+    SLICE_X13Y55.A5      net (fanout=1)        0.662   N179
+    SLICE_X13Y55.A       Tilo                  0.259   Inst_register_32x8/o_OUT_B_3_2
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW2
+    SLICE_X12Y57.B6      net (fanout=2)        0.389   N54
+    SLICE_X12Y57.B       Tilo                  0.254   Inst_register_32x8/o_OUT_A_7_3
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW4
+    SLICE_X13Y57.A2      net (fanout=1)        0.747   N116
+    SLICE_X13Y57.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<5>
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>11
+    SLICE_X11Y46.D3      net (fanout=12)       1.624   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<4>
+    SLICE_X11Y46.D       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_150_o141
+    SLICE_X14Y54.B2      net (fanout=6)        1.952   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+    SLICE_X14Y54.B       Tilo                  0.235   N44
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_172_o151
+    SLICE_X14Y50.B5      net (fanout=6)        0.680   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[5]_GND_9_o_MUX_167_o
+    SLICE_X14Y50.B       Tilo                  0.235   N56
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24_SW2
+    SLICE_X13Y47.A5      net (fanout=8)        0.695   N56
+    SLICE_X13Y47.A       Tilo                  0.259   N89
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24
+    SLICE_X9Y42.B3       net (fanout=11)       1.358   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<2>
+    SLICE_X9Y42.B        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_192_o161
+    SLICE_X12Y46.BX      net (fanout=6)        1.260   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[6]_GND_9_o_MUX_186_o
+    SLICE_X12Y46.CMUX    Taxc                  0.376   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_168_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
+    SLICE_X9Y42.A6       net (fanout=3)        0.789   Inst_my_ALU/i_A[7]_i_B[7]_div_4/GND_9_o_b[7]_add_15_OUT<7>
+    SLICE_X9Y42.A        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW2_SW2
+    SLICE_X9Y42.D3       net (fanout=1)        0.391   N150
+    SLICE_X9Y42.D        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW2
+    SLICE_X9Y41.C4       net (fanout=4)        0.524   N32
+    SLICE_X9Y41.C        Tilo                  0.259   N33
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>1_SW6
+    SLICE_X8Y40.A4       net (fanout=1)        0.493   N155
+    SLICE_X8Y40.CLK      Tas                   0.339   Inst_my_ALU/ALU_Result<1>
                                                        Inst_my_ALU/i_ALU_sel<3>1
                                                        Inst_my_ALU/ALU_Result_0
     -------------------------------------------------  ---------------------------
-    Total                                     16.006ns (4.156ns logic, 11.850ns route)
-                                                       (26.0% logic, 74.0% route)
+    Total                                     17.627ns (4.200ns logic, 13.427ns route)
+                                                       (23.8% logic, 76.2% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_my_ALU/ALU_Result_0 (SLICE_X12Y28.A5), 1038944 paths
+Paths for end point Inst_my_ALU/ALU_Result_0 (SLICE_X8Y40.A3), 1038944 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     15.129ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_register_32x8/o_OUT_B_3_1 (FF)
+Slack (setup path):     13.497ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_register_32x8/o_OUT_B_1_1 (FF)
   Destination:          Inst_my_ALU/ALU_Result_0 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      16.066ns (Levels of Logic = 14)
-  Clock Path Skew:      -0.020ns (0.293 - 0.313)
+  Data Path Delay:      17.658ns (Levels of Logic = 14)
+  Clock Path Skew:      -0.060ns (0.617 - 0.677)
   Source Clock:         i_CLK_BUFGP rising at 0.000ns
   Destination Clock:    i_CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -484,66 +469,66 @@ Slack (setup path):     15.129ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_B_3_1 to Inst_my_ALU/ALU_Result_0
+  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_B_1_1 to Inst_my_ALU/ALU_Result_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X15Y30.AQ      Tcko                  0.430   Inst_register_32x8/o_OUT_B_5_1
-                                                       Inst_register_32x8/o_OUT_B_3_1
-    SLICE_X15Y34.B4      net (fanout=2)        1.343   Inst_register_32x8/o_OUT_B_3_1
-    SLICE_X15Y34.B       Tilo                  0.259   N99
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<6>11_SW1
-    SLICE_X14Y26.D5      net (fanout=8)        0.995   N99
-    SLICE_X14Y26.D       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>1
-    SLICE_X14Y16.CX      net (fanout=4)        1.168   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-    SLICE_X14Y16.CMUX    Tcxc                  0.192   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>11
-    SLICE_X15Y29.A6      net (fanout=2)        1.254   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-    SLICE_X15Y29.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[3]_GND_9_o_MUX_159_o
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_140_o171
-    SLICE_X14Y22.A1      net (fanout=7)        1.217   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[7]_GND_9_o_MUX_133_o
-    SLICE_X14Y22.A       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11_1
-    SLICE_X14Y22.C1      net (fanout=2)        0.545   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11
-    SLICE_X14Y22.C       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B1      net (fanout=1)        0.727   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B       Tilo                  0.235   N56
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24_SW2
-    SLICE_X16Y23.A5      net (fanout=8)        0.681   N56
-    SLICE_X16Y23.A       Tilo                  0.254   N89
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24
-    SLICE_X13Y26.B4      net (fanout=11)       0.856   Inst_my_ALU/i_A[7]_i_B[7]_div_3_OUT<2>
-    SLICE_X13Y26.B       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_182_o161
-    SLICE_X16Y26.BX      net (fanout=6)        0.607   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[6]_GND_9_o_MUX_176_o
-    SLICE_X16Y26.CMUX    Taxc                  0.376   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
-    SLICE_X13Y27.A1      net (fanout=3)        1.219   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-    SLICE_X13Y27.A       Tilo                  0.259   N151
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2_SW3
-    SLICE_X13Y26.D4      net (fanout=1)        0.474   N151
-    SLICE_X13Y26.D       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2
-    SLICE_X12Y28.B3      net (fanout=4)        0.653   N32
-    SLICE_X12Y28.B       Tilo                  0.254   Inst_my_ALU/ALU_Result<1>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>1_SW7
-    SLICE_X12Y28.A5      net (fanout=1)        0.247   N156
-    SLICE_X12Y28.CLK     Tas                   0.339   Inst_my_ALU/ALU_Result<1>
+    SLICE_X13Y54.AQ      Tcko                  0.430   Inst_register_32x8/o_OUT_B_1_1
+                                                       Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X12Y58.A1      net (fanout=7)        2.139   Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X12Y58.A       Tilo                  0.254   N175
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<6>11_SW2
+    SLICE_X12Y57.A5      net (fanout=1)        0.431   N174
+    SLICE_X12Y57.A       Tilo                  0.254   Inst_register_32x8/o_OUT_A_7_3
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW1
+    SLICE_X12Y57.B5      net (fanout=2)        0.422   N53
+    SLICE_X12Y57.B       Tilo                  0.254   Inst_register_32x8/o_OUT_A_7_3
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW4
+    SLICE_X13Y57.A2      net (fanout=1)        0.747   N116
+    SLICE_X13Y57.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<5>
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>11
+    SLICE_X11Y46.D3      net (fanout=12)       1.624   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<4>
+    SLICE_X11Y46.D       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_150_o141
+    SLICE_X14Y54.B2      net (fanout=6)        1.952   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+    SLICE_X14Y54.B       Tilo                  0.235   N44
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_172_o151
+    SLICE_X14Y50.B5      net (fanout=6)        0.680   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[5]_GND_9_o_MUX_167_o
+    SLICE_X14Y50.B       Tilo                  0.235   N56
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24_SW2
+    SLICE_X13Y47.A5      net (fanout=8)        0.695   N56
+    SLICE_X13Y47.A       Tilo                  0.259   N89
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24
+    SLICE_X9Y42.B3       net (fanout=11)       1.358   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<2>
+    SLICE_X9Y42.B        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_192_o161
+    SLICE_X12Y46.BX      net (fanout=6)        1.260   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[6]_GND_9_o_MUX_186_o
+    SLICE_X12Y46.CMUX    Taxc                  0.376   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_168_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
+    SLICE_X9Y42.A6       net (fanout=3)        0.789   Inst_my_ALU/i_A[7]_i_B[7]_div_4/GND_9_o_b[7]_add_15_OUT<7>
+    SLICE_X9Y42.A        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW2_SW2
+    SLICE_X9Y42.D3       net (fanout=1)        0.391   N150
+    SLICE_X9Y42.D        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW2
+    SLICE_X8Y40.D5       net (fanout=4)        0.627   N32
+    SLICE_X8Y40.D        Tilo                  0.254   Inst_my_ALU/ALU_Result<1>
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>1_SW1
+    SLICE_X8Y40.A3       net (fanout=1)        0.358   N154
+    SLICE_X8Y40.CLK      Tas                   0.339   Inst_my_ALU/ALU_Result<1>
                                                        Inst_my_ALU/i_ALU_sel<3>1
                                                        Inst_my_ALU/ALU_Result_0
     -------------------------------------------------  ---------------------------
-    Total                                     16.066ns (4.080ns logic, 11.986ns route)
-                                                       (25.4% logic, 74.6% route)
+    Total                                     17.658ns (4.185ns logic, 13.473ns route)
+                                                       (23.7% logic, 76.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     15.159ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_register_32x8/o_OUT_B_3_1 (FF)
+Slack (setup path):     13.559ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_register_32x8/o_OUT_B_1_1 (FF)
   Destination:          Inst_my_ALU/ALU_Result_0 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      16.036ns (Levels of Logic = 15)
-  Clock Path Skew:      -0.020ns (0.293 - 0.313)
+  Data Path Delay:      17.596ns (Levels of Logic = 14)
+  Clock Path Skew:      -0.060ns (0.617 - 0.677)
   Source Clock:         i_CLK_BUFGP rising at 0.000ns
   Destination Clock:    i_CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -554,69 +539,66 @@ Slack (setup path):     15.159ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_B_3_1 to Inst_my_ALU/ALU_Result_0
+  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_B_1_1 to Inst_my_ALU/ALU_Result_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X15Y30.AQ      Tcko                  0.430   Inst_register_32x8/o_OUT_B_5_1
-                                                       Inst_register_32x8/o_OUT_B_3_1
-    SLICE_X15Y34.B4      net (fanout=2)        1.343   Inst_register_32x8/o_OUT_B_3_1
-    SLICE_X15Y34.B       Tilo                  0.259   N99
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<6>11_SW1
-    SLICE_X14Y26.D5      net (fanout=8)        0.995   N99
-    SLICE_X14Y26.D       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>1
-    SLICE_X14Y16.CX      net (fanout=4)        1.168   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-    SLICE_X14Y16.CMUX    Tcxc                  0.192   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>11
-    SLICE_X15Y29.A6      net (fanout=2)        1.254   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-    SLICE_X15Y29.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[3]_GND_9_o_MUX_159_o
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_140_o171
-    SLICE_X14Y22.A1      net (fanout=7)        1.217   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[7]_GND_9_o_MUX_133_o
-    SLICE_X14Y22.A       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11_1
-    SLICE_X14Y22.C1      net (fanout=2)        0.545   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11
-    SLICE_X14Y22.C       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B1      net (fanout=1)        0.727   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B       Tilo                  0.235   N56
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24_SW2
-    SLICE_X16Y23.A5      net (fanout=8)        0.681   N56
-    SLICE_X16Y23.A       Tilo                  0.254   N89
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24
-    SLICE_X16Y23.C1      net (fanout=11)       0.584   Inst_my_ALU/i_A[7]_i_B[7]_div_3_OUT<2>
-    SLICE_X16Y23.C       Tilo                  0.255   N89
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_182_o141
-    SLICE_X16Y25.DX      net (fanout=5)        0.838   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[4]_GND_9_o_MUX_178_o
-    SLICE_X16Y25.COUT    Tdxcy                 0.109   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4>
-    SLICE_X16Y26.CIN     net (fanout=1)        0.003   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4>
-    SLICE_X16Y26.CMUX    Tcinc                 0.279   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
-    SLICE_X13Y27.A1      net (fanout=3)        1.219   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-    SLICE_X13Y27.A       Tilo                  0.259   N151
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2_SW3
-    SLICE_X13Y26.D4      net (fanout=1)        0.474   N151
-    SLICE_X13Y26.D       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2
-    SLICE_X12Y28.B3      net (fanout=4)        0.653   N32
-    SLICE_X12Y28.B       Tilo                  0.254   Inst_my_ALU/ALU_Result<1>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>1_SW7
-    SLICE_X12Y28.A5      net (fanout=1)        0.247   N156
-    SLICE_X12Y28.CLK     Tas                   0.339   Inst_my_ALU/ALU_Result<1>
+    SLICE_X13Y54.AQ      Tcko                  0.430   Inst_register_32x8/o_OUT_B_1_1
+                                                       Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X12Y58.D5      net (fanout=7)        1.812   Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X12Y58.D       Tilo                  0.254   N175
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<6>11_SW3
+    SLICE_X12Y57.A2      net (fanout=1)        0.696   N175
+    SLICE_X12Y57.A       Tilo                  0.254   Inst_register_32x8/o_OUT_A_7_3
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW1
+    SLICE_X12Y57.B5      net (fanout=2)        0.422   N53
+    SLICE_X12Y57.B       Tilo                  0.254   Inst_register_32x8/o_OUT_A_7_3
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW4
+    SLICE_X13Y57.A2      net (fanout=1)        0.747   N116
+    SLICE_X13Y57.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<5>
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>11
+    SLICE_X11Y46.D3      net (fanout=12)       1.624   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<4>
+    SLICE_X11Y46.D       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_150_o141
+    SLICE_X14Y54.B2      net (fanout=6)        1.952   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+    SLICE_X14Y54.B       Tilo                  0.235   N44
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_172_o151
+    SLICE_X14Y50.B5      net (fanout=6)        0.680   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[5]_GND_9_o_MUX_167_o
+    SLICE_X14Y50.B       Tilo                  0.235   N56
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24_SW2
+    SLICE_X13Y47.A5      net (fanout=8)        0.695   N56
+    SLICE_X13Y47.A       Tilo                  0.259   N89
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24
+    SLICE_X9Y42.B3       net (fanout=11)       1.358   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<2>
+    SLICE_X9Y42.B        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_192_o161
+    SLICE_X12Y46.BX      net (fanout=6)        1.260   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[6]_GND_9_o_MUX_186_o
+    SLICE_X12Y46.CMUX    Taxc                  0.376   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_168_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
+    SLICE_X9Y42.A6       net (fanout=3)        0.789   Inst_my_ALU/i_A[7]_i_B[7]_div_4/GND_9_o_b[7]_add_15_OUT<7>
+    SLICE_X9Y42.A        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW2_SW2
+    SLICE_X9Y42.D3       net (fanout=1)        0.391   N150
+    SLICE_X9Y42.D        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW2
+    SLICE_X8Y40.D5       net (fanout=4)        0.627   N32
+    SLICE_X8Y40.D        Tilo                  0.254   Inst_my_ALU/ALU_Result<1>
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>1_SW1
+    SLICE_X8Y40.A3       net (fanout=1)        0.358   N154
+    SLICE_X8Y40.CLK      Tas                   0.339   Inst_my_ALU/ALU_Result<1>
                                                        Inst_my_ALU/i_ALU_sel<3>1
                                                        Inst_my_ALU/ALU_Result_0
     -------------------------------------------------  ---------------------------
-    Total                                     16.036ns (4.088ns logic, 11.948ns route)
-                                                       (25.5% logic, 74.5% route)
+    Total                                     17.596ns (4.185ns logic, 13.411ns route)
+                                                       (23.8% logic, 76.2% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     15.238ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_register_32x8/o_OUT_A_7 (FF)
+Slack (setup path):     13.565ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_register_32x8/o_OUT_B_1_1 (FF)
   Destination:          Inst_my_ALU/ALU_Result_0 (FF)
   Requirement:          31.250ns
-  Data Path Delay:      15.963ns (Levels of Logic = 14)
-  Clock Path Skew:      -0.014ns (0.193 - 0.207)
+  Data Path Delay:      17.590ns (Levels of Logic = 14)
+  Clock Path Skew:      -0.060ns (0.617 - 0.677)
   Source Clock:         i_CLK_BUFGP rising at 0.000ns
   Destination Clock:    i_CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.035ns
@@ -627,144 +609,142 @@ Slack (setup path):     15.238ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_A_7 to Inst_my_ALU/ALU_Result_0
+  Maximum Data Path at Slow Process Corner: Inst_register_32x8/o_OUT_B_1_1 to Inst_my_ALU/ALU_Result_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X12Y30.BQ      Tcko                  0.525   Inst_register_32x8/o_OUT_A<7>
-                                                       Inst_register_32x8/o_OUT_A_7
-    SLICE_X14Y27.B1      net (fanout=19)       1.432   Inst_register_32x8/o_OUT_A<7>
-    SLICE_X14Y27.B       Tilo                  0.235   N29
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>1_SW1
-    SLICE_X14Y26.D1      net (fanout=1)        0.732   N192
-    SLICE_X14Y26.D       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>1
-    SLICE_X14Y16.CX      net (fanout=4)        1.168   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<6>
-    SLICE_X14Y16.CMUX    Tcxc                  0.192   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>11
-    SLICE_X15Y29.A6      net (fanout=2)        1.254   Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_cy<6>
-    SLICE_X15Y29.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[3]_GND_9_o_MUX_159_o
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_140_o171
-    SLICE_X14Y22.A1      net (fanout=7)        1.217   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[7]_GND_9_o_MUX_133_o
-    SLICE_X14Y22.A       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11_1
-    SLICE_X14Y22.C1      net (fanout=2)        0.545   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>11
-    SLICE_X14Y22.C       Tilo                  0.235   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<3>1
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B1      net (fanout=1)        0.727   Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>1
-    SLICE_X14Y21.B       Tilo                  0.235   N56
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24_SW2
-    SLICE_X16Y23.A5      net (fanout=8)        0.681   N56
-    SLICE_X16Y23.A       Tilo                  0.254   N89
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<2>24
-    SLICE_X13Y26.B4      net (fanout=11)       0.856   Inst_my_ALU/i_A[7]_i_B[7]_div_3_OUT<2>
-    SLICE_X13Y26.B       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_9_o_MUX_182_o161
-    SLICE_X16Y26.BX      net (fanout=6)        0.607   Inst_my_ALU/i_A[7]_i_B[7]_div_3/a[6]_GND_9_o_MUX_176_o
-    SLICE_X16Y26.CMUX    Taxc                  0.376   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
-    SLICE_X13Y27.A1      net (fanout=3)        1.219   Inst_my_ALU/i_A[7]_i_B[7]_div_3/GND_9_o_b[7]_add_15_OUT<7>
-    SLICE_X13Y27.A       Tilo                  0.259   N151
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2_SW3
-    SLICE_X13Y26.D4      net (fanout=1)        0.474   N151
-    SLICE_X13Y26.D       Tilo                  0.259   N32
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>2_SW2
-    SLICE_X12Y28.B3      net (fanout=4)        0.653   N32
-    SLICE_X12Y28.B       Tilo                  0.254   Inst_my_ALU/ALU_Result<1>
-                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_3/o<0>1_SW7
-    SLICE_X12Y28.A5      net (fanout=1)        0.247   N156
-    SLICE_X12Y28.CLK     Tas                   0.339   Inst_my_ALU/ALU_Result<1>
+    SLICE_X13Y54.AQ      Tcko                  0.430   Inst_register_32x8/o_OUT_B_1_1
+                                                       Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X13Y58.D4      net (fanout=7)        1.863   Inst_register_32x8/o_OUT_B_1_1
+    SLICE_X13Y58.D       Tilo                  0.259   N179
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<6>11_SW6
+    SLICE_X13Y55.A5      net (fanout=1)        0.662   N179
+    SLICE_X13Y55.A       Tilo                  0.259   Inst_register_32x8/o_OUT_B_3_2
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW2
+    SLICE_X12Y57.B6      net (fanout=2)        0.389   N54
+    SLICE_X12Y57.B       Tilo                  0.254   Inst_register_32x8/o_OUT_A_7_3
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW4
+    SLICE_X13Y57.A2      net (fanout=1)        0.747   N116
+    SLICE_X13Y57.A       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_9_OUT_Madd_Madd_lut<5>
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>11
+    SLICE_X11Y46.D3      net (fanout=12)       1.624   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<4>
+    SLICE_X11Y46.D       Tilo                  0.259   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_150_o141
+    SLICE_X14Y54.B2      net (fanout=6)        1.952   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_146_o
+    SLICE_X14Y54.B       Tilo                  0.235   N44
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_172_o151
+    SLICE_X14Y50.B5      net (fanout=6)        0.680   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[5]_GND_9_o_MUX_167_o
+    SLICE_X14Y50.B       Tilo                  0.235   N56
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24_SW2
+    SLICE_X13Y47.A5      net (fanout=8)        0.695   N56
+    SLICE_X13Y47.A       Tilo                  0.259   N89
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24
+    SLICE_X9Y42.B3       net (fanout=11)       1.358   Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<2>
+    SLICE_X9Y42.B        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_192_o161
+    SLICE_X12Y46.BX      net (fanout=6)        1.260   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[6]_GND_9_o_MUX_186_o
+    SLICE_X12Y46.CMUX    Taxc                  0.376   Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_168_o
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<7>
+    SLICE_X9Y42.A6       net (fanout=3)        0.789   Inst_my_ALU/i_A[7]_i_B[7]_div_4/GND_9_o_b[7]_add_15_OUT<7>
+    SLICE_X9Y42.A        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW2_SW2
+    SLICE_X9Y42.D3       net (fanout=1)        0.391   N150
+    SLICE_X9Y42.D        Tilo                  0.259   N32
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW2
+    SLICE_X8Y40.D5       net (fanout=4)        0.627   N32
+    SLICE_X8Y40.D        Tilo                  0.254   Inst_my_ALU/ALU_Result<1>
+                                                       Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>1_SW1
+    SLICE_X8Y40.A3       net (fanout=1)        0.358   N154
+    SLICE_X8Y40.CLK      Tas                   0.339   Inst_my_ALU/ALU_Result<1>
                                                        Inst_my_ALU/i_ALU_sel<3>1
                                                        Inst_my_ALU/ALU_Result_0
     -------------------------------------------------  ---------------------------
-    Total                                     15.963ns (4.151ns logic, 11.812ns route)
-                                                       (26.0% logic, 74.0% route)
+    Total                                     17.590ns (4.195ns logic, 13.395ns route)
+                                                       (23.8% logic, 76.2% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: NET "i_CLK_BUFGP/IBUFG" PERIOD = 31.25 ns HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_register_32x8/o_OUT_A_1 (SLICE_X16Y27.AX), 1 path
+Paths for end point Inst_my_ALU/Mmult_n0035 (DSP48_X0Y11.A0), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.703ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_register_32x8/Mram_r_REGISTER2_RAMA_D1 (RAM)
-  Destination:          Inst_register_32x8/o_OUT_A_1 (FF)
+Slack (hold path):      0.624ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_register_32x8/Mram_r_REGISTER11_RAMA (RAM)
+  Destination:          Inst_my_ALU/Mmult_n0035 (DSP)
   Requirement:          0.000ns
-  Data Path Delay:      0.703ns (Levels of Logic = 0)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      0.635ns (Levels of Logic = 0)
+  Clock Path Skew:      0.011ns (0.113 - 0.102)
   Source Clock:         i_CLK_BUFGP rising at 31.250ns
   Destination Clock:    i_CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: Inst_register_32x8/Mram_r_REGISTER2_RAMA_D1 to Inst_register_32x8/o_OUT_A_1
+  Minimum Data Path at Fast Process Corner: Inst_register_32x8/Mram_r_REGISTER11_RAMA to Inst_my_ALU/Mmult_n0035
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X16Y28.A       Tshcko                0.441   Inst_register_32x8/o_OUT_A_5_3
-                                                       Inst_register_32x8/Mram_r_REGISTER2_RAMA_D1
-    SLICE_X16Y27.AX      net (fanout=2)        0.221   Inst_register_32x8/i_ADDRESS_A[4]_read_port_1_OUT<1>
-    SLICE_X16Y27.CLK     Tckdi       (-Th)    -0.041   Inst_register_32x8/o_OUT_A<5>
-                                                       Inst_register_32x8/o_OUT_A_1
+    SLICE_X8Y46.AMUX     Tshcko                0.490   Inst_register_32x8/o_OUT_B<5>
+                                                       Inst_register_32x8/Mram_r_REGISTER11_RAMA
+    DSP48_X0Y11.A0       net (fanout=4)        0.182   Inst_register_32x8/i_ADDRESS_B[4]_read_port_2_OUT<0>
+    DSP48_X0Y11.CLK      Tdspckd_A_A1REG(-Th)     0.037   Inst_my_ALU/Mmult_n0035
+                                                       Inst_my_ALU/Mmult_n0035
     -------------------------------------------------  ---------------------------
-    Total                                      0.703ns (0.482ns logic, 0.221ns route)
-                                                       (68.6% logic, 31.4% route)
+    Total                                      0.635ns (0.453ns logic, 0.182ns route)
+                                                       (71.3% logic, 28.7% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_my_ALU/ALU_Result_3 (SLICE_X18Y30.D4), 1 path
+Paths for end point Inst_my_ALU/Mmult_n0035 (DSP48_X0Y11.B4), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.703ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_register_32x8/o_OUT_B_3 (FF)
-  Destination:          Inst_my_ALU/ALU_Result_3 (FF)
+Slack (hold path):      0.628ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_register_32x8/Mram_r_REGISTER2_RAMC (RAM)
+  Destination:          Inst_my_ALU/Mmult_n0035 (DSP)
   Requirement:          0.000ns
-  Data Path Delay:      0.705ns (Levels of Logic = 1)
-  Clock Path Skew:      0.002ns (0.076 - 0.074)
+  Data Path Delay:      0.640ns (Levels of Logic = 0)
+  Clock Path Skew:      0.012ns (0.113 - 0.101)
   Source Clock:         i_CLK_BUFGP rising at 31.250ns
   Destination Clock:    i_CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: Inst_register_32x8/o_OUT_B_3 to Inst_my_ALU/ALU_Result_3
+  Minimum Data Path at Fast Process Corner: Inst_register_32x8/Mram_r_REGISTER2_RAMC to Inst_my_ALU/Mmult_n0035
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X17Y30.DQ      Tcko                  0.198   Inst_register_32x8/o_OUT_B<3>
-                                                       Inst_register_32x8/o_OUT_B_3
-    SLICE_X18Y30.D4      net (fanout=31)       0.276   Inst_register_32x8/o_OUT_B<3>
-    SLICE_X18Y30.CLK     Tah         (-Th)    -0.231   Inst_my_ALU/ALU_Result<3>
-                                                       Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_15_OUT65_F
-                                                       Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_15_OUT65
-                                                       Inst_my_ALU/ALU_Result_3
+    SLICE_X8Y45.CMUX     Tshcko                0.485   Inst_register_32x8/o_OUT_A_5_3
+                                                       Inst_register_32x8/Mram_r_REGISTER2_RAMC
+    DSP48_X0Y11.B4       net (fanout=4)        0.192   Inst_register_32x8/i_ADDRESS_A[4]_read_port_1_OUT<4>
+    DSP48_X0Y11.CLK      Tdspckd_B_B0REG(-Th)     0.037   Inst_my_ALU/Mmult_n0035
+                                                       Inst_my_ALU/Mmult_n0035
     -------------------------------------------------  ---------------------------
-    Total                                      0.705ns (0.429ns logic, 0.276ns route)
-                                                       (60.9% logic, 39.1% route)
+    Total                                      0.640ns (0.448ns logic, 0.192ns route)
+                                                       (70.0% logic, 30.0% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_register_32x8/o_OUT_A_3 (SLICE_X16Y27.BX), 1 path
+Paths for end point Inst_my_ALU/Mmult_n0035 (DSP48_X0Y11.A2), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.710ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_register_32x8/Mram_r_REGISTER2_RAMB_D1 (RAM)
-  Destination:          Inst_register_32x8/o_OUT_A_3 (FF)
+Slack (hold path):      0.629ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_register_32x8/Mram_r_REGISTER11_RAMB (RAM)
+  Destination:          Inst_my_ALU/Mmult_n0035 (DSP)
   Requirement:          0.000ns
-  Data Path Delay:      0.710ns (Levels of Logic = 0)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      0.640ns (Levels of Logic = 0)
+  Clock Path Skew:      0.011ns (0.113 - 0.102)
   Source Clock:         i_CLK_BUFGP rising at 31.250ns
   Destination Clock:    i_CLK_BUFGP rising at 31.250ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: Inst_register_32x8/Mram_r_REGISTER2_RAMB_D1 to Inst_register_32x8/o_OUT_A_3
+  Minimum Data Path at Fast Process Corner: Inst_register_32x8/Mram_r_REGISTER11_RAMB to Inst_my_ALU/Mmult_n0035
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X16Y28.B       Tshcko                0.449   Inst_register_32x8/o_OUT_A_5_3
-                                                       Inst_register_32x8/Mram_r_REGISTER2_RAMB_D1
-    SLICE_X16Y27.BX      net (fanout=2)        0.220   Inst_register_32x8/i_ADDRESS_A[4]_read_port_1_OUT<3>
-    SLICE_X16Y27.CLK     Tckdi       (-Th)    -0.041   Inst_register_32x8/o_OUT_A<5>
-                                                       Inst_register_32x8/o_OUT_A_3
+    SLICE_X8Y46.BMUX     Tshcko                0.495   Inst_register_32x8/o_OUT_B<5>
+                                                       Inst_register_32x8/Mram_r_REGISTER11_RAMB
+    DSP48_X0Y11.A2       net (fanout=4)        0.182   Inst_register_32x8/i_ADDRESS_B[4]_read_port_2_OUT<2>
+    DSP48_X0Y11.CLK      Tdspckd_A_A1REG(-Th)     0.037   Inst_my_ALU/Mmult_n0035
+                                                       Inst_my_ALU/Mmult_n0035
     -------------------------------------------------  ---------------------------
-    Total                                      0.710ns (0.490ns logic, 0.220ns route)
-                                                       (69.0% logic, 31.0% route)
+    Total                                      0.640ns (0.458ns logic, 0.182ns route)
+                                                       (71.6% logic, 28.4% route)
 
 --------------------------------------------------------------------------------
 
@@ -781,17 +761,17 @@ Slack: 28.584ns (period - min period limit)
 Slack: 29.993ns (period - min period limit)
   Period: 31.250ns
   Min period limit: 1.257ns (795.545MHz) (Tcp)
-  Physical resource: Inst_register_32x8/o_OUT_A_7_2/CLK
-  Logical resource: Inst_register_32x8/Mram_r_REGISTER31/DP/CLK
-  Location pin: SLICE_X12Y29.CLK
+  Physical resource: Inst_register_32x8/o_OUT_A_5_3/CLK
+  Logical resource: Inst_register_32x8/Mram_r_REGISTER2_RAMA/CLK
+  Location pin: SLICE_X8Y45.CLK
   Clock network: i_CLK_BUFGP
 --------------------------------------------------------------------------------
 Slack: 29.993ns (period - min period limit)
   Period: 31.250ns
   Min period limit: 1.257ns (795.545MHz) (Tcp)
-  Physical resource: Inst_register_32x8/o_OUT_A_7_2/CLK
-  Logical resource: Inst_register_32x8/Mram_r_REGISTER32/DP/CLK
-  Location pin: SLICE_X12Y29.CLK
+  Physical resource: Inst_register_32x8/o_OUT_A_5_3/CLK
+  Logical resource: Inst_register_32x8/Mram_r_REGISTER2_RAMA_D1/CLK
+  Location pin: SLICE_X8Y45.CLK
   Clock network: i_CLK_BUFGP
 --------------------------------------------------------------------------------
 
@@ -808,7 +788,7 @@ Clock to Setup on destination clock i_CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-i_CLK          |   16.534|         |         |         |
+i_CLK          |   18.247|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -817,23 +797,23 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 4162456 paths, 0 nets, and 1102 connections
+Constraints cover 4162456 paths, 0 nets, and 1104 connections
 
 Design statistics:
-   Minimum period:  16.534ns{1}   (Maximum frequency:  60.481MHz)
+   Minimum period:  18.247ns{1}   (Maximum frequency:  54.804MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Tue Mar 26 21:16:39 2019 
+Analysis completed Wed Mar 27 20:58:55 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4573 MB
+Peak Memory Usage: 4574 MB
 
 
 

@@ -10,7 +10,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Tue Mar 26 21:16:21 2019
+Mapped Date    : Wed Mar 27 20:58:37 2019
 
 Design Summary
 --------------
@@ -22,11 +22,11 @@ Slice Logic Utilization:
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        227 out of   5,720    3%
-    Number used as logic:                      214 out of   5,720    3%
-      Number using O6 output only:             199
+  Number of Slice LUTs:                        229 out of   5,720    4%
+    Number used as logic:                      215 out of   5,720    3%
+      Number using O6 output only:             201
       Number using O5 output only:               0
-      Number using O5 and O6:                   15
+      Number using O5 and O6:                   14
       Number used as ROM:                        0
     Number used as Memory:                      12 out of   1,440    1%
       Number used as Dual Port RAM:             12
@@ -35,18 +35,18 @@ Slice Logic Utilization:
         Number using O5 and O6:                 12
       Number used as Single Port RAM:            0
       Number used as Shift Register:             0
-    Number used exclusively as route-thrus:      1
-      Number with same-slice register load:      1
+    Number used exclusively as route-thrus:      2
+      Number with same-slice register load:      2
       Number with same-slice carry load:         0
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    76 out of   1,430    5%
+  Number of occupied Slices:                    80 out of   1,430    5%
   Number of MUXCYs used:                        32 out of   2,860    1%
-  Number of LUT Flip Flop pairs used:          236
-    Number with an unused Flip Flop:           186 out of     236   78%
-    Number with an unused LUT:                   9 out of     236    3%
-    Number of fully used LUT-FF pairs:          41 out of     236   17%
+  Number of LUT Flip Flop pairs used:          239
+    Number with an unused Flip Flop:           191 out of     239   79%
+    Number with an unused LUT:                  10 out of     239    4%
+    Number of fully used LUT-FF pairs:          38 out of     239   15%
     Number of unique control sets:               2
     Number of slice register sites lost
       to control set restrictions:               5 out of  11,440    1%

@@ -40,10 +40,12 @@ architecture Behavioral of CPU is
 	SIGNAL w_ALU_INPUT_A : std_logic_vector (7 downto 0);
 	SIGNAL w_ALU_INPUT_B : std_logic_vector (7 downto 0);
 	SIGNAL w_ALU_OUT : std_logic_vector (7 downto 0);
-	--SIGNAL w_ALU_SEL : std_logic_vector (3 downto 0);
 	SIGNAL w_ALU_CARRY : std_logic;
+	SIGNAL w_ALU_OVERFLOW : std_logic;
+	SIGNAL w_ALU_NEGATIVE : std_logic;
+	SIGNAL w_ALU_ZERO : std_logic;
 	
-	SIGNAL r_UNUSED : std_logic_vector(6 downto 0) := (others => '0');
+	SIGNAL r_UNUSED : std_logic_vector(6 downto 0);
 	
 	COMPONENT my_ALU
 	PORT(
@@ -52,7 +54,10 @@ architecture Behavioral of CPU is
 		i_B : IN std_logic_vector(7 downto 0);
 		i_ALU_sel : IN std_logic_vector(3 downto 0);          
 		o_ALU_out : OUT std_logic_vector(7 downto 0);
-		o_ALU_carry_flag : OUT std_logic
+		o_ALU_carry_flag : OUT std_logic;
+		o_ALU_overflow_flag : OUT std_logic;
+		o_ALU_negative_flag : OUT std_logic;
+		o_ALU_zero_flag : OUT std_logic
 		);
 	END COMPONENT;
 	
@@ -76,7 +81,10 @@ begin
 		i_B => w_ALU_INPUT_B,
 		i_ALU_sel => i_INSTRUCTION(10 downto 7),
 		o_ALU_out => w_ALU_OUT,
-		o_ALU_carry_flag => w_ALU_CARRY
+		o_ALU_carry_flag => w_ALU_CARRY,
+		o_ALU_overflow_flag => w_ALU_OVERFLOW,
+		o_ALU_negative_flag => w_ALU_NEGATIVE,
+		o_ALU_zero_flag => w_ALU_ZERO
 	);
 	
 	Inst_register_32x8: register_32x8 PORT MAP(
