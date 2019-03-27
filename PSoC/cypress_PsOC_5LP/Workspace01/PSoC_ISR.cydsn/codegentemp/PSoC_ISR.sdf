@@ -1,0 +1,23 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2019-03-27T08:24:16Z")
+ (DESIGN "PSoC_ISR")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 4.2")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "PSoC_ISR")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT ClockBlock.clk_bus_glb Pin_SW2_Int.clock (0.000:0.000:0.000))
+    (INTERCONNECT Pin_SW2.interrupt Pin_SW2_Int.interrupt (1.000:1.000:1.000))
+    (INTERCONNECT Pin_SW2\(0\)_PAD Pin_SW2\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Pin_Red\(0\)_PAD Pin_Red\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Pin_Yellow\(0\)_PAD Pin_Yellow\(0\).pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)

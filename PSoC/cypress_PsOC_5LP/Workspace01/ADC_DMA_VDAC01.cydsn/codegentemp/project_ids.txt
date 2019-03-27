@@ -1,0 +1,13 @@
+C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\Design01.cydsn\Design01.cyprj|ba7cd0c0-3672-4ecd-af5a-5f92e3196e7f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|be0425be-80ed-4236-b71a-7072503ec517
+C:\Users\holge\OneDrive\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|92f92cd1-4d56-4ed1-9a4f-01b749f8c93e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|3e11a006-5b29-41f7-8586-0e9c13bfa3ed
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|e56a7fc9-55d4-446b-8386-26023060c411
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|3407ca89-ed53-496f-9a51-c39ff317e0ca
+C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\CapSense_CSD_Design01.cydsn\CapSense_CSD_Design01.cyprj|09d5446c-0d92-44c7-b4dd-1c4a7a15a16e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|82fe6dc8-b50e-40c4-90c7-393a030b70ba
+C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\Lek1_ex4.cydsn\Lek1_ex4.cyprj|7fb2fd65-ca17-4aa7-805c-75beccae0ceb
+C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\lek4_ex1.cydsn\lek4_ex1.cyprj|1a07cbfc-e3e7-4403-a5c1-4818f1a5f599
+C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\Control_register.cydsn\Control_register.cyprj|88525068-fe37-4f48-875c-4304d26ca6b7
+C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\PSoC_ISR.cydsn\PSoC_ISR.cyprj|b8f0b49a-585e-47d8-bb5c-118fb6f62a19
+C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\PSoC\cypress_PsOC_5LP\Workspace01\ADC_DMA_VDAC01.cydsn\ADC_DMA_VDAC01.cyprj|32547de2-6bca-4d0c-9469-ec97c334bbf3
