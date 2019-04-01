@@ -18,8 +18,8 @@
 --
 ----------------------------------------------------------------------------------
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.std_logic_1164.ALL;
+use IEEE.std_logic_UNSIGNED.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -35,22 +35,22 @@ entity my_ALU is
      constant N: natural := 1  -- number of shifted or rotated bits
     );
 	 
-    Port ( i_CLK : in  STD_LOGIC;
-			  i_A : in  STD_LOGIC_VECTOR (7 downto 0); -- 8-bit input
-           i_B : in  STD_LOGIC_VECTOR (7 downto 0); -- 8-bit input
-           i_ALU_sel : in  STD_LOGIC_VECTOR (3 downto 0); -- 4-bit function select input
-           o_ALU_out : out  STD_LOGIC_VECTOR (7 downto 0); -- 8-bit output
-           o_ALU_carry_flag : out  STD_LOGIC; -- output carry flag
-			  o_ALU_overflow_flag : out  STD_LOGIC;
-			  o_ALU_negative_flag : out  STD_LOGIC;
-			  o_ALU_zero_flag : out  STD_LOGIC
+    Port ( i_CLK : in  std_logic;
+			  i_A : in  std_logic_vector (7 downto 0); -- 8-bit input
+           i_B : in  std_logic_vector (7 downto 0); -- 8-bit input
+           i_ALU_sel : in  std_logic_vector (3 downto 0); -- 4-bit function select input
+           o_ALU_out : out  std_logic_vector (7 downto 0); -- 8-bit output
+           o_ALU_carry_flag : out  std_logic; -- output carry flag
+			  o_ALU_overflow_flag : out  std_logic;
+			  o_ALU_negative_flag : out  std_logic;
+			  o_ALU_zero_flag : out  std_logic
 			  ); -- output overflow flag
 end my_ALU;
 
 architecture Behavioral of my_ALU is
 
-constant ADD : STD_LOGIC_VECTOR(3 DOWNTO 0):="0000"; -- Add opcode
-constant SUB : STD_LOGIC_VECTOR(3 DOWNTO 0):="0001"; -- Subtract opcode 
+constant ADD : std_logic_vector(3 DOWNTO 0):="0000"; -- Add opcode
+constant SUB : std_logic_vector(3 DOWNTO 0):="0001"; -- Subtract opcode 
 
 signal ALU_Result : std_logic_vector (7 downto 0); -- Buffer signal for output
 signal tmp : std_logic_vector (8 downto 0); -- Buffer for carry flag output

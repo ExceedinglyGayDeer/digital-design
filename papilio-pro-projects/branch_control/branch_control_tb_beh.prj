@@ -1,0 +1,2 @@
+vhdl work "branch_control.vhd"
+vhdl work "branch_control_tb.vhd"

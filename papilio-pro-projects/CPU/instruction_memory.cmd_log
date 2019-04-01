@@ -1,0 +1,1 @@
+vhdtdtfi -prj CPU -o "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/CPU/instruction_memory.vhi" -module instruction_memory -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../instruction_memory/instruction_memory.vhd 

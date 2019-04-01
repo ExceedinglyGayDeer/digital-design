@@ -1,3 +1,7 @@
 vhdl work "../register_32x8/register_32x8.vhd"
+vhdl work "../program_memory/program_memory.vhd"
+vhdl work "../program_counter/program_counter.vhd"
 vhdl work "../my_ALU/my_ALU.vhd"
+vhdl work "../instruction_memory/instruction_memory.vhd"
+vhdl work "../data_memory/data_memory.vhd"
 vhdl work "CPU.vhd"

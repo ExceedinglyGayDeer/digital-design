@@ -1,0 +1,2 @@
+vhdl isim_temp "branch_control.vhd"
+vhdl isim_temp "branch_control_tb.vhd"

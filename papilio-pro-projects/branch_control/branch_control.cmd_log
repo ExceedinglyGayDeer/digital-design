@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/branch_control/branch_control.xst" -ofn "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/branch_control/branch_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 "branch_control.ngc" branch_control.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o branch_control_map.ncd branch_control.ngd branch_control.pcf 
+par -w -intstyle ise -ol high -mt off branch_control_map.ncd branch_control.ncd branch_control.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml branch_control.twx branch_control.ncd -o branch_control.twr branch_control.pcf 
+xst -intstyle ise -ifn "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/branch_control/branch_control.xst" -ofn "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/branch_control/branch_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 "branch_control.ngc" branch_control.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o branch_control_map.ncd branch_control.ngd branch_control.pcf 
+par -w -intstyle ise -ol high -mt off branch_control_map.ncd branch_control.ncd branch_control.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml branch_control.twx branch_control.ncd -o branch_control.twr branch_control.pcf 
+xst -intstyle ise -ifn "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/branch_control/branch_control.xst" -ofn "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/branch_control/branch_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 "branch_control.ngc" branch_control.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o branch_control_map.ncd branch_control.ngd branch_control.pcf 
+par -w -intstyle ise -ol high -mt off branch_control_map.ncd branch_control.ncd branch_control.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml branch_control.twx branch_control.ncd -o branch_control.twr branch_control.pcf 
+netgen -intstyle ise -ar Structure -tm branch_control -w -dir netgen/synthesis -ofmt vhdl -sim branch_control.ngc branch_control_synthesis.vhd 
+vhdtdtfi -prj branch_control -o "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/branch_control/branch_control.vhi" -module branch_control -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work branch_control.vhd 

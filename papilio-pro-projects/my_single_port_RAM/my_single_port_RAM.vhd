@@ -33,7 +33,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity my_single_port_RAM is
     Port ( i_ram_address : in  STD_LOGIC_VECTOR (6 downto 0); --Address to read from or write to
            i_data_in : in  STD_LOGIC_VECTOR (7 downto 0); -- Data to write to RAM
-           i_write : in  STD_LOGIC; -- Write enabe 
+           i_write : in  STD_LOGIC; -- Write enable 
            i_CLK : in  STD_LOGIC; -- Clock input
            o_data_out : out  STD_LOGIC_VECTOR (7 downto 0)); -- Data output
 end my_single_port_RAM;
@@ -45,7 +45,7 @@ type RAM_ARRAY is array (0 to 127 ) of std_logic_vector (7 downto 0);
 -- creates signal "RAM" of type "RAM_ARRAY" 
 -- and initialise with values in the RAM.
 signal RAM: RAM_ARRAY :=(  -- RAM adress
-   x"55",x"66",x"77",x"67",-- 0x00: 
+   x"55",x"66",x"77",x"67",-- 0x00: x'00
    x"99",x"00",x"00",x"11",-- 0x04: 
    x"00",x"00",x"00",x"00",-- 0x08: 
    x"00",x"00",x"00",x"00",-- 0x0C: 

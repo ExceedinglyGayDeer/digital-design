@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: CPU.prj
 
@@ -108,13 +108,24 @@ Slice Utilization Ratio Delta      : 5
 Parsing VHDL file "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\register_32x8\register_32x8.vhd" into library work
 Parsing entity <register_32x8>.
 Parsing architecture <Behavioral> of entity <register_32x8>.
+Parsing VHDL file "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\program_memory\program_memory.vhd" into library work
+Parsing entity <program_memory>.
+Parsing architecture <Behavioral> of entity <program_memory>.
+Parsing VHDL file "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\program_counter\program_counter.vhd" into library work
+Parsing entity <program_counter>.
+Parsing architecture <Behavioral> of entity <program_counter>.
 Parsing VHDL file "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\my_ALU\my_ALU.vhd" into library work
 Parsing entity <my_ALU>.
 Parsing architecture <Behavioral> of entity <my_alu>.
+Parsing VHDL file "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\instruction_memory\instruction_memory.vhd" into library work
+Parsing entity <instruction_memory>.
+Parsing architecture <Behavioral> of entity <instruction_memory>.
+Parsing VHDL file "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\data_memory\data_memory.vhd" into library work
+Parsing entity <data_memory>.
+Parsing architecture <Behavioral> of entity <data_memory>.
 Parsing VHDL file "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" into library work
 Parsing entity <CPU>.
 Parsing architecture <Behavioral> of entity <cpu>.
-WARNING:HDLCompiler:946 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" Line 98: Actual for formal port i_write_enable is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -125,7 +136,17 @@ Elaborating entity <CPU> (architecture <Behavioral>) from library <work>.
 Elaborating entity <my_ALU> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <register_32x8> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" Line 103: Assignment to r_unused ignored, since the identifier is never used
+
+Elaborating entity <program_counter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <instruction_memory> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <program_memory> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <data_memory> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" Line 52: Net <w_DATA_MEM_IN[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" Line 58: Net <w_UNASSIGNED[31]> does not have a driver.
+WARNING:Xst:2972 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" line 169. All outputs of instance <Inst_data_memory> of block <data_memory> are unconnected in block <CPU>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -133,11 +154,14 @@ WARNING:HDLCompiler:1127 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. se
 
 Synthesizing Unit <CPU>.
     Related source file is "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd".
-WARNING:Xst:647 - Input <i_INSTRUCTION<6:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" line 78: Output port <o_ALU_carry_flag> of the instance <Inst_my_ALU> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" line 78: Output port <o_ALU_overflow_flag> of the instance <Inst_my_ALU> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" line 78: Output port <o_ALU_negative_flag> of the instance <Inst_my_ALU> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" line 78: Output port <o_ALU_zero_flag> of the instance <Inst_my_ALU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" line 126: Output port <o_ALU_carry_flag> of the instance <Inst_my_ALU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" line 126: Output port <o_ALU_overflow_flag> of the instance <Inst_my_ALU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" line 126: Output port <o_ALU_negative_flag> of the instance <Inst_my_ALU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" line 126: Output port <o_ALU_zero_flag> of the instance <Inst_my_ALU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\CPU\CPU.vhd" line 169: Output port <o_DATA> of the instance <Inst_data_memory> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <w_DATA_MEM_IN> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <w_UNASSIGNED<31:12>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <w_UNASSIGNED<10:0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <CPU> synthesized.
@@ -208,16 +232,49 @@ Synthesizing Unit <register_32x8>.
 	inferred  16 D-type flip-flop(s).
 Unit <register_32x8> synthesized.
 
+Synthesizing Unit <program_counter>.
+    Related source file is "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\program_counter\program_counter.vhd".
+    Found 10-bit register for signal <o_DATA>.
+    Found 10-bit register for signal <r_PROG_COUNT>.
+    Found 10-bit adder for signal <r_PROG_COUNT[9]_GND_11_o_add_0_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+Unit <program_counter> synthesized.
+
+Synthesizing Unit <instruction_memory>.
+    Related source file is "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\instruction_memory\instruction_memory.vhd".
+WARNING:Xst:647 - Input <i_ADDRESS<7:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'r_INST_MEM', unconnected in block 'instruction_memory', is tied to its initial value.
+    Found 32x32-bit single-port Read Only RAM <Mram_r_INST_MEM> for signal <r_INST_MEM>.
+    Found 32-bit register for signal <o_DATA>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <instruction_memory> synthesized.
+
+Synthesizing Unit <program_memory>.
+    Related source file is "C:\Users\holge\OneDrive\AAU - Elektronik og IT\4. semester\Digital Design\digital-design\papilio-pro-projects\program_memory\program_memory.vhd".
+WARNING:Xst:2999 - Signal 'PROG_MEM', unconnected in block 'program_memory', is tied to its initial value.
+    Found 1024x8-bit single-port Read Only RAM <Mram_PROG_MEM> for signal <PROG_MEM>.
+    Found 8-bit register for signal <o_READ_DATA>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <program_memory> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
+# RAMs                                                 : 4
+ 1024x8-bit single-port Read Only RAM                  : 1
+ 32x32-bit single-port Read Only RAM                   : 1
  32x8-bit dual-port RAM                                : 2
 # Multipliers                                          : 1
  8x8-bit multiplier                                    : 1
-# Adders/Subtractors                                   : 19
- 10-bit adder                                          : 2
+# Adders/Subtractors                                   : 20
+ 10-bit adder                                          : 3
  11-bit adder                                          : 2
  12-bit adder                                          : 2
  13-bit adder                                          : 2
@@ -227,9 +284,11 @@ Macro Statistics
  8-bit adder                                           : 1
  8-bit subtractor                                      : 1
  9-bit adder                                           : 3
-# Registers                                            : 6
+# Registers                                            : 10
  1-bit register                                        : 3
- 8-bit register                                        : 3
+ 10-bit register                                       : 2
+ 32-bit register                                       : 1
+ 8-bit register                                        : 4
 # Comparators                                          : 12
  10-bit comparator lessequal                           : 1
  11-bit comparator lessequal                           : 1
@@ -256,6 +315,50 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:2677 - Node <o_DATA_0> of sequential type is unconnected in block <Inst_instruction_memory>.
+WARNING:Xst:2677 - Node <o_DATA_1> of sequential type is unconnected in block <Inst_instruction_memory>.
+WARNING:Xst:2677 - Node <o_DATA_2> of sequential type is unconnected in block <Inst_instruction_memory>.
+WARNING:Xst:2677 - Node <o_DATA_3> of sequential type is unconnected in block <Inst_instruction_memory>.
+WARNING:Xst:2677 - Node <o_DATA_4> of sequential type is unconnected in block <Inst_instruction_memory>.
+WARNING:Xst:2677 - Node <o_READ_DATA_5> of sequential type is unconnected in block <Inst_program_memory>.
+WARNING:Xst:2677 - Node <o_READ_DATA_6> of sequential type is unconnected in block <Inst_program_memory>.
+WARNING:Xst:2677 - Node <o_READ_DATA_7> of sequential type is unconnected in block <Inst_program_memory>.
+
+Synthesizing (advanced) Unit <CPU>.
+INFO:Xst:3226 - The RAM <Inst_program_memory/Mram_PROG_MEM> will be implemented as a BLOCK RAM, absorbing the following register(s): <Inst_program_memory/o_READ_DATA>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <i_CLK>         | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <w_PC_OUT>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <w_PROG_MEM_OUT> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <CPU> synthesized (advanced).
+
+Synthesizing (advanced) Unit <instruction_memory>.
+INFO:Xst:3231 - The small RAM <Mram_r_INST_MEM> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <i_ADDRESS>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <instruction_memory> synthesized (advanced).
+
+Synthesizing (advanced) Unit <program_counter>.
+The following registers are absorbed into counter <r_PROG_COUNT>: 1 register on signal <r_PROG_COUNT>.
+Unit <program_counter> synthesized (advanced).
 
 Synthesizing (advanced) Unit <register_32x8>.
 INFO:Xst:3231 - The small RAM <Mram_r_REGISTER> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
@@ -296,7 +399,9 @@ Unit <register_32x8> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
+# RAMs                                                 : 4
+ 1024x8-bit single-port block Read Only RAM            : 1
+ 32x32-bit single-port distributed Read Only RAM       : 1
  32x8-bit dual-port distributed RAM                    : 2
 # Multipliers                                          : 1
  8x8-bit multiplier                                    : 1
@@ -305,8 +410,10 @@ Macro Statistics
  8-bit adder carry in                                  : 8
  8-bit subtractor                                      : 1
  9-bit adder                                           : 1
-# Registers                                            : 27
- Flip-Flops                                            : 27
+# Counters                                             : 1
+ 10-bit up counter                                     : 1
+# Registers                                            : 69
+ Flip-Flops                                            : 69
 # Comparators                                          : 12
  10-bit comparator lessequal                           : 1
  11-bit comparator lessequal                           : 1
@@ -332,33 +439,89 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-
-Optimizing unit <register_32x8> ...
+WARNING:Xst:1710 - FF/Latch <o_DATA_31> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_30> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_29> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_28> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_27> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_26> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_25> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_24> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_23> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_22> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_21> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_20> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_19> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_18> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_17> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_16> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_15> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_14> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_13> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_12> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_11> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_10> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_9> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_DATA_8> (without init value) has a constant value of 0 in block <instruction_memory>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <o_DATA_5> in Unit <instruction_memory> is equivalent to the following FF/Latch, which will be removed : <o_DATA_6> 
 
 Optimizing unit <CPU> ...
+
+Optimizing unit <register_32x8> ...
 
 Optimizing unit <my_ALU> ...
 
 Optimizing unit <div_8u_8u> ...
+
+Optimizing unit <instruction_memory> ...
 WARNING:Xst:2677 - Node <Inst_my_ALU/o_ALU_overflow_flag> of sequential type is unconnected in block <CPU>.
 WARNING:Xst:2677 - Node <Inst_my_ALU/o_ALU_negative_flag> of sequential type is unconnected in block <CPU>.
 WARNING:Xst:2677 - Node <Inst_my_ALU/o_ALU_zero_flag> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <Inst_instruction_memory/o_DATA_4> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <Inst_instruction_memory/o_DATA_3> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <Inst_instruction_memory/o_DATA_2> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <Inst_instruction_memory/o_DATA_1> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <Inst_instruction_memory/o_DATA_0> of sequential type is unconnected in block <CPU>.
+INFO:Xst:2399 - RAMs <Inst_register_32x8/Mram_r_REGISTER122>, <Inst_register_32x8/Mram_r_REGISTER32> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Inst_register_32x8/Mram_r_REGISTER121>, <Inst_register_32x8/Mram_r_REGISTER31> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <Inst_register_32x8/Mram_r_REGISTER11>, <Inst_register_32x8/Mram_r_REGISTER2> are equivalent, second RAM is removed
+WARNING:Xst:1710 - FF/Latch <Inst_my_ALU/ALU_Result_0> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/r_PROG_COUNT_9> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/r_PROG_COUNT_8> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/r_PROG_COUNT_7> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/r_PROG_COUNT_6> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/r_PROG_COUNT_5> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/r_PROG_COUNT_4> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/r_PROG_COUNT_3> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/r_PROG_COUNT_2> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/r_PROG_COUNT_1> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/r_PROG_COUNT_0> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/o_DATA_9> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/o_DATA_8> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/o_DATA_7> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/o_DATA_6> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/o_DATA_5> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/o_DATA_4> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/o_DATA_3> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/o_DATA_2> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/o_DATA_1> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_program_counter/o_DATA_0> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_instruction_memory/o_DATA_5> is unconnected in block <CPU>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <Inst_my_ALU/Mmult_n0035> is unconnected in block <CPU>.
+INFO:Xst:2261 - The FF/Latch <Inst_register_32x8/o_OUT_A_0> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <Inst_register_32x8/o_OUT_B_0> 
+INFO:Xst:2261 - The FF/Latch <Inst_register_32x8/o_OUT_A_1> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <Inst_register_32x8/o_OUT_B_1> 
+INFO:Xst:2261 - The FF/Latch <Inst_register_32x8/o_OUT_A_2> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <Inst_register_32x8/o_OUT_B_2> 
+INFO:Xst:2261 - The FF/Latch <Inst_register_32x8/o_OUT_A_3> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <Inst_register_32x8/o_OUT_B_3> 
+INFO:Xst:2261 - The FF/Latch <Inst_register_32x8/o_OUT_A_4> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <Inst_register_32x8/o_OUT_B_4> 
+INFO:Xst:2261 - The FF/Latch <Inst_register_32x8/o_OUT_A_5> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <Inst_register_32x8/o_OUT_B_5> 
+INFO:Xst:2261 - The FF/Latch <Inst_register_32x8/o_OUT_A_6> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <Inst_register_32x8/o_OUT_B_6> 
+INFO:Xst:2261 - The FF/Latch <Inst_register_32x8/o_OUT_A_7> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <Inst_register_32x8/o_OUT_B_7> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block CPU, actual ratio is 3.
-FlipFlop Inst_register_32x8/o_OUT_A_4 has been replicated 2 time(s)
-FlipFlop Inst_register_32x8/o_OUT_A_5 has been replicated 3 time(s)
-FlipFlop Inst_register_32x8/o_OUT_A_6 has been replicated 3 time(s)
-FlipFlop Inst_register_32x8/o_OUT_A_7 has been replicated 3 time(s)
-FlipFlop Inst_register_32x8/o_OUT_B_0 has been replicated 2 time(s)
-FlipFlop Inst_register_32x8/o_OUT_B_1 has been replicated 2 time(s)
-FlipFlop Inst_register_32x8/o_OUT_B_2 has been replicated 2 time(s)
-FlipFlop Inst_register_32x8/o_OUT_B_3 has been replicated 2 time(s)
-FlipFlop Inst_register_32x8/o_OUT_B_4 has been replicated 2 time(s)
-FlipFlop Inst_register_32x8/o_OUT_B_5 has been replicated 2 time(s)
-FlipFlop Inst_register_32x8/o_OUT_B_6 has been replicated 2 time(s)
-FlipFlop Inst_register_32x8/o_OUT_B_7 has been replicated 2 time(s)
+Found area constraint ratio of 100 (+ 5) on block CPU, actual ratio is 0.
+WARNING:Xst:2677 - Node <Inst_register_32x8/Mram_r_REGISTER122> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <Inst_register_32x8/o_OUT_A_7> of sequential type is unconnected in block <CPU>.
 
 Final Macro Processing ...
 
@@ -366,8 +529,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 51
- Flip-Flops                                            : 51
+# Registers                                            : 15
+ Flip-Flops                                            : 15
 
 =========================================================================
 
@@ -390,30 +553,23 @@ Top Level Output File Name         : CPU.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 297
+# BELS                             : 38
 #      GND                         : 1
-#      INV                         : 1
-#      LUT2                        : 32
-#      LUT3                        : 14
-#      LUT4                        : 15
-#      LUT5                        : 43
-#      LUT6                        : 125
-#      MUXCY                       : 25
-#      MUXF7                       : 11
+#      LUT3                        : 7
+#      LUT4                        : 1
+#      MUXCY                       : 14
 #      VCC                         : 1
-#      XORCY                       : 29
-# FlipFlops/Latches                : 51
-#      FD                          : 51
-# RAMS                             : 6
-#      RAM32M                      : 2
-#      RAM32X1D                    : 4
+#      XORCY                       : 14
+# FlipFlops/Latches                : 15
+#      FD                          : 15
+# RAMS                             : 3
+#      RAM32M                      : 1
+#      RAM32X1D                    : 1
+#      RAMB8BWER                   : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 33
-#      IBUF                        : 25
+# IO Buffers                       : 8
 #      OBUF                        : 8
-# DSPs                             : 1
-#      DSP48A1                     : 1
 
 Device utilization summary:
 ---------------------------
@@ -422,26 +578,27 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              51  out of  11440     0%  
- Number of Slice LUTs:                  246  out of   5720     4%  
-    Number used as Logic:               230  out of   5720     4%  
-    Number used as Memory:               16  out of   1440     1%  
-       Number used as RAM:               16
+ Number of Slice Registers:              15  out of  11440     0%  
+ Number of Slice LUTs:                   14  out of   5720     0%  
+    Number used as Logic:                 8  out of   5720     0%  
+    Number used as Memory:                6  out of   1440     0%  
+       Number used as RAM:                6
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    282
-   Number with an unused Flip Flop:     231  out of    282    81%  
-   Number with an unused LUT:            36  out of    282    12%  
-   Number of fully used LUT-FF pairs:    15  out of    282     5%  
+ Number of LUT Flip Flop pairs used:     19
+   Number with an unused Flip Flop:       4  out of     19    21%  
+   Number with an unused LUT:             5  out of     19    26%  
+   Number of fully used LUT-FF pairs:    10  out of     19    52%  
    Number of unique control sets:         1
 
 IO Utilization: 
- Number of IOs:                          41
- Number of bonded IOBs:                  34  out of    102    33%  
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of    102     8%  
 
 Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
- Number of DSP48A1s:                      1  out of     16     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -464,7 +621,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-i_CLK                              | BUFGP                  | 58    |
+i_CLK                              | BUFGP                  | 18    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -475,8 +632,8 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 18.224ns (Maximum Frequency: 54.872MHz)
-   Minimum input arrival time before clock: 7.594ns
+   Minimum period: 3.086ns (Maximum Frequency: 324.044MHz)
+   Minimum input arrival time before clock: No path found
    Maximum output required time after clock: 4.118ns
    Maximum combinational path delay: No path found
 
@@ -486,69 +643,29 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'i_CLK'
-  Clock period: 18.224ns (frequency: 54.872MHz)
-  Total number of paths / destination ports: 4162464 / 67
+  Clock period: 3.086ns (frequency: 324.044MHz)
+  Total number of paths / destination ports: 74 / 15
 -------------------------------------------------------------------------
-Delay:               18.224ns (Levels of Logic = 17)
-  Source:            Inst_register_32x8/o_OUT_A_6_2 (FF)
-  Destination:       Inst_my_ALU/ALU_Result_0 (FF)
+Delay:               3.086ns (Levels of Logic = 1)
+  Source:            Inst_program_memory/Mram_PROG_MEM (RAM)
+  Destination:       Inst_instruction_memory/o_DATA_7 (FF)
   Source Clock:      i_CLK rising
   Destination Clock: i_CLK rising
 
-  Data Path: Inst_register_32x8/o_OUT_A_6_2 to Inst_my_ALU/ALU_Result_0
+  Data Path: Inst_program_memory/Mram_PROG_MEM to Inst_instruction_memory/o_DATA_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.525   1.156  Inst_register_32x8/o_OUT_A_6_2 (Inst_register_32x8/o_OUT_A_6_2)
-     LUT5:I0->O            1   0.254   1.112  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<6>11_SW6 (N179)
-     LUT5:I0->O            2   0.254   0.834  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW2 (N54)
-     LUT5:I3->O            1   0.250   0.682  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>2_SW4 (N116)
-     LUT5:I4->O           12   0.254   1.069  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<4>11 (Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<4>)
-     LUT6:I5->O           11   0.254   1.039  Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_150_o161 (Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[6]_GND_9_o_MUX_144_o)
-     LUT6:I5->O            2   0.254   0.726  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<3>11_1 (Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<3>11)
-     LUT6:I5->O            5   0.254   0.841  Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_172_o151 (Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[5]_GND_9_o_MUX_167_o)
-     LUT3:I2->O            8   0.254   0.944  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24_SW2 (N56)
-     LUT6:I5->O           11   0.254   1.039  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<2>24 (Inst_my_ALU/i_A[7]_i_B[7]_div_4_OUT<2>)
-     LUT6:I5->O            4   0.254   0.803  Inst_my_ALU/i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_9_o_MUX_192_o141 (Inst_my_ALU/i_A[7]_i_B[7]_div_4/a[4]_GND_9_o_MUX_188_o)
-     MUXCY:DI->O           1   0.181   0.000  Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4> (Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<5> (Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_cy<5>)
-     XORCY:CI->O           3   0.206   0.874  Inst_my_ALU/i_A[7]_i_B[7]_div_4/Madd_GND_9_o_b[7]_add_15_OUT_Madd_Madd_xor<6> (Inst_my_ALU/i_A[7]_i_B[7]_div_4/GND_9_o_b[7]_add_15_OUT<6>)
-     LUT6:I4->O            1   0.250   0.790  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW2_SW3 (N151)
-     LUT5:I3->O            4   0.250   0.804  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>2_SW2 (N32)
-     LUT5:I4->O            1   0.254   0.958  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>1_SW6 (N155)
-     LUT6:I2->O            1   0.254   0.000  Inst_my_ALU/i_ALU_sel<3>1 (Inst_my_ALU/i_ALU_sel[3]_GND_7_o_wide_mux_16_OUT<0>)
-     FD:D                      0.074          Inst_my_ALU/ALU_Result_0
+     RAMB8BWER:CLKAWRCLK->DOADO1    1   1.800   0.958  Inst_program_memory/Mram_PROG_MEM (w_PROG_MEM_OUT<1>)
+     LUT4:I0->O            1   0.254   0.000  Inst_instruction_memory/Mram_r_INST_MEM121 (Inst_instruction_memory/Mram_r_INST_MEM12)
+     FD:D                      0.074          Inst_instruction_memory/o_DATA_7
     ----------------------------------------
-    Total                     18.224ns (4.553ns logic, 13.671ns route)
-                                       (25.0% logic, 75.0% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'i_CLK'
-  Total number of paths / destination ports: 402 / 98
--------------------------------------------------------------------------
-Offset:              7.594ns (Levels of Logic = 6)
-  Source:            i_INSTRUCTION<8> (PAD)
-  Destination:       Inst_my_ALU/ALU_Result_0 (FF)
-  Destination Clock: i_CLK rising
-
-  Data Path: i_INSTRUCTION<8> to Inst_my_ALU/ALU_Result_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            36   1.328   1.863  i_INSTRUCTION_8_IBUF (i_INSTRUCTION_8_IBUF)
-     LUT4:I0->O            4   0.254   1.032  Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_16_OUT_7 (Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_16_OUT_7)
-     LUT6:I3->O            1   0.235   0.000  Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_16_OUT_6_SW1_G (N204)
-     MUXF7:I1->O           4   0.175   1.234  Inst_my_ALU/Mmux_i_ALU_sel[3]_GND_7_o_wide_mux_16_OUT_6_SW1 (N87)
-     LUT5:I0->O            1   0.254   0.910  Inst_my_ALU/i_A[7]_i_B[7]_div_4/o<0>1_SW0 (N153)
-     LUT6:I3->O            1   0.235   0.000  Inst_my_ALU/i_ALU_sel<3>1 (Inst_my_ALU/i_ALU_sel[3]_GND_7_o_wide_mux_16_OUT<0>)
-     FD:D                      0.074          Inst_my_ALU/ALU_Result_0
-    ----------------------------------------
-    Total                      7.594ns (2.555ns logic, 5.039ns route)
-                                       (33.6% logic, 66.4% route)
+    Total                      3.086ns (2.128ns logic, 0.958ns route)
+                                       (69.0% logic, 31.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'i_CLK'
-  Total number of paths / destination ports: 8 / 8
+  Total number of paths / destination ports: 7 / 7
 -------------------------------------------------------------------------
 Offset:              4.118ns (Levels of Logic = 1)
   Source:            Inst_my_ALU/ALU_Result_7 (FF)
@@ -575,20 +692,20 @@ Clock to Setup on destination clock i_CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-i_CLK          |   18.224|         |         |         |
+i_CLK          |    3.086|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.95 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.23 secs
  
 --> 
 
-Total memory usage is 4527740 kilobytes
+Total memory usage is 4525388 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    6 (   0 filtered)
-Number of infos    :    6 (   0 filtered)
+Number of warnings :   74 (   0 filtered)
+Number of infos    :   21 (   0 filtered)
 

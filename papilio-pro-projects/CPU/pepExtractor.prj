@@ -1,1 +1,1 @@
-work	"../my_ALU/my_ALU.vhd"
+work	"../program_memory/program_memory.vhd"
