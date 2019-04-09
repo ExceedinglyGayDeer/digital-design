@@ -37,26 +37,26 @@ Setup/Hold to clock i_CLK
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-i_A<0>      |   13.227(R)|      SLOW  |   -1.616(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_A<1>      |   13.075(R)|      SLOW  |   -1.473(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_A<2>      |   17.450(R)|      SLOW  |   -1.911(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_A<3>      |   20.402(R)|      SLOW  |   -1.760(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_A<4>      |   24.608(R)|      SLOW  |   -2.355(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_A<5>      |   28.303(R)|      SLOW  |   -2.535(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_A<6>      |   28.065(R)|      SLOW  |   -1.729(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_A<7>      |   27.649(R)|      SLOW  |   -1.656(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_ALU_sel<0>|    8.688(R)|      SLOW  |   -0.972(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_ALU_sel<1>|   10.053(R)|      SLOW  |   -0.906(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_ALU_sel<2>|    9.282(R)|      SLOW  |   -0.991(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_ALU_sel<3>|    7.761(R)|      SLOW  |   -0.876(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_B<0>      |   29.936(R)|      SLOW  |   -2.173(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_B<1>      |   28.371(R)|      SLOW  |   -2.272(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_B<2>      |   28.196(R)|      SLOW  |   -1.863(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_B<3>      |   28.877(R)|      SLOW  |   -2.277(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_B<4>      |   30.926(R)|      SLOW  |   -2.776(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_B<5>      |   28.721(R)|      SLOW  |   -2.266(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_B<6>      |   29.411(R)|      SLOW  |   -2.469(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-i_B<7>      |   29.184(R)|      SLOW  |   -1.652(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_A<0>      |   12.088(R)|      SLOW  |   -1.847(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_A<1>      |   11.851(R)|      SLOW  |   -1.779(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_A<2>      |   16.985(R)|      SLOW  |   -1.953(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_A<3>      |   18.860(R)|      SLOW  |   -2.296(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_A<4>      |   21.976(R)|      SLOW  |   -1.837(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_A<5>      |   24.821(R)|      SLOW  |   -1.466(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_A<6>      |   25.484(R)|      SLOW  |   -1.579(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_A<7>      |   26.208(R)|      SLOW  |   -1.115(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_ALU_sel<0>|    7.983(R)|      SLOW  |   -1.686(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_ALU_sel<1>|    8.292(R)|      SLOW  |   -1.859(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_ALU_sel<2>|    7.019(R)|      SLOW  |   -1.183(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_ALU_sel<3>|    6.709(R)|      SLOW  |   -1.364(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_B<0>      |   26.680(R)|      SLOW  |   -2.095(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_B<1>      |   26.907(R)|      SLOW  |   -2.858(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_B<2>      |   26.988(R)|      SLOW  |   -2.029(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_B<3>      |   27.574(R)|      SLOW  |   -1.587(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_B<4>      |   27.144(R)|      SLOW  |   -1.840(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_B<5>      |   27.592(R)|      SLOW  |   -1.984(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_B<6>      |   27.510(R)|      SLOW  |   -2.206(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+i_B<7>      |   27.388(R)|      SLOW  |   -1.530(R)|      FAST  |i_CLK_BUFGP       |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock i_CLK to Pad
@@ -64,7 +64,7 @@ Clock i_CLK to Pad
                    |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination        |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 -------------------+-----------------+------------+-----------------+------------+------------------+--------+
-o_ALU_negative_flag|         7.895(R)|      SLOW  |         2.931(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+o_ALU_negative_flag|         8.920(R)|      SLOW  |         3.591(R)|      FAST  |i_CLK_BUFGP       |   0.000|
 o_ALU_out<0>       |         8.594(R)|      SLOW  |         3.597(R)|      FAST  |i_CLK_BUFGP       |   0.000|
 o_ALU_out<1>       |         8.594(R)|      SLOW  |         3.597(R)|      FAST  |i_CLK_BUFGP       |   0.000|
 o_ALU_out<2>       |         8.645(R)|      SLOW  |         3.648(R)|      FAST  |i_CLK_BUFGP       |   0.000|
@@ -73,8 +73,8 @@ o_ALU_out<4>       |         8.566(R)|      SLOW  |         3.569(R)|      FAST 
 o_ALU_out<5>       |         8.566(R)|      SLOW  |         3.569(R)|      FAST  |i_CLK_BUFGP       |   0.000|
 o_ALU_out<6>       |         8.616(R)|      SLOW  |         3.619(R)|      FAST  |i_CLK_BUFGP       |   0.000|
 o_ALU_out<7>       |         7.897(R)|      SLOW  |         2.933(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-o_ALU_overflow_flag|         9.712(R)|      SLOW  |         4.195(R)|      FAST  |i_CLK_BUFGP       |   0.000|
-o_ALU_zero_flag    |         9.373(R)|      SLOW  |         3.905(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+o_ALU_overflow_flag|         9.566(R)|      SLOW  |         4.023(R)|      FAST  |i_CLK_BUFGP       |   0.000|
+o_ALU_zero_flag    |         9.428(R)|      SLOW  |         3.938(R)|      FAST  |i_CLK_BUFGP       |   0.000|
 -------------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock i_CLK
@@ -82,33 +82,33 @@ Clock to Setup on destination clock i_CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-i_CLK          |    3.035|         |         |         |
+i_CLK          |    2.771|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+----------------+---------+
 Source Pad     |Destination Pad |  Delay  |
 ---------------+----------------+---------+
-i_A<0>         |o_ALU_carry_flag|   11.229|
-i_A<1>         |o_ALU_carry_flag|   11.217|
-i_A<2>         |o_ALU_carry_flag|   12.309|
-i_A<3>         |o_ALU_carry_flag|   12.124|
-i_A<4>         |o_ALU_carry_flag|   12.014|
-i_A<5>         |o_ALU_carry_flag|   14.219|
-i_A<6>         |o_ALU_carry_flag|   11.123|
-i_A<7>         |o_ALU_carry_flag|   12.054|
-i_B<0>         |o_ALU_carry_flag|   12.114|
-i_B<1>         |o_ALU_carry_flag|   11.803|
-i_B<2>         |o_ALU_carry_flag|   11.668|
-i_B<3>         |o_ALU_carry_flag|   11.313|
-i_B<4>         |o_ALU_carry_flag|   13.327|
-i_B<5>         |o_ALU_carry_flag|   11.684|
-i_B<6>         |o_ALU_carry_flag|   11.478|
-i_B<7>         |o_ALU_carry_flag|   11.409|
+i_A<0>         |o_ALU_carry_flag|   12.039|
+i_A<1>         |o_ALU_carry_flag|   11.403|
+i_A<2>         |o_ALU_carry_flag|   11.366|
+i_A<3>         |o_ALU_carry_flag|   10.742|
+i_A<4>         |o_ALU_carry_flag|   10.461|
+i_A<5>         |o_ALU_carry_flag|   11.006|
+i_A<6>         |o_ALU_carry_flag|   10.664|
+i_A<7>         |o_ALU_carry_flag|   13.284|
+i_B<0>         |o_ALU_carry_flag|   11.585|
+i_B<1>         |o_ALU_carry_flag|   12.163|
+i_B<2>         |o_ALU_carry_flag|   11.407|
+i_B<3>         |o_ALU_carry_flag|   11.347|
+i_B<4>         |o_ALU_carry_flag|   11.465|
+i_B<5>         |o_ALU_carry_flag|   11.369|
+i_B<6>         |o_ALU_carry_flag|   11.330|
+i_B<7>         |o_ALU_carry_flag|   10.941|
 ---------------+----------------+---------+
 
 
-Analysis completed Wed Mar 27 20:50:36 2019 
+Analysis completed Mon Apr 01 21:33:11 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:

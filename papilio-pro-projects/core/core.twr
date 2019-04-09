@@ -1,0 +1,87 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml core.twx core.ncd -o core.twr core.pcf
+
+Design file:              core.ncd
+Physical constraint file: core.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock i_CORE_CLK
+----------------+------------+------------+------------+------------+------------------+--------+
+                |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source          | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+----------------+------------+------------+------------+------------+------------------+--------+
+MEM_i_DATA_ready|    4.092(R)|      SLOW  |   -1.641(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+MEM_i_READY     |    5.579(R)|      SLOW  |   -1.545(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+i_CORE_RESET    |    4.199(R)|      SLOW  |   -0.496(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+----------------+------------+------------+------------+------------+------------------+--------+
+
+Clock i_CORE_CLK to Pad
+-----------------+-----------------+------------+-----------------+------------+------------------+--------+
+                 |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination      |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+-----------------+-----------------+------------+-----------------+------------+------------------+--------+
+MEM_o_ADDRESS<0> |        10.890(R)|      SLOW  |         4.726(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+MEM_o_ADDRESS<1> |        10.714(R)|      SLOW  |         4.621(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+MEM_o_ADDRESS<2> |        10.765(R)|      SLOW  |         4.697(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+MEM_o_ADDRESS<3> |        10.765(R)|      SLOW  |         4.697(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+MEM_o_ADDRESS<4> |        10.788(R)|      SLOW  |         4.682(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+MEM_o_ADDRESS<5> |        10.756(R)|      SLOW  |         4.640(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+MEM_o_ADDRESS<6> |        10.633(R)|      SLOW  |         4.603(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+MEM_o_ADDRESS<7> |        10.623(R)|      SLOW  |         4.593(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+MEM_o_ADDRESS<8> |        10.829(R)|      SLOW  |         4.709(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+MEM_o_ADDRESS<9> |        10.653(R)|      SLOW  |         4.604(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+MEM_o_ADDRESS<10>|        10.704(R)|      SLOW  |         4.680(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+MEM_o_ADDRESS<11>|        10.672(R)|      SLOW  |         4.638(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+MEM_o_ADDRESS<12>|        10.917(R)|      SLOW  |         4.845(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+MEM_o_ADDRESS<13>|        10.886(R)|      SLOW  |         4.804(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+MEM_o_ADDRESS<14>|        10.762(R)|      SLOW  |         4.766(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+MEM_o_ADDRESS<15>|        10.920(R)|      SLOW  |         4.845(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+MEM_o_CMD        |         9.504(R)|      SLOW  |         4.069(R)|      FAST  |i_CORE_CLK_BUFGP  |   0.000|
+-----------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock i_CORE_CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_CORE_CLK     |    4.430|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Apr 08 17:19:27 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4573 MB
+
+
+

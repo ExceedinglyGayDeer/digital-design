@@ -30,37 +30,38 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
+library work;
+use work.core_constants.all;
+
 entity my_ALU is
 	generic ( 
      constant N: natural := 1  -- number of shifted or rotated bits
     );
 	 
-    Port ( i_CLK : in  std_logic;
-			  i_A : in  std_logic_vector (7 downto 0); -- 8-bit input
-           i_B : in  std_logic_vector (7 downto 0); -- 8-bit input
-           i_ALU_sel : in  std_logic_vector (3 downto 0); -- 4-bit function select input
-           o_ALU_out : out  std_logic_vector (7 downto 0); -- 8-bit output
-           o_ALU_carry_flag : out  std_logic; -- output carry flag
-			  o_ALU_overflow_flag : out  std_logic;
-			  o_ALU_negative_flag : out  std_logic;
-			  o_ALU_zero_flag : out  std_logic
-			  ); -- output overflow flag
+    Port ( 	i_CLK : in  std_logic;
+				i_ENABLE : in std_logic;
+				i_A : in  std_logic_vector (7 downto 0); -- 8-bit input
+				i_B : in  std_logic_vector (7 downto 0); -- 8-bit input
+				i_ALU_sel : in  std_logic_vector (3 downto 0); -- 4-bit function select input
+				o_ALU_out : out  std_logic_vector (7 downto 0); -- 8-bit output
+				o_ALU_carry_flag : out  std_logic; -- output carry flag
+				o_ALU_overflow_flag : out  std_logic;
+				o_ALU_negative_flag : out  std_logic;
+				o_ALU_zero_flag : out  std_logic
+			 ); -- output overflow flag
 end my_ALU;
 
 architecture Behavioral of my_ALU is
-
-constant ADD : std_logic_vector(3 DOWNTO 0):="0000"; -- Add opcode
-constant SUB : std_logic_vector(3 DOWNTO 0):="0001"; -- Subtract opcode 
 
 signal ALU_Result : std_logic_vector (7 downto 0); -- Buffer signal for output
 signal tmp : std_logic_vector (8 downto 0); -- Buffer for carry flag output
 
 begin
-	process(i_CLK, i_A, i_B, i_ALU_Sel)
+	process(i_CLK, i_ENABLE)
 	begin
-		if(rising_edge(i_CLK)) then
+		if(rising_edge(i_CLK) and i_ENABLE ='1') then
 			case(i_ALU_Sel) is
-				when ADD => -- Add
+				when OPCODE_ADD => -- Add
 					ALU_result <= std_logic_vector(unsigned(i_A) + unsigned(i_B));
 					if(i_A(7) = i_B(7)) then -- Test for addition overflow
 						if(i_A(7) /= ALU_result(7)) then
@@ -69,7 +70,7 @@ begin
 							o_ALU_overflow_flag <= '0';
 						end if;
 					end if;
-				when SUB => -- Subtract
+				when OPCODE_SUB => -- Subtract
 					ALU_result <= std_logic_vector(unsigned(i_A) - unsigned(i_B));
 					if(i_A(7) /= i_B(7)) then -- Test for subtraction overflow
 						if(i_A(7) /= ALU_result(7)) then
@@ -78,47 +79,50 @@ begin
 							o_ALU_overflow_flag <= '0';
 						end if;
 					end if;
-					if(i_A < i_B) then
-						o_ALU_negative_flag <= '1';
-					else
-						o_ALU_negative_flag <= '0';
-					end if;
-				when "0010" => -- Multiply
-					ALU_result <= std_logic_vector(to_unsigned(to_integer(unsigned(i_A)) * to_integer(unsigned(i_B)),8));
-				when "0011" => -- Divide
-					ALU_result <= std_logic_vector(to_unsigned(to_integer(unsigned(i_A)) / to_integer(unsigned(i_B)),8));
-				when "0100" => -- Logical left shift
-					ALU_result <= std_logic_vector(unsigned(i_A) sll N);
-				when "0101" => -- Logical right shift
-					ALU_result <= std_logic_vector(unsigned(i_A) srl N);
-				when "1000" => -- And
-					ALU_result <= i_A and i_B;
-				when "1001" => -- Or
+				--when OPCODE_MUL => -- Multiply
+				--	ALU_result <= std_logic_vector(to_unsigned(to_integer(unsigned(i_A)) * to_integer(unsigned(i_B)),8));
+				--when OPCODE_DIV => -- Divide
+				--	ALU_result <= std_logic_vector(to_unsigned(to_integer(unsigned(i_A)) / to_integer(unsigned(i_B)),8));
+				when OPCODE_OR => -- Or
 					ALU_result <= i_A or i_B;
-				when "1010" => -- Xor
+				when OPCODE_XOR => -- Xor
 					ALU_result <= i_A xor i_B;
-				when "1011" => -- Nor
+				when OPCODE_AND => -- And
 					ALU_result <= i_A and i_B;
-				when "1100" => -- Nand
+				when OPCODE_NOT => -- Not
 					ALU_result <= i_A and i_B;
-				when "1101" => -- Xnor
+				when OPCODE_READ => -- Read
 					ALU_result <= i_A and i_B;
-				when "1110" => -- Greater than compare
+				when OPCODE_WRITE => -- Write
+					ALU_result <= i_A and i_B;
+				when OPCODE_LOAD => -- Load
+					ALU_result <= i_A and i_B;
+				when OPCODE_COMPARE => -- Compare
 					if(i_A > i_B) then
 						ALU_result <= x"01";
 					else
 						ALU_result <= x"00";
 					end if;
-				when "1111" => -- Equal than compare
-					if(i_A = i_B) then
-						ALU_result <= x"01";
-					else
-						ALU_result <= x"00";
-					end if;
+				when OPCODE_BSL => -- Bit shift left
+					ALU_result <= std_logic_vector(unsigned(i_A) sll N);
+				when OPCODE_BSR => -- Bit shift right
+					ALU_result <= std_logic_vector(unsigned(i_A) srl N);
+				when OPCODE_JUMP => -- Jump
+					ALU_result <= i_A and i_B;
+				when OPCODE_BRANCH => -- Branch
+					ALU_result <= i_A and i_B;
+				when OPCODE_SPECIAL => -- Special opcode
+					ALU_result <= i_A and i_B;
 				when others => 
 					ALU_result <= i_A + i_B;
-				-- 14 out of 16 possible ALU function slots used (4-bit -> 16 possible select signals)
 			end case;
+			
+			
+			if (signed(unsigned(ALU_result)) < 0) then
+				o_ALU_negative_flag <= '1';
+			else
+				o_ALU_negative_flag <= '0';
+			end if;
 			
 			if (ALU_result="00000000") then 
 				o_ALU_zero_flag <= '1'; 

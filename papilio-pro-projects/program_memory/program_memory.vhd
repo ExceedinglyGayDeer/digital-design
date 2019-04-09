@@ -34,15 +34,15 @@ entity program_memory is
            
 			  --i_RESET : in  STD_LOGIC;
 			  i_READ_ADDRESS : in  STD_LOGIC_VECTOR (9 downto 0);
-           o_READ_DATA : out  STD_LOGIC_VECTOR (7 downto 0));
+           o_READ_DATA : out  STD_LOGIC_VECTOR (31 downto 0));
 end program_memory;
 
 architecture Behavioral of program_memory is
 
-type RAM_ARRAY is array (0 to 1023) of std_logic_vector (7 downto 0);
+type RAM_ARRAY is array (0 to 1023) of std_logic_vector (31 downto 0);
 
 signal PROG_MEM: RAM_ARRAY :=(
-others => x"FF"
+others => x"00000000"
 ); 
 
 begin

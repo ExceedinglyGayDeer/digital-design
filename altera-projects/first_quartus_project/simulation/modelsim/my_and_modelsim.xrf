@@ -1,6 +1,8 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/holge/OneDrive/Skrivebord/first_quartus_project/my_and.vhd
-source_file = 1, C:/Users/holge/OneDrive/Skrivebord/first_quartus_project/db/my_and.cbx.xml
+source_file = 1, C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/altera-projects/first_quartus_project/my_and.vhd
+source_file = 1, C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/altera-projects/first_quartus_project/mega_tester.qip
+source_file = 1, C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/altera-projects/first_quartus_project/mega_tester.vhd
+source_file = 1, C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/altera-projects/first_quartus_project/db/my_and.cbx.xml
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd

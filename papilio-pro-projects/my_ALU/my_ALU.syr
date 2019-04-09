@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: my_ALU.prj
 
@@ -126,14 +126,14 @@ Synthesizing Unit <my_ALU>.
     Found 1-bit register for signal <o_ALU_negative_flag>.
     Found 1-bit register for signal <o_ALU_zero_flag>.
     Found 8-bit register for signal <o_ALU_out>.
-    Found 8-bit adder for signal <i_A[7]_i_B[7]_add_15_OUT> created at line 119.
-    Found 9-bit adder for signal <tmp> created at line 132.
-    Found 8-bit subtractor for signal <GND_6_o_GND_6_o_sub_2_OUT<7:0>> created at line 73.
-    Found 8x8-bit multiplier for signal <n0035> created at line 87.
-    Found 8-bit 14-to-1 multiplexer for signal <i_ALU_sel[3]_GND_6_o_wide_mux_16_OUT> created at line 62.
-    Found 8-bit comparator greater for signal <i_A[7]_i_B[7]_LessThan_3_o> created at line 81
-    Found 8-bit comparator greater for signal <i_B[7]_i_A[7]_LessThan_12_o> created at line 107
-    Found 8-bit comparator equal for signal <i_A[7]_i_B[7]_equal_14_o> created at line 113
+    Found 8-bit adder for signal <i_A[7]_i_B[7]_add_14_OUT> created at line 115.
+    Found 9-bit adder for signal <tmp> created at line 135.
+    Found 8-bit subtractor for signal <GND_6_o_GND_6_o_sub_2_OUT<7:0>> created at line 74.
+    Found 8x8-bit multiplier for signal <n0034> created at line 83.
+    Found 8-bit 14-to-1 multiplexer for signal <i_ALU_sel[3]_GND_6_o_wide_mux_15_OUT> created at line 63.
+    Found 8-bit comparator greater for signal <i_B[7]_i_A[7]_LessThan_11_o> created at line 103
+    Found 8-bit comparator equal for signal <i_A[7]_i_B[7]_equal_13_o> created at line 109
+    Found 8-bit comparator greater for signal <GND_6_o_ALU_Result[7]_LessThan_18_o> created at line 120
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   3 Adder/Subtractor(s).
@@ -267,7 +267,7 @@ Optimizing unit <div_8u_8u> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block my_ALU, actual ratio is 4.
+Found area constraint ratio of 100 (+ 5) on block my_ALU, actual ratio is 3.
 FlipFlop ALU_Result_7 has been replicated 1 time(s) to handle iob=true attribute.
 FlipFlop ALU_Result_6 has been replicated 1 time(s) to handle iob=true attribute.
 FlipFlop ALU_Result_5 has been replicated 1 time(s) to handle iob=true attribute.
@@ -307,20 +307,20 @@ Top Level Output File Name         : my_ALU.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 217
+# BELS                             : 212
 #      GND                         : 1
 #      LUT2                        : 36
-#      LUT3                        : 15
-#      LUT4                        : 10
-#      LUT5                        : 28
-#      LUT6                        : 55
+#      LUT3                        : 14
+#      LUT4                        : 9
+#      LUT5                        : 26
+#      LUT6                        : 54
 #      MUXCY                       : 33
 #      MUXF7                       : 9
 #      VCC                         : 1
 #      XORCY                       : 29
 # FlipFlops/Latches                : 19
-#      FD                          : 17
-#      FDE                         : 2
+#      FD                          : 18
+#      FDE                         : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 32
@@ -336,21 +336,21 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              10  out of  11440     0%  
- Number of Slice LUTs:                  144  out of   5720     2%  
-    Number used as Logic:               144  out of   5720     2%  
+ Number of Slice Registers:              11  out of  11440     0%  
+ Number of Slice LUTs:                  139  out of   5720     2%  
+    Number used as Logic:               139  out of   5720     2%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    147
-   Number with an unused Flip Flop:     137  out of    147    93%  
-   Number with an unused LUT:             3  out of    147     2%  
-   Number of fully used LUT-FF pairs:     7  out of    147     4%  
-   Number of unique control sets:         3
+ Number of LUT Flip Flop pairs used:    143
+   Number with an unused Flip Flop:     132  out of    143    92%  
+   Number with an unused LUT:             4  out of    143     2%  
+   Number of fully used LUT-FF pairs:     7  out of    143     4%  
+   Number of unique control sets:         2
 
 IO Utilization: 
  Number of IOs:                          33
  Number of bonded IOBs:                  33  out of    102    32%  
-    IOB Flip Flops/Latches:               9
+    IOB Flip Flops/Latches:               8
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -389,9 +389,9 @@ Timing Summary:
 Speed Grade: -2
 
    Minimum period: 2.680ns (Maximum Frequency: 373.134MHz)
-   Minimum input arrival time before clock: 32.395ns
+   Minimum input arrival time before clock: 32.373ns
    Maximum output required time after clock: 4.118ns
-   Maximum combinational path delay: 7.318ns
+   Maximum combinational path delay: 7.302ns
 
 Timing Details:
 ---------------
@@ -400,7 +400,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'i_CLK'
   Clock period: 2.680ns (frequency: 373.134MHz)
-  Total number of paths / destination ports: 9 / 2
+  Total number of paths / destination ports: 10 / 3
 -------------------------------------------------------------------------
 Delay:               2.680ns (Levels of Logic = 2)
   Source:            ALU_Result_5 (FF)
@@ -413,8 +413,8 @@ Delay:               2.680ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               1   0.525   0.910  ALU_Result_5 (ALU_Result_5)
-     LUT3:I0->O            1   0.235   0.682  ALU_Result[7]_GND_6_o_equal_20_o<7>_SW0 (N01)
-     LUT6:I5->O            1   0.254   0.000  ALU_Result[7]_GND_6_o_equal_20_o<7> (ALU_Result[7]_GND_6_o_equal_20_o)
+     LUT3:I0->O            1   0.235   0.682  ALU_Result[7]_GND_6_o_equal_19_o<7>_SW0 (N01)
+     LUT6:I5->O            1   0.254   0.000  ALU_Result[7]_GND_6_o_equal_19_o<7> (ALU_Result[7]_GND_6_o_equal_19_o)
      FD:D                      0.074          o_ALU_zero_flag
     ----------------------------------------
     Total                      2.680ns (1.088ns logic, 1.592ns route)
@@ -422,9 +422,9 @@ Delay:               2.680ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'i_CLK'
-  Total number of paths / destination ports: 3438955 / 20
+  Total number of paths / destination ports: 3438935 / 18
 -------------------------------------------------------------------------
-Offset:              32.395ns (Levels of Logic = 27)
+Offset:              32.373ns (Levels of Logic = 27)
   Source:            i_B<3> (PAD)
   Destination:       ALU_Result_0 (FF)
   Destination Clock: i_CLK rising
@@ -433,36 +433,36 @@ Offset:              32.395ns (Levels of Logic = 27)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            24   1.328   1.810  i_B_3_IBUF (i_B_3_IBUF)
-     LUT5:I0->O            6   0.254   1.306  i_A[7]_i_B[7]_div_4/o<7>121 (i_A[7]_i_B[7]_div_4/o<7>12)
-     LUT6:I1->O            2   0.254   1.002  i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_8_o_MUX_100_o161 (i_A[7]_i_B[7]_div_4/a[6]_GND_8_o_MUX_94_o)
-     LUT6:I2->O            4   0.254   1.259  i_A[7]_i_B[7]_div_4/o<5>12 (i_A[7]_i_B[7]_div_4_OUT<5>)
-     LUT6:I0->O            2   0.254   1.181  i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_8_o_MUX_126_o161 (i_A[7]_i_B[7]_div_4/a[6]_GND_8_o_MUX_120_o)
-     LUT6:I0->O            2   0.254   0.834  i_A[7]_i_B[7]_div_4/o<4>2 (i_A[7]_i_B[7]_div_4/Madd_GND_8_o_b[7]_add_9_OUT_Madd_Madd_cy<6>)
-     LUT5:I3->O            5   0.250   1.296  i_A[7]_i_B[7]_div_4/o<4>11 (i_A[7]_i_B[7]_div_4_OUT<4>)
-     LUT6:I0->O            2   0.254   1.181  i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_8_o_MUX_150_o151 (i_A[7]_i_B[7]_div_4/a[5]_GND_8_o_MUX_145_o)
-     LUT6:I0->O            5   0.254   1.117  i_A[7]_i_B[7]_div_4/o<3>1 (i_A[7]_i_B[7]_div_4/Madd_GND_8_o_b[7]_add_11_OUT_Madd_Madd_cy<5>)
-     LUT6:I2->O           13   0.254   1.553  i_A[7]_i_B[7]_div_4/o<3>11 (i_A[7]_i_B[7]_div_4_OUT<3>)
-     LUT6:I0->O            3   0.254   1.221  i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_8_o_MUX_172_o141 (i_A[7]_i_B[7]_div_4/a[4]_GND_8_o_MUX_168_o)
-     LUT6:I0->O            1   0.254   0.910  i_A[7]_i_B[7]_div_4/o<2>1 (i_A[7]_i_B[7]_div_4/o<2>1)
-     LUT3:I0->O            1   0.235   0.790  i_A[7]_i_B[7]_div_4/o<2>24_SW0 (N12)
-     LUT6:I4->O           18   0.250   1.665  i_A[7]_i_B[7]_div_4/o<2>24 (i_A[7]_i_B[7]_div_4_OUT<2>)
-     LUT5:I0->O            1   0.254   1.137  i_A[7]_i_B[7]_div_4/Mmux_a[0]_GND_8_o_MUX_192_o131 (i_A[7]_i_B[7]_div_4/a[3]_GND_8_o_MUX_189_o)
-     LUT6:I0->O            2   0.254   0.954  i_A[7]_i_B[7]_div_4/o<1>3 (i_A[7]_i_B[7]_div_4/o<1>1)
-     LUT6:I3->O            1   0.235   0.000  i_A[7]_i_B[7]_div_4/o<1>1_G (N25)
-     MUXF7:I1->O           1   0.175   0.682  i_A[7]_i_B[7]_div_4/o<1>1 (i_A[7]_i_B[7]_div_4/o<1>2)
-     LUT6:I5->O            6   0.254   1.306  i_A[7]_i_B[7]_div_4/o<1>21 (i_A[7]_i_B[7]_div_4_OUT<1>)
-     LUT5:I0->O            2   0.254   1.156  i_A[7]_i_B[7]_div_4/Mmux_n028651 (i_A[7]_i_B[7]_div_4/n0286<4>)
-     LUT6:I1->O            1   0.254   0.000  i_A[7]_i_B[7]_div_4/o<0>1_G (N27)
-     MUXF7:I1->O           2   0.175   0.834  i_A[7]_i_B[7]_div_4/o<0>1 (i_A[7]_i_B[7]_div_4/o<0>2)
-     LUT5:I3->O            1   0.250   0.000  i_A[7]_i_B[7]_div_4/o<0>2_G (N23)
-     MUXF7:I1->O           1   0.175   0.910  i_A[7]_i_B[7]_div_4/o<0>2 (i_A[7]_i_B[7]_div_4_OUT<0>)
-     LUT6:I3->O            1   0.235   0.682  Mmux_i_ALU_sel[3]_GND_6_o_wide_mux_16_OUT_6 (Mmux_i_ALU_sel[3]_GND_6_o_wide_mux_16_OUT_6)
+     IBUF:I->O            23   1.328   1.788  i_B_3_IBUF (i_B_3_IBUF)
+     LUT5:I0->O            6   0.254   1.306  i_A[7]_i_B[7]_div_3/o<7>121 (i_A[7]_i_B[7]_div_3/o<7>12)
+     LUT6:I1->O            2   0.254   1.002  i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_8_o_MUX_92_o161 (i_A[7]_i_B[7]_div_3/a[6]_GND_8_o_MUX_86_o)
+     LUT6:I2->O            4   0.254   1.259  i_A[7]_i_B[7]_div_3/o<5>12 (i_A[7]_i_B[7]_div_3_OUT<5>)
+     LUT6:I0->O            2   0.254   1.181  i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_8_o_MUX_118_o161 (i_A[7]_i_B[7]_div_3/a[6]_GND_8_o_MUX_112_o)
+     LUT6:I0->O            2   0.254   0.834  i_A[7]_i_B[7]_div_3/o<4>2 (i_A[7]_i_B[7]_div_3/Madd_GND_8_o_b[7]_add_9_OUT_Madd_Madd_cy<6>)
+     LUT5:I3->O            5   0.250   1.296  i_A[7]_i_B[7]_div_3/o<4>11 (i_A[7]_i_B[7]_div_3_OUT<4>)
+     LUT6:I0->O            2   0.254   1.181  i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_8_o_MUX_142_o151 (i_A[7]_i_B[7]_div_3/a[5]_GND_8_o_MUX_137_o)
+     LUT6:I0->O            5   0.254   1.117  i_A[7]_i_B[7]_div_3/o<3>1 (i_A[7]_i_B[7]_div_3/Madd_GND_8_o_b[7]_add_11_OUT_Madd_Madd_cy<5>)
+     LUT6:I2->O           13   0.254   1.553  i_A[7]_i_B[7]_div_3/o<3>11 (i_A[7]_i_B[7]_div_3_OUT<3>)
+     LUT6:I0->O            3   0.254   1.221  i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_8_o_MUX_164_o141 (i_A[7]_i_B[7]_div_3/a[4]_GND_8_o_MUX_160_o)
+     LUT6:I0->O            1   0.254   0.910  i_A[7]_i_B[7]_div_3/o<2>1 (i_A[7]_i_B[7]_div_3/o<2>1)
+     LUT3:I0->O            1   0.235   0.790  i_A[7]_i_B[7]_div_3/o<2>24_SW0 (N12)
+     LUT6:I4->O           18   0.250   1.665  i_A[7]_i_B[7]_div_3/o<2>24 (i_A[7]_i_B[7]_div_3_OUT<2>)
+     LUT5:I0->O            1   0.254   1.137  i_A[7]_i_B[7]_div_3/Mmux_a[0]_GND_8_o_MUX_184_o131 (i_A[7]_i_B[7]_div_3/a[3]_GND_8_o_MUX_181_o)
+     LUT6:I0->O            2   0.254   0.954  i_A[7]_i_B[7]_div_3/o<1>3 (i_A[7]_i_B[7]_div_3/o<1>1)
+     LUT6:I3->O            1   0.235   0.000  i_A[7]_i_B[7]_div_3/o<1>1_G (N25)
+     MUXF7:I1->O           1   0.175   0.682  i_A[7]_i_B[7]_div_3/o<1>1 (i_A[7]_i_B[7]_div_3/o<1>2)
+     LUT6:I5->O            6   0.254   1.306  i_A[7]_i_B[7]_div_3/o<1>21 (i_A[7]_i_B[7]_div_3_OUT<1>)
+     LUT5:I0->O            2   0.254   1.156  i_A[7]_i_B[7]_div_3/Mmux_n028651 (i_A[7]_i_B[7]_div_3/n0286<4>)
+     LUT6:I1->O            1   0.254   0.000  i_A[7]_i_B[7]_div_3/o<0>1_G (N27)
+     MUXF7:I1->O           2   0.175   0.834  i_A[7]_i_B[7]_div_3/o<0>1 (i_A[7]_i_B[7]_div_3/o<0>2)
+     LUT5:I3->O            1   0.250   0.000  i_A[7]_i_B[7]_div_3/o<0>2_G (N23)
+     MUXF7:I1->O           1   0.175   0.910  i_A[7]_i_B[7]_div_3/o<0>2 (i_A[7]_i_B[7]_div_3_OUT<0>)
+     LUT6:I3->O            1   0.235   0.682  Mmux_i_ALU_sel[3]_GND_6_o_wide_mux_15_OUT_6 (Mmux_i_ALU_sel[3]_GND_6_o_wide_mux_15_OUT_6)
      LUT6:I5->O            1   0.254   0.000  i_ALU_sel<3>1_F (N30)
-     MUXF7:I0->O           2   0.163   0.000  i_ALU_sel<3>1 (i_ALU_sel[3]_GND_6_o_wide_mux_16_OUT<0>)
+     MUXF7:I0->O           2   0.163   0.000  i_ALU_sel<3>1 (i_ALU_sel[3]_GND_6_o_wide_mux_15_OUT<0>)
      FD:D                      0.074          ALU_Result_0
     ----------------------------------------
-    Total                     32.395ns (7.609ns logic, 24.786ns route)
+    Total                     32.373ns (7.609ns logic, 24.764ns route)
                                        (23.5% logic, 76.5% route)
 
 =========================================================================
@@ -488,7 +488,7 @@ Offset:              4.118ns (Levels of Logic = 1)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 24 / 1
 -------------------------------------------------------------------------
-Delay:               7.318ns (Levels of Logic = 11)
+Delay:               7.302ns (Levels of Logic = 11)
   Source:            i_B<0> (PAD)
   Destination:       o_ALU_carry_flag (PAD)
 
@@ -496,7 +496,7 @@ Delay:               7.318ns (Levels of Logic = 11)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            34   1.328   1.553  i_B_0_IBUF (i_B_0_IBUF)
+     IBUF:I->O            33   1.328   1.537  i_B_0_IBUF (i_B_0_IBUF)
      LUT2:I1->O            1   0.254   0.000  Madd_tmp_lut<0> (Madd_tmp_lut<0>)
      MUXCY:S->O            1   0.215   0.000  Madd_tmp_cy<0> (Madd_tmp_cy<0>)
      MUXCY:CI->O           1   0.023   0.000  Madd_tmp_cy<1> (Madd_tmp_cy<1>)
@@ -508,8 +508,8 @@ Delay:               7.318ns (Levels of Logic = 11)
      MUXCY:CI->O           1   0.235   0.681  Madd_tmp_cy<7> (Madd_tmp_cy<7>)
      OBUF:I->O                 2.912          o_ALU_carry_flag_OBUF (o_ALU_carry_flag)
     ----------------------------------------
-    Total                      7.318ns (5.084ns logic, 2.234ns route)
-                                       (69.5% logic, 30.5% route)
+    Total                      7.302ns (5.084ns logic, 2.218ns route)
+                                       (69.6% logic, 30.4% route)
 
 =========================================================================
 
@@ -527,8 +527,8 @@ i_CLK          |    2.680|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.69 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.02 secs
  
 --> 
 

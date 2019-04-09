@@ -1,0 +1,1 @@
+vhdtdtfi -prj core -o "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/core/memory_controller.vhi" -module memory_controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../memory_controller/memory_controller.vhd 

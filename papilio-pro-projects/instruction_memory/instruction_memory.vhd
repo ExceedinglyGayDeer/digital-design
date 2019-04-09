@@ -31,27 +31,27 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity instruction_memory is
     Port ( 	i_CLK : in STD_LOGIC;
-				i_ADDRESS : in  STD_LOGIC_VECTOR (7 downto 0);
+				i_ENABLE : in STD_LOGIC;
+				i_DATA : in  STD_LOGIC_VECTOR (31 downto 0);
 				o_DATA : out  STD_LOGIC_VECTOR (31 downto 0)
 				);
 end instruction_memory;
 
 architecture Behavioral of instruction_memory is
-type RAM_ARRAY is array (0 to 31) of std_logic_vector(31 downto 0);
-signal r_INST_MEM: RAM_ARRAY :=(
-	x"00000001",x"00000002",x"00000003",x"00000004",-- 0x00: x'00
-   x"00000099",x"000000ff",x"00000078",x"00000011",-- 0x04: 
-	others => x"00000000"); 
+
+signal r_INST_MEM : std_logic_vector(31 downto 0) := x"00000000"; 
 
 begin
  
-process(i_CLK)
+process(i_CLK, i_ENABLE)
 
 	begin
-		if(rising_edge(i_CLK)) then
-			o_DATA <= r_INST_MEM(to_integer(unsigned(i_ADDRESS)));
+		if(rising_edge(i_CLK) and i_ENABLE ='1') then
+			r_INST_MEM <= i_DATA; -- Store input instruction in instruction register
 		end if;
 	end process;
 
+	o_DATA <= r_INST_MEM;
+	
 end Behavioral;
 

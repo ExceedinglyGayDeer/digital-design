@@ -31,6 +31,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity register_32x8 is
     Port ( 	i_CLK : in STD_LOGIC;
+				i_ENABLE : in STD_LOGIC;
 				i_ADDRESS_A : in  STD_LOGIC_VECTOR (4 downto 0);
 				i_ADDRESS_B : in  STD_LOGIC_VECTOR (4 downto 0);
 				o_OUT_A : out  STD_LOGIC_VECTOR (7 downto 0);
@@ -50,9 +51,9 @@ signal r_REGISTER: RAM_ARRAY :=(
 
 begin
  
-process(i_CLK)
+process(i_CLK, i_ENABLE)
 	begin
-		if(rising_edge(i_CLK)) then 
+		if(rising_edge(i_CLK) and i_ENABLE = '1') then 
 			if(i_WRITE_ENABLE = '1') then -- test if write is enabled
 				r_REGISTER(to_integer(unsigned(i_WRITE_ADDRESS))) <= i_DATA_IN; -- Store input in ram address
 				-- (RAM address needs to be integer)

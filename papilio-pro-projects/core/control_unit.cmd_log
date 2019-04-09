@@ -1,0 +1,1 @@
+vhdtdtfi -prj core -o "C:/Users/holge/OneDrive/AAU - Elektronik og IT/4. semester/Digital Design/digital-design/papilio-pro-projects/core/control_unit.vhi" -module control_unit -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../control_unit/control_unit.vhd 

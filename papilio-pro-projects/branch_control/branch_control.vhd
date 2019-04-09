@@ -36,8 +36,8 @@ entity branch_control is
            i_OVERFLOW_FLAG : in  STD_LOGIC;
            i_NEGATIVE_FLAG : in  STD_LOGIC;
            i_CARRY_FLAG : in  STD_LOGIC;
-           i_ADDRESS : in  STD_LOGIC_VECTOR (15 downto 0);
-           o_ADDRESS : out  STD_LOGIC_VECTOR (15 downto 0);
+           i_ADDRESS : in  STD_LOGIC_VECTOR (9 downto 0);
+           o_ADDRESS : out  STD_LOGIC_VECTOR (9 downto 0);
            o_PC_LOAD : out  STD_LOGIC
            );
 end branch_control;
@@ -54,33 +54,33 @@ begin
 		if(rising_edge(i_CLK)) then
 		
 			case i_BRANCH_CONTROL is
-				when "001" =>
+				when "001" => -- Jump
 					o_PC_LOAD <= '1';
-				when "010" =>
+				when "010" => -- Zero branch
 					if i_ZERO_FLAG = '1' then
 						o_PC_LOAD <= '1';
 					else
 						o_PC_LOAD <= '0';
 					end if;
-				when "011" =>
+				when "011" => -- Overflow branch
 					if i_OVERFLOW_FLAG = '1' then
 						o_PC_LOAD <= '1';
 					else
 						o_PC_LOAD <= '0';
 					end if;
-				when "100" =>
+				when "100" => -- Negative branch
 					if i_NEGATIVE_FLAG = '1' then
 						o_PC_LOAD <= '1';
 					else
 						o_PC_LOAD <= '0';
 					end if;
-				when "101" =>
+				when "101" => -- Carry branch
 					if i_CARRY_FLAG = '1' then
 						o_PC_LOAD <= '1';
 					else
 						o_PC_LOAD <= '0';
 					end if;
-				when others =>
+				when others => -- Increment PC
 					o_PC_LOAD <= '0';
 			end case;
 	
